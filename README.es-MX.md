@@ -1,25 +1,25 @@
 # AI Page Publisher
 
-> Publica páginas de React generadas por IA en la web con un solo push.
+> Publica páginas de React hechas con IA en la web, con un solo push.
 
 | [English](README.md) · [中文（臺灣）](README.zh-TW.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português (Brasil)](README.pt-BR.md) · [Español (México)](README.es-MX.md) · [العربية (السعودية)](README.ar-SA.md) · [اردو (پاکستان)](README.ur-PK.md) · [ไทย](README.th.md) · [Italiano](README.it.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) |
 | :-- |
 
-Genera una página con Claude, ChatGPT o cualquier modelo de lenguaje. Pégala en `src/App.jsx`. Haz push. Listo.
+Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/App.jsx`. Haz push. Ya.
 
 ## Inicio rápido
 
-1. **Usa esta plantilla** para crear tu propio repositorio
-2. **Reemplaza** `src/App.jsx` con tu artefacto generado por IA
-3. **Haz push** a `main` — GitHub Actions construye y despliega automáticamente
+1. **Usa esta plantilla** para crear tu propio repo
+2. **Reemplaza** `src/App.jsx` con el código que te generó la IA
+3. **Haz push** a `main` — GitHub Actions se encarga de compilar y publicar solito
 
-Tu sitio estará disponible en `https://<usuario>.github.io/<nombre-del-repositorio>/`.
+Tu sitio va a quedar en `https://<usuario>.github.io/<nombre-del-repo>/`.
 
 ## Qué incluye
 
-Esta plantilla viene preconfigurada con todo lo que los artefactos de IA suelen utilizar:
+La plantilla ya viene con todo lo que las páginas hechas con IA suelen ocupar:
 
-- **React 18 + Vite + Tailwind CSS 3** — compilación moderna, rápida y sin configuración
+- **React 18 + Vite + Tailwind CSS 3** — build moderno, rápido y sin configurar nada
 - **Más de 40 componentes de shadcn/ui** preinstalados en `src/components/ui/`
 - **Todas las primitivas de Radix UI** para interacciones accesibles
 - **Iconos** — `lucide-react`, `react-icons`, `@heroicons/react`
@@ -29,7 +29,7 @@ Esta plantilla viene preconfigurada con todo lo que los artefactos de IA suelen 
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
 - **Utilidades** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` y muchas más
 
-> El tree-shaking garantiza que solo los paquetes que realmente utiliza tu artefacto terminen en el bundle final.
+> Con tree-shaking, al bundle final solo llegan los paquetes que de verdad usas.
 
 ## Desarrollo local
 
@@ -40,51 +40,52 @@ npm run dev
 
 Abre `http://localhost:5173` en tu navegador.
 
-## Verificar dependencias faltantes
+## Revisar imports que falten
 
-Si tu artefacto generado por IA utiliza un paquete que no está preinstalado, ejecuta:
+Si el código que te generó la IA usa algún paquete que no viene preinstalado, corre:
 
 ```bash
 npm run check
+
 ```
 
-Este comando analiza tus archivos fuente y reporta cualquier dependencia faltante, junto con el comando exacto de `npm install` para resolverla.
+Esto escanea tus archivos y te dice qué dependencias faltan, con el comando exacto de `npm install` para instalarlas.
 
 ## Dominio personalizado
 
-1. Edita `public/CNAME` — sustituye el contenido de marcador por tu dominio (por ejemplo, `misitio.com`)
-2. Configura tu DNS para que apunte a GitHub Pages
-3. En tu repositorio: **Settings → Pages → Custom domain** — ingresa el mismo dominio
-4. Opcionalmente, verifica el dominio en **Settings → Verified domains**
+1. Edita `public/CNAME` y cambia el contenido del placeholder por tu dominio (por ejemplo, `misitio.com`)
+2. Apunta tu DNS a GitHub Pages
+3. En tu repo, ve a **Settings → Pages → Custom domain** y escribe el mismo dominio
+4. Si quieres, puedes verificar el dominio en **Settings → Verified domains**
 
-Si no necesitas un dominio personalizado, elimina `public/CNAME` o déjalo tal cual. Los comentarios dentro del archivo se ignoran.
+Si no vas a usar dominio personalizado, borra `public/CNAME` o déjalo tal cual — los comentarios del archivo se ignoran.
 
-## Cómo funciona la ruta base
+## Cómo funciona el base path
 
-La compilación detecta automáticamente la ruta base correcta:
+El build detecta automáticamente el base path correcto:
 
-| Escenario | Ruta base |
+| Escenario | Base path |
 | :-- | :-- |
-| Dominio personalizado (CNAME tiene un dominio) | `/` |
-| GitHub Pages (sin dominio personalizado) | `/<nombre-del-repositorio>/` |
+| Dominio personalizado (CNAME con dominio) | `/` |
+| GitHub Pages (sin dominio personalizado) | `/<nombre-del-repo>/` |
 | Desarrollo local | `/` |
 
-No requiere configuración manual.
+No hay que configurar nada a mano.
 
 ## Activar GitHub Pages
 
-1. Ve a **Settings → Pages** en tu repositorio
-2. Establece **Source** en **GitHub Actions**
-3. Haz push a `main` — el workflow se activará automáticamente
+1. Entra a **Settings → Pages** en tu repo
+2. Cambia **Source** a **GitHub Actions**
+3. Haz push a `main` — el workflow se dispara solo
 
 ## Estructura de archivos
 
 ```
 ├── src/
 │   ├── App.jsx              ← REEMPLAZA ESTE ARCHIVO
-│   ├── main.jsx             ← Punto de entrada (no modificar)
+│   ├── main.jsx             ← Punto de entrada (no tocar)
 │   ├── index.css            ← Tailwind y tema de shadcn
-│   ├── lib/utils.js         ← Función utilitaria cn()
+│   ├── lib/utils.js         ← Utilidad cn()
 │   ├── hooks/use-toast.js   ← Hook de toast
 │   └── components/ui/       ← Componentes de shadcn/ui
 ├── public/
@@ -93,8 +94,8 @@ No requiere configuración manual.
 ├── scripts/
 │   └── check-imports.js     ← Detecta dependencias faltantes
 ├── .github/workflows/
-│   └── deploy.yml           ← Despliegue con GitHub Actions
-├── index.html               ← HTML de entrada de Vite con etiquetas SEO
+│   └── deploy.yml           ← Deploy con GitHub Actions
+├── index.html               ← HTML de entrada de Vite con tags SEO
 ├── package.json
 ├── vite.config.js
 └── tailwind.config.js
@@ -102,21 +103,21 @@ No requiere configuración manual.
 
 ## Agregar más componentes de shadcn/ui
 
-La plantilla incluye más de 40 componentes de shadcn. Si necesitas más:
+La plantilla ya trae más de 40 componentes de shadcn. Si te faltan más, corre:
 
 ```bash
 npx shadcn@latest add <nombre-del-componente>
 ```
 
-El archivo `components.json` ya está preconfigurado.
+`components.json` ya viene configurado.
 
 ## Solución de problemas
 
-**La compilación falla con errores de importación.**
-Ejecuta `npm run check` para identificar los paquetes faltantes y luego instálalos.
+**El build truena por errores de import.**
+Corre `npm run check` para ver qué paquetes faltan y los instalas.
 
-**La página aparece en blanco después del despliegue.**
-Asegúrate de que la fuente de GitHub Pages esté configurada como **GitHub Actions**, no como "Deploy from a branch".
+**La página sale en blanco después del deploy.**
+Revisa que la Source de GitHub Pages esté en **GitHub Actions**, no en "Deploy from a branch".
 
-**El dominio personalizado no funciona.**
-Verifica que `public/CNAME` contenga únicamente tu dominio. Revisa la configuración de tu DNS.
+**El dominio personalizado no jala.**
+Verifica que `public/CNAME` tenga solo tu dominio, y revisa tus registros DNS.

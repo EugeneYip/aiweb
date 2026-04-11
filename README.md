@@ -1,6 +1,6 @@
 # AI Page Publisher
 
-> Publish AI-generated React pages to the web with one push.
+> Publish AI-generated React pages to the web in one push.
 
 | [English](README.md) · [中文（臺灣）](README.zh-TW.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português (Brasil)](README.pt-BR.md) · [Español (México)](README.es-MX.md) · [العربية (السعودية)](README.ar-SA.md) · [اردو (پاکستان)](README.ur-PK.md) · [ไทย](README.th.md) · [Italiano](README.it.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) |
 | :-- |
@@ -57,7 +57,7 @@ This scans your source files and reports any missing dependencies, with the exac
 3. In your repository: **Settings → Pages → Custom domain** — enter the same domain
 4. Optionally verify the domain under **Settings → Verified domains**
 
-If you do not need a custom domain, delete `public/CNAME` or leave it as it is. Comments in the file are ignored.
+If you don't need a custom domain, delete `public/CNAME` or leave it alone. Comments in the file are ignored.
 
 ## How the Base Path Works
 
