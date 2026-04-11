@@ -256,6 +256,70 @@ const translations = {
     footerLine2: "All Rights Reserved.",
     langLabel: "言語",
   },
+  vi: {
+    badge: "AI Page Publisher",
+    heroTitle: ["Một lần push,", "trang AI đã lên web."],
+    heroSubtitle:
+      "Một template gọn gàng để biến code React do AI sinh ra thành website đang chạy. Thay đúng một file, push lên GitHub, xong.",
+    ctaPrimary: "Dùng template này",
+    ctaSecondary: "Đọc README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.vi.md",
+    details: [
+      { label: "File chính", value: "src/App.jsx" },
+      { label: "Check import", value: "npm run check" },
+      { label: "Chạy local", value: "npm run dev" },
+    ],
+    includedLabel: "Có sẵn",
+    includedTitle: "Trong template có gì",
+    includes: [
+      "40+ component shadcn/ui",
+      "80+ package cài sẵn",
+      "Tailwind CSS, dùng được ngay",
+      "Deploy bằng GitHub Actions",
+      "Hỗ trợ custom domain",
+      "Tự detect base path",
+    ],
+    howItWorksLabel: "Cách hoạt động",
+    howItWorksTitle: "Gọn trong ba bước",
+    howItWorksSubtitle:
+      "Cả quy trình cố tình giữ thật ngắn. Sinh code, thay file, push. Trang của bạn đã lên web.",
+    steps: [
+      {
+        number: "01",
+        title: "Nhờ AI sinh code",
+        body: "Bảo Claude, ChatGPT hay AI nào cũng được sinh cho bạn một component React JSX cho trang bạn muốn.",
+      },
+      {
+        number: "02",
+        title: "Thay đúng một file",
+        body: "Mở src/App.jsx rồi thay nội dung bằng JSX vừa sinh ra. Cả quá trình bạn chỉ cần đụng vào file này.",
+      },
+      {
+        number: "03",
+        title: "Push là deploy",
+        body: "Commit rồi push lên nhánh main. GitHub Actions có sẵn sẽ tự build và publish site cho bạn.",
+      },
+    ],
+    quickStartLabel: "Bắt đầu nhanh",
+    quickStartTitle: "Chạy thử trên máy",
+    quickStartSubtitle:
+      "Clone repo mới của bạn, cài dependencies rồi khởi động dev server.",
+    terminalLabel: "terminal",
+    replaceLabel: "Thay thế",
+    replaceTitle: "Chỗ phép màu xảy ra",
+    replaceBodyBefore:
+      "Hầu hết các update chỉ cần đổi đúng một file. Dán JSX do AI sinh vào ",
+    replaceBodyAfter: " là xong.",
+    replaceSteps: [
+      "Sinh component React bằng công cụ AI bất kỳ",
+      "Thay src/App.jsx bằng code vừa sinh ra",
+      "Thiếu import thì chạy npm run check",
+      "Commit rồi push, tự động deploy",
+    ],
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "All Rights Reserved.",
+    langLabel: "Ngôn ngữ",
+  },
 };
 
 const LANGUAGES = [
@@ -263,6 +327,7 @@ const LANGUAGES = [
   { code: "zh", label: "中文", short: "中" },
   { code: "es", label: "Español", short: "ES" },
   { code: "ja", label: "日本語", short: "日" },
+  { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
 const STEP_ICONS = [
@@ -276,6 +341,7 @@ const HTML_LANG = {
   zh: "zh-TW",
   es: "es",
   ja: "ja",
+  vi: "vi",
 };
 
 function detectInitialLang() {
@@ -290,6 +356,7 @@ function detectInitialLang() {
   if (browser.startsWith("zh")) return "zh";
   if (browser.startsWith("es")) return "es";
   if (browser.startsWith("ja")) return "ja";
+  if (browser.startsWith("vi")) return "vi";
   return "en";
 }
 
