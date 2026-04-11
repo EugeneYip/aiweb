@@ -80,7 +80,7 @@ const translations = {
       { label: "本機開發", value: "npm run dev" },
     ],
     includedLabel: "內建項目",
-    includedTitle: "範本包含什麼",
+    includedTitle: "範本包含甚麼",
     includes: [
       "40+ 個 shadcn/ui 元件",
       "80+ 個預裝套件",
