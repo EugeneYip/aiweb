@@ -9,6 +9,7 @@ const translations = {
       "A clean template for turning any AI-generated React artifact into a live website. Replace one file. Push to GitHub. Done.",
     ctaPrimary: "Use this template",
     ctaSecondary: "Read the README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb#readme",
     details: [
       { label: "Main file", value: "src/App.jsx" },
       { label: "Check imports", value: "npm run check" },
@@ -72,6 +73,7 @@ const translations = {
       "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就這樣。",
     ctaPrimary: "使用這個範本",
     ctaSecondary: "看 README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.zh-TW.md",
     details: [
       { label: "主要檔案", value: "src/App.jsx" },
       { label: "檢查 import", value: "npm run check" },
@@ -133,6 +135,7 @@ const translations = {
       "Una plantilla sencilla para llevar cualquier componente de React generado por IA directo a la web. Cambias un archivo, haces push a GitHub y listo.",
     ctaPrimary: "Usar esta plantilla",
     ctaSecondary: "Leer el README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.es-MX.md",
     details: [
       { label: "Archivo principal", value: "src/App.jsx" },
       { label: "Verificar imports", value: "npm run check" },
@@ -196,6 +199,7 @@ const translations = {
       "AI が生成した React コードを、そのままウェブサイトとして公開できるシンプルなテンプレート。ファイルを 1 つ差し替えて、GitHub に push するだけ。",
     ctaPrimary: "このテンプレートを使う",
     ctaSecondary: "README を読む",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ja.md",
     details: [
       { label: "メインファイル", value: "src/App.jsx" },
       { label: "インポート確認", value: "npm run check" },
@@ -364,7 +368,7 @@ export default function App() {
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://github.com/EugeneYip/aiweb#readme"
+                  href={t.readmeUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-[#D9CEBD] bg-white/80 px-5 py-3 text-sm font-medium text-[#2F2A24] transition hover:bg-white"
