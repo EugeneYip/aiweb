@@ -20,7 +20,7 @@
 | 項目 | 做法 |
 | :-- | :-- |
 | 頁面標題和描述 | 編輯 [`index.html`](index.html) 裡的 `<title>` 和 `<meta name="description">` |
-| 自訂網域 | 把 [`public/CNAME`](public/CNAME) 裡的內容換成你的網域（例如 `mysite.com`），設定 DNS 指向 GitHub Pages，再到 **Settings → Pages → Custom domain** 填上同一個網域 |
+| 自訂網域 | 把 [`public/CNAME`](public/CNAME) 裡的內容換成你的網域（例如 `mysite.com`），設定 DNS 指向 GitHub Pages，再到 **Settings → Pages → Custom domain** 填上同一個網域。或者到 **Settings → Secrets and variables → Actions → Variables** 新增名為 `CUSTOM_DOMAIN` 的 repository variable |
 
 ## 內建項目
 
