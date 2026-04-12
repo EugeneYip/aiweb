@@ -4,21 +4,27 @@ import path from "path";
 import fs from "fs";
 
 function getBase() {
-  // If custom domain is set in public/CNAME, serve from root
+  // 1. Check CUSTOM_DOMAIN env var (set via GitHub repo variable)
+  const customDomain = process.env.CUSTOM_DOMAIN;
+  if (customDomain && customDomain.trim() && !customDomain.trim().startsWith("#")) {
+    return "/";
+  }
+  // 2. Check public/CNAME file for a real domain (skip comment lines)
   const cnamePath = path.resolve(__dirname, "public/CNAME");
   if (fs.existsSync(cnamePath)) {
-    const cname = fs.readFileSync(cnamePath, "utf-8").trim();
-    if (cname && !cname.startsWith("#")) {
+    const lines = fs.readFileSync(cnamePath, "utf-8").split("\n");
+    const domain = lines.find((l) => l.trim() && !l.trim().startsWith("#"));
+    if (domain) {
       return "/";
     }
   }
-  // In GitHub Actions, derive base path from repo name
+  // 3. In GitHub Actions, derive base path from repo name
   const repo = process.env.GITHUB_REPOSITORY;
   if (repo) {
     const repoName = repo.split("/")[1];
     return `/${repoName}/`;
   }
-  // Local dev
+  // 4. Local dev
   return "/";
 }
 

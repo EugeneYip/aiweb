@@ -20,7 +20,7 @@ Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/Ap
 | Qué | Cómo |
 | :-- | :-- |
 | Título y descripción de la página | Edita `<title>` y `<meta name="description">` en [`index.html`](index.html) |
-| Dominio personalizado | Reemplaza el placeholder en [`public/CNAME`](public/CNAME) con tu dominio (ej. `misitio.com`), configura tu DNS para GitHub Pages y pon el mismo dominio en **Settings → Pages → Custom domain** |
+| Dominio personalizado | Reemplaza el placeholder en [`public/CNAME`](public/CNAME) con tu dominio (ej. `misitio.com`), configura tu DNS para GitHub Pages y pon el mismo dominio en **Settings → Pages → Custom domain**. También puedes crear una variable de repositorio llamada `CUSTOM_DOMAIN` en **Settings → Secrets and variables → Actions → Variables** |
 
 ## Qué incluye
 

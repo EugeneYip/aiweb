@@ -20,7 +20,7 @@ Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. P
 | What | How |
 | :-- | :-- |
 | Page title & description | Edit `<title>` and `<meta name="description">` in [`index.html`](index.html) |
-| Custom domain | Replace the placeholder in [`public/CNAME`](public/CNAME) with your domain (e.g. `mysite.com`), configure DNS for GitHub Pages, and set the same domain in **Settings → Pages → Custom domain** |
+| Custom domain | Replace the placeholder in [`public/CNAME`](public/CNAME) with your domain (e.g. `mysite.com`), configure DNS for GitHub Pages, and set the same domain in **Settings → Pages → Custom domain**. Alternatively, set a repository variable named `CUSTOM_DOMAIN` in **Settings → Secrets and variables → Actions → Variables** |
 
 ## What's Included
 

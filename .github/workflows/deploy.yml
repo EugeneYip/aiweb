@@ -37,6 +37,15 @@ jobs:
         run: npm run build
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
+          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+
+      - name: Configure CNAME
+        run: |
+          if [ -n "${{ vars.CUSTOM_DOMAIN }}" ]; then
+            echo "${{ vars.CUSTOM_DOMAIN }}" > ./dist/CNAME
+          elif [ -f ./dist/CNAME ] && ! grep -qv '^#\|^[[:space:]]*$' ./dist/CNAME; then
+            rm -f ./dist/CNAME
+          fi
 
       - name: Setup Pages
         id: pages
