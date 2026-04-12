@@ -39,15 +39,32 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
+        continue-on-error: true
 
       - name: Upload artifact
+        if: steps.pages.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./dist"
 
       - name: Deploy to GitHub Pages
+        if: steps.pages.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v5
+
+      - name: Pages not enabled
+        if: steps.pages.outcome != 'success'
+        run: |
+          echo ""
+          echo "============================================================"
+          echo "  GitHub Pages is not enabled yet."
+          echo ""
+          echo "  1. Go to your repo → Settings → Pages"
+          echo "  2. Set Source to \"GitHub Actions\""
+          echo "  3. Re-run this workflow (or push again)"
+          echo "============================================================"
+          echo ""
+          echo "::error::GitHub Pages is not enabled. Go to Settings → Pages → set Source to \"GitHub Actions\", then re-run this workflow."
+          exit 1
