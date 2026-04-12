@@ -73,7 +73,7 @@ const translations = {
       "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就這樣。",
     ctaPrimary: "使用這個範本",
     ctaSecondary: "看 README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.zh-TW.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.zh.md",
     details: [
       { label: "主要檔案", value: "src/App.jsx" },
       { label: "檢查 import", value: "npm run check" },
@@ -135,7 +135,7 @@ const translations = {
       "Una plantilla sencilla para llevar cualquier componente de React generado por IA directo a la web. Cambias un archivo, haces push a GitHub y listo.",
     ctaPrimary: "Usar esta plantilla",
     ctaSecondary: "Leer el README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.es-MX.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.es.md",
     details: [
       { label: "Archivo principal", value: "src/App.jsx" },
       { label: "Verificar imports", value: "npm run check" },
@@ -338,7 +338,7 @@ const STEP_ICONS = [
 
 const HTML_LANG = {
   en: "en",
-  zh: "zh-TW",
+  zh: "zh",
   es: "es",
   ja: "ja",
   vi: "vi",
