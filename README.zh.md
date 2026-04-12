@@ -74,8 +74,11 @@ Build 的時候會自動偵測正確的 base path：
 ## 啟用 GitHub Pages
 
 1. 到 repo 的 **Settings → Pages**
-2. 把 **Source** 設成 **GitHub Actions**
-3. Push 到 `main`，workflow 就會自動跑
+2. 把 **Source** 設成 **Deploy from a branch**
+3. 選 **`gh-pages`** 分支和 **`/ (root)`** 資料夾，按 Save
+4. Push 到 `main`，workflow 會自動 build 並推到 `gh-pages`
+
+> `gh-pages` 分支會在第一次成功 build 後自動建立。如果還沒看到，先 push 到 `main` 再來設就好。
 
 ## 檔案結構
 
@@ -116,7 +119,7 @@ npx shadcn@latest add <元件名稱>
 執行 `npm run check` 看看缺了哪些套件，照提示裝就好。
 
 **部署完頁面一片空白。**
-確認 GitHub Pages 的 Source 是設在 **GitHub Actions**，不是「Deploy from a branch」。
+確認 GitHub Pages 的 Source 是設成 **Deploy from a branch**，並選了 **`gh-pages`** 分支。
 
 **自訂網域沒 work。**
 確認 `public/CNAME` 裡面只有你的網域，然後檢查一下 DNS 記錄。

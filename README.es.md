@@ -75,8 +75,11 @@ No hay que configurar nada a mano.
 ## Activar GitHub Pages
 
 1. Entra a **Settings → Pages** en tu repo
-2. Cambia **Source** a **GitHub Actions**
-3. Haz push a `main` — el workflow se dispara solo
+2. Cambia **Source** a **Deploy from a branch**
+3. Selecciona la rama **`gh-pages`** y la carpeta **`/ (root)`**, y dale Save
+4. Haz push a `main` — el workflow compila y sube todo a `gh-pages` solito
+
+> La rama `gh-pages` se crea automáticamente con el primer build exitoso. Si todavía no la ves, haz push a `main` primero y luego configura Pages.
 
 ## Estructura de archivos
 
@@ -117,7 +120,7 @@ npx shadcn@latest add <nombre-del-componente>
 Corre `npm run check` para ver qué paquetes faltan y los instalas.
 
 **La página sale en blanco después del deploy.**
-Revisa que la Source de GitHub Pages esté en **GitHub Actions**, no en "Deploy from a branch".
+Revisa que la Source de GitHub Pages esté en **Deploy from a branch** con la rama **`gh-pages`** seleccionada.
 
 **El dominio personalizado no jala.**
 Verifica que `public/CNAME` tenga solo tu dominio, y revisa tus registros DNS.
