@@ -2,7 +2,7 @@
 
 > Publish AI-generated React pages to the web in one push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Italiano](README.it.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) |
+| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) |
 | :-- |
 
 Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. Push. Done.
