@@ -9,11 +9,18 @@
 
 ## 快速開始
 
-1. **使用這個範本**建立自己的 repo
-2. 把 `src/App.jsx` **換成** AI 生成的程式碼
-3. **Push** 到 `main` 分支 — GitHub Actions 會自動 build 並部署
+1. **請 AI 生成 JSX** — 告訴 Claude、ChatGPT 或任何 AI，請它用 **JSX 格式**幫你生成想要的 React 頁面
+2. **使用這個範本**建立自己的 repo
+3. **啟用 GitHub Pages** — 到 **Settings → Pages**，把 Source 設成 **GitHub Actions**
+4. 把 `src/App.jsx` **換成** AI 剛剛生成的 JSX
+5. **Push** 到 `main` — 網站就會上線在 `https://<使用者名稱>.github.io/<repo 名稱>/`
 
-網站會上線於 `https://<使用者名稱>.github.io/<repo 名稱>/`。
+## 自訂設定（選用）
+
+| 項目 | 做法 |
+| :-- | :-- |
+| 頁面標題和描述 | 編輯 `index.html` 裡的 `<title>` 和 `<meta name="description">` |
+| 自訂網域 | 把 `public/CNAME` 裡的內容換成你的網域（例如 `mysite.com`），設定 DNS 指向 GitHub Pages，再到 **Settings → Pages → Custom domain** 填上同一個網域 |
 
 ## 內建項目
 
@@ -31,15 +38,6 @@
 
 > Tree-shaking 會自動把你沒用到的套件從最終的 bundle 裡拿掉。
 
-## 本機開發
-
-```bash
-npm install
-npm run dev
-```
-
-在瀏覽器打開 `http://localhost:5173`。
-
 ## 檢查缺少的套件
 
 如果 AI 生成的程式碼用到了沒預裝的套件，執行：
@@ -49,15 +47,6 @@ npm run check
 ```
 
 這會掃描原始檔，把缺少的套件列出來，同時附上完整的 `npm install` 指令方便你直接安裝。
-
-## 自訂網域
-
-1. 編輯 `public/CNAME`，把裡面的預留內容換成你的網域（例如 `mysite.com`）
-2. 把 DNS 指向 GitHub Pages
-3. 在 repo 的 **Settings → Pages → Custom domain** 填上同一個網域
-4. 如果有需要，可以到 **Settings → Verified domains** 驗證網域
-
-不需要自訂網域的話，直接把 `public/CNAME` 刪掉，或留著也沒差 — 檔案裡的註解會被忽略。
 
 ## Base path 是怎麼決定的
 
@@ -70,12 +59,6 @@ Build 的時候會自動偵測正確的 base path：
 | 本機開發 | `/` |
 
 都不用自己設。
-
-## 啟用 GitHub Pages
-
-1. 到 repo 的 **Settings → Pages**
-2. 把 **Source** 設成 **GitHub Actions**
-3. Push 到 `main`，workflow 就會自動 build 並部署
 
 ## 檔案結構
 
@@ -94,7 +77,7 @@ Build 的時候會自動偵測正確的 base path：
 │   └── check-imports.js     ← 偵測缺少的套件
 ├── .github/workflows/
 │   └── deploy.yml           ← GitHub Actions 部署
-├── index.html               ← Vite 進入 HTML（含 SEO 標籤）
+├── index.html               ← 頁面標題與 meta 標籤
 ├── package.json
 ├── vite.config.js
 └── tailwind.config.js
@@ -109,6 +92,15 @@ npx shadcn@latest add <元件名稱>
 ```
 
 `components.json` 已經配好了。
+
+## 本機開發
+
+```bash
+npm install
+npm run dev
+```
+
+在瀏覽器打開 `http://localhost:5173`。
 
 ## 疑難排解
 

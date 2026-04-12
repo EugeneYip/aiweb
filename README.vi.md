@@ -9,11 +9,18 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 
 ## Bắt đầu nhanh
 
-1. **Dùng template này** để tạo repo của riêng bạn
-2. **Thay** `src/App.jsx` bằng code AI vừa sinh ra
-3. **Push** lên `main` — GitHub Actions sẽ tự build và deploy
+1. **Nhờ AI sinh JSX** — bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React **định dạng JSX**
+2. **Dùng template này** để tạo repo của riêng bạn
+3. **Bật GitHub Pages** — vào **Settings → Pages**, đặt Source là **GitHub Actions**
+4. **Thay** `src/App.jsx` bằng JSX mà AI vừa sinh ra
+5. **Push** lên `main` — site của bạn sẽ lên ở `https://<tên-user>.github.io/<tên-repo>/`
 
-Site của bạn sẽ lên ở `https://<tên-user>.github.io/<tên-repo>/`.
+## Tuỳ chỉnh (Không bắt buộc)
+
+| Mục | Cách làm |
+| :-- | :-- |
+| Tiêu đề và mô tả trang | Sửa `<title>` và `<meta name="description">` trong `index.html` |
+| Custom domain | Thay placeholder trong `public/CNAME` bằng domain của bạn (ví dụ `mysite.com`), trỏ DNS về GitHub Pages, rồi điền domain đó vào **Settings → Pages → Custom domain** |
 
 ## Có những gì
 
@@ -31,15 +38,6 @@ Template đã setup sẵn mọi thứ mà trang AI thường dùng:
 
 > Tree-shaking đảm bảo chỉ những package bạn thực sự dùng mới có mặt trong bundle cuối.
 
-## Chạy trên máy
-
-```bash
-npm install
-npm run dev
-```
-
-Mở `http://localhost:5173` trên trình duyệt.
-
 ## Kiểm tra import còn thiếu
 
 Nếu code AI sinh ra dùng một package chưa được cài sẵn, chạy:
@@ -49,15 +47,6 @@ npm run check
 ```
 
 Lệnh này sẽ quét file source và liệt kê các dependency còn thiếu, kèm câu lệnh `npm install` chính xác để bạn cài ngay.
-
-## Custom domain
-
-1. Sửa `public/CNAME` — thay placeholder bằng domain của bạn (ví dụ `mysite.com`)
-2. Trỏ DNS về GitHub Pages
-3. Vào repo: **Settings → Pages → Custom domain** — nhập cùng domain
-4. Nếu muốn thì verify domain ở **Settings → Verified domains**
-
-Không cần custom domain thì xóa `public/CNAME` hoặc để nguyên cũng được — comment trong file sẽ bị bỏ qua.
 
 ## Base path hoạt động thế nào
 
@@ -70,12 +59,6 @@ Build sẽ tự detect đúng base path:
 | Chạy local | `/` |
 
 Không cần config thủ công.
-
-## Bật GitHub Pages
-
-1. Vào **Settings → Pages** trong repo
-2. Đặt **Source** là **GitHub Actions**
-3. Push lên `main` — workflow sẽ tự build và deploy
 
 ## Cấu trúc file
 
@@ -94,7 +77,7 @@ Không cần config thủ công.
 │   └── check-imports.js     ← Phát hiện dependency còn thiếu
 ├── .github/workflows/
 │   └── deploy.yml           ← Deploy bằng GitHub Actions
-├── index.html               ← HTML entry của Vite (có SEO tags)
+├── index.html               ← Tiêu đề trang và meta tags
 ├── package.json
 ├── vite.config.js
 └── tailwind.config.js
@@ -109,6 +92,15 @@ npx shadcn@latest add <tên-component>
 ```
 
 `components.json` đã được config sẵn.
+
+## Chạy trên máy
+
+```bash
+npm install
+npm run dev
+```
+
+Mở `http://localhost:5173` trên trình duyệt.
 
 ## Khi gặp sự cố
 

@@ -9,11 +9,18 @@ Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/Ap
 
 ## Inicio rápido
 
-1. **Usa esta plantilla** para crear tu propio repo
-2. **Reemplaza** `src/App.jsx` con el código que te generó la IA
-3. **Haz push** a `main` — GitHub Actions se encarga de compilar y publicar solito
+1. **Pide JSX a tu IA** — dile a Claude, ChatGPT o la IA que uses que te genere la página como un componente React en **formato JSX**
+2. **Usa esta plantilla** para crear tu propio repo
+3. **Activa GitHub Pages** — ve a **Settings → Pages** y pon Source en **GitHub Actions**
+4. **Reemplaza** `src/App.jsx` con el JSX que te generó la IA
+5. **Haz push** a `main` — tu sitio va a quedar en `https://<usuario>.github.io/<nombre-del-repo>/`
 
-Tu sitio va a quedar en `https://<usuario>.github.io/<nombre-del-repo>/`.
+## Personalizar (Opcional)
+
+| Qué | Cómo |
+| :-- | :-- |
+| Título y descripción de la página | Edita `<title>` y `<meta name="description">` en `index.html` |
+| Dominio personalizado | Reemplaza el placeholder en `public/CNAME` con tu dominio (ej. `misitio.com`), configura tu DNS para GitHub Pages y pon el mismo dominio en **Settings → Pages → Custom domain** |
 
 ## Qué incluye
 
@@ -31,34 +38,15 @@ La plantilla ya viene con todo lo que las páginas hechas con IA suelen ocupar:
 
 > Con tree-shaking, al bundle final solo llegan los paquetes que de verdad usas.
 
-## Desarrollo local
-
-```bash
-npm install
-npm run dev
-```
-
-Abre `http://localhost:5173` en tu navegador.
-
 ## Revisar imports que falten
 
 Si el código que te generó la IA usa algún paquete que no viene preinstalado, corre:
 
 ```bash
 npm run check
-
 ```
 
 Esto escanea tus archivos y te dice qué dependencias faltan, con el comando exacto de `npm install` para instalarlas.
-
-## Dominio personalizado
-
-1. Edita `public/CNAME` y cambia el contenido del placeholder por tu dominio (por ejemplo, `misitio.com`)
-2. Apunta tu DNS a GitHub Pages
-3. En tu repo, ve a **Settings → Pages → Custom domain** y escribe el mismo dominio
-4. Si quieres, puedes verificar el dominio en **Settings → Verified domains**
-
-Si no vas a usar dominio personalizado, borra `public/CNAME` o déjalo tal cual — los comentarios del archivo se ignoran.
 
 ## Cómo funciona el base path
 
@@ -71,12 +59,6 @@ El build detecta automáticamente el base path correcto:
 | Desarrollo local | `/` |
 
 No hay que configurar nada a mano.
-
-## Activar GitHub Pages
-
-1. Entra a **Settings → Pages** en tu repo
-2. Cambia **Source** a **GitHub Actions**
-3. Haz push a `main` — el workflow compila y despliega solito
 
 ## Estructura de archivos
 
@@ -95,7 +77,7 @@ No hay que configurar nada a mano.
 │   └── check-imports.js     ← Detecta dependencias faltantes
 ├── .github/workflows/
 │   └── deploy.yml           ← Deploy con GitHub Actions
-├── index.html               ← HTML de entrada de Vite con tags SEO
+├── index.html               ← Título de la página y meta tags
 ├── package.json
 ├── vite.config.js
 └── tailwind.config.js
@@ -110,6 +92,15 @@ npx shadcn@latest add <nombre-del-componente>
 ```
 
 `components.json` ya viene configurado.
+
+## Desarrollo local
+
+```bash
+npm install
+npm run dev
+```
+
+Abre `http://localhost:5173` en tu navegador.
 
 ## Solución de problemas
 

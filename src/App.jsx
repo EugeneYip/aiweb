@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, FileCode, GitBranch, Globe, ArrowUpRight, CheckCircle2, Terminal } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Terminal } from "lucide-react";
 
 const translations = {
   en: {
@@ -26,27 +26,27 @@ const translations = {
       "Auto base path detection",
     ],
     howItWorksLabel: "How it works",
-    howItWorksTitle: "A simple three-step flow",
+    howItWorksTitle: "Three steps to go live",
     howItWorksSubtitle:
-      "The whole process is intentionally short. Generate, replace, push. Your page is live.",
+      "No coding experience needed. Ask any AI for JSX, paste it, push, done.",
     steps: [
       {
         number: "01",
-        title: "Generate with AI",
-        body: "Ask Claude, ChatGPT, or any AI to generate a React JSX component for the page you want.",
+        title: "Ask your AI for JSX",
+        body: "Tell Claude, ChatGPT, or any AI to generate the page you want as a React component in JSX format.",
       },
       {
         number: "02",
-        title: "Replace one file",
-        body: "Open src/App.jsx and replace its content with the JSX you just generated. That is the only file you need to change.",
+        title: "Set up your repo",
+        body: "Use this template to create your own repository. Go to Settings → Pages and set Source to GitHub Actions.",
       },
       {
         number: "03",
-        title: "Push to deploy",
-        body: "Commit and push to the main branch. The included GitHub Actions workflow builds and publishes your site automatically.",
+        title: "Replace and push",
+        body: "Paste the JSX into src/App.jsx and push to main. GitHub Actions builds and publishes your site automatically.",
       },
     ],
-    quickStartLabel: "Quick start",
+    quickStartLabel: "For developers",
     quickStartTitle: "Run it locally",
     quickStartSubtitle:
       "Clone your new repository, install the dependencies, and start the dev server.",
@@ -90,27 +90,27 @@ const translations = {
       "自動偵測 base path",
     ],
     howItWorksLabel: "運作方式",
-    howItWorksTitle: "簡單三步驟",
+    howItWorksTitle: "三步就上線",
     howItWorksSubtitle:
-      "整個流程刻意設計得很短。生成、替換、push，頁面就上線了。",
+      "不需要寫程式經驗。請 AI 生成 JSX，貼上，push，搞定。",
     steps: [
       {
         number: "01",
-        title: "用 AI 生成",
-        body: "請 Claude、ChatGPT 或任何一個 AI 幫你生成想要頁面的 React JSX 元件。",
+        title: "請 AI 生成 JSX",
+        body: "告訴 Claude、ChatGPT 或任何 AI，請它用 JSX 格式幫你生成想要的 React 頁面。",
       },
       {
         number: "02",
-        title: "換掉一個檔案",
-        body: "打開 src/App.jsx，把內容換成剛剛生成的 JSX。整個過程只需要改這一個檔案。",
+        title: "建立你的 repo",
+        body: "用這個範本建立自己的 repo。到 Settings → Pages 把 Source 設成 GitHub Actions。",
       },
       {
         number: "03",
-        title: "Push 就部署",
-        body: "commit 後 push 到 main 分支，內建的 GitHub Actions 會自動 build 並把網站發佈出去。",
+        title: "貼上、push",
+        body: "把 JSX 貼進 src/App.jsx，push 到 main。GitHub Actions 會自動 build 並把網站發佈出去。",
       },
     ],
-    quickStartLabel: "快速開始",
+    quickStartLabel: "開發者專區",
     quickStartTitle: "在本機跑起來",
     quickStartSubtitle: "clone 你的新 repo、裝好相依套件，然後啟動開發伺服器。",
     terminalLabel: "終端機",
@@ -152,27 +152,27 @@ const translations = {
       "Detección automática de base path",
     ],
     howItWorksLabel: "Cómo funciona",
-    howItWorksTitle: "Un flujo simple de tres pasos",
+    howItWorksTitle: "Tres pasos y listo",
     howItWorksSubtitle:
-      "Todo el proceso es deliberadamente corto. Generas, reemplazas, haces push. Y tu página queda en línea.",
+      "No necesitas saber programar. Pide JSX a la IA, pégalo, haz push y ya.",
     steps: [
       {
         number: "01",
-        title: "Genera con IA",
-        body: "Pídele a Claude, ChatGPT o la IA que prefieras que te arme un componente React JSX con la página que quieres.",
+        title: "Pide JSX a tu IA",
+        body: "Dile a Claude, ChatGPT o la IA que prefieras que te genere la página que quieres como componente React en formato JSX.",
       },
       {
         number: "02",
-        title: "Reemplaza un archivo",
-        body: "Abre src/App.jsx y pega ahí el JSX que acabas de generar. Es el único archivo que tienes que tocar.",
+        title: "Arma tu repo",
+        body: "Usa esta plantilla para crear tu propio repo. Ve a Settings → Pages y pon Source en GitHub Actions.",
       },
       {
         number: "03",
-        title: "Haz push para desplegar",
-        body: "Haz commit y push a la rama main. El workflow de GitHub Actions incluido se encarga de compilar y publicar tu sitio solito.",
+        title: "Pega y haz push",
+        body: "Pega el JSX en src/App.jsx y haz push a main. GitHub Actions se encarga de compilar y publicar tu sitio solito.",
       },
     ],
-    quickStartLabel: "Inicio rápido",
+    quickStartLabel: "Para developers",
     quickStartTitle: "Ejecútalo localmente",
     quickStartSubtitle:
       "Clona tu nuevo repo, instala las dependencias y arranca el servidor de desarrollo.",
@@ -216,30 +216,30 @@ const translations = {
       "ベースパスを自動検出",
     ],
     howItWorksLabel: "仕組み",
-    howItWorksTitle: "たった 3 ステップ",
+    howItWorksTitle: "3 ステップで公開",
     howItWorksSubtitle:
-      "全体の流れは意図的に短くしてあります。生成して、差し替えて、push。それだけでページが公開されます。",
+      "プログラミングの経験は不要。AI に JSX を頼んで、貼り付けて、push するだけ。",
     steps: [
       {
         number: "01",
-        title: "AI で生成",
-        body: "Claude、ChatGPT、お好きな AI に、作りたいページの React コンポーネントを書いてもらいます。",
+        title: "AI に JSX を頼む",
+        body: "Claude、ChatGPT、お好きな AI に、作りたいページを JSX 形式の React コンポーネントとして書いてもらいます。",
       },
       {
         number: "02",
-        title: "ファイルを 1 つ差し替え",
-        body: "src/App.jsx を開いて、中身を先ほどの JSX に差し替えるだけ。触るのはこのファイルだけで OK です。",
+        title: "リポジトリを準備",
+        body: "このテンプレートで自分のリポジトリを作成。Settings → Pages で Source を GitHub Actions に設定。",
       },
       {
         number: "03",
-        title: "push でデプロイ",
-        body: "main ブランチに commit して push するだけ。同梱の GitHub Actions が自動でビルドして公開してくれます。",
+        title: "貼り付けて push",
+        body: "JSX を src/App.jsx に貼り付けて main に push。GitHub Actions が自動でビルドして公開してくれます。",
       },
     ],
-    quickStartLabel: "クイックスタート",
+    quickStartLabel: "開発者向け",
     quickStartTitle: "ローカルで動かす",
     quickStartSubtitle:
-      "新しいリポジトリを clone して、依存関係をインストールし、開発サーバーを立ち上げます。",
+      "リポジトリを clone して、依存関係をインストールし、開発サーバーを立ち上げます。",
     terminalLabel: "ターミナル",
     replaceLabel: "差し替え",
     replaceTitle: "いちばん大事なところ",
@@ -280,27 +280,27 @@ const translations = {
       "Tự detect base path",
     ],
     howItWorksLabel: "Cách hoạt động",
-    howItWorksTitle: "Gọn trong ba bước",
+    howItWorksTitle: "Ba bước là lên web",
     howItWorksSubtitle:
-      "Cả quy trình cố tình giữ thật ngắn. Sinh code, thay file, push. Trang của bạn đã lên web.",
+      "Không cần biết lập trình. Nhờ AI sinh JSX, dán vào, push, xong.",
     steps: [
       {
         number: "01",
-        title: "Nhờ AI sinh code",
-        body: "Bảo Claude, ChatGPT hay AI nào cũng được sinh cho bạn một component React JSX cho trang bạn muốn.",
+        title: "Nhờ AI sinh JSX",
+        body: "Bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React định dạng JSX.",
       },
       {
         number: "02",
-        title: "Thay đúng một file",
-        body: "Mở src/App.jsx rồi thay nội dung bằng JSX vừa sinh ra. Cả quá trình bạn chỉ cần đụng vào file này.",
+        title: "Tạo repo của bạn",
+        body: "Dùng template này để tạo repo riêng. Vào Settings → Pages đặt Source là GitHub Actions.",
       },
       {
         number: "03",
-        title: "Push là deploy",
-        body: "Commit rồi push lên nhánh main. GitHub Actions có sẵn sẽ tự build và publish site cho bạn.",
+        title: "Dán vào, push",
+        body: "Dán JSX vào src/App.jsx rồi push lên main. GitHub Actions sẽ tự build và publish site cho bạn.",
       },
     ],
-    quickStartLabel: "Bắt đầu nhanh",
+    quickStartLabel: "Dành cho dev",
     quickStartTitle: "Chạy thử trên máy",
     quickStartSubtitle:
       "Clone repo mới của bạn, cài dependencies rồi khởi động dev server.",
@@ -332,8 +332,8 @@ const LANGUAGES = [
 
 const STEP_ICONS = [
   <Sparkles className="h-5 w-5" />,
-  <FileCode className="h-5 w-5" />,
-  <GitBranch className="h-5 w-5" />,
+  <Settings className="h-5 w-5" />,
+  <Upload className="h-5 w-5" />,
 ];
 
 const HTML_LANG = {
