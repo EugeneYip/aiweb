@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Terminal } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb } from "lucide-react";
 
 const translations = {
   en: {
@@ -10,11 +10,6 @@ const translations = {
     ctaPrimary: "Use this template",
     ctaSecondary: "Read the README",
     readmeUrl: "https://github.com/EugeneYip/aiweb#readme",
-    details: [
-      { label: "Main file", value: "src/App.jsx" },
-      { label: "Check imports", value: "npm run check" },
-      { label: "Local dev", value: "npm run dev" },
-    ],
     includedLabel: "Included",
     includedTitle: "What you get",
     includes: [
@@ -46,22 +41,19 @@ const translations = {
         body: "Paste the JSX into src/App.jsx and push to main. GitHub Actions builds and publishes your site automatically.",
       },
     ],
-    quickStartLabel: "For developers",
-    quickStartTitle: "Run it locally",
-    quickStartSubtitle:
-      "Clone your new repository, install the dependencies, and start the dev server.",
-    terminalLabel: "terminal",
-    replaceLabel: "Replace",
-    replaceTitle: "Where the magic happens",
-    replaceBodyBefore:
-      "Most updates only require changing one file. Paste your AI-generated JSX into ",
-    replaceBodyAfter: " and you are done.",
-    replaceSteps: [
-      "Generate a React component with any AI tool",
-      "Replace src/App.jsx with the generated code",
-      "Run npm run check if any imports are missing",
-      "Commit and push to deploy automatically",
+    filesLabel: "Your files",
+    filesTitle: "What you'll change",
+    filesSubtitle:
+      "Most of the time you only touch one file. The other two are optional.",
+    files: [
+      { name: "src/App.jsx", tag: "Required", desc: "Paste your AI-generated JSX here. This is the only file you need to change.", required: true },
+      { name: "index.html", tag: "Optional", desc: "Update the page title and meta description to match your site.", required: false },
+      { name: "public/CNAME", tag: "Optional", desc: "Set your custom domain. Leave as-is if you don't need one.", required: false },
     ],
+    tipLabel: "Tip",
+    tipText: "If your AI code uses a package not included in the template, run",
+    tipCommand: "npm run check",
+    tipAfter: "to find and fix missing dependencies.",
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Language",
@@ -74,11 +66,6 @@ const translations = {
     ctaPrimary: "使用這個範本",
     ctaSecondary: "看 README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.zh.md",
-    details: [
-      { label: "主要檔案", value: "src/App.jsx" },
-      { label: "檢查 import", value: "npm run check" },
-      { label: "本機開發", value: "npm run dev" },
-    ],
     includedLabel: "內建項目",
     includedTitle: "範本包含甚麼",
     includes: [
@@ -110,20 +97,18 @@ const translations = {
         body: "把 JSX 貼進 src/App.jsx，push 到 main。GitHub Actions 會自動 build 並把網站發佈出去。",
       },
     ],
-    quickStartLabel: "開發者專區",
-    quickStartTitle: "在本機跑起來",
-    quickStartSubtitle: "clone 你的新 repo、裝好相依套件，然後啟動開發伺服器。",
-    terminalLabel: "終端機",
-    replaceLabel: "替換",
-    replaceTitle: "魔法就發生在這裡",
-    replaceBodyBefore: "大部分的更新只需要動一個檔案。把 AI 生成的 JSX 貼到 ",
-    replaceBodyAfter: " 就完成了。",
-    replaceSteps: [
-      "用任何 AI 工具生成 React 元件",
-      "把生成的程式碼貼到 src/App.jsx",
-      "若有缺少的 import，執行 npm run check",
-      "commit、push，自動部署",
+    filesLabel: "你的檔案",
+    filesTitle: "需要改的檔案",
+    filesSubtitle: "通常只需要動一個檔案，其餘兩個是進階選用。",
+    files: [
+      { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 貼到這裡。這是唯一需要改的檔案。", required: true },
+      { name: "index.html", tag: "選用", desc: "改一下頁面標題和描述，讓它符合你的網站。", required: false },
+      { name: "public/CNAME", tag: "選用", desc: "設定你的自訂網域。不需要的話就不用動。", required: false },
     ],
+    tipLabel: "小提示",
+    tipText: "如果 AI 的程式碼用到了範本沒預裝的套件，執行",
+    tipCommand: "npm run check",
+    tipAfter: "就能找到並修復缺少的相依套件。",
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "版權所有。",
     langLabel: "語言",
@@ -136,11 +121,6 @@ const translations = {
     ctaPrimary: "Usar esta plantilla",
     ctaSecondary: "Leer el README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.es.md",
-    details: [
-      { label: "Archivo principal", value: "src/App.jsx" },
-      { label: "Verificar imports", value: "npm run check" },
-      { label: "Desarrollo local", value: "npm run dev" },
-    ],
     includedLabel: "Incluido",
     includedTitle: "Lo que obtienes",
     includes: [
@@ -172,22 +152,19 @@ const translations = {
         body: "Pega el JSX en src/App.jsx y haz push a main. GitHub Actions se encarga de compilar y publicar tu sitio solito.",
       },
     ],
-    quickStartLabel: "Para developers",
-    quickStartTitle: "Ejecútalo localmente",
-    quickStartSubtitle:
-      "Clona tu nuevo repo, instala las dependencias y arranca el servidor de desarrollo.",
-    terminalLabel: "terminal",
-    replaceLabel: "Reemplazar",
-    replaceTitle: "Aquí ocurre la magia",
-    replaceBodyBefore:
-      "La mayoría de los cambios se reducen a tocar un solo archivo. Pega tu JSX generado por IA en ",
-    replaceBodyAfter: " y ya.",
-    replaceSteps: [
-      "Genera un componente de React con la herramienta de IA que uses",
-      "Pega el código generado en src/App.jsx",
-      "Si te faltan imports, corre npm run check",
-      "Haz commit y push, y se despliega solo",
+    filesLabel: "Tus archivos",
+    filesTitle: "Qué vas a cambiar",
+    filesSubtitle:
+      "Casi siempre solo tocas un archivo. Los otros dos son opcionales.",
+    files: [
+      { name: "src/App.jsx", tag: "Obligatorio", desc: "Pega aquí el JSX que te generó la IA. Es el único archivo que tienes que cambiar.", required: true },
+      { name: "index.html", tag: "Opcional", desc: "Cambia el título y la descripción de la página para que vayan con tu sitio.", required: false },
+      { name: "public/CNAME", tag: "Opcional", desc: "Configura tu dominio personalizado. Si no lo necesitas, déjalo como está.", required: false },
     ],
+    tipLabel: "Tip",
+    tipText: "Si el código de tu IA usa un paquete que no viene en la plantilla, corre",
+    tipCommand: "npm run check",
+    tipAfter: "para encontrar y arreglar las dependencias que faltan.",
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Todos los derechos reservados.",
     langLabel: "Idioma",
@@ -200,11 +177,6 @@ const translations = {
     ctaPrimary: "このテンプレートを使う",
     ctaSecondary: "README を読む",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ja.md",
-    details: [
-      { label: "メインファイル", value: "src/App.jsx" },
-      { label: "インポート確認", value: "npm run check" },
-      { label: "ローカル開発", value: "npm run dev" },
-    ],
     includedLabel: "含まれるもの",
     includedTitle: "テンプレートの中身",
     includes: [
@@ -236,22 +208,19 @@ const translations = {
         body: "JSX を src/App.jsx に貼り付けて main に push。GitHub Actions が自動でビルドして公開してくれます。",
       },
     ],
-    quickStartLabel: "開発者向け",
-    quickStartTitle: "ローカルで動かす",
-    quickStartSubtitle:
-      "リポジトリを clone して、依存関係をインストールし、開発サーバーを立ち上げます。",
-    terminalLabel: "ターミナル",
-    replaceLabel: "差し替え",
-    replaceTitle: "いちばん大事なところ",
-    replaceBodyBefore:
-      "ほとんどの更新は、ファイルを 1 つ書き換えるだけ。AI が生成した JSX を ",
-    replaceBodyAfter: " に貼り付ければそれで完了です。",
-    replaceSteps: [
-      "お好きな AI ツールで React コンポーネントを生成",
-      "生成したコードで src/App.jsx を差し替え",
-      "import が足りないときは npm run check を実行",
-      "commit して push すれば自動でデプロイ",
+    filesLabel: "ファイル",
+    filesTitle: "変更するファイル",
+    filesSubtitle:
+      "ほとんどの場合、触るのは 1 ファイルだけ。残り 2 つは任意です。",
+    files: [
+      { name: "src/App.jsx", tag: "必須", desc: "AI が生成した JSX をここに貼り付けます。変更が必要なのはこのファイルだけです。", required: true },
+      { name: "index.html", tag: "任意", desc: "ページのタイトルや説明を自分のサイトに合わせて変更します。", required: false },
+      { name: "public/CNAME", tag: "任意", desc: "カスタムドメインを設定します。不要ならそのままで OK。", required: false },
     ],
+    tipLabel: "ヒント",
+    tipText: "AI のコードがテンプレートに含まれないパッケージを使っている場合は",
+    tipCommand: "npm run check",
+    tipAfter: "を実行すれば、足りない依存を見つけて修正できます。",
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "言語",
@@ -264,11 +233,6 @@ const translations = {
     ctaPrimary: "Dùng template này",
     ctaSecondary: "Đọc README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.vi.md",
-    details: [
-      { label: "File chính", value: "src/App.jsx" },
-      { label: "Check import", value: "npm run check" },
-      { label: "Chạy local", value: "npm run dev" },
-    ],
     includedLabel: "Có sẵn",
     includedTitle: "Trong template có gì",
     includes: [
@@ -300,22 +264,19 @@ const translations = {
         body: "Dán JSX vào src/App.jsx rồi push lên main. GitHub Actions sẽ tự build và publish site cho bạn.",
       },
     ],
-    quickStartLabel: "Dành cho dev",
-    quickStartTitle: "Chạy thử trên máy",
-    quickStartSubtitle:
-      "Clone repo mới của bạn, cài dependencies rồi khởi động dev server.",
-    terminalLabel: "terminal",
-    replaceLabel: "Thay thế",
-    replaceTitle: "Chỗ phép màu xảy ra",
-    replaceBodyBefore:
-      "Hầu hết các update chỉ cần đổi đúng một file. Dán JSX do AI sinh vào ",
-    replaceBodyAfter: " là xong.",
-    replaceSteps: [
-      "Sinh component React bằng công cụ AI bất kỳ",
-      "Thay src/App.jsx bằng code vừa sinh ra",
-      "Thiếu import thì chạy npm run check",
-      "Commit rồi push, tự động deploy",
+    filesLabel: "File của bạn",
+    filesTitle: "Cần thay đổi gì",
+    filesSubtitle:
+      "Hầu hết bạn chỉ cần đổi một file. Hai file còn lại là tuỳ chọn.",
+    files: [
+      { name: "src/App.jsx", tag: "Bắt buộc", desc: "Dán JSX do AI sinh ra vào đây. Đây là file duy nhất bạn cần thay.", required: true },
+      { name: "index.html", tag: "Tuỳ chọn", desc: "Đổi tiêu đề và mô tả trang cho phù hợp với site của bạn.", required: false },
+      { name: "public/CNAME", tag: "Tuỳ chọn", desc: "Cài custom domain. Không cần thì để nguyên.", required: false },
     ],
+    tipLabel: "Mẹo",
+    tipText: "Nếu code AI dùng package chưa có sẵn trong template, chạy",
+    tipCommand: "npm run check",
+    tipAfter: "để tìm và sửa các dependency còn thiếu.",
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Ngôn ngữ",
@@ -404,23 +365,23 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#FCFAF2] text-[#2F2A24] antialiased">
-      <main className="mx-auto max-w-6xl px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+      <main className="mx-auto max-w-6xl px-4 py-5 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
         {/* Hero */}
         <section className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]">
-          <div className="grid gap-8 px-5 py-7 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
+          <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
                 <span className="h-2 w-2 rounded-full bg-[#A67B5B]" />
                 {t.badge}
               </div>
 
-              <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
+              <h1 className="mt-5 max-w-3xl text-[2rem] font-semibold leading-[1.15] tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
                 {t.heroTitle[0]}
                 <br />
                 {t.heroTitle[1]}
               </h1>
 
-              <p className="mt-5 max-w-2xl text-sm leading-8 text-[#4B443C] sm:text-base">
+              <p className="mt-5 max-w-xl text-[0.938rem] leading-7 text-[#4B443C] sm:text-base sm:leading-8">
                 {t.heroSubtitle}
               </p>
 
@@ -443,35 +404,23 @@ export default function App() {
                   {t.ctaSecondary}
                 </a>
               </div>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                {t.details.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl border border-[#E9E0D2] bg-white/70 px-4 py-4"
-                  >
-                    <p className="text-xs uppercase tracking-[0.18em] text-[#7A6F63]">{item.label}</p>
-                    <p className="mt-2 break-all font-mono text-sm font-medium text-[#241F1A]">{item.value}</p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="rounded-[1.75rem] border border-[#E9E0D2] bg-white/80 p-4 sm:p-5 lg:p-6">
-              <div className="flex items-center justify-between border-b border-[#F0E7DA] pb-4">
+              <div className="flex items-center justify-between border-b border-[#F0E7DA] pb-3">
                 <div>
                   <p className="text-xs uppercase tracking-[0.18em] text-[#7A6F63]">{t.includedLabel}</p>
-                  <h2 className="mt-2 text-lg font-semibold text-[#241F1A]">{t.includedTitle}</h2>
+                  <h2 className="mt-1.5 text-lg font-semibold text-[#241F1A]">{t.includedTitle}</h2>
                 </div>
                 <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#F4EEE1] text-[#5C5247]">
                   <Globe className="h-5 w-5" />
                 </div>
               </div>
 
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-4 space-y-2">
                 {t.includes.map((item) => (
-                  <li key={item} className="flex items-start gap-3 rounded-2xl bg-[#FCFAF2] px-4 py-3">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#A67B5B]" />
+                  <li key={item} className="flex items-center gap-3 rounded-xl bg-[#FCFAF2] px-3.5 py-2.5">
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[#A67B5B]" />
                     <span className="text-sm font-medium text-[#241F1A]">{item}</span>
                   </li>
                 ))}
@@ -481,107 +430,106 @@ export default function App() {
         </section>
 
         {/* How It Works */}
-        <section className="mt-8 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-7 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:px-8 sm:py-9 lg:px-10">
+        <section className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.howItWorksLabel}</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
+            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
               {t.howItWorksTitle}
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[#4B443C] sm:text-base">
+            <p className="mt-3 text-[0.938rem] leading-7 text-[#4B443C] sm:text-base">
               {t.howItWorksSubtitle}
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+          <div className="mt-6 grid gap-4 sm:mt-8 lg:grid-cols-3">
             {t.steps.map((step, idx) => (
               <div
                 key={step.number}
-                className="rounded-3xl border border-[#E9E0D2] bg-white/75 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] backdrop-blur-sm sm:p-6"
+                className="rounded-2xl border border-[#E9E0D2] bg-white/75 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] backdrop-blur-sm"
               >
                 <div className="flex items-center justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#F4EEE1] text-[#5C5247]">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4EEE1] text-[#5C5247]">
                     {STEP_ICONS[idx]}
                   </div>
                   <span className="font-mono text-xs font-semibold tracking-wider text-[#A89A87]">
                     {step.number}
                   </span>
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-[#241F1A]">{step.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[#4B443C]">{step.body}</p>
+                <h3 className="mt-4 text-base font-semibold text-[#241F1A] sm:text-lg">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#4B443C]">{step.body}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Quick Start */}
-        <section className="mt-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="rounded-[2rem] border border-[#E9E0D2] bg-white/70 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.quickStartLabel}</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
-              {t.quickStartTitle}
+        {/* Files You'll Change */}
+        <section className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.filesLabel}</p>
+            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
+              {t.filesTitle}
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[#4B443C]">
-              {t.quickStartSubtitle}
+            <p className="mt-3 text-[0.938rem] leading-7 text-[#4B443C] sm:text-base">
+              {t.filesSubtitle}
             </p>
-
-            <div className="mt-6 overflow-hidden rounded-3xl border border-[#ECE2D4] bg-[#1F1A16] text-[#F8F2E8]">
-              <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3 text-xs text-[#CBBEAF]">
-                <Terminal className="h-3.5 w-3.5" />
-                <span className="font-mono">{t.terminalLabel}</span>
-              </div>
-              <div className="px-4 py-5 sm:px-5">
-                <pre className="overflow-x-auto text-xs leading-7 sm:text-sm">
-                  <code>{`# 1. install dependencies
-npm install
-
-# 2. start dev server
-npm run dev
-
-# 3. (optional) check for missing imports
-npm run check`}</code>
-                </pre>
-              </div>
-            </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[#E9E0D2] bg-white/70 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.replaceLabel}</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
-              {t.replaceTitle}
-            </h2>
-            <p className="mt-4 text-sm leading-7 text-[#4B443C]">
-              {t.replaceBodyBefore}
-              <code className="rounded bg-[#F4EEE1] px-1.5 py-0.5 font-mono text-xs text-[#241F1A]">src/App.jsx</code>
-              {t.replaceBodyAfter}
-            </p>
-
-            <div className="mt-6 space-y-3">
-              {t.replaceSteps.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-start gap-3 rounded-2xl border border-[#EFE5D8] bg-[#FCFAF2] px-4 py-3"
-                >
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#A67B5B]" />
-                  <p className="text-sm leading-7 text-[#3F382F]">{item}</p>
+          <div className="mt-6 grid gap-4 sm:mt-8 lg:grid-cols-3">
+            {t.files.map((file) => (
+              <div
+                key={file.name}
+                className={`rounded-2xl border p-5 ${
+                  file.required
+                    ? "border-[#D4C4AB] bg-white/90 shadow-[0_8px_30px_rgba(54,42,27,0.06)]"
+                    : "border-[#E9E0D2] bg-white/60"
+                }`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <code className="rounded-lg bg-[#F4EEE1] px-2.5 py-1 font-mono text-xs font-medium text-[#241F1A]">
+                    {file.name}
+                  </code>
+                  <span
+                    className={`shrink-0 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
+                      file.required
+                        ? "bg-[#A67B5B]/15 text-[#A67B5B]"
+                        : "bg-[#E9E0D2]/70 text-[#8A7F72]"
+                    }`}
+                  >
+                    {file.tag}
+                  </span>
                 </div>
-              ))}
-            </div>
+                <p className="mt-3 text-sm leading-6 text-[#4B443C]">{file.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-5 flex items-start gap-3 rounded-xl border border-[#EFE5D8] bg-[#FCFAF2] px-4 py-3">
+            <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-[#A67B5B]" />
+            <p className="text-sm leading-6 text-[#4B443C]">
+              <span className="font-semibold text-[#241F1A]">{t.tipLabel}</span>
+              {" — "}
+              {t.tipText}{" "}
+              <code className="rounded bg-[#F4EEE1] px-1.5 py-0.5 font-mono text-xs text-[#241F1A]">
+                {t.tipCommand}
+              </code>{" "}
+              {t.tipAfter}
+            </p>
           </div>
         </section>
 
-        <footer className="mt-10 pb-24 text-center text-sm text-[#6B6257]">
+        <footer className="mt-8 pb-20 text-center text-sm text-[#6B6257]">
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
         </footer>
       </main>
 
-      {/* Language switcher — persistent, tucked into bottom-right */}
-      <div ref={switcherRef} className="fixed bottom-5 right-5 z-50 sm:bottom-6 sm:right-6">
+      {/* Language switcher */}
+      <div ref={switcherRef} className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
         {langOpen && (
           <div
             role="listbox"
             aria-label={t.langLabel}
-            className="mb-3 min-w-[9.5rem] overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
+            className="mb-2.5 min-w-[9.5rem] overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
           >
             {LANGUAGES.map((l) => {
               const active = l.code === lang;
@@ -614,9 +562,9 @@ npm run check`}</code>
           onClick={() => setLangOpen((v) => !v)}
           aria-label={t.langLabel}
           aria-expanded={langOpen}
-          className="flex h-12 items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/90 px-4 text-[#5C5247] shadow-[0_10px_30px_rgba(54,42,27,0.12)] backdrop-blur-sm transition hover:bg-white"
+          className="flex h-11 items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/90 px-3.5 text-[#5C5247] shadow-[0_10px_30px_rgba(54,42,27,0.12)] backdrop-blur-sm transition hover:bg-white"
         >
-          <Globe className="h-5 w-5" />
+          <Globe className="h-4.5 w-4.5" />
           <span className="font-mono text-xs font-semibold tracking-wider text-[#5C5247]">
             {currentLang.short}
           </span>

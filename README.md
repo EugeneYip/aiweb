@@ -12,15 +12,15 @@ Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. P
 1. **Ask your AI for JSX** — tell Claude, ChatGPT, or any LLM to generate your page as a React component in **JSX format**
 2. **Use this template** to create your own repository
 3. **Enable GitHub Pages** — go to **Settings → Pages** and set Source to **GitHub Actions**
-4. **Replace** `src/App.jsx` with the JSX your AI generated
+4. **Replace** [`src/App.jsx`](src/App.jsx) with the JSX your AI generated
 5. **Push** to `main` — your site will be live at `https://<username>.github.io/<repo-name>/`
 
 ## Customize (Optional)
 
 | What | How |
 | :-- | :-- |
-| Page title & description | Edit `<title>` and `<meta name="description">` in `index.html` |
-| Custom domain | Replace the placeholder in `public/CNAME` with your domain (e.g. `mysite.com`), configure DNS for GitHub Pages, and set the same domain in **Settings → Pages → Custom domain** |
+| Page title & description | Edit `<title>` and `<meta name="description">` in [`index.html`](index.html) |
+| Custom domain | Replace the placeholder in [`public/CNAME`](public/CNAME) with your domain (e.g. `mysite.com`), configure DNS for GitHub Pages, and set the same domain in **Settings → Pages → Custom domain** |
 
 ## What's Included
 
