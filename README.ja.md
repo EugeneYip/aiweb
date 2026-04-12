@@ -74,11 +74,8 @@ npm run check
 ## GitHub Pages の有効化
 
 1. リポジトリの **Settings → Pages** を開く
-2. **Source** を **Deploy from a branch** に設定
-3. **`gh-pages`** ブランチの **`/ (root)`** を選んで Save
-4. `main` に push すると、ワークフローがビルドして `gh-pages` に自動デプロイ
-
-> `gh-pages` ブランチは初回ビルド成功時に自動で作られます。まだ表示されない場合は、先に `main` へ push してください。
+2. **Source** を **GitHub Actions** に設定
+3. `main` ブランチに push すれば、ワークフローが自動でビルド・デプロイします
 
 ## ファイル構成
 
@@ -119,7 +116,7 @@ npx shadcn@latest add <コンポーネント名>
 `npm run check` で足りないパッケージを確認して、そのままインストールしてください。
 
 **デプロイ後にページが真っ白**
-GitHub Pages の Source が **Deploy from a branch** で、**`gh-pages`** ブランチが選択されているか確認してください。
+GitHub Pages の Source が「Deploy from a branch」ではなく **GitHub Actions** になっているか確認してください。
 
 **カスタムドメインが効かない**
 `public/CNAME` に自分のドメインだけが書かれているか、DNS レコードも合わせて確認してください。

@@ -74,11 +74,8 @@ No manual configuration is needed.
 ## Enable GitHub Pages
 
 1. Go to **Settings → Pages** in your repository
-2. Set **Source** to **Deploy from a branch**
-3. Select the **`gh-pages`** branch and **`/ (root)`** folder, then click Save
-4. Push to `main` — the workflow builds and pushes to `gh-pages` automatically
-
-> The `gh-pages` branch is created automatically on the first successful build. If you don't see it yet, push to `main` first, then configure Pages.
+2. Set **Source** to **GitHub Actions**
+3. Push to `main` — the workflow builds and deploys automatically
 
 ## File Structure
 
@@ -119,7 +116,7 @@ The `components.json` is pre-configured.
 Run `npm run check` to see which packages are missing, then install them.
 
 **Page is blank after deploy.**
-Make sure GitHub Pages source is set to **Deploy from a branch** with the **`gh-pages`** branch selected.
+Make sure GitHub Pages source is set to **GitHub Actions**, not "Deploy from a branch".
 
 **Custom domain not working.**
 Verify `public/CNAME` contains only your domain. Check your DNS records.

@@ -74,11 +74,8 @@ Không cần config thủ công.
 ## Bật GitHub Pages
 
 1. Vào **Settings → Pages** trong repo
-2. Đặt **Source** là **Deploy from a branch**
-3. Chọn nhánh **`gh-pages`** và thư mục **`/ (root)`**, bấm Save
-4. Push lên `main` — workflow sẽ build và đẩy lên `gh-pages` tự động
-
-> Nhánh `gh-pages` sẽ được tạo tự động sau lần build thành công đầu tiên. Nếu chưa thấy, cứ push lên `main` trước rồi quay lại cài đặt.
+2. Đặt **Source** là **GitHub Actions**
+3. Push lên `main` — workflow sẽ tự build và deploy
 
 ## Cấu trúc file
 
@@ -119,7 +116,7 @@ npx shadcn@latest add <tên-component>
 Chạy `npm run check` để xem thiếu package nào rồi cài chúng.
 
 **Trang trắng trơn sau khi deploy.**
-Kiểm tra xem Source của GitHub Pages đã chọn **Deploy from a branch** với nhánh **`gh-pages`** chưa.
+Kiểm tra xem Source của GitHub Pages đã chọn **GitHub Actions** chưa, đừng để ở "Deploy from a branch".
 
 **Custom domain không chạy.**
 Xem lại `public/CNAME` có đúng chỉ chứa domain của bạn không, rồi kiểm tra DNS records.
