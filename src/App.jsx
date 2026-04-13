@@ -505,6 +505,62 @@ const translations = {
     footerLine2: "All Rights Reserved.",
     langLabel: "언어",
   },
+  ur: {
+    badge: "AI Page Publisher",
+    heroTitle: ["AI صفحات شائع کریں", "ایک push میں۔"],
+    heroSubtitle:
+      "AI سے بنے کسی بھی React کمپوننٹ کو لائیو ویب سائٹ میں بدلنے کا آسان ٹیمپلیٹ۔ ایک فائل بدلیں۔ GitHub پر push کریں۔ ہو گیا۔",
+    ctaPrimary: "یہ ٹیمپلیٹ استعمال کریں",
+    ctaSecondary: "README پڑھیں",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ur.md",
+    includedLabel: "شامل ہے",
+    includedTitle: "آپ کو کیا ملتا ہے",
+    includes: [
+      "40+ shadcn/ui کمپوننٹس",
+      "80+ پہلے سے نصب پیکجز",
+      "Tailwind CSS، فوری استعمال کے لیے تیار",
+      "GitHub Actions سے ڈیپلائمنٹ",
+      "حسب ضرورت ڈومین سپورٹ",
+      "خودکار base path کی شناخت",
+    ],
+    howItWorksLabel: "کیسے کام کرتا ہے",
+    howItWorksTitle: "تین قدم میں لائیو",
+    howItWorksSubtitle:
+      "کوڈنگ کا تجربہ ضروری نہیں۔ AI سے JSX مانگیں، چسپاں کریں، push کریں، بس۔",
+    steps: [
+      {
+        number: "01",
+        title: "AI سے JSX مانگیں",
+        body: "Claude، ChatGPT یا کسی بھی AI سے اپنا صفحہ JSX فارمیٹ میں React کمپوننٹ کے طور پر بنوائیں۔",
+      },
+      {
+        number: "02",
+        title: "اپنا repo تیار کریں",
+        body: "اس ٹیمپلیٹ سے اپنا ذخیرہ بنائیں۔ Settings → Pages میں جا کر Source کو GitHub Actions پر سیٹ کریں۔",
+      },
+      {
+        number: "03",
+        title: "چسپاں کریں اور push کریں",
+        body: "JSX کو src/App.jsx میں چسپاں کریں اور main پر push کریں۔ GitHub Actions خود بخود بلڈ اور شائع کر دے گا۔",
+      },
+    ],
+    filesLabel: "آپ کی فائلز",
+    filesTitle: "کیا بدلنا ہے",
+    filesSubtitle:
+      "اکثر صرف ایک فائل بدلنی ہوتی ہے۔ باقی دو اختیاری ہیں۔",
+    files: [
+      { name: "src/App.jsx", tag: "ضروری", desc: "AI کا بنایا ہوا JSX یہاں چسپاں کریں۔ صرف یہی ایک فائل بدلنی ہے۔", required: true },
+      { name: "index.html", tag: "اختیاری", desc: "صفحے کا عنوان اور تفصیل اپنی سائٹ کے مطابق بدلیں۔", required: false },
+      { name: "public/CNAME", tag: "اختیاری", desc: "اپنا حسب ضرورت ڈومین سیٹ کریں۔ ضرورت نہ ہو تو ایسے ہی چھوڑ دیں۔", required: false },
+    ],
+    tipLabel: "مشورہ",
+    tipText: "اگر AI کا کوڈ ایسا پیکج استعمال کرتا ہے جو ٹیمپلیٹ میں نہیں ہے تو چلائیں",
+    tipCommand: "npm run check",
+    tipAfter: "گمشدہ ڈیپنڈنسیز تلاش اور ٹھیک کرنے کے لیے۔",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "جملہ حقوق محفوظ ہیں۔",
+    langLabel: "زبان",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -573,10 +629,11 @@ const LANGUAGES = [
   { code: "fr", label: "Français", short: "FR" },
   { code: "hi", label: "हिन्दी", short: "हि" },
   { code: "ko", label: "한국어", short: "한" },
+  { code: "ur", label: "اردو", short: "ار" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
-const RTL_LANGS = new Set(["ar"]);
+const RTL_LANGS = new Set(["ar", "ur"]);
 
 const STEP_ICONS = [
   <Sparkles className="h-5 w-5" />,
@@ -594,6 +651,7 @@ const HTML_LANG = {
   fr: "fr",
   hi: "hi",
   ko: "ko",
+  ur: "ur",
   vi: "vi",
 };
 
@@ -614,6 +672,7 @@ function detectInitialLang() {
   if (browser.startsWith("fr")) return "fr";
   if (browser.startsWith("hi")) return "hi";
   if (browser.startsWith("ko")) return "ko";
+  if (browser.startsWith("ur")) return "ur";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
