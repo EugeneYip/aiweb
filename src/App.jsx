@@ -337,6 +337,62 @@ const translations = {
     footerLine2: "جميع الحقوق محفوظة.",
     langLabel: "اللغة",
   },
+  fr: {
+    badge: "AI Page Publisher",
+    heroTitle: ["Publiez des pages IA", "en un seul push."],
+    heroSubtitle:
+      "Un template simple pour transformer n'importe quel composant React généré par IA en site web. Remplacez un fichier. Pushez sur GitHub. C'est fait.",
+    ctaPrimary: "Utiliser ce template",
+    ctaSecondary: "Lire le README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.fr.md",
+    includedLabel: "Inclus",
+    includedTitle: "Ce que vous obtenez",
+    includes: [
+      "Plus de 40 composants shadcn/ui",
+      "Plus de 80 paquets préinstallés",
+      "Tailwind CSS, prêt à l'emploi",
+      "Déploiement via GitHub Actions",
+      "Support de domaine personnalisé",
+      "Détection automatique du base path",
+    ],
+    howItWorksLabel: "Comment ça marche",
+    howItWorksTitle: "Trois étapes pour publier",
+    howItWorksSubtitle:
+      "Aucune expérience en programmation requise. Demandez du JSX à l'IA, collez-le, pushez, c'est fait.",
+    steps: [
+      {
+        number: "01",
+        title: "Demandez du JSX à votre IA",
+        body: "Dites à Claude, ChatGPT ou n'importe quelle IA de générer la page que vous voulez en tant que composant React au format JSX.",
+      },
+      {
+        number: "02",
+        title: "Configurez votre dépôt",
+        body: "Utilisez ce template pour créer votre propre dépôt. Allez dans Settings → Pages et définissez Source sur GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "Collez et pushez",
+        body: "Collez le JSX dans src/App.jsx et pushez vers main. GitHub Actions compile et publie votre site automatiquement.",
+      },
+    ],
+    filesLabel: "Vos fichiers",
+    filesTitle: "Ce que vous allez modifier",
+    filesSubtitle:
+      "La plupart du temps, vous ne touchez qu'un seul fichier. Les deux autres sont optionnels.",
+    files: [
+      { name: "src/App.jsx", tag: "Requis", desc: "Collez le JSX généré par l'IA ici. C'est le seul fichier que vous devez modifier.", required: true },
+      { name: "index.html", tag: "Optionnel", desc: "Mettez à jour le titre et la description de la page pour correspondre à votre site.", required: false },
+      { name: "public/CNAME", tag: "Optionnel", desc: "Configurez votre domaine personnalisé. Laissez tel quel si vous n'en avez pas besoin.", required: false },
+    ],
+    tipLabel: "Astuce",
+    tipText: "Si le code de l'IA utilise un paquet non inclus dans le template, exécutez",
+    tipCommand: "npm run check",
+    tipAfter: "pour trouver et corriger les dépendances manquantes.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Tous droits réservés.",
+    langLabel: "Langue",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -402,6 +458,7 @@ const LANGUAGES = [
   { code: "ja", label: "日本語", short: "日" },
   { code: "pt", label: "Português", short: "PT" },
   { code: "ar", label: "العربية", short: "ع" },
+  { code: "fr", label: "Français", short: "FR" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -420,6 +477,7 @@ const HTML_LANG = {
   ja: "ja",
   pt: "pt",
   ar: "ar",
+  fr: "fr",
   vi: "vi",
 };
 
@@ -437,6 +495,7 @@ function detectInitialLang() {
   if (browser.startsWith("ja")) return "ja";
   if (browser.startsWith("pt")) return "pt";
   if (browser.startsWith("ar")) return "ar";
+  if (browser.startsWith("fr")) return "fr";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
