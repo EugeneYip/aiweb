@@ -449,6 +449,62 @@ const translations = {
     footerLine2: "सर्वाधिकार सुरक्षित।",
     langLabel: "भाषा",
   },
+  ko: {
+    badge: "AI Page Publisher",
+    heroTitle: ["AI 페이지를 배포하세요,", "단 한 번의 push로."],
+    heroSubtitle:
+      "AI가 생성한 React 컴포넌트를 바로 라이브 웹사이트로 만드는 간결한 템플릿. 파일 하나만 교체하고 GitHub에 push하면 끝.",
+    ctaPrimary: "이 템플릿 사용하기",
+    ctaSecondary: "README 읽기",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ko.md",
+    includedLabel: "포함 항목",
+    includedTitle: "무엇이 들어있나요",
+    includes: [
+      "40개 이상의 shadcn/ui 컴포넌트",
+      "80개 이상의 사전 설치 패키지",
+      "Tailwind CSS, 바로 사용 가능",
+      "GitHub Actions 자동 배포",
+      "커스텀 도메인 지원",
+      "자동 base path 감지",
+    ],
+    howItWorksLabel: "작동 방식",
+    howItWorksTitle: "세 단계로 배포",
+    howItWorksSubtitle:
+      "코딩 경험이 없어도 됩니다. AI에게 JSX를 요청하고, 붙여넣고, push하면 끝.",
+    steps: [
+      {
+        number: "01",
+        title: "AI에게 JSX 요청",
+        body: "Claude, ChatGPT 또는 아무 AI에게 원하는 페이지를 JSX 형식의 React 컴포넌트로 생성해 달라고 하세요.",
+      },
+      {
+        number: "02",
+        title: "저장소 설정",
+        body: "이 템플릿으로 자신만의 저장소를 만드세요. Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
+      },
+      {
+        number: "03",
+        title: "붙여넣고 push",
+        body: "JSX를 src/App.jsx에 붙여넣고 main에 push하세요. GitHub Actions가 자동으로 빌드하고 배포합니다.",
+      },
+    ],
+    filesLabel: "파일",
+    filesTitle: "변경할 파일",
+    filesSubtitle:
+      "대부분의 경우 파일 하나만 수정하면 됩니다. 나머지 둘은 선택사항입니다.",
+    files: [
+      { name: "src/App.jsx", tag: "필수", desc: "AI가 생성한 JSX를 여기에 붙여넣으세요. 변경이 필요한 유일한 파일입니다.", required: true },
+      { name: "index.html", tag: "선택", desc: "페이지 제목과 설명을 사이트에 맞게 수정하세요.", required: false },
+      { name: "public/CNAME", tag: "선택", desc: "커스텀 도메인을 설정하세요. 필요 없으면 그대로 두세요.", required: false },
+    ],
+    tipLabel: "팁",
+    tipText: "AI 코드가 템플릿에 포함되지 않은 패키지를 사용하는 경우 실행하세요",
+    tipCommand: "npm run check",
+    tipAfter: "누락된 의존성을 찾아 수정할 수 있습니다.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "All Rights Reserved.",
+    langLabel: "언어",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -516,6 +572,7 @@ const LANGUAGES = [
   { code: "ar", label: "العربية", short: "ع" },
   { code: "fr", label: "Français", short: "FR" },
   { code: "hi", label: "हिन्दी", short: "हि" },
+  { code: "ko", label: "한국어", short: "한" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -536,6 +593,7 @@ const HTML_LANG = {
   ar: "ar",
   fr: "fr",
   hi: "hi",
+  ko: "ko",
   vi: "vi",
 };
 
@@ -555,6 +613,7 @@ function detectInitialLang() {
   if (browser.startsWith("ar")) return "ar";
   if (browser.startsWith("fr")) return "fr";
   if (browser.startsWith("hi")) return "hi";
+  if (browser.startsWith("ko")) return "ko";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
