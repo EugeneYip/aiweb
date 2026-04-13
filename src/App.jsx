@@ -393,6 +393,62 @@ const translations = {
     footerLine2: "Tous droits réservés.",
     langLabel: "Langue",
   },
+  hi: {
+    badge: "AI Page Publisher",
+    heroTitle: ["AI पेज पब्लिश करें", "एक ही push में।"],
+    heroSubtitle:
+      "AI से बना कोई भी React कंपोनेंट सीधे लाइव वेबसाइट में बदलने का आसान टेम्पलेट। एक फ़ाइल बदलें। GitHub पर push करें। बस।",
+    ctaPrimary: "यह टेम्पलेट इस्तेमाल करें",
+    ctaSecondary: "README पढ़ें",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.hi.md",
+    includedLabel: "शामिल है",
+    includedTitle: "आपको क्या मिलता है",
+    includes: [
+      "40+ shadcn/ui कंपोनेंट",
+      "80+ पैकेज पहले से इंस्टॉल",
+      "Tailwind CSS, तुरंत इस्तेमाल के लिए तैयार",
+      "GitHub Actions से डिप्लॉयमेंट",
+      "कस्टम डोमेन सपोर्ट",
+      "ऑटो base path डिटेक्शन",
+    ],
+    howItWorksLabel: "कैसे काम करता है",
+    howItWorksTitle: "तीन स्टेप में लाइव",
+    howItWorksSubtitle:
+      "कोडिंग का अनुभव ज़रूरी नहीं। AI से JSX माँगें, पेस्ट करें, push करें, बस।",
+    steps: [
+      {
+        number: "01",
+        title: "AI से JSX माँगें",
+        body: "Claude, ChatGPT या किसी भी AI से अपना पेज JSX फ़ॉर्मेट में React कंपोनेंट के रूप में बनवाएँ।",
+      },
+      {
+        number: "02",
+        title: "अपना repo सेट करें",
+        body: "इस टेम्पलेट से अपना रिपॉज़िटरी बनाएँ। Settings → Pages में जाकर Source को GitHub Actions पर सेट करें।",
+      },
+      {
+        number: "03",
+        title: "पेस्ट करें और push करें",
+        body: "JSX को src/App.jsx में पेस्ट करें और main पर push करें। GitHub Actions ऑटोमैटिक बिल्ड और पब्लिश कर देगा।",
+      },
+    ],
+    filesLabel: "आपकी फ़ाइलें",
+    filesTitle: "क्या बदलना है",
+    filesSubtitle:
+      "ज़्यादातर सिर्फ़ एक फ़ाइल बदलनी होती है। बाकी दो वैकल्पिक हैं।",
+    files: [
+      { name: "src/App.jsx", tag: "ज़रूरी", desc: "AI द्वारा बनाया गया JSX यहाँ पेस्ट करें। बस यही एक फ़ाइल बदलनी है।", required: true },
+      { name: "index.html", tag: "वैकल्पिक", desc: "पेज का टाइटल और विवरण अपनी साइट के अनुसार अपडेट करें।", required: false },
+      { name: "public/CNAME", tag: "वैकल्पिक", desc: "अपना कस्टम डोमेन सेट करें। ज़रूरत न हो तो ऐसे ही छोड़ दें।", required: false },
+    ],
+    tipLabel: "सुझाव",
+    tipText: "अगर AI का कोड ऐसा पैकेज इस्तेमाल करता है जो टेम्पलेट में नहीं है, तो चलाएँ",
+    tipCommand: "npm run check",
+    tipAfter: "गायब डिपेंडेंसी खोजने और ठीक करने के लिए।",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "सर्वाधिकार सुरक्षित।",
+    langLabel: "भाषा",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -459,6 +515,7 @@ const LANGUAGES = [
   { code: "pt", label: "Português", short: "PT" },
   { code: "ar", label: "العربية", short: "ع" },
   { code: "fr", label: "Français", short: "FR" },
+  { code: "hi", label: "हिन्दी", short: "हि" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -478,6 +535,7 @@ const HTML_LANG = {
   pt: "pt",
   ar: "ar",
   fr: "fr",
+  hi: "hi",
   vi: "vi",
 };
 
@@ -496,6 +554,7 @@ function detectInitialLang() {
   if (browser.startsWith("pt")) return "pt";
   if (browser.startsWith("ar")) return "ar";
   if (browser.startsWith("fr")) return "fr";
+  if (browser.startsWith("hi")) return "hi";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
