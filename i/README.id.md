@@ -2,7 +2,7 @@
 
 > Terbitkan halaman React buatan AI ke web hanya dengan satu push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. Push. Selesai.
@@ -12,15 +12,15 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 1. **Minta JSX dari AI** — minta Claude, ChatGPT, atau AI mana pun untuk membuat halaman yang kamu inginkan sebagai komponen React dalam **format JSX**
 2. **Gunakan template ini** untuk membuat repositori kamu sendiri
 3. **Aktifkan GitHub Pages** — buka **Settings → Pages** dan atur Source ke **GitHub Actions**
-4. **Ganti** [`src/App.jsx`](src/App.jsx) dengan JSX yang dibuat oleh AI
+4. **Ganti** [`src/App.jsx`](../src/App.jsx) dengan JSX yang dibuat oleh AI
 5. **Push** ke `main` — situsmu akan aktif di `https://<username>.github.io/<repo-name>/`
 
 ## Kustomisasi (Opsional)
 
 | Apa | Cara |
 | :-- | :-- |
-| Judul dan deskripsi halaman | Edit `<title>` dan `<meta name="description">` di [`index.html`](index.html) |
-| Domain kustom | Ganti placeholder di [`public/CNAME`](public/CNAME) dengan domainmu (mis. `situsaku.com`), konfigurasikan DNS ke GitHub Pages, lalu masukkan domain yang sama di **Settings → Pages → Custom domain**. Atau buat variabel repositori bernama `CUSTOM_DOMAIN` di **Settings → Secrets and variables → Actions → Variables** |
+| Judul dan deskripsi halaman | Edit `<title>` dan `<meta name="description">` di [`index.html`](../index.html) |
+| Domain kustom | Ganti placeholder di [`public/CNAME`](../public/CNAME) dengan domainmu (mis. `situsaku.com`), konfigurasikan DNS ke GitHub Pages, lalu masukkan domain yang sama di **Settings → Pages → Custom domain**. Atau buat variabel repositori bernama `CUSTOM_DOMAIN` di **Settings → Secrets and variables → Actions → Variables** |
 
 ## Yang Sudah Disertakan
 

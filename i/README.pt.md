@@ -2,7 +2,7 @@
 
 > Publique páginas React geradas por IA na web com um único push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Faça push. Pronto.
@@ -12,15 +12,15 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
 1. **Peça JSX à sua IA** — diga ao Claude, ChatGPT ou qualquer IA para gerar a página que você quer como componente React em **formato JSX**
 2. **Use este template** para criar o seu próprio repositório
 3. **Ative o GitHub Pages** — vá em **Settings → Pages** e defina Source como **GitHub Actions**
-4. **Substitua** [`src/App.jsx`](src/App.jsx) pelo JSX que a IA gerou
+4. **Substitua** [`src/App.jsx`](../src/App.jsx) pelo JSX que a IA gerou
 5. **Faça push** para `main` — seu site estará no ar em `https://<usuario>.github.io/<nome-do-repo>/`
 
 ## Personalizar (Opcional)
 
 | O quê | Como |
 | :-- | :-- |
-| Título e descrição da página | Edite `<title>` e `<meta name="description">` em [`index.html`](index.html) |
-| Domínio personalizado | Substitua o placeholder em [`public/CNAME`](public/CNAME) pelo seu domínio (ex: `meusite.com`), configure o DNS para o GitHub Pages e coloque o mesmo domínio em **Settings → Pages → Custom domain**. Ou crie uma variável de repositório chamada `CUSTOM_DOMAIN` em **Settings → Secrets and variables → Actions → Variables** |
+| Título e descrição da página | Edite `<title>` e `<meta name="description">` em [`index.html`](../index.html) |
+| Domínio personalizado | Substitua o placeholder em [`public/CNAME`](../public/CNAME) pelo seu domínio (ex: `meusite.com`), configure o DNS para o GitHub Pages e coloque o mesmo domínio em **Settings → Pages → Custom domain**. Ou crie uma variável de repositório chamada `CUSTOM_DOMAIN` em **Settings → Secrets and variables → Actions → Variables** |
 
 ## O que está incluído
 

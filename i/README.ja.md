@@ -2,7 +2,7 @@
 
 > AI が生成した React ページを、たった 1 回の push でウェブに公開。
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Claude、ChatGPT、お好きな LLM でページを生成して、`src/App.jsx` に貼り付けて push。それだけで完了です。
@@ -12,15 +12,15 @@ Claude、ChatGPT、お好きな LLM でページを生成して、`src/App.jsx` 
 1. **AI に JSX で生成してもらう** — Claude、ChatGPT などに、作りたいページを **JSX 形式**の React コンポーネントとして書いてもらいます
 2. **このテンプレートを使って**自分のリポジトリを作成
 3. **GitHub Pages を有効化** — **Settings → Pages** で Source を **GitHub Actions** に設定
-4. [`src/App.jsx`](src/App.jsx) を AI が生成した JSX に**差し替え**
+4. [`src/App.jsx`](../src/App.jsx) を AI が生成した JSX に**差し替え**
 5. `main` ブランチに **push** — `https://<ユーザー名>.github.io/<リポジトリ名>/` でサイトが公開されます
 
 ## カスタマイズ（任意）
 
 | 項目 | やり方 |
 | :-- | :-- |
-| ページタイトルと説明 | [`index.html`](index.html) の `<title>` と `<meta name="description">` を編集 |
-| カスタムドメイン | [`public/CNAME`](public/CNAME) のプレースホルダーを自分のドメイン（例: `mysite.com`）に書き換え、DNS を GitHub Pages に向けて、**Settings → Pages → Custom domain** に同じドメインを入力。または **Settings → Secrets and variables → Actions → Variables** で `CUSTOM_DOMAIN` という repository variable を追加してもOK |
+| ページタイトルと説明 | [`index.html`](../index.html) の `<title>` と `<meta name="description">` を編集 |
+| カスタムドメイン | [`public/CNAME`](../public/CNAME) のプレースホルダーを自分のドメイン（例: `mysite.com`）に書き換え、DNS を GitHub Pages に向けて、**Settings → Pages → Custom domain** に同じドメインを入力。または **Settings → Secrets and variables → Actions → Variables** で `CUSTOM_DOMAIN` という repository variable を追加してもOK |
 
 ## 含まれているもの
 

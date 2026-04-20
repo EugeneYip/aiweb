@@ -2,7 +2,7 @@
 
 > เผยแพร่หน้า React ที่สร้างด้วย AI ขึ้นเว็บได้ในการ push ครั้งเดียว
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 สร้างหน้าเว็บด้วย Claude, ChatGPT หรือ AI ตัวไหนก็ได้ วางลงใน `src/App.jsx` แล้ว push เท่านั้นเอง
@@ -12,15 +12,15 @@
 1. **ขอ JSX จาก AI** — บอก Claude, ChatGPT หรือ AI ตัวไหนก็ได้ให้สร้างหน้าเว็บที่ต้องการเป็น React component ใน**รูปแบบ JSX**
 2. **ใช้เทมเพลตนี้**สร้าง repository ของคุณเอง
 3. **เปิดใช้งาน GitHub Pages** — ไปที่ **Settings → Pages** แล้วตั้ง Source เป็น **GitHub Actions**
-4. **แทนที่** [`src/App.jsx`](src/App.jsx) ด้วย JSX ที่ AI สร้างให้
+4. **แทนที่** [`src/App.jsx`](../src/App.jsx) ด้วย JSX ที่ AI สร้างให้
 5. **Push** ไปที่ `main` — เว็บไซต์ของคุณจะอยู่ที่ `https://<ชื่อผู้ใช้>.github.io/<ชื่อ-repo>/`
 
 ## ปรับแต่ง (ไม่บังคับ)
 
 | อะไร | ทำอย่างไร |
 | :-- | :-- |
-| ชื่อและคำอธิบายหน้า | แก้ไข `<title>` และ `<meta name="description">` ใน [`index.html`](index.html) |
-| โดเมนที่กำหนดเอง | แทนที่ placeholder ใน [`public/CNAME`](public/CNAME) ด้วยโดเมนของคุณ (เช่น `mysite.com`) ตั้งค่า DNS ให้ชี้ไปที่ GitHub Pages แล้วใส่โดเมนเดียวกันใน **Settings → Pages → Custom domain** หรือสร้าง repository variable ชื่อ `CUSTOM_DOMAIN` ใน **Settings → Secrets and variables → Actions → Variables** |
+| ชื่อและคำอธิบายหน้า | แก้ไข `<title>` และ `<meta name="description">` ใน [`index.html`](../index.html) |
+| โดเมนที่กำหนดเอง | แทนที่ placeholder ใน [`public/CNAME`](../public/CNAME) ด้วยโดเมนของคุณ (เช่น `mysite.com`) ตั้งค่า DNS ให้ชี้ไปที่ GitHub Pages แล้วใส่โดเมนเดียวกันใน **Settings → Pages → Custom domain** หรือสร้าง repository variable ชื่อ `CUSTOM_DOMAIN` ใน **Settings → Secrets and variables → Actions → Variables** |
 
 ## มีอะไรบ้าง
 

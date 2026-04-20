@@ -2,7 +2,7 @@
 
 > Публикуйте сгенерированные ИИ React-страницы в веб одним push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Сгенерируйте страницу с помощью Claude, ChatGPT или любого ИИ. Вставьте её в `src/App.jsx`. Сделайте push. Готово.
@@ -12,15 +12,15 @@
 1. **Попросите ИИ сгенерировать JSX** — скажите Claude, ChatGPT или любому ИИ создать нужную страницу как React-компонент в **формате JSX**
 2. **Используйте этот шаблон** для создания собственного репозитория
 3. **Включите GitHub Pages** — перейдите в **Settings → Pages** и установите Source на **GitHub Actions**
-4. **Замените** [`src/App.jsx`](src/App.jsx) на JSX, сгенерированный ИИ
+4. **Замените** [`src/App.jsx`](../src/App.jsx) на JSX, сгенерированный ИИ
 5. **Сделайте push** в `main` — ваш сайт будет доступен по адресу `https://<имя-пользователя>.github.io/<имя-репо>/`
 
 ## Настройка (Необязательно)
 
 | Что | Как |
 | :-- | :-- |
-| Заголовок и описание страницы | Измените `<title>` и `<meta name="description">` в [`index.html`](index.html) |
-| Свой домен | Замените заглушку в [`public/CNAME`](public/CNAME) на свой домен (например, `mysite.com`), настройте DNS для GitHub Pages и введите тот же домен в **Settings → Pages → Custom domain**. Или создайте переменную репозитория `CUSTOM_DOMAIN` в **Settings → Secrets and variables → Actions → Variables** |
+| Заголовок и описание страницы | Измените `<title>` и `<meta name="description">` в [`index.html`](../index.html) |
+| Свой домен | Замените заглушку в [`public/CNAME`](../public/CNAME) на свой домен (например, `mysite.com`), настройте DNS для GitHub Pages и введите тот же домен в **Settings → Pages → Custom domain**. Или создайте переменную репозитория `CUSTOM_DOMAIN` в **Settings → Secrets and variables → Actions → Variables** |
 
 ## Что включено
 
