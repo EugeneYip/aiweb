@@ -673,6 +673,62 @@ const translations = {
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
   },
+  it: {
+    badge: "AI Page Publisher",
+    heroTitle: ["Pubblica pagine AI", "con un solo push."],
+    heroSubtitle:
+      "Un template semplice per trasformare qualsiasi componente React generato dall'AI in un sito web live. Sostituisci un file. Fai push su GitHub. Fatto.",
+    ctaPrimary: "Usa questo template",
+    ctaSecondary: "Leggi il README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.it.md",
+    includedLabel: "Incluso",
+    includedTitle: "Cosa ottieni",
+    includes: [
+      "Oltre 40 componenti shadcn/ui",
+      "Oltre 80 pacchetti preinstallati",
+      "Tailwind CSS, pronto all'uso",
+      "Deployment con GitHub Actions",
+      "Supporto dominio personalizzato",
+      "Rilevamento automatico del base path",
+    ],
+    howItWorksLabel: "Come funziona",
+    howItWorksTitle: "Tre passi per andare live",
+    howItWorksSubtitle:
+      "Non serve esperienza di programmazione. Chiedi il JSX all'AI, incollalo, fai push, fatto.",
+    steps: [
+      {
+        number: "01",
+        title: "Chiedi il JSX alla tua AI",
+        body: "Di' a Claude, ChatGPT o qualsiasi AI di generare la pagina che vuoi come componente React in formato JSX.",
+      },
+      {
+        number: "02",
+        title: "Configura il tuo repo",
+        body: "Usa questo template per creare il tuo repository. Vai su Settings → Pages e imposta Source su GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "Incolla e fai push",
+        body: "Incolla il JSX in src/App.jsx e fai push su main. GitHub Actions compila e pubblica il tuo sito automaticamente.",
+      },
+    ],
+    filesLabel: "I tuoi file",
+    filesTitle: "Cosa cambierai",
+    filesSubtitle:
+      "Nella maggior parte dei casi tocchi solo un file. Gli altri due sono opzionali.",
+    files: [
+      { name: "src/App.jsx", tag: "Obbligatorio", desc: "Incolla qui il JSX generato dall'AI. È l'unico file che devi modificare.", required: true },
+      { name: "index.html", tag: "Opzionale", desc: "Aggiorna il titolo e la descrizione della pagina per il tuo sito.", required: false },
+      { name: "public/CNAME", tag: "Opzionale", desc: "Imposta il tuo dominio personalizzato. Lascia com'è se non ne hai bisogno.", required: false },
+    ],
+    tipLabel: "Suggerimento",
+    tipText: "Se il codice dell'AI usa un pacchetto non incluso nel template, esegui",
+    tipCommand: "npm run check",
+    tipAfter: "per trovare e correggere le dipendenze mancanti.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Tutti i diritti riservati.",
+    langLabel: "Lingua",
+  },
   id: {
     badge: "AI Page Publisher",
     heroTitle: ["Terbitkan halaman AI", "hanya satu push."],
@@ -801,6 +857,7 @@ const LANGUAGES = [
   { code: "th", label: "ไทย", short: "ไท" },
   { code: "de", label: "Deutsch", short: "DE" },
   { code: "id", label: "Bahasa Indonesia", short: "ID" },
+  { code: "it", label: "Italiano", short: "IT" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -826,6 +883,7 @@ const HTML_LANG = {
   th: "th",
   de: "de",
   id: "id",
+  it: "it",
   vi: "vi",
 };
 
@@ -850,6 +908,7 @@ function detectInitialLang() {
   if (browser.startsWith("th")) return "th";
   if (browser.startsWith("de")) return "de";
   if (browser.startsWith("id")) return "id";
+  if (browser.startsWith("it")) return "it";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
