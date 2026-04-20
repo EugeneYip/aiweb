@@ -561,6 +561,62 @@ const translations = {
     footerLine2: "جملہ حقوق محفوظ ہیں۔",
     langLabel: "زبان",
   },
+  th: {
+    badge: "AI Page Publisher",
+    heroTitle: ["เผยแพร่หน้า AI", "แค่ push ครั้งเดียว"],
+    heroSubtitle:
+      "เทมเพลตง่าย ๆ สำหรับเปลี่ยน React component ที่ AI สร้างให้เป็นเว็บไซต์จริง เปลี่ยนไฟล์เดียว Push ขึ้น GitHub เสร็จ",
+    ctaPrimary: "ใช้เทมเพลตนี้",
+    ctaSecondary: "อ่าน README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.th.md",
+    includedLabel: "รวมมาให้แล้ว",
+    includedTitle: "มีอะไรบ้าง",
+    includes: [
+      "คอมโพเนนต์ shadcn/ui กว่า 40 ตัว",
+      "แพ็กเกจติดตั้งล่วงหน้ากว่า 80 ตัว",
+      "Tailwind CSS พร้อมใช้งาน",
+      "ดีพลอยด้วย GitHub Actions",
+      "รองรับโดเมนที่กำหนดเอง",
+      "ตรวจจับ base path อัตโนมัติ",
+    ],
+    howItWorksLabel: "วิธีการทำงาน",
+    howItWorksTitle: "สามขั้นตอนสู่การเผยแพร่",
+    howItWorksSubtitle:
+      "ไม่ต้องมีประสบการณ์เขียนโค้ด ขอ JSX จาก AI วางลงไป push แค่นั้น",
+    steps: [
+      {
+        number: "01",
+        title: "ขอ JSX จาก AI",
+        body: "บอก Claude, ChatGPT หรือ AI ตัวไหนก็ได้ให้สร้างหน้าเว็บที่ต้องการเป็น React component ในรูปแบบ JSX",
+      },
+      {
+        number: "02",
+        title: "ตั้งค่า repo ของคุณ",
+        body: "ใช้เทมเพลตนี้สร้าง repository ของตัวเอง ไปที่ Settings → Pages แล้วตั้ง Source เป็น GitHub Actions",
+      },
+      {
+        number: "03",
+        title: "วางแล้ว push",
+        body: "วาง JSX ลงใน src/App.jsx แล้ว push ไปที่ main GitHub Actions จะบิลด์และเผยแพร่เว็บไซต์ให้อัตโนมัติ",
+      },
+    ],
+    filesLabel: "ไฟล์ของคุณ",
+    filesTitle: "ต้องเปลี่ยนอะไร",
+    filesSubtitle:
+      "ส่วนใหญ่แค่แก้ไฟล์เดียว อีกสองไฟล์เป็นตัวเลือกเพิ่มเติม",
+    files: [
+      { name: "src/App.jsx", tag: "จำเป็น", desc: "วาง JSX ที่ AI สร้างให้ตรงนี้ นี่คือไฟล์เดียวที่ต้องเปลี่ยน", required: true },
+      { name: "index.html", tag: "ไม่บังคับ", desc: "อัปเดตชื่อหน้าและคำอธิบายให้ตรงกับเว็บไซต์ของคุณ", required: false },
+      { name: "public/CNAME", tag: "ไม่บังคับ", desc: "ตั้งค่าโดเมนที่กำหนดเอง ไม่ต้องการก็ปล่อยไว้ตามเดิม", required: false },
+    ],
+    tipLabel: "เคล็ดลับ",
+    tipText: "หากโค้ดจาก AI ใช้แพ็กเกจที่ไม่ได้รวมมาในเทมเพลต ให้รัน",
+    tipCommand: "npm run check",
+    tipAfter: "เพื่อค้นหาและแก้ไข dependency ที่ขาดหาย",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "สงวนลิขสิทธิ์",
+    langLabel: "ภาษา",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -630,6 +686,7 @@ const LANGUAGES = [
   { code: "hi", label: "हिन्दी", short: "हि" },
   { code: "ko", label: "한국어", short: "한" },
   { code: "ur", label: "اردو", short: "ار" },
+  { code: "th", label: "ไทย", short: "ไท" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -652,6 +709,7 @@ const HTML_LANG = {
   hi: "hi",
   ko: "ko",
   ur: "ur",
+  th: "th",
   vi: "vi",
 };
 
@@ -673,6 +731,7 @@ function detectInitialLang() {
   if (browser.startsWith("hi")) return "hi";
   if (browser.startsWith("ko")) return "ko";
   if (browser.startsWith("ur")) return "ur";
+  if (browser.startsWith("th")) return "th";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }

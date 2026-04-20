@@ -4,7 +4,7 @@
 
 > AI سے بنائے گئے React صفحات کو ایک push میں ویب پر شائع کریں۔
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) |
+| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) |
 | :-- |
 
 Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.jsx` میں چسپاں کریں۔ Push کریں۔ ہو گیا۔
