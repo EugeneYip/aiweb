@@ -617,6 +617,62 @@ const translations = {
     footerLine2: "สงวนลิขสิทธิ์",
     langLabel: "ภาษา",
   },
+  de: {
+    badge: "AI Page Publisher",
+    heroTitle: ["KI-Seiten veröffentlichen", "mit einem Push."],
+    heroSubtitle:
+      "Ein schlankes Template, um jedes KI-generierte React-Artefakt in eine Live-Website zu verwandeln. Eine Datei ersetzen. Auf GitHub pushen. Fertig.",
+    ctaPrimary: "Dieses Template verwenden",
+    ctaSecondary: "README lesen",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.de.md",
+    includedLabel: "Enthalten",
+    includedTitle: "Was du bekommst",
+    includes: [
+      "Über 40 shadcn/ui-Komponenten",
+      "Über 80 vorinstallierte Pakete",
+      "Tailwind CSS, sofort einsatzbereit",
+      "Deployment mit GitHub Actions",
+      "Eigene Domain wird unterstützt",
+      "Automatische Base-Path-Erkennung",
+    ],
+    howItWorksLabel: "So funktioniert's",
+    howItWorksTitle: "In drei Schritten online",
+    howItWorksSubtitle:
+      "Keine Programmierkenntnisse nötig. Frag eine KI nach JSX, füge es ein, push, fertig.",
+    steps: [
+      {
+        number: "01",
+        title: "Frag deine KI nach JSX",
+        body: "Bitte Claude, ChatGPT oder eine beliebige KI, die gewünschte Seite als React-Komponente im JSX-Format zu erstellen.",
+      },
+      {
+        number: "02",
+        title: "Richte dein Repo ein",
+        body: "Verwende dieses Template, um dein eigenes Repository zu erstellen. Gehe zu Settings → Pages und setze Source auf GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "Einfügen und pushen",
+        body: "Füge das JSX in src/App.jsx ein und push nach main. GitHub Actions baut und veröffentlicht deine Seite automatisch.",
+      },
+    ],
+    filesLabel: "Deine Dateien",
+    filesTitle: "Was du änderst",
+    filesSubtitle:
+      "Meistens änderst du nur eine Datei. Die anderen beiden sind optional.",
+    files: [
+      { name: "src/App.jsx", tag: "Erforderlich", desc: "Füge das KI-generierte JSX hier ein. Das ist die einzige Datei, die du ändern musst.", required: true },
+      { name: "index.html", tag: "Optional", desc: "Aktualisiere Seitentitel und Beschreibung passend zu deiner Seite.", required: false },
+      { name: "public/CNAME", tag: "Optional", desc: "Richte deine eigene Domain ein. Lass es wie es ist, wenn du keine brauchst.", required: false },
+    ],
+    tipLabel: "Tipp",
+    tipText: "Falls dein KI-Code ein Paket verwendet, das nicht im Template enthalten ist, führe",
+    tipCommand: "npm run check",
+    tipAfter: "aus, um fehlende Abhängigkeiten zu finden und zu beheben.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Alle Rechte vorbehalten.",
+    langLabel: "Sprache",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -687,6 +743,7 @@ const LANGUAGES = [
   { code: "ko", label: "한국어", short: "한" },
   { code: "ur", label: "اردو", short: "ار" },
   { code: "th", label: "ไทย", short: "ไท" },
+  { code: "de", label: "Deutsch", short: "DE" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -710,6 +767,7 @@ const HTML_LANG = {
   ko: "ko",
   ur: "ur",
   th: "th",
+  de: "de",
   vi: "vi",
 };
 
@@ -732,6 +790,7 @@ function detectInitialLang() {
   if (browser.startsWith("ko")) return "ko";
   if (browser.startsWith("ur")) return "ur";
   if (browser.startsWith("th")) return "th";
+  if (browser.startsWith("de")) return "de";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
