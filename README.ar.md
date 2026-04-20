@@ -4,7 +4,7 @@
 
 > انشر صفحات React المولّدة بالذكاء الاصطناعي على الويب بضغطة واحدة.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) |
+| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) |
 | :-- |
 
 أنشئ صفحة باستخدام Claude أو ChatGPT أو أي ذكاء اصطناعي. الصقها في `src/App.jsx`. ادفعها. انتهى الأمر.
