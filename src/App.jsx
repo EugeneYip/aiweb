@@ -673,6 +673,62 @@ const translations = {
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
   },
+  tr: {
+    badge: "AI Page Publisher",
+    heroTitle: ["AI sayfalarını yayınlayın,", "tek bir push ile."],
+    heroSubtitle:
+      "Yapay zeka tarafından oluşturulan her React bileşenini canlı bir web sitesine dönüştürmek için sade bir şablon. Bir dosyayı değiştirin. GitHub'a push edin. Bitti.",
+    ctaPrimary: "Bu şablonu kullan",
+    ctaSecondary: "README'yi oku",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.tr.md",
+    includedLabel: "Dahil",
+    includedTitle: "Neler geliyor",
+    includes: [
+      "40'tan fazla shadcn/ui bileşeni",
+      "80'den fazla önceden kurulu paket",
+      "Tailwind CSS, kullanıma hazır",
+      "GitHub Actions ile dağıtım",
+      "Özel alan adı desteği",
+      "Otomatik base path algılama",
+    ],
+    howItWorksLabel: "Nasıl çalışır",
+    howItWorksTitle: "Üç adımda yayına girin",
+    howItWorksSubtitle:
+      "Programlama deneyimine gerek yok. Yapay zekadan JSX isteyin, yapıştırın, push edin, bitti.",
+    steps: [
+      {
+        number: "01",
+        title: "Yapay zekadan JSX isteyin",
+        body: "Claude, ChatGPT veya herhangi bir yapay zekadan istediğiniz sayfayı JSX formatında React bileşeni olarak oluşturmasını isteyin.",
+      },
+      {
+        number: "02",
+        title: "Deponuzu kurun",
+        body: "Bu şablonu kullanarak kendi deponuzu oluşturun. Settings → Pages sayfasına gidin ve Source'u GitHub Actions olarak ayarlayın.",
+      },
+      {
+        number: "03",
+        title: "Yapıştırın ve push edin",
+        body: "JSX'i src/App.jsx dosyasına yapıştırın ve main dalına push edin. GitHub Actions sitenizi otomatik olarak derleyip yayınlar.",
+      },
+    ],
+    filesLabel: "Dosyalarınız",
+    filesTitle: "Neyi değiştireceksiniz",
+    filesSubtitle:
+      "Çoğu zaman yalnızca bir dosyaya dokunursunuz. Diğer ikisi isteğe bağlıdır.",
+    files: [
+      { name: "src/App.jsx", tag: "Zorunlu", desc: "Yapay zekanın oluşturduğu JSX'i buraya yapıştırın. Değiştirmeniz gereken tek dosya budur.", required: true },
+      { name: "index.html", tag: "İsteğe bağlı", desc: "Sayfa başlığını ve açıklamasını sitenize uygun şekilde güncelleyin.", required: false },
+      { name: "public/CNAME", tag: "İsteğe bağlı", desc: "Özel alan adınızı ayarlayın. Gerekmiyorsa olduğu gibi bırakın.", required: false },
+    ],
+    tipLabel: "İpucu",
+    tipText: "Yapay zekanın kodu şablonda bulunmayan bir paket kullanıyorsa şunu çalıştırın:",
+    tipCommand: "npm run check",
+    tipAfter: "Eksik bağımlılıkları bulup düzeltmek için.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Tüm hakları saklıdır.",
+    langLabel: "Dil",
+  },
   he: {
     badge: "AI Page Publisher",
     heroTitle: ["פרסם דפי AI", "בדחיפה אחת."],
@@ -915,6 +971,7 @@ const LANGUAGES = [
   { code: "id", label: "Bahasa Indonesia", short: "ID" },
   { code: "it", label: "Italiano", short: "IT" },
   { code: "he", label: "עברית", short: "עב" },
+  { code: "tr", label: "Türkçe", short: "TR" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -942,6 +999,7 @@ const HTML_LANG = {
   id: "id",
   it: "it",
   he: "he",
+  tr: "tr",
   vi: "vi",
 };
 
@@ -968,6 +1026,7 @@ function detectInitialLang() {
   if (browser.startsWith("id")) return "id";
   if (browser.startsWith("it")) return "it";
   if (browser.startsWith("he")) return "he";
+  if (browser.startsWith("tr")) return "tr";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
