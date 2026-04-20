@@ -673,6 +673,62 @@ const translations = {
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
   },
+  id: {
+    badge: "AI Page Publisher",
+    heroTitle: ["Terbitkan halaman AI", "hanya satu push."],
+    heroSubtitle:
+      "Template sederhana untuk mengubah komponen React buatan AI menjadi website langsung. Ganti satu file. Push ke GitHub. Selesai.",
+    ctaPrimary: "Gunakan template ini",
+    ctaSecondary: "Baca README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.id.md",
+    includedLabel: "Sudah Disertakan",
+    includedTitle: "Yang kamu dapatkan",
+    includes: [
+      "Lebih dari 40 komponen shadcn/ui",
+      "Lebih dari 80 paket yang sudah terpasang",
+      "Tailwind CSS, siap digunakan",
+      "Deployment dengan GitHub Actions",
+      "Dukungan domain kustom",
+      "Deteksi base path otomatis",
+    ],
+    howItWorksLabel: "Cara kerjanya",
+    howItWorksTitle: "Tiga langkah untuk online",
+    howItWorksSubtitle:
+      "Tidak perlu pengalaman coding. Minta JSX dari AI, tempel, push, selesai.",
+    steps: [
+      {
+        number: "01",
+        title: "Minta JSX dari AI",
+        body: "Minta Claude, ChatGPT, atau AI mana pun untuk membuat halaman yang kamu inginkan sebagai komponen React dalam format JSX.",
+      },
+      {
+        number: "02",
+        title: "Siapkan repo-mu",
+        body: "Gunakan template ini untuk membuat repositorimu sendiri. Buka Settings → Pages dan atur Source ke GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "Tempel dan push",
+        body: "Tempel JSX ke src/App.jsx lalu push ke main. GitHub Actions akan mem-build dan menerbitkan situsmu secara otomatis.",
+      },
+    ],
+    filesLabel: "File-mu",
+    filesTitle: "Yang akan kamu ubah",
+    filesSubtitle:
+      "Biasanya kamu hanya mengubah satu file. Dua file lainnya bersifat opsional.",
+    files: [
+      { name: "src/App.jsx", tag: "Wajib", desc: "Tempel JSX buatan AI di sini. Ini satu-satunya file yang perlu kamu ubah.", required: true },
+      { name: "index.html", tag: "Opsional", desc: "Perbarui judul dan deskripsi halaman agar sesuai dengan situsmu.", required: false },
+      { name: "public/CNAME", tag: "Opsional", desc: "Atur domain kustom-mu. Biarkan apa adanya jika tidak membutuhkannya.", required: false },
+    ],
+    tipLabel: "Tips",
+    tipText: "Jika kode AI menggunakan paket yang tidak ada di template, jalankan",
+    tipCommand: "npm run check",
+    tipAfter: "untuk menemukan dan memperbaiki dependensi yang hilang.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Semua hak dilindungi.",
+    langLabel: "Bahasa",
+  },
   vi: {
     badge: "AI Page Publisher",
     heroTitle: ["Một lần push,", "trang AI đã lên web."],
@@ -744,6 +800,7 @@ const LANGUAGES = [
   { code: "ur", label: "اردو", short: "ار" },
   { code: "th", label: "ไทย", short: "ไท" },
   { code: "de", label: "Deutsch", short: "DE" },
+  { code: "id", label: "Bahasa Indonesia", short: "ID" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -768,6 +825,7 @@ const HTML_LANG = {
   ur: "ur",
   th: "th",
   de: "de",
+  id: "id",
   vi: "vi",
 };
 
@@ -791,6 +849,7 @@ function detectInitialLang() {
   if (browser.startsWith("ur")) return "ur";
   if (browser.startsWith("th")) return "th";
   if (browser.startsWith("de")) return "de";
+  if (browser.startsWith("id")) return "id";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
