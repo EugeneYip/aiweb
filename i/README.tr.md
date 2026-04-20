@@ -2,7 +2,7 @@
 
 > AI tarafından oluşturulan React sayfalarını tek bir push ile web'de yayınlayın.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx` dosyasına yapıştırın. Push edin. Bitti.
@@ -12,15 +12,15 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 1. **Yapay zekadan JSX isteyin** — Claude, ChatGPT veya herhangi bir yapay zekadan istediğiniz sayfayı **JSX formatında** React bileşeni olarak oluşturmasını isteyin
 2. **Bu şablonu kullanarak** kendi deponuzu oluşturun
 3. **GitHub Pages'i etkinleştirin** — **Settings → Pages** sayfasına gidin ve Source'u **GitHub Actions** olarak ayarlayın
-4. [`src/App.jsx`](src/App.jsx) dosyasını yapay zekanın oluşturduğu JSX ile **değiştirin**
+4. [`src/App.jsx`](../src/App.jsx) dosyasını yapay zekanın oluşturduğu JSX ile **değiştirin**
 5. `main` dalına **push edin** — siteniz `https://<kullanıcı-adı>.github.io/<repo-adı>/` adresinde yayına girecektir
 
 ## Özelleştirme (İsteğe Bağlı)
 
 | Ne | Nasıl |
 | :-- | :-- |
-| Sayfa başlığı ve açıklaması | [`index.html`](index.html) dosyasındaki `<title>` ve `<meta name="description">` etiketlerini düzenleyin |
-| Özel alan adı | [`public/CNAME`](public/CNAME) dosyasındaki yer tutucuyu alan adınızla değiştirin (ör. `sitenim.com`), DNS'i GitHub Pages'e yönlendirin ve aynı alan adını **Settings → Pages → Custom domain** bölümüne girin. Alternatif olarak **Settings → Secrets and variables → Actions → Variables** bölümünde `CUSTOM_DOMAIN` adında bir depo değişkeni oluşturun |
+| Sayfa başlığı ve açıklaması | [`index.html`](../index.html) dosyasındaki `<title>` ve `<meta name="description">` etiketlerini düzenleyin |
+| Özel alan adı | [`public/CNAME`](../public/CNAME) dosyasındaki yer tutucuyu alan adınızla değiştirin (ör. `sitenim.com`), DNS'i GitHub Pages'e yönlendirin ve aynı alan adını **Settings → Pages → Custom domain** bölümüne girin. Alternatif olarak **Settings → Secrets and variables → Actions → Variables** bölümünde `CUSTOM_DOMAIN` adında bir depo değişkeni oluşturun |
 
 ## Neler Dahil
 

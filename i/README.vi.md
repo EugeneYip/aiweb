@@ -2,7 +2,7 @@
 
 > Đưa trang React do AI sinh ra lên web chỉ với một lần push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dán vào `src/App.jsx`, push lên là xong.
@@ -12,15 +12,15 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 1. **Nhờ AI sinh JSX** — bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React **định dạng JSX**
 2. **Dùng template này** để tạo repo của riêng bạn
 3. **Bật GitHub Pages** — vào **Settings → Pages**, đặt Source là **GitHub Actions**
-4. **Thay** [`src/App.jsx`](src/App.jsx) bằng JSX mà AI vừa sinh ra
+4. **Thay** [`src/App.jsx`](../src/App.jsx) bằng JSX mà AI vừa sinh ra
 5. **Push** lên `main` — site của bạn sẽ lên ở `https://<tên-user>.github.io/<tên-repo>/`
 
 ## Tuỳ chỉnh (Không bắt buộc)
 
 | Mục | Cách làm |
 | :-- | :-- |
-| Tiêu đề và mô tả trang | Sửa `<title>` và `<meta name="description">` trong [`index.html`](index.html) |
-| Custom domain | Thay placeholder trong [`public/CNAME`](public/CNAME) bằng domain của bạn (ví dụ `mysite.com`), trỏ DNS về GitHub Pages, rồi điền domain đó vào **Settings → Pages → Custom domain**. Hoặc tạo repository variable tên `CUSTOM_DOMAIN` trong **Settings → Secrets and variables → Actions → Variables** |
+| Tiêu đề và mô tả trang | Sửa `<title>` và `<meta name="description">` trong [`index.html`](../index.html) |
+| Custom domain | Thay placeholder trong [`public/CNAME`](../public/CNAME) bằng domain của bạn (ví dụ `mysite.com`), trỏ DNS về GitHub Pages, rồi điền domain đó vào **Settings → Pages → Custom domain**. Hoặc tạo repository variable tên `CUSTOM_DOMAIN` trong **Settings → Secrets and variables → Actions → Variables** |
 
 ## Có những gì
 

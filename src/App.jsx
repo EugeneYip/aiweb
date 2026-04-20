@@ -65,7 +65,7 @@ const translations = {
       "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就這樣。",
     ctaPrimary: "使用這個範本",
     ctaSecondary: "看 README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.zh.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh.md",
     includedLabel: "內建項目",
     includedTitle: "範本包含甚麼",
     includes: [
@@ -120,7 +120,7 @@ const translations = {
       "Una plantilla sencilla para llevar cualquier componente de React generado por IA directo a la web. Cambias un archivo, haces push a GitHub y listo.",
     ctaPrimary: "Usar esta plantilla",
     ctaSecondary: "Leer el README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.es.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.es.md",
     includedLabel: "Incluido",
     includedTitle: "Lo que obtienes",
     includes: [
@@ -176,7 +176,7 @@ const translations = {
       "AI が生成した React コードを、そのままウェブサイトとして公開できるシンプルなテンプレート。ファイルを 1 つ差し替えて、GitHub に push するだけ。",
     ctaPrimary: "このテンプレートを使う",
     ctaSecondary: "README を読む",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ja.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.ja.md",
     includedLabel: "含まれるもの",
     includedTitle: "テンプレートの中身",
     includes: [
@@ -232,7 +232,7 @@ const translations = {
       "Um template simples para transformar qualquer componente React gerado por IA em um site no ar. Troque um arquivo. Faça push no GitHub. Pronto.",
     ctaPrimary: "Usar este template",
     ctaSecondary: "Ler o README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.pt.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.pt.md",
     includedLabel: "Incluído",
     includedTitle: "O que você recebe",
     includes: [
@@ -288,7 +288,7 @@ const translations = {
       "قالب بسيط لتحويل أي مكوّن React مولّد بالذكاء الاصطناعي إلى موقع ويب. استبدل ملفاً واحداً. ادفع إلى GitHub. انتهى.",
     ctaPrimary: "استخدم هذا القالب",
     ctaSecondary: "اقرأ الـ README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ar.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.ar.md",
     includedLabel: "مُتضمَّن",
     includedTitle: "ما الذي تحصل عليه",
     includes: [
@@ -344,7 +344,7 @@ const translations = {
       "Un template simple pour transformer n'importe quel composant React généré par IA en site web. Remplacez un fichier. Pushez sur GitHub. C'est fait.",
     ctaPrimary: "Utiliser ce template",
     ctaSecondary: "Lire le README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.fr.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.fr.md",
     includedLabel: "Inclus",
     includedTitle: "Ce que vous obtenez",
     includes: [
@@ -400,7 +400,7 @@ const translations = {
       "AI से बना कोई भी React कंपोनेंट सीधे लाइव वेबसाइट में बदलने का आसान टेम्पलेट। एक फ़ाइल बदलें। GitHub पर push करें। बस।",
     ctaPrimary: "यह टेम्पलेट इस्तेमाल करें",
     ctaSecondary: "README पढ़ें",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.hi.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.hi.md",
     includedLabel: "शामिल है",
     includedTitle: "आपको क्या मिलता है",
     includes: [
@@ -456,7 +456,7 @@ const translations = {
       "AI가 생성한 React 컴포넌트를 바로 라이브 웹사이트로 만드는 간결한 템플릿. 파일 하나만 교체하고 GitHub에 push하면 끝.",
     ctaPrimary: "이 템플릿 사용하기",
     ctaSecondary: "README 읽기",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ko.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.ko.md",
     includedLabel: "포함 항목",
     includedTitle: "무엇이 들어있나요",
     includes: [
@@ -512,7 +512,7 @@ const translations = {
       "AI سے بنے کسی بھی React کمپوننٹ کو لائیو ویب سائٹ میں بدلنے کا آسان ٹیمپلیٹ۔ ایک فائل بدلیں۔ GitHub پر push کریں۔ ہو گیا۔",
     ctaPrimary: "یہ ٹیمپلیٹ استعمال کریں",
     ctaSecondary: "README پڑھیں",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ur.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.ur.md",
     includedLabel: "شامل ہے",
     includedTitle: "آپ کو کیا ملتا ہے",
     includes: [
@@ -568,7 +568,7 @@ const translations = {
       "เทมเพลตง่าย ๆ สำหรับเปลี่ยน React component ที่ AI สร้างให้เป็นเว็บไซต์จริง เปลี่ยนไฟล์เดียว Push ขึ้น GitHub เสร็จ",
     ctaPrimary: "ใช้เทมเพลตนี้",
     ctaSecondary: "อ่าน README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.th.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.th.md",
     includedLabel: "รวมมาให้แล้ว",
     includedTitle: "มีอะไรบ้าง",
     includes: [
@@ -624,7 +624,7 @@ const translations = {
       "Ein schlankes Template, um jedes KI-generierte React-Artefakt in eine Live-Website zu verwandeln. Eine Datei ersetzen. Auf GitHub pushen. Fertig.",
     ctaPrimary: "Dieses Template verwenden",
     ctaSecondary: "README lesen",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.de.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.de.md",
     includedLabel: "Enthalten",
     includedTitle: "Was du bekommst",
     includes: [
@@ -680,7 +680,7 @@ const translations = {
       "Yapay zeka tarafından oluşturulan her React bileşenini canlı bir web sitesine dönüştürmek için sade bir şablon. Bir dosyayı değiştirin. GitHub'a push edin. Bitti.",
     ctaPrimary: "Bu şablonu kullan",
     ctaSecondary: "README'yi oku",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.tr.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.tr.md",
     includedLabel: "Dahil",
     includedTitle: "Neler geliyor",
     includes: [
@@ -736,7 +736,7 @@ const translations = {
       "Простой шаблон для превращения любого React-компонента, сгенерированного ИИ, в работающий сайт. Замените один файл. Сделайте push на GitHub. Готово.",
     ctaPrimary: "Использовать шаблон",
     ctaSecondary: "Читать README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ru.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.ru.md",
     includedLabel: "Включено",
     includedTitle: "Что вы получаете",
     includes: [
@@ -792,7 +792,7 @@ const translations = {
       "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. סיום.",
     ctaPrimary: "השתמש בתבנית זו",
     ctaSecondary: "קרא את ה-README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.he.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.he.md",
     includedLabel: "כלול",
     includedTitle: "מה אתה מקבל",
     includes: [
@@ -848,7 +848,7 @@ const translations = {
       "Un template semplice per trasformare qualsiasi componente React generato dall'AI in un sito web live. Sostituisci un file. Fai push su GitHub. Fatto.",
     ctaPrimary: "Usa questo template",
     ctaSecondary: "Leggi il README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.it.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.it.md",
     includedLabel: "Incluso",
     includedTitle: "Cosa ottieni",
     includes: [
@@ -904,7 +904,7 @@ const translations = {
       "Template sederhana untuk mengubah komponen React buatan AI menjadi website langsung. Ganti satu file. Push ke GitHub. Selesai.",
     ctaPrimary: "Gunakan template ini",
     ctaSecondary: "Baca README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.id.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.id.md",
     includedLabel: "Sudah Disertakan",
     includedTitle: "Yang kamu dapatkan",
     includes: [
@@ -960,7 +960,7 @@ const translations = {
       "Một template gọn gàng để biến code React do AI sinh ra thành website đang chạy. Thay đúng một file, push lên GitHub, xong.",
     ctaPrimary: "Dùng template này",
     ctaSecondary: "Đọc README",
-    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.vi.md",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.vi.md",
     includedLabel: "Có sẵn",
     includedTitle: "Trong template có gì",
     includes: [

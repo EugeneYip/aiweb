@@ -4,7 +4,7 @@
 
 > AI سے بنائے گئے React صفحات کو ایک push میں ویب پر شائع کریں۔
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.jsx` میں چسپاں کریں۔ Push کریں۔ ہو گیا۔
@@ -14,15 +14,15 @@ Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.j
 1. **AI سے JSX مانگیں** — Claude، ChatGPT یا کسی بھی AI سے اپنا صفحہ **JSX فارمیٹ** میں React کمپوننٹ کے طور پر بنوائیں
 2. **یہ ٹیمپلیٹ استعمال کریں** اپنا ذخیرہ بنانے کے لیے
 3. **GitHub Pages فعال کریں** — **Settings → Pages** میں جائیں اور Source کو **GitHub Actions** پر سیٹ کریں
-4. [`src/App.jsx`](src/App.jsx) کو AI کے بنائے ہوئے JSX سے **بدلیں**
+4. [`src/App.jsx`](../src/App.jsx) کو AI کے بنائے ہوئے JSX سے **بدلیں**
 5. `main` پر **push کریں** — آپ کی سائٹ `https://<صارف-نام>.github.io/<ذخیرہ-نام>/` پر لائیو ہو جائے گی
 
 ## حسب ضرورت تبدیلی (اختیاری)
 
 | کیا | کیسے |
 | :-- | :-- |
-| صفحے کا عنوان اور تفصیل | [`index.html`](index.html) میں `<title>` اور `<meta name="description">` میں ترمیم کریں |
-| حسب ضرورت ڈومین | [`public/CNAME`](public/CNAME) میں placeholder کو اپنے ڈومین سے بدلیں (مثلاً `mysite.com`)، DNS کو GitHub Pages کی طرف پوائنٹ کریں، اور وہی ڈومین **Settings → Pages → Custom domain** میں درج کریں۔ یا **Settings → Secrets and variables → Actions → Variables** میں `CUSTOM_DOMAIN` نام کا repository variable بنائیں |
+| صفحے کا عنوان اور تفصیل | [`index.html`](../index.html) میں `<title>` اور `<meta name="description">` میں ترمیم کریں |
+| حسب ضرورت ڈومین | [`public/CNAME`](../public/CNAME) میں placeholder کو اپنے ڈومین سے بدلیں (مثلاً `mysite.com`)، DNS کو GitHub Pages کی طرف پوائنٹ کریں، اور وہی ڈومین **Settings → Pages → Custom domain** میں درج کریں۔ یا **Settings → Secrets and variables → Actions → Variables** میں `CUSTOM_DOMAIN` نام کا repository variable بنائیں |
 
 ## کیا شامل ہے
 

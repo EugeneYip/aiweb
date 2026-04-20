@@ -2,7 +2,7 @@
 
 > Publish AI-generated React pages to the web in one push.
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](README.md) · [中文](i/README.zh.md) · [日本語](i/README.ja.md) · [Tiếng Việt](i/README.vi.md) · [Português](i/README.pt.md) · [Español](i/README.es.md) · [العربية](i/README.ar.md) · [Français](i/README.fr.md) · [हिन्दी](i/README.hi.md) · [한국어](i/README.ko.md) · [اردو](i/README.ur.md) · [ไทย](i/README.th.md) · [Deutsch](i/README.de.md) · [Bahasa Indonesia](i/README.id.md) · [Italiano](i/README.it.md) · [עברית](i/README.he.md) · [Türkçe](i/README.tr.md) · [Русский](i/README.ru.md) |
 | :-- |
 
 Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. Push. Done.

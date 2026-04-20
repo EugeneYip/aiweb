@@ -2,7 +2,7 @@
 
 > Push 一次，把 AI 生成的 React 頁面直接發佈上線。
 
-| [English](README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
+| [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
 用 Claude、ChatGPT 或任何 AI 生成你要的頁面，貼進 `src/App.jsx`，push 上去就完成了。
@@ -12,15 +12,15 @@
 1. **請 AI 生成 JSX** — 告訴 Claude、ChatGPT 或任何 AI，請它用 **JSX 格式**幫你生成想要的 React 頁面
 2. **使用這個範本**建立自己的 repo
 3. **啟用 GitHub Pages** — 到 **Settings → Pages**，把 Source 設成 **GitHub Actions**
-4. 把 [`src/App.jsx`](src/App.jsx) **換成** AI 剛剛生成的 JSX
+4. 把 [`src/App.jsx`](../src/App.jsx) **換成** AI 剛剛生成的 JSX
 5. **Push** 到 `main` — 網站就會上線在 `https://<使用者名稱>.github.io/<repo 名稱>/`
 
 ## 自訂設定（選用）
 
 | 項目 | 做法 |
 | :-- | :-- |
-| 頁面標題和描述 | 編輯 [`index.html`](index.html) 裡的 `<title>` 和 `<meta name="description">` |
-| 自訂網域 | 把 [`public/CNAME`](public/CNAME) 裡的內容換成你的網域（例如 `mysite.com`），設定 DNS 指向 GitHub Pages，再到 **Settings → Pages → Custom domain** 填上同一個網域。或者到 **Settings → Secrets and variables → Actions → Variables** 新增名為 `CUSTOM_DOMAIN` 的 repository variable |
+| 頁面標題和描述 | 編輯 [`index.html`](../index.html) 裡的 `<title>` 和 `<meta name="description">` |
+| 自訂網域 | 把 [`public/CNAME`](../public/CNAME) 裡的內容換成你的網域（例如 `mysite.com`），設定 DNS 指向 GitHub Pages，再到 **Settings → Pages → Custom domain** 填上同一個網域。或者到 **Settings → Secrets and variables → Actions → Variables** 新增名為 `CUSTOM_DOMAIN` 的 repository variable |
 
 ## 內建項目
 
