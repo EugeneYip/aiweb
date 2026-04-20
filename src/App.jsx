@@ -673,6 +673,62 @@ const translations = {
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
   },
+  he: {
+    badge: "AI Page Publisher",
+    heroTitle: ["פרסם דפי AI", "בדחיפה אחת."],
+    heroSubtitle:
+      "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. סיום.",
+    ctaPrimary: "השתמש בתבנית זו",
+    ctaSecondary: "קרא את ה-README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.he.md",
+    includedLabel: "כלול",
+    includedTitle: "מה אתה מקבל",
+    includes: [
+      "מעל 40 רכיבי shadcn/ui",
+      "מעל 80 חבילות מותקנות מראש",
+      "Tailwind CSS, מוכן לשימוש",
+      "פריסה עם GitHub Actions",
+      "תמיכה בדומיין מותאם אישית",
+      "זיהוי אוטומטי של נתיב בסיס",
+    ],
+    howItWorksLabel: "כיצד זה עובד",
+    howItWorksTitle: "שלושה שלבים לעלייה לאוויר",
+    howItWorksSubtitle:
+      "אין צורך בניסיון בתכנות. בקש JSX מהבינה המלאכותית, הדבק, דחוף, סיום.",
+    steps: [
+      {
+        number: "01",
+        title: "בקש JSX מהבינה המלאכותית",
+        body: "אמור ל-Claude, ל-ChatGPT או לכל בינה מלאכותית ליצור את הדף שאתה רוצה כרכיב React בפורמט JSX.",
+      },
+      {
+        number: "02",
+        title: "הגדר את ה-repo שלך",
+        body: "השתמש בתבנית זו ליצירת המאגר שלך. עבור אל Settings → Pages והגדר את Source ל-GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "הדבק ודחוף",
+        body: "הדבק את ה-JSX ב-src/App.jsx ודחוף ל-main. GitHub Actions יבנה וייפרס את האתר שלך אוטומטית.",
+      },
+    ],
+    filesLabel: "הקבצים שלך",
+    filesTitle: "מה תשנה",
+    filesSubtitle:
+      "ברוב המקרים אתה נוגע בקובץ אחד בלבד. שני הקבצים האחרים הם אופציונליים.",
+    files: [
+      { name: "src/App.jsx", tag: "נדרש", desc: "הדבק כאן את ה-JSX שנוצר על ידי בינה מלאכותית. זהו הקובץ היחיד שעליך לשנות.", required: true },
+      { name: "index.html", tag: "אופציונלי", desc: "עדכן את כותרת הדף והתיאור כך שיתאימו לאתר שלך.", required: false },
+      { name: "public/CNAME", tag: "אופציונלי", desc: "הגדר את הדומיין המותאם אישית שלך. השאר כפי שהוא אם אינך זקוק לאחד.", required: false },
+    ],
+    tipLabel: "טיפ",
+    tipText: "אם קוד הבינה המלאכותית משתמש בחבילה שאינה כלולה בתבנית, הפעל",
+    tipCommand: "npm run check",
+    tipAfter: "כדי למצוא ולתקן תלויות חסרות.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "כל הזכויות שמורות.",
+    langLabel: "שפה",
+  },
   it: {
     badge: "AI Page Publisher",
     heroTitle: ["Pubblica pagine AI", "con un solo push."],
@@ -858,10 +914,11 @@ const LANGUAGES = [
   { code: "de", label: "Deutsch", short: "DE" },
   { code: "id", label: "Bahasa Indonesia", short: "ID" },
   { code: "it", label: "Italiano", short: "IT" },
+  { code: "he", label: "עברית", short: "עב" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
-const RTL_LANGS = new Set(["ar", "ur"]);
+const RTL_LANGS = new Set(["ar", "ur", "he"]);
 
 const STEP_ICONS = [
   <Sparkles className="h-5 w-5" />,
@@ -884,6 +941,7 @@ const HTML_LANG = {
   de: "de",
   id: "id",
   it: "it",
+  he: "he",
   vi: "vi",
 };
 
@@ -909,6 +967,7 @@ function detectInitialLang() {
   if (browser.startsWith("de")) return "de";
   if (browser.startsWith("id")) return "id";
   if (browser.startsWith("it")) return "it";
+  if (browser.startsWith("he")) return "he";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
