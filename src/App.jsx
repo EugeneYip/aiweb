@@ -729,6 +729,62 @@ const translations = {
     footerLine2: "Tüm hakları saklıdır.",
     langLabel: "Dil",
   },
+  ru: {
+    badge: "AI Page Publisher",
+    heroTitle: ["Публикуйте страницы ИИ", "одним push."],
+    heroSubtitle:
+      "Простой шаблон для превращения любого React-компонента, сгенерированного ИИ, в работающий сайт. Замените один файл. Сделайте push на GitHub. Готово.",
+    ctaPrimary: "Использовать шаблон",
+    ctaSecondary: "Читать README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/README.ru.md",
+    includedLabel: "Включено",
+    includedTitle: "Что вы получаете",
+    includes: [
+      "Более 40 компонентов shadcn/ui",
+      "Более 80 предустановленных пакетов",
+      "Tailwind CSS, готов к использованию",
+      "Деплой через GitHub Actions",
+      "Поддержка своего домена",
+      "Автоматическое определение base path",
+    ],
+    howItWorksLabel: "Как это работает",
+    howItWorksTitle: "Три шага до публикации",
+    howItWorksSubtitle:
+      "Опыт программирования не нужен. Попросите ИИ сгенерировать JSX, вставьте, сделайте push, готово.",
+    steps: [
+      {
+        number: "01",
+        title: "Попросите ИИ создать JSX",
+        body: "Попросите Claude, ChatGPT или любой ИИ сгенерировать нужную страницу как React-компонент в формате JSX.",
+      },
+      {
+        number: "02",
+        title: "Настройте свой репозиторий",
+        body: "Используйте этот шаблон для создания своего репозитория. Перейдите в Settings → Pages и установите Source на GitHub Actions.",
+      },
+      {
+        number: "03",
+        title: "Вставьте и сделайте push",
+        body: "Вставьте JSX в src/App.jsx и сделайте push в main. GitHub Actions автоматически соберёт и опубликует ваш сайт.",
+      },
+    ],
+    filesLabel: "Ваши файлы",
+    filesTitle: "Что вы измените",
+    filesSubtitle:
+      "Обычно вы меняете только один файл. Остальные два — необязательные.",
+    files: [
+      { name: "src/App.jsx", tag: "Обязательно", desc: "Вставьте сюда JSX, сгенерированный ИИ. Это единственный файл, который нужно изменить.", required: true },
+      { name: "index.html", tag: "Необязательно", desc: "Обновите заголовок и описание страницы под ваш сайт.", required: false },
+      { name: "public/CNAME", tag: "Необязательно", desc: "Укажите свой домен. Оставьте как есть, если он не нужен.", required: false },
+    ],
+    tipLabel: "Совет",
+    tipText: "Если код ИИ использует пакет, не включённый в шаблон, выполните",
+    tipCommand: "npm run check",
+    tipAfter: "чтобы найти и исправить отсутствующие зависимости.",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "Все права защищены.",
+    langLabel: "Язык",
+  },
   he: {
     badge: "AI Page Publisher",
     heroTitle: ["פרסם דפי AI", "בדחיפה אחת."],
@@ -972,6 +1028,7 @@ const LANGUAGES = [
   { code: "it", label: "Italiano", short: "IT" },
   { code: "he", label: "עברית", short: "עב" },
   { code: "tr", label: "Türkçe", short: "TR" },
+  { code: "ru", label: "Русский", short: "RU" },
   { code: "vi", label: "Tiếng Việt", short: "VI" },
 ];
 
@@ -1000,6 +1057,7 @@ const HTML_LANG = {
   it: "it",
   he: "he",
   tr: "tr",
+  ru: "ru",
   vi: "vi",
 };
 
@@ -1027,6 +1085,7 @@ function detectInitialLang() {
   if (browser.startsWith("it")) return "it";
   if (browser.startsWith("he")) return "he";
   if (browser.startsWith("tr")) return "tr";
+  if (browser.startsWith("ru")) return "ru";
   if (browser.startsWith("vi")) return "vi";
   return "en";
 }
