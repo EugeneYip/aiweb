@@ -19,7 +19,7 @@
 
 | Что | Как |
 | :-- | :-- |
-| Заголовок и описание страницы | Измените `<title>` и `<meta name="description">` в [`index.html`](../index.html) |
+| Заголовок, описание и Google Analytics | Измените `<title>`, `<meta name="description">` и Google Analytics в [`index.html`](../index.html) |
 | Свой домен | Замените заглушку в [`public/CNAME`](../public/CNAME) на свой домен (например, `mysite.com`), настройте DNS для GitHub Pages и введите тот же домен в **Settings → Pages → Custom domain**. Или создайте переменную репозитория `CUSTOM_DOMAIN` в **Settings → Secrets and variables → Actions → Variables** |
 
 ## Что включено

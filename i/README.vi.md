@@ -19,7 +19,7 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 
 | Mục | Cách làm |
 | :-- | :-- |
-| Tiêu đề và mô tả trang | Sửa `<title>` và `<meta name="description">` trong [`index.html`](../index.html) |
+| Tiêu đề, mô tả và Google Analytics | Sửa `<title>`, `<meta name="description">` và Google Analytics trong [`index.html`](../index.html) |
 | Custom domain | Thay placeholder trong [`public/CNAME`](../public/CNAME) bằng domain của bạn (ví dụ `mysite.com`), trỏ DNS về GitHub Pages, rồi điền domain đó vào **Settings → Pages → Custom domain**. Hoặc tạo repository variable tên `CUSTOM_DOMAIN` trong **Settings → Secrets and variables → Actions → Variables** |
 
 ## Có những gì

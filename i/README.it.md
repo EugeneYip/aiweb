@@ -19,7 +19,7 @@ Genera una pagina con Claude, ChatGPT o qualsiasi AI. Incollala in `src/App.jsx`
 
 | Cosa | Come |
 | :-- | :-- |
-| Titolo e descrizione della pagina | Modifica `<title>` e `<meta name="description">` in [`index.html`](../index.html) |
+| Titolo, descrizione e Google Analytics | Modifica `<title>`, `<meta name="description">` e Google Analytics in [`index.html`](../index.html) |
 | Dominio personalizzato | Sostituisci il placeholder in [`public/CNAME`](../public/CNAME) con il tuo dominio (es. `miosito.com`), configura il DNS per GitHub Pages e inserisci lo stesso dominio in **Settings → Pages → Custom domain**. In alternativa, crea una variabile di repository chiamata `CUSTOM_DOMAIN` in **Settings → Secrets and variables → Actions → Variables** |
 
 ## Cosa è incluso

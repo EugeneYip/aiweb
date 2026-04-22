@@ -21,7 +21,7 @@
 
 | الإعداد | الطريقة |
 | :-- | :-- |
-| عنوان الصفحة والوصف | عدّل `<title>` و `<meta name="description">` في [`index.html`](../index.html) |
+| عنوان الصفحة والوصف وGoogle Analytics | عدّل `<title>` و`<meta name="description">` وGoogle Analytics في [`index.html`](../index.html) |
 | نطاق مخصص | استبدل النص في [`public/CNAME`](../public/CNAME) بنطاقك (مثلاً `mysite.com`)، واضبط DNS ليشير إلى GitHub Pages، ثم أدخل النطاق نفسه في **Settings → Pages → Custom domain**. أو أنشئ متغيّر مستودع باسم `CUSTOM_DOMAIN` في **Settings → Secrets and variables → Actions → Variables** |
 
 ## ما يتضمّنه القالب

@@ -19,7 +19,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 
 | Apa | Cara |
 | :-- | :-- |
-| Judul dan deskripsi halaman | Edit `<title>` dan `<meta name="description">` di [`index.html`](../index.html) |
+| Judul, deskripsi, dan Google Analytics | Edit `<title>`, `<meta name="description">`, dan Google Analytics di [`index.html`](../index.html) |
 | Domain kustom | Ganti placeholder di [`public/CNAME`](../public/CNAME) dengan domainmu (mis. `situsaku.com`), konfigurasikan DNS ke GitHub Pages, lalu masukkan domain yang sama di **Settings → Pages → Custom domain**. Atau buat variabel repositori bernama `CUSTOM_DOMAIN` di **Settings → Secrets and variables → Actions → Variables** |
 
 ## Yang Sudah Disertakan

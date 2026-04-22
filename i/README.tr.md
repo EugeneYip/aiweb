@@ -19,7 +19,7 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 
 | Ne | Nasıl |
 | :-- | :-- |
-| Sayfa başlığı ve açıklaması | [`index.html`](../index.html) dosyasındaki `<title>` ve `<meta name="description">` etiketlerini düzenleyin |
+| Sayfa başlığı, açıklaması ve Google Analytics | [`index.html`](../index.html) dosyasındaki `<title>`, `<meta name="description">` ve Google Analytics'i düzenleyin |
 | Özel alan adı | [`public/CNAME`](../public/CNAME) dosyasındaki yer tutucuyu alan adınızla değiştirin (ör. `sitenim.com`), DNS'i GitHub Pages'e yönlendirin ve aynı alan adını **Settings → Pages → Custom domain** bölümüne girin. Alternatif olarak **Settings → Secrets and variables → Actions → Variables** bölümünde `CUSTOM_DOMAIN` adında bir depo değişkeni oluşturun |
 
 ## Neler Dahil
