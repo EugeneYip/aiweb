@@ -1145,7 +1145,7 @@ export default function App() {
                 {t.badge}
               </div>
 
-              <h1 className="mt-5 max-w-3xl text-[2rem] font-semibold leading-[1.15] tracking-tight text-[#241F1A] sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 max-w-3xl text-[2rem] font-semibold leading-[1.15] tracking-tight text-[#241F1A] sm:text-5xl lg:text-[3.5rem]">
                 {t.heroTitle[0]}
                 <br />
                 {t.heroTitle[1]}
@@ -1160,7 +1160,7 @@ export default function App() {
                   href="https://github.com/EugeneYip/aiweb"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2F2A24] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#1F1A16]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2F2A24] px-5 py-3 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#1F1A16] hover:shadow-md"
                 >
                   {t.ctaPrimary}
                   <ArrowUpRight className="h-4 w-4" />
@@ -1169,7 +1169,7 @@ export default function App() {
                   href={t.readmeUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#D9CEBD] bg-white/80 px-5 py-3 text-sm font-medium text-[#2F2A24] transition hover:bg-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#D9CEBD] bg-white/80 px-5 py-3 text-sm font-medium text-[#2F2A24] transition-all hover:bg-white hover:border-[#C4B5A5]"
                 >
                   {t.ctaSecondary}
                 </a>
@@ -1215,9 +1215,9 @@ export default function App() {
             {t.steps.map((step, idx) => (
               <div
                 key={step.number}
-                className="relative overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/80 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)]"
+                className="relative overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/80 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] transition-all hover:shadow-[0_12px_40px_rgba(54,42,27,0.1)] hover:border-[#DDD3C3]"
               >
-                <span className="pointer-events-none absolute right-3 top-1 select-none font-mono text-6xl font-bold text-[#F0E7DA]">
+                <span className="pointer-events-none absolute end-3 top-1 select-none font-mono text-6xl font-bold text-[#F0E7DA]">
                   {step.number}
                 </span>
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4EEE1] text-[#5C5247]">
@@ -1246,10 +1246,10 @@ export default function App() {
             {t.files.map((file) => (
               <div
                 key={file.name}
-                className={`relative overflow-hidden rounded-2xl border p-5 ${
+                className={`relative overflow-hidden rounded-2xl border p-5 transition-all ${
                   file.required
-                    ? "border-[#D4C4AB] bg-white/90 shadow-[0_8px_30px_rgba(54,42,27,0.06)]"
-                    : "border-[#E9E0D2] bg-white/60"
+                    ? "border-[#D4C4AB] bg-white/90 shadow-[0_8px_30px_rgba(54,42,27,0.06)] hover:shadow-[0_12px_40px_rgba(54,42,27,0.1)]"
+                    : "border-[#E9E0D2] bg-white/60 hover:bg-white/80 hover:border-[#DDD3C3]"
                 }`}
               >
                 {file.required && (
@@ -1274,7 +1274,7 @@ export default function App() {
             ))}
           </div>
 
-          <div className="mt-5 flex items-start gap-3 rounded-xl border border-[#EFE5D8] bg-[#FCFAF2] px-4 py-3">
+          <div className="mt-5 flex items-start gap-3 rounded-xl border border-[#EFE5D8] border-s-[3px] border-s-[#C4A97D]/50 bg-[#FAF6ED] px-4 py-3.5">
             <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-[#A67B5B]" />
             <p className="text-sm leading-6 text-[#4B443C]">
               <span className="font-semibold text-[#241F1A]">{t.tipLabel}</span>
@@ -1288,7 +1288,7 @@ export default function App() {
           </div>
         </section>
 
-        <footer className="mt-8 pb-20 text-center text-sm text-[#6B6257]">
+        <footer className="mt-10 pb-24 text-center text-sm text-[#6B6257]">
           <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
@@ -1301,7 +1301,7 @@ export default function App() {
           <div
             role="listbox"
             aria-label={t.langLabel}
-            className="mb-2.5 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
+            className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
           >
             {LANGUAGES.map((l) => {
               const active = l.code === lang;
