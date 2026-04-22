@@ -19,7 +19,7 @@ Claude、ChatGPT、お好きな LLM でページを生成して、`src/App.jsx` 
 
 | 項目 | やり方 |
 | :-- | :-- |
-| ページタイトルと説明 | [`index.html`](../index.html) の `<title>` と `<meta name="description">` を編集 |
+| ページタイトル、説明、Google Analytics | [`index.html`](../index.html) の `<title>`、`<meta name="description">` と Google Analytics を編集 |
 | カスタムドメイン | [`public/CNAME`](../public/CNAME) のプレースホルダーを自分のドメイン（例: `mysite.com`）に書き換え、DNS を GitHub Pages に向けて、**Settings → Pages → Custom domain** に同じドメインを入力。または **Settings → Secrets and variables → Actions → Variables** で `CUSTOM_DOMAIN` という repository variable を追加してもOK |
 
 ## 含まれているもの

@@ -21,7 +21,7 @@
 
 | מה | כיצד |
 | :-- | :-- |
-| כותרת הדף ותיאורו | ערוך את `<title>` ואת `<meta name="description">` ב-[`index.html`](../index.html) |
+| כותרת הדף, תיאורו ו-Google Analytics | ערוך את `<title>`, `<meta name="description">` ו-Google Analytics ב-[`index.html`](../index.html) |
 | דומיין מותאם אישית | החלף את ה-placeholder ב-[`public/CNAME`](../public/CNAME) בדומיין שלך (למשל `mysite.com`), הגדר DNS ל-GitHub Pages, והכנס את אותו הדומיין ב-**Settings → Pages → Custom domain**. לחלופין, צור משתנה מאגר בשם `CUSTOM_DOMAIN` ב-**Settings → Secrets and variables → Actions → Variables** |
 
 ## מה כלול

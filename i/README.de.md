@@ -19,7 +19,7 @@ Generiere eine Seite mit Claude, ChatGPT oder einer beliebigen KI. Füge sie in 
 
 | Was | Wie |
 | :-- | :-- |
-| Seitentitel und Beschreibung | Bearbeite `<title>` und `<meta name="description">` in [`index.html`](../index.html) |
+| Seitentitel, Beschreibung und Google Analytics | Bearbeite `<title>`, `<meta name="description">` und Google Analytics in [`index.html`](../index.html) |
 | Eigene Domain | Ersetze den Platzhalter in [`public/CNAME`](../public/CNAME) durch deine Domain (z. B. `meineseite.com`), konfiguriere DNS für GitHub Pages und trage dieselbe Domain unter **Settings → Pages → Custom domain** ein. Alternativ kannst du eine Repository-Variable namens `CUSTOM_DOMAIN` unter **Settings → Secrets and variables → Actions → Variables** erstellen |
 
 ## Was enthalten ist

@@ -19,7 +19,7 @@
 
 | อะไร | ทำอย่างไร |
 | :-- | :-- |
-| ชื่อและคำอธิบายหน้า | แก้ไข `<title>` และ `<meta name="description">` ใน [`index.html`](../index.html) |
+| ชื่อหน้า คำอธิบาย และ Google Analytics | แก้ไข `<title>`, `<meta name="description">` และ Google Analytics ใน [`index.html`](../index.html) |
 | โดเมนที่กำหนดเอง | แทนที่ placeholder ใน [`public/CNAME`](../public/CNAME) ด้วยโดเมนของคุณ (เช่น `mysite.com`) ตั้งค่า DNS ให้ชี้ไปที่ GitHub Pages แล้วใส่โดเมนเดียวกันใน **Settings → Pages → Custom domain** หรือสร้าง repository variable ชื่อ `CUSTOM_DOMAIN` ใน **Settings → Secrets and variables → Actions → Variables** |
 
 ## มีอะไรบ้าง

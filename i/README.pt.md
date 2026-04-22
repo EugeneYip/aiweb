@@ -19,7 +19,7 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
 
 | O quê | Como |
 | :-- | :-- |
-| Título e descrição da página | Edite `<title>` e `<meta name="description">` em [`index.html`](../index.html) |
+| Título, descrição e Google Analytics | Edite `<title>`, `<meta name="description">` e Google Analytics em [`index.html`](../index.html) |
 | Domínio personalizado | Substitua o placeholder em [`public/CNAME`](../public/CNAME) pelo seu domínio (ex: `meusite.com`), configure o DNS para o GitHub Pages e coloque o mesmo domínio em **Settings → Pages → Custom domain**. Ou crie uma variável de repositório chamada `CUSTOM_DOMAIN` em **Settings → Secrets and variables → Actions → Variables** |
 
 ## O que está incluído

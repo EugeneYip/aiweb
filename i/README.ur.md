@@ -21,7 +21,7 @@ Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.j
 
 | کیا | کیسے |
 | :-- | :-- |
-| صفحے کا عنوان اور تفصیل | [`index.html`](../index.html) میں `<title>` اور `<meta name="description">` میں ترمیم کریں |
+| صفحے کا عنوان، تفصیل اور Google Analytics | [`index.html`](../index.html) میں `<title>`، `<meta name="description">` اور Google Analytics میں ترمیم کریں |
 | حسب ضرورت ڈومین | [`public/CNAME`](../public/CNAME) میں placeholder کو اپنے ڈومین سے بدلیں (مثلاً `mysite.com`)، DNS کو GitHub Pages کی طرف پوائنٹ کریں، اور وہی ڈومین **Settings → Pages → Custom domain** میں درج کریں۔ یا **Settings → Secrets and variables → Actions → Variables** میں `CUSTOM_DOMAIN` نام کا repository variable بنائیں |
 
 ## کیا شامل ہے

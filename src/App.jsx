@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb } from "lucide-react";
 
 const translations = {
   en: {
@@ -47,7 +47,7 @@ const translations = {
       "Most of the time you only touch one file. The other two are optional.",
     files: [
       { name: "src/App.jsx", tag: "Required", desc: "Paste your AI-generated JSX here. This is the only file you need to change.", required: true },
-      { name: "index.html", tag: "Optional", desc: "Update the page title and meta description to match your site.", required: false },
+      { name: "index.html", tag: "Optional", desc: "Update the page title, meta description, and Google Analytics to match your site.", required: false },
       { name: "public/CNAME", tag: "Optional", desc: "Set your custom domain. Leave as-is if you don't need one.", required: false },
     ],
     tipLabel: "Tip",
@@ -102,7 +102,7 @@ const translations = {
     filesSubtitle: "通常只需要動一個檔案，其餘兩個是進階選用。",
     files: [
       { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 貼到這裡。這是唯一需要改的檔案。", required: true },
-      { name: "index.html", tag: "選用", desc: "改一下頁面標題和描述，讓它符合你的網站。", required: false },
+      { name: "index.html", tag: "選用", desc: "改一下頁面標題、描述和 Google Analytics，讓它符合你的網站。", required: false },
       { name: "public/CNAME", tag: "選用", desc: "設定你的自訂網域。不需要的話就不用動。", required: false },
     ],
     tipLabel: "小提示",
@@ -158,7 +158,7 @@ const translations = {
       "Casi siempre solo tocas un archivo. Los otros dos son opcionales.",
     files: [
       { name: "src/App.jsx", tag: "Obligatorio", desc: "Pega aquí el JSX que te generó la IA. Es el único archivo que tienes que cambiar.", required: true },
-      { name: "index.html", tag: "Opcional", desc: "Cambia el título y la descripción de la página para que vayan con tu sitio.", required: false },
+      { name: "index.html", tag: "Opcional", desc: "Cambia el título, la descripción y Google Analytics para que vayan con tu sitio.", required: false },
       { name: "public/CNAME", tag: "Opcional", desc: "Configura tu dominio personalizado. Si no lo necesitas, déjalo como está.", required: false },
     ],
     tipLabel: "Tip",
@@ -214,7 +214,7 @@ const translations = {
       "ほとんどの場合、触るのは 1 ファイルだけ。残り 2 つは任意です。",
     files: [
       { name: "src/App.jsx", tag: "必須", desc: "AI が生成した JSX をここに貼り付けます。変更が必要なのはこのファイルだけです。", required: true },
-      { name: "index.html", tag: "任意", desc: "ページのタイトルや説明を自分のサイトに合わせて変更します。", required: false },
+      { name: "index.html", tag: "任意", desc: "ページのタイトル、説明、Google Analytics を自分のサイトに合わせて変更します。", required: false },
       { name: "public/CNAME", tag: "任意", desc: "カスタムドメインを設定します。不要ならそのままで OK。", required: false },
     ],
     tipLabel: "ヒント",
@@ -270,7 +270,7 @@ const translations = {
       "Na maioria das vezes você só mexe em um arquivo. Os outros dois são opcionais.",
     files: [
       { name: "src/App.jsx", tag: "Obrigatório", desc: "Cole o JSX gerado pela IA aqui. Este é o único arquivo que você precisa mudar.", required: true },
-      { name: "index.html", tag: "Opcional", desc: "Atualize o título e a descrição da página para combinar com seu site.", required: false },
+      { name: "index.html", tag: "Opcional", desc: "Atualize o título, a descrição e o Google Analytics para combinar com seu site.", required: false },
       { name: "public/CNAME", tag: "Opcional", desc: "Configure seu domínio personalizado. Se não precisar, deixe como está.", required: false },
     ],
     tipLabel: "Dica",
@@ -326,7 +326,7 @@ const translations = {
       "في أغلب الأحيان ستعدّل ملفاً واحداً فقط. الملفان الآخران اختياريان.",
     files: [
       { name: "src/App.jsx", tag: "مطلوب", desc: "الصق كود JSX المولّد بالذكاء الاصطناعي هنا. هذا هو الملف الوحيد الذي تحتاج تغييره.", required: true },
-      { name: "index.html", tag: "اختياري", desc: "حدّث عنوان الصفحة والوصف ليتوافقا مع موقعك.", required: false },
+      { name: "index.html", tag: "اختياري", desc: "حدّث عنوان الصفحة والوصف وGoogle Analytics ليتوافقوا مع موقعك.", required: false },
       { name: "public/CNAME", tag: "اختياري", desc: "اضبط نطاقك المخصص. اتركه كما هو إن لم تحتج واحداً.", required: false },
     ],
     tipLabel: "نصيحة",
@@ -382,7 +382,7 @@ const translations = {
       "La plupart du temps, vous ne touchez qu'un seul fichier. Les deux autres sont optionnels.",
     files: [
       { name: "src/App.jsx", tag: "Requis", desc: "Collez le JSX généré par l'IA ici. C'est le seul fichier que vous devez modifier.", required: true },
-      { name: "index.html", tag: "Optionnel", desc: "Mettez à jour le titre et la description de la page pour correspondre à votre site.", required: false },
+      { name: "index.html", tag: "Optionnel", desc: "Mettez à jour le titre, la description et Google Analytics pour correspondre à votre site.", required: false },
       { name: "public/CNAME", tag: "Optionnel", desc: "Configurez votre domaine personnalisé. Laissez tel quel si vous n'en avez pas besoin.", required: false },
     ],
     tipLabel: "Astuce",
@@ -438,7 +438,7 @@ const translations = {
       "ज़्यादातर सिर्फ़ एक फ़ाइल बदलनी होती है। बाकी दो वैकल्पिक हैं।",
     files: [
       { name: "src/App.jsx", tag: "ज़रूरी", desc: "AI द्वारा बनाया गया JSX यहाँ पेस्ट करें। बस यही एक फ़ाइल बदलनी है।", required: true },
-      { name: "index.html", tag: "वैकल्पिक", desc: "पेज का टाइटल और विवरण अपनी साइट के अनुसार अपडेट करें।", required: false },
+      { name: "index.html", tag: "वैकल्पिक", desc: "पेज का टाइटल, विवरण और Google Analytics अपनी साइट के अनुसार अपडेट करें।", required: false },
       { name: "public/CNAME", tag: "वैकल्पिक", desc: "अपना कस्टम डोमेन सेट करें। ज़रूरत न हो तो ऐसे ही छोड़ दें।", required: false },
     ],
     tipLabel: "सुझाव",
@@ -494,7 +494,7 @@ const translations = {
       "대부분의 경우 파일 하나만 수정하면 됩니다. 나머지 둘은 선택사항입니다.",
     files: [
       { name: "src/App.jsx", tag: "필수", desc: "AI가 생성한 JSX를 여기에 붙여넣으세요. 변경이 필요한 유일한 파일입니다.", required: true },
-      { name: "index.html", tag: "선택", desc: "페이지 제목과 설명을 사이트에 맞게 수정하세요.", required: false },
+      { name: "index.html", tag: "선택", desc: "페이지 제목, 설명, Google Analytics를 사이트에 맞게 수정하세요.", required: false },
       { name: "public/CNAME", tag: "선택", desc: "커스텀 도메인을 설정하세요. 필요 없으면 그대로 두세요.", required: false },
     ],
     tipLabel: "팁",
@@ -550,7 +550,7 @@ const translations = {
       "اکثر صرف ایک فائل بدلنی ہوتی ہے۔ باقی دو اختیاری ہیں۔",
     files: [
       { name: "src/App.jsx", tag: "ضروری", desc: "AI کا بنایا ہوا JSX یہاں چسپاں کریں۔ صرف یہی ایک فائل بدلنی ہے۔", required: true },
-      { name: "index.html", tag: "اختیاری", desc: "صفحے کا عنوان اور تفصیل اپنی سائٹ کے مطابق بدلیں۔", required: false },
+      { name: "index.html", tag: "اختیاری", desc: "صفحے کا عنوان، تفصیل اور Google Analytics اپنی سائٹ کے مطابق بدلیں۔", required: false },
       { name: "public/CNAME", tag: "اختیاری", desc: "اپنا حسب ضرورت ڈومین سیٹ کریں۔ ضرورت نہ ہو تو ایسے ہی چھوڑ دیں۔", required: false },
     ],
     tipLabel: "مشورہ",
@@ -606,7 +606,7 @@ const translations = {
       "ส่วนใหญ่แค่แก้ไฟล์เดียว อีกสองไฟล์เป็นตัวเลือกเพิ่มเติม",
     files: [
       { name: "src/App.jsx", tag: "จำเป็น", desc: "วาง JSX ที่ AI สร้างให้ตรงนี้ นี่คือไฟล์เดียวที่ต้องเปลี่ยน", required: true },
-      { name: "index.html", tag: "ไม่บังคับ", desc: "อัปเดตชื่อหน้าและคำอธิบายให้ตรงกับเว็บไซต์ของคุณ", required: false },
+      { name: "index.html", tag: "ไม่บังคับ", desc: "อัปเดตชื่อหน้า คำอธิบาย และ Google Analytics ให้ตรงกับเว็บไซต์ของคุณ", required: false },
       { name: "public/CNAME", tag: "ไม่บังคับ", desc: "ตั้งค่าโดเมนที่กำหนดเอง ไม่ต้องการก็ปล่อยไว้ตามเดิม", required: false },
     ],
     tipLabel: "เคล็ดลับ",
@@ -662,7 +662,7 @@ const translations = {
       "Meistens änderst du nur eine Datei. Die anderen beiden sind optional.",
     files: [
       { name: "src/App.jsx", tag: "Erforderlich", desc: "Füge das KI-generierte JSX hier ein. Das ist die einzige Datei, die du ändern musst.", required: true },
-      { name: "index.html", tag: "Optional", desc: "Aktualisiere Seitentitel und Beschreibung passend zu deiner Seite.", required: false },
+      { name: "index.html", tag: "Optional", desc: "Aktualisiere Seitentitel, Beschreibung und Google Analytics passend zu deiner Seite.", required: false },
       { name: "public/CNAME", tag: "Optional", desc: "Richte deine eigene Domain ein. Lass es wie es ist, wenn du keine brauchst.", required: false },
     ],
     tipLabel: "Tipp",
@@ -718,7 +718,7 @@ const translations = {
       "Çoğu zaman yalnızca bir dosyaya dokunursunuz. Diğer ikisi isteğe bağlıdır.",
     files: [
       { name: "src/App.jsx", tag: "Zorunlu", desc: "Yapay zekanın oluşturduğu JSX'i buraya yapıştırın. Değiştirmeniz gereken tek dosya budur.", required: true },
-      { name: "index.html", tag: "İsteğe bağlı", desc: "Sayfa başlığını ve açıklamasını sitenize uygun şekilde güncelleyin.", required: false },
+      { name: "index.html", tag: "İsteğe bağlı", desc: "Sayfa başlığını, açıklamasını ve Google Analytics'i sitenize uygun şekilde güncelleyin.", required: false },
       { name: "public/CNAME", tag: "İsteğe bağlı", desc: "Özel alan adınızı ayarlayın. Gerekmiyorsa olduğu gibi bırakın.", required: false },
     ],
     tipLabel: "İpucu",
@@ -774,7 +774,7 @@ const translations = {
       "Обычно вы меняете только один файл. Остальные два — необязательные.",
     files: [
       { name: "src/App.jsx", tag: "Обязательно", desc: "Вставьте сюда JSX, сгенерированный ИИ. Это единственный файл, который нужно изменить.", required: true },
-      { name: "index.html", tag: "Необязательно", desc: "Обновите заголовок и описание страницы под ваш сайт.", required: false },
+      { name: "index.html", tag: "Необязательно", desc: "Обновите заголовок, описание страницы и Google Analytics под ваш сайт.", required: false },
       { name: "public/CNAME", tag: "Необязательно", desc: "Укажите свой домен. Оставьте как есть, если он не нужен.", required: false },
     ],
     tipLabel: "Совет",
@@ -830,7 +830,7 @@ const translations = {
       "ברוב המקרים אתה נוגע בקובץ אחד בלבד. שני הקבצים האחרים הם אופציונליים.",
     files: [
       { name: "src/App.jsx", tag: "נדרש", desc: "הדבק כאן את ה-JSX שנוצר על ידי בינה מלאכותית. זהו הקובץ היחיד שעליך לשנות.", required: true },
-      { name: "index.html", tag: "אופציונלי", desc: "עדכן את כותרת הדף והתיאור כך שיתאימו לאתר שלך.", required: false },
+      { name: "index.html", tag: "אופציונלי", desc: "עדכן את כותרת הדף, התיאור ו-Google Analytics כך שיתאימו לאתר שלך.", required: false },
       { name: "public/CNAME", tag: "אופציונלי", desc: "הגדר את הדומיין המותאם אישית שלך. השאר כפי שהוא אם אינך זקוק לאחד.", required: false },
     ],
     tipLabel: "טיפ",
@@ -886,7 +886,7 @@ const translations = {
       "Nella maggior parte dei casi tocchi solo un file. Gli altri due sono opzionali.",
     files: [
       { name: "src/App.jsx", tag: "Obbligatorio", desc: "Incolla qui il JSX generato dall'AI. È l'unico file che devi modificare.", required: true },
-      { name: "index.html", tag: "Opzionale", desc: "Aggiorna il titolo e la descrizione della pagina per il tuo sito.", required: false },
+      { name: "index.html", tag: "Opzionale", desc: "Aggiorna il titolo, la descrizione e Google Analytics per il tuo sito.", required: false },
       { name: "public/CNAME", tag: "Opzionale", desc: "Imposta il tuo dominio personalizzato. Lascia com'è se non ne hai bisogno.", required: false },
     ],
     tipLabel: "Suggerimento",
@@ -942,7 +942,7 @@ const translations = {
       "Biasanya kamu hanya mengubah satu file. Dua file lainnya bersifat opsional.",
     files: [
       { name: "src/App.jsx", tag: "Wajib", desc: "Tempel JSX buatan AI di sini. Ini satu-satunya file yang perlu kamu ubah.", required: true },
-      { name: "index.html", tag: "Opsional", desc: "Perbarui judul dan deskripsi halaman agar sesuai dengan situsmu.", required: false },
+      { name: "index.html", tag: "Opsional", desc: "Perbarui judul, deskripsi halaman, dan Google Analytics agar sesuai dengan situsmu.", required: false },
       { name: "public/CNAME", tag: "Opsional", desc: "Atur domain kustom-mu. Biarkan apa adanya jika tidak membutuhkannya.", required: false },
     ],
     tipLabel: "Tips",
@@ -998,7 +998,7 @@ const translations = {
       "Hầu hết bạn chỉ cần đổi một file. Hai file còn lại là tuỳ chọn.",
     files: [
       { name: "src/App.jsx", tag: "Bắt buộc", desc: "Dán JSX do AI sinh ra vào đây. Đây là file duy nhất bạn cần thay.", required: true },
-      { name: "index.html", tag: "Tuỳ chọn", desc: "Đổi tiêu đề và mô tả trang cho phù hợp với site của bạn.", required: false },
+      { name: "index.html", tag: "Tuỳ chọn", desc: "Đổi tiêu đề, mô tả trang và Google Analytics cho phù hợp với site của bạn.", required: false },
       { name: "public/CNAME", tag: "Tuỳ chọn", desc: "Cài custom domain. Không cần thì để nguyên.", required: false },
     ],
     tipLabel: "Mẹo",
@@ -1141,7 +1141,7 @@ export default function App() {
           <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
-                <Anchor className="h-3.5 w-3.5 text-[#A67B5B]" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5 text-[#A67B5B]"><circle cx="12" cy="5" r="2.5"/><line x1="12" y1="7.5" x2="12" y2="17"/><line x1="6.5" y1="10.5" x2="17.5" y2="10.5"/><path d="M12 17 C7.5 17 5 18 5 21"/><path d="M12 17 C16.5 17 19 18 19 21"/></svg>
                 {t.badge}
               </div>
 
@@ -1289,7 +1289,7 @@ export default function App() {
         </section>
 
         <footer className="mt-8 pb-20 text-center text-sm text-[#6B6257]">
-          <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]"><circle cx="12" cy="5" r="2.5"/><line x1="12" y1="7.5" x2="12" y2="17"/><line x1="6.5" y1="10.5" x2="17.5" y2="10.5"/><path d="M12 17 C7.5 17 5 18 5 21"/><path d="M12 17 C16.5 17 19 18 19 21"/></svg>
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
         </footer>
