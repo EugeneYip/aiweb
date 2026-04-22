@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor } from "lucide-react";
 
 const translations = {
   en: {
@@ -1141,7 +1141,7 @@ export default function App() {
           <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5 text-[#A67B5B]"><circle cx="12" cy="5" r="2.5"/><line x1="12" y1="7.5" x2="12" y2="17"/><line x1="6.5" y1="10.5" x2="17.5" y2="10.5"/><path d="M12 17 C7.5 17 5 18 5 21"/><path d="M12 17 C16.5 17 19 18 19 21"/></svg>
+                <Anchor className="h-3.5 w-3.5 text-[#A67B5B]" />
                 {t.badge}
               </div>
 
@@ -1289,7 +1289,7 @@ export default function App() {
         </section>
 
         <footer className="mt-8 pb-20 text-center text-sm text-[#6B6257]">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]"><circle cx="12" cy="5" r="2.5"/><line x1="12" y1="7.5" x2="12" y2="17"/><line x1="6.5" y1="10.5" x2="17.5" y2="10.5"/><path d="M12 17 C7.5 17 5 18 5 21"/><path d="M12 17 C16.5 17 19 18 19 21"/></svg>
+          <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
         </footer>
