@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor } from "lucide-react";
 
 const translations = {
   en: {
@@ -1137,11 +1137,11 @@ export default function App() {
     <div className="min-h-screen bg-[#FCFAF2] text-[#2F2A24] antialiased">
       <main className="mx-auto max-w-6xl px-4 py-5 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
         {/* Hero */}
-        <section className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[linear-gradient(180deg,rgba(255,255,255,0.92)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]">
+        <section className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[radial-gradient(ellipse_80%_60%_at_100%_0%,rgba(166,123,91,0.07)_0%,transparent_70%),linear-gradient(180deg,rgba(255,255,255,0.95)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]">
           <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
-                <span className="h-2 w-2 rounded-full bg-[#A67B5B]" />
+                <Anchor className="h-3.5 w-3.5 text-[#A67B5B]" />
                 {t.badge}
               </div>
 
@@ -1189,7 +1189,7 @@ export default function App() {
 
               <ul className="mt-4 space-y-2">
                 {t.includes.map((item) => (
-                  <li key={item} className="flex items-center gap-3 rounded-xl bg-[#FCFAF2] px-3.5 py-2.5">
+                  <li key={item} className="flex items-center gap-3 rounded-xl bg-[#FCFAF2] px-3.5 py-2.5 transition-colors hover:bg-[#F4EEE1]">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-[#A67B5B]" />
                     <span className="text-sm font-medium text-[#241F1A]">{item}</span>
                   </li>
@@ -1215,15 +1215,13 @@ export default function App() {
             {t.steps.map((step, idx) => (
               <div
                 key={step.number}
-                className="rounded-2xl border border-[#E9E0D2] bg-white/75 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] backdrop-blur-sm"
+                className="relative overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/80 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)]"
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4EEE1] text-[#5C5247]">
-                    {STEP_ICONS[idx]}
-                  </div>
-                  <span className="font-mono text-xs font-semibold tracking-wider text-[#A89A87]">
-                    {step.number}
-                  </span>
+                <span className="pointer-events-none absolute right-3 top-1 select-none font-mono text-6xl font-bold text-[#F0E7DA]">
+                  {step.number}
+                </span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4EEE1] text-[#5C5247]">
+                  {STEP_ICONS[idx]}
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-[#241F1A] sm:text-lg">{step.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[#4B443C]">{step.body}</p>
@@ -1248,12 +1246,15 @@ export default function App() {
             {t.files.map((file) => (
               <div
                 key={file.name}
-                className={`rounded-2xl border p-5 ${
+                className={`relative overflow-hidden rounded-2xl border p-5 ${
                   file.required
                     ? "border-[#D4C4AB] bg-white/90 shadow-[0_8px_30px_rgba(54,42,27,0.06)]"
                     : "border-[#E9E0D2] bg-white/60"
                 }`}
               >
+                {file.required && (
+                  <div className="absolute inset-x-0 top-0 h-[3px] bg-[#A67B5B]/50" />
+                )}
                 <div className="flex items-center justify-between gap-2">
                   <code className="rounded-lg bg-[#F4EEE1] px-2.5 py-1 font-mono text-xs font-medium text-[#241F1A]">
                     {file.name}
@@ -1288,6 +1289,7 @@ export default function App() {
         </section>
 
         <footer className="mt-8 pb-20 text-center text-sm text-[#6B6257]">
+          <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
         </footer>
@@ -1299,7 +1301,7 @@ export default function App() {
           <div
             role="listbox"
             aria-label={t.langLabel}
-            className="mb-2.5 min-w-[9.5rem] overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
+            className="mb-2.5 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
           >
             {LANGUAGES.map((l) => {
               const active = l.code === lang;
