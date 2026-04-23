@@ -30,11 +30,19 @@ Bu şablon, yapay zeka tarafından oluşturulan sayfalarda yaygın olarak kullan
 - **40'tan fazla shadcn/ui bileşeni** `src/components/ui/` dizininde önceden kurulu
 - **Tüm Radix UI primitifleri** erişilebilir etkileşimler için
 - **İkonlar** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafikler** — `recharts`, `chart.js` + `react-chartjs-2`
-- **Animasyon** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **Grafikler ve veri görselleştirme** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **Haritalar** — `leaflet` + `react-leaflet`
+- **Video** — `react-player`
+- **Animasyon** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Zengin metin** — `@tiptap/react` + `@tiptap/starter-kit`
 - **Formlar** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Akış diyagramları** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Yardımcı araçlar** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` ve daha fazlası
+- **Görseller** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Takvim** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Yardımcı araçlar** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` ve daha fazlası
 
 > Tree-shaking, yalnızca gerçekten kullandığınız paketlerin son pakete dahil edilmesini sağlar.
 

@@ -30,11 +30,19 @@
 - **Более 40 компонентов shadcn/ui** предустановлены в `src/components/ui/`
 - **Все примитивы Radix UI** для доступных интерактивных элементов
 - **Иконки** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Графики** — `recharts`, `chart.js` + `react-chartjs-2`
-- **Анимация** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **Графики и визуализация** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **Карты** — `leaflet` + `react-leaflet`
+- **Видео** — `react-player`
+- **Анимация** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Форматированный текст** — `@tiptap/react` + `@tiptap/starter-kit`
 - **Формы** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Блок-схемы** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Утилиты** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` и многое другое
+- **Изображения** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Календарь** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Утилиты** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` и многое другое
 
 > Tree-shaking гарантирует, что в финальную сборку попадут только те пакеты, которые вы реально используете.
 

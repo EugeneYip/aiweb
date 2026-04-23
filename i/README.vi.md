@@ -30,11 +30,19 @@ Template đã setup sẵn mọi thứ mà trang AI thường dùng:
 - **Hơn 40 component shadcn/ui** đã cài sẵn trong `src/components/ui/`
 - **Toàn bộ Radix UI primitives** cho tương tác accessible
 - **Icons** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Charts** — `recharts`, `chart.js` với `react-chartjs-2`
-- **Animation** — `framer-motion`, `react-spring`, `tailwindcss-animate`
-- **Forms** — `react-hook-form` với `@hookform/resolvers` và `zod`
+- **Biểu đồ & trực quan dữ liệu** — `recharts`, `chart.js` với `react-chartjs-2`, `d3`
+- **Bản đồ** — `leaflet` với `react-leaflet`
+- **Video** — `react-player`
+- **Hiệu ứng động** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` với `@tiptap/starter-kit`
+- **Biểu mẫu** — `react-hook-form` với `@hookform/resolvers` và `zod`
+- **Sơ đồ luồng** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Tiện ích** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` và nhiều nữa
+- **Hình ảnh** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Lịch** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Tiện ích** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` và nhiều nữa
 
 > Tree-shaking đảm bảo chỉ những package bạn thực sự dùng mới có mặt trong bundle cuối.
 

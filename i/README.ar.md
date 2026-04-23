@@ -32,11 +32,19 @@
 - **أكثر من 40 مكوّن shadcn/ui** مثبّتة مسبقاً في `src/components/ui/`
 - **جميع عناصر Radix UI** لتفاعلات يسهل الوصول إليها
 - **أيقونات** — `lucide-react`، `react-icons`، `@heroicons/react`
-- **رسوم بيانية** — `recharts`، `chart.js` مع `react-chartjs-2`
-- **حركات** — `framer-motion`، `react-spring`، `tailwindcss-animate`
+- **الرسوم البيانية والتصور** — `recharts`، `chart.js` مع `react-chartjs-2`، `d3`
+- **خرائط** — `leaflet` مع `react-leaflet`
+- **فيديو** — `react-player`
+- **رسوم متحركة** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `tailwindcss-animate`
+- **نص منسّق** — `@tiptap/react` مع `@tiptap/starter-kit`
 - **نماذج** — `react-hook-form` مع `@hookform/resolvers` و `zod`
+- **مخططات التدفق** — `@xyflow/react`
 - **ثلاثي الأبعاد** — `three`، `@react-three/fiber`، `@react-three/drei`
-- **أدوات مساعدة** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom` والمزيد
+- **صور** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **تقويم** — `react-big-calendar`، `react-day-picker`
+- **CSS-in-JS** — `styled-components`، `@emotion/react`
+- **أدوات مساعدة** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom`، `@faker-js/faker` والمزيد
 
 > يضمن tree-shaking أن الحزم التي تستخدمها فعلاً هي فقط التي تُضمّن في الملف النهائي.
 

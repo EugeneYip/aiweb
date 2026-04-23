@@ -30,11 +30,19 @@ Template ini sudah dikonfigurasi dengan semua yang biasa digunakan oleh artefak 
 - **Lebih dari 40 komponen shadcn/ui** yang sudah terpasang di `src/components/ui/`
 - **Semua Radix UI primitives** untuk interaksi yang aksesibel
 - **Ikon** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafik** — `recharts`, `chart.js` + `react-chartjs-2`
-- **Animasi** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **Grafik & visualisasi data** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **Peta** — `leaflet` + `react-leaflet`
+- **Video** — `react-player`
+- **Animasi** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + `@tiptap/starter-kit`
 - **Formulir** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Diagram alur** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Utilitas** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, dan banyak lagi
+- **Gambar** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Kalender** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Utilitas** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, dan banyak lagi
 
 > Tree-shaking memastikan hanya paket yang benar-benar kamu gunakan yang masuk ke dalam bundle akhir.
 

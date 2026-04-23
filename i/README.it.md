@@ -30,11 +30,19 @@ Questo template è preconfigurato con tutto ciò che gli artefatti AI usano comu
 - **Oltre 40 componenti shadcn/ui** preinstallati in `src/components/ui/`
 - **Tutti i primitivi Radix UI** per interazioni accessibili
 - **Icone** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafici** — `recharts`, `chart.js` + `react-chartjs-2`
-- **Animazioni** — `framer-motion`, `react-spring`, `tailwindcss-animate`
-- **Form** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Grafici e visualizzazione** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **Mappe** — `leaflet` + `react-leaflet`
+- **Video** — `react-player`
+- **Animazione** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Testo ricco** — `@tiptap/react` + `@tiptap/starter-kit`
+- **Moduli** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Diagrammi di flusso** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Utilità** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` e molti altri
+- **Immagini** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Calendario** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Utilità** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` e molti altri
 
 > Il tree-shaking garantisce che solo i pacchetti effettivamente utilizzati finiscano nel bundle finale.
 

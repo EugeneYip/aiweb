@@ -32,11 +32,19 @@
 - **מעל 40 רכיבי shadcn/ui** מותקנים מראש ב-`src/components/ui/`
 - **כל ה-Radix UI primitives** לאינטראקציות נגישות
 - **אייקונים** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **גרפים** — `recharts`, `chart.js` + `react-chartjs-2`
-- **אנימציה** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **גרפים ותצוגת נתונים** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **מפות** — `leaflet` + `react-leaflet`
+- **וידאו** — `react-player`
+- **אנימציה** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **עריכת טקסט עשיר** — `@tiptap/react` + `@tiptap/starter-kit`
 - **טפסים** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **תרשימי זרימה** — `@xyflow/react`
 - **תלת-ממד** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **כלים** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, ועוד רבים
+- **תמונות** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **לוח שנה** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **כלי עזר** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, ועוד רבים
 
 > Tree-shaking מבטיח שרק החבילות שבהן הארטיפקט שלך משתמש בפועל ייכנסו לחבילה הסופית.
 

@@ -30,11 +30,19 @@ La plantilla ya viene con todo lo que las páginas hechas con IA suelen ocupar:
 - **Más de 40 componentes de shadcn/ui** preinstalados en `src/components/ui/`
 - **Todas las primitivas de Radix UI** para interacciones accesibles
 - **Iconos** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Gráficas** — `recharts`, `chart.js` con `react-chartjs-2`
-- **Animación** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **Gráficos y visualización** — `recharts`, `chart.js` con `react-chartjs-2`, `d3`
+- **Mapas** — `leaflet` con `react-leaflet`
+- **Video** — `react-player`
+- **Animación** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Texto enriquecido** — `@tiptap/react` con `@tiptap/starter-kit`
 - **Formularios** — `react-hook-form` con `@hookform/resolvers` y `zod`
+- **Diagramas de flujo** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Utilidades** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` y muchas más
+- **Imágenes** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Calendario** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Utilidades** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` y muchas más
 
 > Con tree-shaking, al bundle final solo llegan los paquetes que de verdad usas.
 
