@@ -60,6 +60,7 @@
   }
 
   .dark {
+    color-scheme: dark;
     --background: 30 9% 9%;
     --foreground: 33 16% 91%;
     --card: 30 12% 12%;
@@ -79,12 +80,6 @@
     --border: 27 11% 16%;
     --input: 27 11% 16%;
     --ring: 30 20% 60%;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
     --lp-bg: #1A1816;
     --lp-heading: #EDE8E0;
     --lp-body: #D4CEC4;

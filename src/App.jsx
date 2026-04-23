@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor, Sun, Moon } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -1098,6 +1098,7 @@ function detectInitialLang() {
 
 export default function App() {
   const [lang, setLang] = useState("en");
+  const [darkMode, setDarkMode] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [focusIdx, setFocusIdx] = useState(-1);
   const switcherRef = useRef(null);
@@ -1105,11 +1106,24 @@ export default function App() {
 
   useEffect(() => {
     setLang(detectInitialLang());
+    const stored = localStorage.getItem("aiweb-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setDarkMode(stored ? stored === "dark" : prefersDark);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => {
+      m.setAttribute("content", darkMode ? "#1A1816" : "#FCFAF2");
+    });
+  }, [darkMode]);
+
+  useEffect(() => {
+    if (localStorage.getItem("aiweb-theme")) return;
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    const apply = (e) => document.documentElement.classList.toggle("dark", e.matches);
-    apply(mq);
-    mq.addEventListener("change", apply);
-    return () => mq.removeEventListener("change", apply);
+    const handler = (e) => setDarkMode(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
   }, []);
 
   useEffect(() => {
@@ -1379,64 +1393,77 @@ export default function App() {
         </motion.footer>
       </main>
 
-      {/* Language switcher */}
-      <div
-        ref={switcherRef}
-        className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6"
-        onKeyDown={handleSwitcherKey}
-      >
-        {langOpen && (
-          <div
-            ref={listRef}
-            role="listbox"
-            aria-label={t.langLabel}
-            aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
-            className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
-          >
-            {LANGUAGES.map((l, i) => {
-              const active = l.code === lang;
-              const focused = i === focusIdx;
-              return (
-                <button
-                  key={l.code}
-                  id={`lang-opt-${l.code}`}
-                  type="button"
-                  role="option"
-                  aria-selected={active}
-                  onMouseEnter={() => setFocusIdx(i)}
-                  onClick={() => {
-                    setLang(l.code);
-                    setLangOpen(false);
-                  }}
-                  className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
-                    active
-                      ? "bg-[var(--lp-raised)] font-semibold text-[var(--lp-heading)]"
-                      : focused
-                        ? "bg-[var(--lp-hover)] text-[var(--lp-heading)]"
-                        : "text-[var(--lp-text)] hover:bg-[var(--lp-bg)]"
-                  }${focused ? " ring-1 ring-inset ring-[var(--lp-ring)]" : ""}`}
-                >
-                  <span className="w-4 font-mono text-[11px] text-[var(--lp-hint)]">{l.short}</span>
-                  <span>{l.label}</span>
-                  {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[var(--lp-accent)]" />}
-                </button>
-              );
-            })}
-          </div>
-        )}
+      {/* Controls */}
+      <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 sm:bottom-6 sm:right-6">
+        {/* Theme toggle */}
         <button
           type="button"
-          onClick={() => setLangOpen((v) => !v)}
-          aria-label={t.langLabel}
-          aria-expanded={langOpen}
-          aria-haspopup="listbox"
-          className="flex h-11 items-center gap-2 rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] px-3.5 text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
+          onClick={() => {
+            const next = !darkMode;
+            setDarkMode(next);
+            localStorage.setItem("aiweb-theme", next ? "dark" : "light");
+          }}
+          aria-label={darkMode ? "Light mode" : "Dark mode"}
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
         >
-          <Globe className="h-4.5 w-4.5" />
-          <span className="font-mono text-xs font-semibold tracking-wider text-[var(--lp-subtle)]">
-            {currentLang.short}
-          </span>
+          {darkMode ? <Sun className="h-[1.125rem] w-[1.125rem]" /> : <Moon className="h-[1.125rem] w-[1.125rem]" />}
         </button>
+
+        {/* Language switcher */}
+        <div ref={switcherRef} className="relative" onKeyDown={handleSwitcherKey}>
+          {langOpen && (
+            <div
+              ref={listRef}
+              role="listbox"
+              aria-label={t.langLabel}
+              aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
+              className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
+            >
+              {LANGUAGES.map((l, i) => {
+                const active = l.code === lang;
+                const focused = i === focusIdx;
+                return (
+                  <button
+                    key={l.code}
+                    id={`lang-opt-${l.code}`}
+                    type="button"
+                    role="option"
+                    aria-selected={active}
+                    onMouseEnter={() => setFocusIdx(i)}
+                    onClick={() => {
+                      setLang(l.code);
+                      setLangOpen(false);
+                    }}
+                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
+                      active
+                        ? "bg-[var(--lp-raised)] font-semibold text-[var(--lp-heading)]"
+                        : focused
+                          ? "bg-[var(--lp-hover)] text-[var(--lp-heading)]"
+                          : "text-[var(--lp-text)] hover:bg-[var(--lp-bg)]"
+                    }${focused ? " ring-1 ring-inset ring-[var(--lp-ring)]" : ""}`}
+                  >
+                    <span className="w-4 font-mono text-[11px] text-[var(--lp-hint)]">{l.short}</span>
+                    <span>{l.label}</span>
+                    {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[var(--lp-accent)]" />}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          <button
+            type="button"
+            onClick={() => setLangOpen((v) => !v)}
+            aria-label={t.langLabel}
+            aria-expanded={langOpen}
+            aria-haspopup="listbox"
+            className="flex h-11 items-center gap-2 rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] px-3.5 text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
+          >
+            <Globe className="h-4.5 w-4.5" />
+            <span className="font-mono text-xs font-semibold tracking-wider text-[var(--lp-subtle)]">
+              {currentLang.short}
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );
