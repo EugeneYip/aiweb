@@ -1,5 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor } from "lucide-react";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+};
 
 const translations = {
   en: {
@@ -1093,7 +1099,9 @@ function detectInitialLang() {
 export default function App() {
   const [lang, setLang] = useState("en");
   const [langOpen, setLangOpen] = useState(false);
+  const [focusIdx, setFocusIdx] = useState(-1);
   const switcherRef = useRef(null);
+  const listRef = useRef(null);
 
   useEffect(() => {
     setLang(detectInitialLang());
@@ -1113,20 +1121,64 @@ export default function App() {
   }, [lang]);
 
   useEffect(() => {
+    if (langOpen) {
+      setFocusIdx(LANGUAGES.findIndex((l) => l.code === lang));
+    }
+  }, [langOpen]);
+
+  useEffect(() => {
+    if (!langOpen || focusIdx < 0) return;
+    const list = listRef.current;
+    if (!list) return;
+    const items = list.querySelectorAll("[role=option]");
+    if (items[focusIdx]) items[focusIdx].scrollIntoView({ block: "nearest" });
+  }, [focusIdx, langOpen]);
+
+  const handleSwitcherKey = useCallback(
+    (e) => {
+      if (!langOpen) {
+        if (e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setLangOpen(true);
+        }
+        return;
+      }
+      switch (e.key) {
+        case "ArrowDown":
+          e.preventDefault();
+          setFocusIdx((i) => (i + 1) % LANGUAGES.length);
+          break;
+        case "ArrowUp":
+          e.preventDefault();
+          setFocusIdx((i) => (i - 1 + LANGUAGES.length) % LANGUAGES.length);
+          break;
+        case "Enter":
+        case " ":
+          e.preventDefault();
+          if (focusIdx >= 0) {
+            setLang(LANGUAGES[focusIdx].code);
+            setLangOpen(false);
+          }
+          break;
+        case "Escape":
+          e.preventDefault();
+          setLangOpen(false);
+          break;
+      }
+    },
+    [langOpen, focusIdx],
+  );
+
+  useEffect(() => {
     if (!langOpen) return;
     function onClickAway(e) {
       if (switcherRef.current && !switcherRef.current.contains(e.target)) {
         setLangOpen(false);
       }
     }
-    function onKey(e) {
-      if (e.key === "Escape") setLangOpen(false);
-    }
     document.addEventListener("mousedown", onClickAway);
-    document.addEventListener("keydown", onKey);
     return () => {
       document.removeEventListener("mousedown", onClickAway);
-      document.removeEventListener("keydown", onKey);
     };
   }, [langOpen]);
 
@@ -1137,7 +1189,12 @@ export default function App() {
     <div className="min-h-screen bg-[#FCFAF2] text-[#2F2A24] antialiased">
       <main className="mx-auto max-w-6xl px-4 py-5 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
         {/* Hero */}
-        <section className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[radial-gradient(ellipse_80%_60%_at_100%_0%,rgba(166,123,91,0.07)_0%,transparent_70%),linear-gradient(180deg,rgba(255,255,255,0.95)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]">
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[radial-gradient(ellipse_80%_60%_at_100%_0%,rgba(166,123,91,0.07)_0%,transparent_70%),linear-gradient(180deg,rgba(255,255,255,0.95)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]"
+        >
           <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
@@ -1197,10 +1254,16 @@ export default function App() {
               </ul>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* How It Works */}
-        <section className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10">
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
+        >
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.howItWorksLabel}</p>
             <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
@@ -1213,8 +1276,12 @@ export default function App() {
 
           <div className="mt-6 grid gap-4 sm:mt-8 lg:grid-cols-3">
             {t.steps.map((step, idx) => (
-              <div
+              <motion.div
                 key={step.number}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-40px" }}
                 className="relative overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/80 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] transition-all hover:shadow-[0_12px_40px_rgba(54,42,27,0.1)] hover:border-[#DDD3C3]"
               >
                 <span className="pointer-events-none absolute end-3 top-1 select-none font-mono text-6xl font-bold text-[#F0E7DA]">
@@ -1225,13 +1292,19 @@ export default function App() {
                 </div>
                 <h3 className="mt-4 text-base font-semibold text-[#241F1A] sm:text-lg">{step.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[#4B443C]">{step.body}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Files You'll Change */}
-        <section className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10">
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
+        >
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.filesLabel}</p>
             <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
@@ -1286,31 +1359,46 @@ export default function App() {
               {t.tipAfter}
             </p>
           </div>
-        </section>
+        </motion.section>
 
-        <footer className="mt-10 pb-24 text-center text-sm text-[#6B6257]">
+        <motion.footer
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-40px" }}
+          className="mt-10 pb-24 text-center text-sm text-[#6B6257]"
+        >
           <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
-        </footer>
+        </motion.footer>
       </main>
 
       {/* Language switcher */}
-      <div ref={switcherRef} className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
+      <div
+        ref={switcherRef}
+        className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6"
+        onKeyDown={handleSwitcherKey}
+      >
         {langOpen && (
           <div
+            ref={listRef}
             role="listbox"
             aria-label={t.langLabel}
+            aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
             className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
           >
-            {LANGUAGES.map((l) => {
+            {LANGUAGES.map((l, i) => {
               const active = l.code === lang;
+              const focused = i === focusIdx;
               return (
                 <button
                   key={l.code}
+                  id={`lang-opt-${l.code}`}
                   type="button"
                   role="option"
                   aria-selected={active}
+                  onMouseEnter={() => setFocusIdx(i)}
                   onClick={() => {
                     setLang(l.code);
                     setLangOpen(false);
@@ -1318,8 +1406,10 @@ export default function App() {
                   className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
                     active
                       ? "bg-[#F4EEE1] font-semibold text-[#241F1A]"
-                      : "text-[#4B443C] hover:bg-[#FCFAF2]"
-                  }`}
+                      : focused
+                        ? "bg-[#FAF6ED] text-[#241F1A]"
+                        : "text-[#4B443C] hover:bg-[#FCFAF2]"
+                  }${focused ? " ring-1 ring-inset ring-[#C4A97D]/40" : ""}`}
                 >
                   <span className="w-4 font-mono text-[11px] text-[#A89A87]">{l.short}</span>
                   <span>{l.label}</span>
@@ -1334,6 +1424,7 @@ export default function App() {
           onClick={() => setLangOpen((v) => !v)}
           aria-label={t.langLabel}
           aria-expanded={langOpen}
+          aria-haspopup="listbox"
           className="flex h-11 items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/90 px-3.5 text-[#5C5247] shadow-[0_10px_30px_rgba(54,42,27,0.12)] backdrop-blur-sm transition hover:bg-white"
         >
           <Globe className="h-4.5 w-4.5" />
