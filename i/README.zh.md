@@ -30,11 +30,19 @@
 - **40+ 個 shadcn/ui 元件** 已預裝在 `src/components/ui/`
 - **所有 Radix UI 底層元件**，提供無障礙互動
 - **圖示** — `lucide-react`、`react-icons`、`@heroicons/react`
-- **圖表** — `recharts`、`chart.js` 搭配 `react-chartjs-2`
-- **動畫** — `framer-motion`、`react-spring`、`tailwindcss-animate`
+- **圖表與資料視覺化** — `recharts`、`chart.js` 搭配 `react-chartjs-2`、`d3`
+- **地圖** — `leaflet` 搭配 `react-leaflet`
+- **影片** — `react-player`
+- **動畫** — `framer-motion`、`react-spring`、`lottie-react`、`react-confetti`、`tailwindcss-animate`
+- **富文字編輯** — `@tiptap/react` 搭配 `@tiptap/starter-kit`
 - **表單** — `react-hook-form` 搭配 `@hookform/resolvers` 與 `zod`
+- **流程圖** — `@xyflow/react`
 - **3D** — `three`、`@react-three/fiber`、`@react-three/drei`
-- **常用工具** — `date-fns`、`lodash`、`axios`、`zustand`、`react-router-dom` 等等
+- **圖片** — `react-easy-crop`、`react-image-gallery`、`yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **行事曆** — `react-big-calendar`、`react-day-picker`
+- **CSS-in-JS** — `styled-components`、`@emotion/react`
+- **工具庫** — `date-fns`、`lodash`、`axios`、`zustand`、`react-router-dom`、`@faker-js/faker` 等等
 
 > Tree-shaking 會自動把你沒用到的套件從最終的 bundle 裡拿掉。
 

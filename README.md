@@ -30,11 +30,19 @@ This template comes pre-configured with everything AI artifacts commonly use:
 - **40+ shadcn/ui components** pre-installed in `src/components/ui/`
 - **All Radix UI primitives** for accessible interactions
 - **Icons** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Charts** — `recharts`, `chart.js` + `react-chartjs-2`
-- **Animation** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **Charts & data viz** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **Maps** — `leaflet` + `react-leaflet`
+- **Video** — `react-player`
+- **Animation** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + `@tiptap/starter-kit`
 - **Forms** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Flow diagrams** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Utilities** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, and many more
+- **Images** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **Calendar** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **Utilities** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, and many more
 
 > Tree-shaking ensures only the packages your artifact actually uses end up in the final bundle.
 

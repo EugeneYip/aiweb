@@ -30,11 +30,19 @@
 - **คอมโพเนนต์ shadcn/ui กว่า 40 ตัว** ติดตั้งไว้แล้วใน `src/components/ui/`
 - **Radix UI primitives ครบทุกตัว** สำหรับการโต้ตอบที่เข้าถึงได้
 - **ไอคอน** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **กราฟ** — `recharts`, `chart.js` + `react-chartjs-2`
-- **แอนิเมชัน** — `framer-motion`, `react-spring`, `tailwindcss-animate`
+- **แผนภูมิและการแสดงผลข้อมูล** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
+- **แผนที่** — `leaflet` + `react-leaflet`
+- **วิดีโอ** — `react-player`
+- **แอนิเมชัน** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + `@tiptap/starter-kit`
 - **ฟอร์ม** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **ไดอะแกรมโฟลว์** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **ยูทิลิตี้** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom` และอีกมากมาย
+- **รูปภาพ** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **ปฏิทิน** — `react-big-calendar`, `react-day-picker`
+- **CSS-in-JS** — `styled-components`, `@emotion/react`
+- **ยูทิลิตี้** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` และอีกมากมาย
 
 > Tree-shaking รับประกันว่ามีเฉพาะแพ็กเกจที่ใช้จริงเท่านั้นในไฟล์สุดท้าย
 

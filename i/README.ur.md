@@ -32,11 +32,19 @@ Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.j
 - **40+ shadcn/ui کمپوننٹ** `src/components/ui/` میں پہلے سے نصب
 - **تمام Radix UI پرائمیٹوز** قابل رسائی تعاملات کے لیے
 - **آئیکنز** — `lucide-react`، `react-icons`، `@heroicons/react`
-- **چارٹس** — `recharts`، `chart.js` + `react-chartjs-2`
-- **اینیمیشن** — `framer-motion`، `react-spring`، `tailwindcss-animate`
+- **چارٹس اور ڈیٹا ویژولائزیشن** — `recharts`، `chart.js` + `react-chartjs-2`، `d3`
+- **نقشے** — `leaflet` + `react-leaflet`
+- **ویڈیو** — `react-player`
+- **اینیمیشن** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `tailwindcss-animate`
+- **رچ ٹیکسٹ** — `@tiptap/react` + `@tiptap/starter-kit`
 - **فارمز** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **فلو ڈائگرام** — `@xyflow/react`
 - **3D** — `three`، `@react-three/fiber`، `@react-three/drei`
-- **یوٹیلیٹیز** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom` اور بہت کچھ
+- **تصاویر** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`
+- **PDF** — `jspdf`
+- **کیلنڈر** — `react-big-calendar`، `react-day-picker`
+- **CSS-in-JS** — `styled-components`، `@emotion/react`
+- **یوٹیلٹیز** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom`، `@faker-js/faker` اور بہت کچھ
 
 > Tree-shaking یقینی بناتا ہے کہ صرف وہی پیکجز فائنل بنڈل میں شامل ہوں جو آپ واقعی استعمال کرتے ہیں۔
 
