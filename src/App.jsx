@@ -1105,6 +1105,11 @@ export default function App() {
 
   useEffect(() => {
     setLang(detectInitialLang());
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const apply = (e) => document.documentElement.classList.toggle("dark", e.matches);
+    apply(mq);
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
   }, []);
 
   useEffect(() => {
@@ -1186,29 +1191,29 @@ export default function App() {
   const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
   return (
-    <div className="min-h-screen bg-[#FCFAF2] text-[#2F2A24] antialiased">
+    <div className="min-h-screen bg-[var(--lp-bg)] text-[var(--lp-body)] antialiased">
       <main className="mx-auto max-w-6xl px-4 py-5 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
         {/* Hero */}
         <motion.section
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="overflow-hidden rounded-[2rem] border border-[#E9E0D2] bg-[radial-gradient(ellipse_80%_60%_at_100%_0%,rgba(166,123,91,0.07)_0%,transparent_70%),linear-gradient(180deg,rgba(255,255,255,0.95)_0%,rgba(252,250,242,0.92)_100%)] shadow-[0_18px_70px_rgba(54,42,27,0.08)]"
+          className="overflow-hidden rounded-[2rem] border border-[var(--lp-border)] bg-[image:var(--lp-hero-grad)] shadow-[0_18px_70px_rgba(var(--lp-shadow-rgb),0.08)]"
         >
           <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-8 sm:py-9 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:px-10 lg:py-12">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/85 px-3 py-1.5 text-xs font-medium text-[#5E564C]">
-                <Anchor className="h-3.5 w-3.5 text-[#A67B5B]" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.85)] px-3 py-1.5 text-xs font-medium text-[var(--lp-subtle)]">
+                <Anchor className="h-3.5 w-3.5 text-[var(--lp-accent)]" />
                 {t.badge}
               </div>
 
-              <h1 className="mt-6 max-w-3xl text-[2rem] font-semibold leading-[1.15] tracking-tight text-[#241F1A] sm:text-5xl lg:text-[3.5rem]">
+              <h1 className="mt-6 max-w-3xl text-[2rem] font-semibold leading-[1.15] tracking-tight text-[var(--lp-heading)] sm:text-5xl lg:text-[3.5rem]">
                 {t.heroTitle[0]}
                 <br />
                 {t.heroTitle[1]}
               </h1>
 
-              <p className="mt-5 max-w-xl text-[0.938rem] leading-7 text-[#4B443C] sm:text-base sm:leading-8">
+              <p className="mt-5 max-w-xl text-[0.938rem] leading-7 text-[var(--lp-text)] sm:text-base sm:leading-8">
                 {t.heroSubtitle}
               </p>
 
@@ -1217,7 +1222,7 @@ export default function App() {
                   href="https://github.com/EugeneYip/aiweb"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2F2A24] px-5 py-3 text-sm font-medium text-white shadow-sm transition-all hover:bg-[#1F1A16] hover:shadow-md"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--lp-cta-bg)] px-5 py-3 text-sm font-medium text-[var(--lp-cta-fg)] shadow-sm transition-all hover:bg-[var(--lp-cta-hover)] hover:shadow-md"
                 >
                   {t.ctaPrimary}
                   <ArrowUpRight className="h-4 w-4" />
@@ -1226,29 +1231,29 @@ export default function App() {
                   href={t.readmeUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#D9CEBD] bg-white/80 px-5 py-3 text-sm font-medium text-[#2F2A24] transition-all hover:bg-white hover:border-[#C4B5A5]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.80)] px-5 py-3 text-sm font-medium text-[var(--lp-body)] transition-all hover:bg-[var(--lp-surface-solid)] hover:border-[var(--lp-border-hover)]"
                 >
                   {t.ctaSecondary}
                 </a>
               </div>
             </div>
 
-            <div className="rounded-[1.75rem] border border-[#E9E0D2] bg-white/80 p-4 sm:p-5 lg:p-6">
-              <div className="flex items-center justify-between border-b border-[#F0E7DA] pb-3">
+            <div className="rounded-[1.75rem] border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.80)] p-4 sm:p-5 lg:p-6">
+              <div className="flex items-center justify-between border-b border-[var(--lp-divider)] pb-3">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.18em] text-[#7A6F63]">{t.includedLabel}</p>
-                  <h2 className="mt-1.5 text-lg font-semibold text-[#241F1A]">{t.includedTitle}</h2>
+                  <p className="text-xs uppercase tracking-[0.18em] text-[var(--lp-muted)]">{t.includedLabel}</p>
+                  <h2 className="mt-1.5 text-lg font-semibold text-[var(--lp-heading)]">{t.includedTitle}</h2>
                 </div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#F4EEE1] text-[#5C5247]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[var(--lp-raised)] text-[var(--lp-subtle)]">
                   <Globe className="h-5 w-5" />
                 </div>
               </div>
 
               <ul className="mt-4 space-y-2">
                 {t.includes.map((item) => (
-                  <li key={item} className="flex items-center gap-3 rounded-xl bg-[#FCFAF2] px-3.5 py-2.5 transition-colors hover:bg-[#F4EEE1]">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[#A67B5B]" />
-                    <span className="text-sm font-medium text-[#241F1A]">{item}</span>
+                  <li key={item} className="flex items-center gap-3 rounded-xl bg-[var(--lp-bg)] px-3.5 py-2.5 transition-colors hover:bg-[var(--lp-raised)]">
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-[var(--lp-accent)]" />
+                    <span className="text-sm font-medium text-[var(--lp-heading)]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -1262,14 +1267,14 @@ export default function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
+          className="mt-6 rounded-[2rem] border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.65)] px-5 py-6 shadow-[0_8px_30px_rgba(var(--lp-shadow-rgb),0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
         >
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.howItWorksLabel}</p>
-            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--lp-muted)]">{t.howItWorksLabel}</p>
+            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[var(--lp-heading)] sm:text-3xl">
               {t.howItWorksTitle}
             </h2>
-            <p className="mt-3 text-[0.938rem] leading-7 text-[#4B443C] sm:text-base">
+            <p className="mt-3 text-[0.938rem] leading-7 text-[var(--lp-text)] sm:text-base">
               {t.howItWorksSubtitle}
             </p>
           </div>
@@ -1282,16 +1287,16 @@ export default function App() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
-                className="relative overflow-hidden rounded-2xl border border-[#E9E0D2] bg-white/80 p-5 shadow-[0_8px_30px_rgba(54,42,27,0.05)] transition-all hover:shadow-[0_12px_40px_rgba(54,42,27,0.1)] hover:border-[#DDD3C3]"
+                className="relative overflow-hidden rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.80)] p-5 shadow-[0_8px_30px_rgba(var(--lp-shadow-rgb),0.05)] transition-all hover:shadow-[0_12px_40px_rgba(var(--lp-shadow-rgb),0.1)] hover:border-[var(--lp-border-hover)]"
               >
-                <span className="pointer-events-none absolute end-3 top-1 select-none font-mono text-6xl font-bold text-[#F0E7DA]">
+                <span className="pointer-events-none absolute end-3 top-1 select-none font-mono text-6xl font-bold text-[var(--lp-watermark)]">
                   {step.number}
                 </span>
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4EEE1] text-[#5C5247]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--lp-raised)] text-[var(--lp-subtle)]">
                   {STEP_ICONS[idx]}
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-[#241F1A] sm:text-lg">{step.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#4B443C]">{step.body}</p>
+                <h3 className="mt-4 text-base font-semibold text-[var(--lp-heading)] sm:text-lg">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-[var(--lp-text)]">{step.body}</p>
               </motion.div>
             ))}
           </div>
@@ -1303,14 +1308,14 @@ export default function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mt-6 rounded-[2rem] border border-[#E9E0D2] bg-white/65 px-5 py-6 shadow-[0_8px_30px_rgba(54,42,27,0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
+          className="mt-6 rounded-[2rem] border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.65)] px-5 py-6 shadow-[0_8px_30px_rgba(var(--lp-shadow-rgb),0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
         >
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#6B6257]">{t.filesLabel}</p>
-            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[#241F1A] sm:text-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--lp-muted)]">{t.filesLabel}</p>
+            <h2 className="mt-2.5 text-2xl font-semibold tracking-tight text-[var(--lp-heading)] sm:text-3xl">
               {t.filesTitle}
             </h2>
-            <p className="mt-3 text-[0.938rem] leading-7 text-[#4B443C] sm:text-base">
+            <p className="mt-3 text-[0.938rem] leading-7 text-[var(--lp-text)] sm:text-base">
               {t.filesSubtitle}
             </p>
           </div>
@@ -1321,39 +1326,39 @@ export default function App() {
                 key={file.name}
                 className={`relative overflow-hidden rounded-2xl border p-5 transition-all ${
                   file.required
-                    ? "border-[#D4C4AB] bg-white/90 shadow-[0_8px_30px_rgba(54,42,27,0.06)] hover:shadow-[0_12px_40px_rgba(54,42,27,0.1)]"
-                    : "border-[#E9E0D2] bg-white/60 hover:bg-white/80 hover:border-[#DDD3C3]"
+                    ? "border-[var(--lp-border-accent)] bg-[rgba(var(--lp-surface-rgb),0.90)] shadow-[0_8px_30px_rgba(var(--lp-shadow-rgb),0.06)] hover:shadow-[0_12px_40px_rgba(var(--lp-shadow-rgb),0.1)]"
+                    : "border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.60)] hover:bg-[rgba(var(--lp-surface-rgb),0.80)] hover:border-[var(--lp-border-hover)]"
                 }`}
               >
                 {file.required && (
-                  <div className="absolute inset-x-0 top-0 h-[3px] bg-[#A67B5B]/50" />
+                  <div className="absolute inset-x-0 top-0 h-[3px] bg-[var(--lp-accent-bar)]" />
                 )}
                 <div className="flex items-center justify-between gap-2">
-                  <code className="rounded-lg bg-[#F4EEE1] px-2.5 py-1 font-mono text-xs font-medium text-[#241F1A]">
+                  <code className="rounded-lg bg-[var(--lp-raised)] px-2.5 py-1 font-mono text-xs font-medium text-[var(--lp-heading)]">
                     {file.name}
                   </code>
                   <span
                     className={`shrink-0 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
                       file.required
-                        ? "bg-[#A67B5B]/15 text-[#A67B5B]"
-                        : "bg-[#E9E0D2]/70 text-[#8A7F72]"
+                        ? "bg-[var(--lp-accent-soft)] text-[var(--lp-accent)]"
+                        : "bg-[var(--lp-border-tag)] text-[var(--lp-dim)]"
                     }`}
                   >
                     {file.tag}
                   </span>
                 </div>
-                <p className="mt-3 text-sm leading-6 text-[#4B443C]">{file.desc}</p>
+                <p className="mt-3 text-sm leading-6 text-[var(--lp-text)]">{file.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-5 flex items-start gap-3 rounded-xl border border-[#EFE5D8] border-s-[3px] border-s-[#C4A97D]/50 bg-[#FAF6ED] px-4 py-3.5">
-            <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-[#A67B5B]" />
-            <p className="text-sm leading-6 text-[#4B443C]">
-              <span className="font-semibold text-[#241F1A]">{t.tipLabel}</span>
+          <div className="mt-5 flex items-start gap-3 rounded-xl border border-[var(--lp-border-tip)] border-s-[3px] border-s-[var(--lp-accent-tint-soft)] bg-[var(--lp-hover)] px-4 py-3.5">
+            <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-[var(--lp-accent)]" />
+            <p className="text-sm leading-6 text-[var(--lp-text)]">
+              <span className="font-semibold text-[var(--lp-heading)]">{t.tipLabel}</span>
               {" — "}
               {t.tipText}{" "}
-              <code className="rounded bg-[#F4EEE1] px-1.5 py-0.5 font-mono text-xs text-[#241F1A]">
+              <code className="rounded bg-[var(--lp-raised)] px-1.5 py-0.5 font-mono text-xs text-[var(--lp-heading)]">
                 {t.tipCommand}
               </code>{" "}
               {t.tipAfter}
@@ -1366,9 +1371,9 @@ export default function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-40px" }}
-          className="mt-10 pb-24 text-center text-sm text-[#6B6257]"
+          className="mt-10 pb-24 text-center text-sm text-[var(--lp-muted)]"
         >
-          <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[#C4B5A5]" />
+          <Anchor className="mx-auto mb-2.5 h-4 w-4 text-[var(--lp-footer-icon)]" />
           {t.footerLine1} <br className="sm:hidden" />
           {t.footerLine2}
         </motion.footer>
@@ -1386,7 +1391,7 @@ export default function App() {
             role="listbox"
             aria-label={t.langLabel}
             aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
-            className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[#E9E0D2] bg-white/95 shadow-[0_18px_50px_rgba(54,42,27,0.15)] backdrop-blur-sm"
+            className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
           >
             {LANGUAGES.map((l, i) => {
               const active = l.code === lang;
@@ -1405,15 +1410,15 @@ export default function App() {
                   }}
                   className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
                     active
-                      ? "bg-[#F4EEE1] font-semibold text-[#241F1A]"
+                      ? "bg-[var(--lp-raised)] font-semibold text-[var(--lp-heading)]"
                       : focused
-                        ? "bg-[#FAF6ED] text-[#241F1A]"
-                        : "text-[#4B443C] hover:bg-[#FCFAF2]"
-                  }${focused ? " ring-1 ring-inset ring-[#C4A97D]/40" : ""}`}
+                        ? "bg-[var(--lp-hover)] text-[var(--lp-heading)]"
+                        : "text-[var(--lp-text)] hover:bg-[var(--lp-bg)]"
+                  }${focused ? " ring-1 ring-inset ring-[var(--lp-ring)]" : ""}`}
                 >
-                  <span className="w-4 font-mono text-[11px] text-[#A89A87]">{l.short}</span>
+                  <span className="w-4 font-mono text-[11px] text-[var(--lp-hint)]">{l.short}</span>
                   <span>{l.label}</span>
-                  {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[#A67B5B]" />}
+                  {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[var(--lp-accent)]" />}
                 </button>
               );
             })}
@@ -1425,10 +1430,10 @@ export default function App() {
           aria-label={t.langLabel}
           aria-expanded={langOpen}
           aria-haspopup="listbox"
-          className="flex h-11 items-center gap-2 rounded-full border border-[#E3D8C7] bg-white/90 px-3.5 text-[#5C5247] shadow-[0_10px_30px_rgba(54,42,27,0.12)] backdrop-blur-sm transition hover:bg-white"
+          className="flex h-11 items-center gap-2 rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] px-3.5 text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
         >
           <Globe className="h-4.5 w-4.5" />
-          <span className="font-mono text-xs font-semibold tracking-wider text-[#5C5247]">
+          <span className="font-mono text-xs font-semibold tracking-wider text-[var(--lp-subtle)]">
             {currentLang.short}
           </span>
         </button>
