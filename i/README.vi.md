@@ -73,7 +73,7 @@ Không cần config thủ công.
 ```
 ├── src/
 │   ├── App.jsx              ← THAY FILE NÀY
-│   ├── main.jsx             ← Entry point (đừng đụng vào)
+│   ├── main.jsx             ← Entry point (không chỉnh sửa)
 │   ├── index.css            ← Tailwind + shadcn theme
 │   ├── lib/utils.js         ← Utility cn()
 │   ├── hooks/use-toast.js   ← Toast hook

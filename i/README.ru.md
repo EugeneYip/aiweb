@@ -73,7 +73,7 @@ npm run check
 ```
 ├── src/
 │   ├── App.jsx              ← ЗАМЕНИТЕ ЭТОТ ФАЙЛ
-│   ├── main.jsx             ← Точка входа (не трогать)
+│   ├── main.jsx             ← Точка входа (не изменять)
 │   ├── index.css            ← Tailwind + тема shadcn
 │   ├── lib/utils.js         ← Утилита cn()
 │   ├── hooks/use-toast.js   ← Хук toast

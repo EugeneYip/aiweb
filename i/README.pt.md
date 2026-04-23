@@ -73,7 +73,7 @@ Nenhuma configuração manual é necessária.
 ```
 ├── src/
 │   ├── App.jsx              ← SUBSTITUA ESTE ARQUIVO
-│   ├── main.jsx             ← Ponto de entrada (não mexa)
+│   ├── main.jsx             ← Ponto de entrada (não altere)
 │   ├── index.css            ← Tailwind + tema shadcn
 │   ├── lib/utils.js         ← Utilitário cn()
 │   ├── hooks/use-toast.js   ← Hook de toast

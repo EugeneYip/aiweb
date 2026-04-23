@@ -5,7 +5,7 @@
 | [English](../README.md) · [中文](README.zh.md) · [日本語](README.ja.md) · [Tiếng Việt](README.vi.md) · [Português](README.pt.md) · [Español](README.es.md) · [العربية](README.ar.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) · [한국어](README.ko.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [Deutsch](README.de.md) · [Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) · [עברית](README.he.md) · [Türkçe](README.tr.md) · [Русский](README.ru.md) |
 | :-- |
 
-Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/App.jsx`. Haz push. Ya.
+Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/App.jsx`. Haz push. Listo.
 
 ## Inicio rápido
 
@@ -48,7 +48,7 @@ La plantilla ya viene con todo lo que las páginas hechas con IA suelen ocupar:
 
 ## Revisar imports que falten
 
-Si el código que te generó la IA usa algún paquete que no viene preinstalado, corre:
+Si el código que te generó la IA usa algún paquete que no viene preinstalado, ejecuta:
 
 ```bash
 npm run check
@@ -93,7 +93,7 @@ No hay que configurar nada a mano.
 
 ## Agregar más componentes de shadcn/ui
 
-La plantilla ya trae más de 40 componentes de shadcn. Si te faltan más, corre:
+La plantilla ya trae más de 40 componentes de shadcn. Si necesitas más, ejecuta:
 
 ```bash
 npx shadcn@latest add <nombre-del-componente>
@@ -112,11 +112,11 @@ Abre `http://localhost:5173` en tu navegador.
 
 ## Solución de problemas
 
-**El build truena por errores de import.**
-Corre `npm run check` para ver qué paquetes faltan y los instalas.
+**El build falla por errores de import.**
+Ejecuta `npm run check` para ver qué paquetes faltan e instálalos.
 
 **La página sale en blanco después del deploy.**
 Revisa que la Source de GitHub Pages esté en **GitHub Actions**, no en "Deploy from a branch".
 
-**El dominio personalizado no jala.**
+**El dominio personalizado no funciona.**
 Verifica que `public/CNAME` tenga solo tu dominio, y revisa tus registros DNS.
