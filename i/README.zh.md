@@ -66,14 +66,14 @@ Build 的時候會自動偵測正確的 base path：
 | GitHub Pages（沒有自訂網域） | `/<repo 名稱>/` |
 | 本機開發 | `/` |
 
-都不用自己設。
+無需手動設定。
 
 ## 檔案結構
 
 ```
 ├── src/
-│   ├── App.jsx              ← 要換的就是這個
-│   ├── main.jsx             ← 進入點（不要動）
+│   ├── App.jsx              ← 替換此檔案
+│   ├── main.jsx             ← 進入點（請勿修改）
 │   ├── index.css            ← Tailwind 與 shadcn 主題
 │   ├── lib/utils.js         ← cn() 工具函式
 │   ├── hooks/use-toast.js   ← Toast hook
@@ -113,10 +113,10 @@ npm run dev
 ## 疑難排解
 
 **Build 因為 import 錯誤失敗。**
-執行 `npm run check` 看看缺了哪些套件，照提示裝就好。
+執行 `npm run check` 確認缺少哪些套件，再依照提示安裝即可。
 
 **部署完頁面一片空白。**
 確認 GitHub Pages 的 Source 是設在 **GitHub Actions**，不是「Deploy from a branch」。
 
-**自訂網域沒 work。**
-確認 `public/CNAME` 裡面只有你的網域，然後檢查一下 DNS 記錄。
+**自訂網域無法運作。**
+確認 `public/CNAME` 中僅包含你的網域，並檢查 DNS 記錄。

@@ -68,9 +68,9 @@ const translations = {
     badge: "AI Page Publisher",
     heroTitle: ["Push 一次", "AI 頁面就上線"],
     heroSubtitle:
-      "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就這樣。",
+      "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就完成了。",
     ctaPrimary: "使用這個範本",
-    ctaSecondary: "看 README",
+    ctaSecondary: "閱讀 README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh.md",
     includedLabel: "內建項目",
     includedTitle: "範本包含甚麼",
@@ -85,7 +85,7 @@ const translations = {
     howItWorksLabel: "運作方式",
     howItWorksTitle: "三步就上線",
     howItWorksSubtitle:
-      "不需要寫程式經驗。請 AI 生成 JSX，貼上，push，搞定。",
+      "不需要寫程式經驗。請 AI 生成 JSX，貼上，push，即可上線。",
     steps: [
       {
         number: "01",
@@ -99,17 +99,17 @@ const translations = {
       },
       {
         number: "03",
-        title: "貼上、push",
-        body: "把 JSX 貼進 src/App.jsx，push 到 main。GitHub Actions 會自動 build 並把網站發佈出去。",
+        title: "貼上並 Push",
+        body: "將 JSX 貼進 src/App.jsx，push 到 main。GitHub Actions 會自動 build 並發佈你的網站。",
       },
     ],
     filesLabel: "你的檔案",
     filesTitle: "需要改的檔案",
-    filesSubtitle: "通常只需要動一個檔案，其餘兩個是進階選用。",
+    filesSubtitle: "通常只需要修改一個檔案，其餘兩個是進階選用。",
     files: [
       { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 貼到這裡。這是唯一需要改的檔案。", required: true },
-      { name: "index.html", tag: "選用", desc: "改一下頁面標題、描述和 Google Analytics，讓它符合你的網站。", required: false },
-      { name: "public/CNAME", tag: "選用", desc: "設定你的自訂網域。不需要的話就不用動。", required: false },
+      { name: "index.html", tag: "選用", desc: "更新頁面標題、描述和 Google Analytics，讓它符合你的網站。", required: false },
+      { name: "public/CNAME", tag: "選用", desc: "設定你的自訂網域。不需要的話維持原樣即可。", required: false },
     ],
     tipLabel: "小提示",
     tipText: "如果 AI 的程式碼用到了範本沒預裝的套件，執行",
@@ -149,13 +149,13 @@ const translations = {
       },
       {
         number: "02",
-        title: "Arma tu repo",
+        title: "Configura tu repo",
         body: "Usa esta plantilla para crear tu propio repo. Ve a Settings → Pages y pon Source en GitHub Actions.",
       },
       {
         number: "03",
         title: "Pega y haz push",
-        body: "Pega el JSX en src/App.jsx y haz push a main. GitHub Actions se encarga de compilar y publicar tu sitio solito.",
+        body: "Pega el JSX en src/App.jsx y haz push a main. GitHub Actions se encarga de compilar y publicar tu sitio automáticamente.",
       },
     ],
     filesLabel: "Tus archivos",
@@ -164,11 +164,11 @@ const translations = {
       "Casi siempre solo tocas un archivo. Los otros dos son opcionales.",
     files: [
       { name: "src/App.jsx", tag: "Obligatorio", desc: "Pega aquí el JSX que te generó la IA. Es el único archivo que tienes que cambiar.", required: true },
-      { name: "index.html", tag: "Opcional", desc: "Cambia el título, la descripción y Google Analytics para que vayan con tu sitio.", required: false },
+      { name: "index.html", tag: "Opcional", desc: "Actualiza el título, la descripción y Google Analytics para que coincidan con tu sitio.", required: false },
       { name: "public/CNAME", tag: "Opcional", desc: "Configura tu dominio personalizado. Si no lo necesitas, déjalo como está.", required: false },
     ],
     tipLabel: "Tip",
-    tipText: "Si el código de tu IA usa un paquete que no viene en la plantilla, corre",
+    tipText: "Si el código de tu IA usa un paquete que no viene en la plantilla, ejecuta",
     tipCommand: "npm run check",
     tipAfter: "para encontrar y arreglar las dependencias que faltan.",
     footerLine1: "© 2026 Eugene Yip.",
@@ -273,7 +273,7 @@ const translations = {
     filesLabel: "Seus arquivos",
     filesTitle: "O que você vai mudar",
     filesSubtitle:
-      "Na maioria das vezes você só mexe em um arquivo. Os outros dois são opcionais.",
+      "Na maioria das vezes você só altera um arquivo. Os outros dois são opcionais.",
     files: [
       { name: "src/App.jsx", tag: "Obrigatório", desc: "Cole o JSX gerado pela IA aqui. Este é o único arquivo que você precisa mudar.", required: true },
       { name: "index.html", tag: "Opcional", desc: "Atualize o título, a descrição e o Google Analytics para combinar com seu site.", required: false },
