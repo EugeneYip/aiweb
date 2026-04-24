@@ -30,19 +30,29 @@ This template comes pre-configured with everything AI artifacts commonly use:
 - **40+ shadcn/ui components** pre-installed in `src/components/ui/`
 - **All Radix UI primitives** for accessible interactions
 - **Icons** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Charts & data viz** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **Maps** — `leaflet` + `react-leaflet`
-- **Video** — `react-player`
-- **Animation** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Rich text** — `@tiptap/react` + `@tiptap/starter-kit`
-- **Forms** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Charts & data viz** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **Maps** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Video & audio** — `react-player`, `howler`
+- **Animation** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + starter-kit + 12 extensions (link, image, table, color, highlight…)
+- **Forms** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **Flow diagrams** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Images** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Images** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Calendar** — `react-big-calendar`, `react-day-picker`
+- **Payments** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **Email** — `@emailjs/browser`
+- **File handling** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Search** — `fuse.js`
+- **UI effects** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Drag & drop** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Carousel** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Utilities** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, and many more
+- **Utilities** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker`, and many more
 
 > Tree-shaking ensures only the packages your artifact actually uses end up in the final bundle.
 

@@ -30,19 +30,29 @@ Bu şablon, yapay zeka tarafından oluşturulan sayfalarda yaygın olarak kullan
 - **40'tan fazla shadcn/ui bileşeni** `src/components/ui/` dizininde önceden kurulu
 - **Tüm Radix UI primitifleri** erişilebilir etkileşimler için
 - **İkonlar** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafikler ve veri görselleştirme** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **Haritalar** — `leaflet` + `react-leaflet`
-- **Video** — `react-player`
-- **Animasyon** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Zengin metin** — `@tiptap/react` + `@tiptap/starter-kit`
-- **Formlar** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Grafikler ve veri görselleştirme** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **Haritalar** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Video ve ses** — `react-player`, `howler`
+- **Animasyon** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Zengin metin** — `@tiptap/react` + starter-kit + 12 eklenti (link, görsel, tablo, renk, vurgulama…)
+- **Formlar** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **Akış diyagramları** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Görseller** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Görseller** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Takvim** — `react-big-calendar`, `react-day-picker`
+- **Ödeme** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **E-posta** — `@emailjs/browser`
+- **Dosya işleme** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Arama** — `fuse.js`
+- **UI efektleri** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Sürükle ve bırak** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Carousel** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Yardımcı araçlar** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` ve daha fazlası
+- **Yardımcı araçlar** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker` ve daha fazlası
 
 > Tree-shaking, yalnızca gerçekten kullandığınız paketlerin son pakete dahil edilmesini sağlar.
 

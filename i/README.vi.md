@@ -30,19 +30,29 @@ Template đã setup sẵn mọi thứ mà trang AI thường dùng:
 - **Hơn 40 component shadcn/ui** đã cài sẵn trong `src/components/ui/`
 - **Toàn bộ Radix UI primitives** cho tương tác accessible
 - **Icons** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Biểu đồ & trực quan dữ liệu** — `recharts`, `chart.js` với `react-chartjs-2`, `d3`
-- **Bản đồ** — `leaflet` với `react-leaflet`
-- **Video** — `react-player`
-- **Hiệu ứng động** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Rich text** — `@tiptap/react` với `@tiptap/starter-kit`
-- **Biểu mẫu** — `react-hook-form` với `@hookform/resolvers` và `zod`
+- **Biểu đồ & trực quan dữ liệu** — `recharts`, `chart.js` với `react-chartjs-2`, `d3`, `apexcharts`
+- **Bản đồ** — `leaflet` với `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Video & audio** — `react-player`, `howler`
+- **Hiệu ứng động** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + starter-kit + 12 extension (link, image, table, color, highlight…)
+- **Biểu mẫu** — `react-hook-form` với `@hookform/resolvers` và `zod`, `react-number-format`
 - **Sơ đồ luồng** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Hình ảnh** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Hình ảnh** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Lịch** — `react-big-calendar`, `react-day-picker`
+- **Thanh toán** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **Email** — `@emailjs/browser`
+- **Xử lý file** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Tìm kiếm** — `fuse.js`
+- **Hiệu ứng UI** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Kéo & thả** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Carousel** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Tiện ích** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` và nhiều nữa
+- **Tiện ích** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker` và nhiều nữa
 
 > Tree-shaking đảm bảo chỉ những package bạn thực sự dùng mới có mặt trong bundle cuối.
 

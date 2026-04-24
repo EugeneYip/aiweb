@@ -30,19 +30,29 @@
 - **Более 40 компонентов shadcn/ui** предустановлены в `src/components/ui/`
 - **Все примитивы Radix UI** для доступных интерактивных элементов
 - **Иконки** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Графики и визуализация** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **Карты** — `leaflet` + `react-leaflet`
-- **Видео** — `react-player`
-- **Анимация** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Форматированный текст** — `@tiptap/react` + `@tiptap/starter-kit`
-- **Формы** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Графики и визуализация данных** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **Карты** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Видео и аудио** — `react-player`, `howler`
+- **Анимация** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Форматированный текст** — `@tiptap/react` + starter-kit + 12 расширений (ссылка, изображение, таблица, цвет, подсветка…)
+- **Формы** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **Блок-схемы** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Изображения** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Изображения** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Календарь** — `react-big-calendar`, `react-day-picker`
+- **Платежи** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **Электронная почта** — `@emailjs/browser`
+- **Работа с файлами** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Поиск** — `fuse.js`
+- **UI-эффекты** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Перетаскивание** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Карусель** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Утилиты** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` и многое другое
+- **Утилиты** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker` и многое другое
 
 > Tree-shaking гарантирует, что в финальную сборку попадут только те пакеты, которые вы реально используете.
 
