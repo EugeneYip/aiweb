@@ -32,19 +32,29 @@
 - **أكثر من 40 مكوّن shadcn/ui** مثبّتة مسبقاً في `src/components/ui/`
 - **جميع عناصر Radix UI** لتفاعلات يسهل الوصول إليها
 - **أيقونات** — `lucide-react`، `react-icons`، `@heroicons/react`
-- **الرسوم البيانية والتصور** — `recharts`، `chart.js` مع `react-chartjs-2`، `d3`
-- **خرائط** — `leaflet` مع `react-leaflet`
-- **فيديو** — `react-player`
-- **رسوم متحركة** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `tailwindcss-animate`
-- **نص منسّق** — `@tiptap/react` مع `@tiptap/starter-kit`
-- **نماذج** — `react-hook-form` مع `@hookform/resolvers` و `zod`
+- **الرسوم البيانية والتصور** — `recharts`، `chart.js` مع `react-chartjs-2`، `d3`، `apexcharts`
+- **خرائط** — `leaflet` مع `react-leaflet`، `@react-google-maps/api`، `react-simple-maps`
+- **فيديو وصوت** — `react-player`، `howler`
+- **رسوم متحركة** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `aos`، `tailwindcss-animate`
+- **نص منسّق** — `@tiptap/react` مع starter-kit و12 إضافة (رابط، صورة، جدول، لون، تمييز…)
+- **نماذج** — `react-hook-form` مع `@hookform/resolvers` و `zod`، `react-number-format`
 - **مخططات التدفق** — `@xyflow/react`
 - **ثلاثي الأبعاد** — `three`، `@react-three/fiber`، `@react-three/drei`
-- **صور** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **صور** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`، `react-lazy-load-image-component`
+- **PDF** — `jspdf`، `@react-pdf/renderer`، `react-pdf`، `pdf-lib`
 - **تقويم** — `react-big-calendar`، `react-day-picker`
+- **مدفوعات** — `@stripe/stripe-js` مع `@stripe/react-stripe-js`
+- **تعدد اللغات** — `i18next` مع `react-i18next`
+- **تحسين محركات البحث** — `react-helmet-async`
+- **بريد إلكتروني** — `@emailjs/browser`
+- **معالجة الملفات** — `file-saver`، `jszip`، `papaparse`، `xlsx`
+- **بحث** — `fuse.js`
+- **تأثيرات واجهة المستخدم** — `react-type-animation`، `@tsparticles/react`، `react-parallax-tilt`
+- **سحب وإفلات** — `@dnd-kit/core` مع sortable، `react-beautiful-dnd`
+- **عرض دوّار** — `embla-carousel-react`، `swiper`، `react-slick`
+- **رسم على القماش** — `fabric`
 - **CSS-in-JS** — `styled-components`، `@emotion/react`
-- **أدوات مساعدة** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom`، `@faker-js/faker` والمزيد
+- **أدوات مساعدة** — `date-fns`، `dayjs`، `lodash`، `axios`، `zustand`، `react-router-dom`، `nanoid`، `crypto-js`، `@faker-js/faker` والمزيد
 
 > يضمن tree-shaking أن الحزم التي تستخدمها فعلاً هي فقط التي تُضمّن في الملف النهائي.
 

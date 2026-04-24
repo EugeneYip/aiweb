@@ -32,19 +32,29 @@ Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.j
 - **40+ shadcn/ui کمپوننٹ** `src/components/ui/` میں پہلے سے نصب
 - **تمام Radix UI پرائمیٹوز** قابل رسائی تعاملات کے لیے
 - **آئیکنز** — `lucide-react`، `react-icons`، `@heroicons/react`
-- **چارٹس اور ڈیٹا ویژولائزیشن** — `recharts`، `chart.js` + `react-chartjs-2`، `d3`
-- **نقشے** — `leaflet` + `react-leaflet`
-- **ویڈیو** — `react-player`
-- **اینیمیشن** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `tailwindcss-animate`
-- **رچ ٹیکسٹ** — `@tiptap/react` + `@tiptap/starter-kit`
-- **فارمز** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **چارٹس اور ڈیٹا ویژولائزیشن** — `recharts`، `chart.js` + `react-chartjs-2`، `d3`، `apexcharts`
+- **نقشے** — `leaflet` + `react-leaflet`، `@react-google-maps/api`، `react-simple-maps`
+- **ویڈیو اور آڈیو** — `react-player`، `howler`
+- **اینیمیشن** — `framer-motion`، `react-spring`، `lottie-react`، `react-confetti`، `aos`، `tailwindcss-animate`
+- **رچ ٹیکسٹ** — `@tiptap/react` + starter-kit + 12 ایکسٹینشنز (link، image، table، color، highlight…)
+- **فارمز** — `react-hook-form` + `@hookform/resolvers` + `zod`، `react-number-format`
 - **فلو ڈائگرام** — `@xyflow/react`
 - **3D** — `three`، `@react-three/fiber`، `@react-three/drei`
-- **تصاویر** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **تصاویر** — `react-easy-crop`، `react-image-gallery`، `yet-another-react-lightbox`، `react-lazy-load-image-component`
+- **PDF** — `jspdf`، `@react-pdf/renderer`، `react-pdf`، `pdf-lib`
 - **کیلنڈر** — `react-big-calendar`، `react-day-picker`
+- **ادائیگیاں** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **ای میل** — `@emailjs/browser`
+- **فائل ہینڈلنگ** — `file-saver`، `jszip`، `papaparse`، `xlsx`
+- **تلاش** — `fuse.js`
+- **UI ایفیکٹس** — `react-type-animation`، `@tsparticles/react`، `react-parallax-tilt`
+- **ڈریگ اینڈ ڈراپ** — `@dnd-kit/core` + sortable، `react-beautiful-dnd`
+- **کیروسل** — `embla-carousel-react`، `swiper`، `react-slick`
+- **کینوس** — `fabric`
 - **CSS-in-JS** — `styled-components`، `@emotion/react`
-- **یوٹیلٹیز** — `date-fns`، `lodash`، `axios`، `zustand`، `react-router-dom`، `@faker-js/faker` اور بہت کچھ
+- **یوٹیلٹیز** — `date-fns`، `dayjs`، `lodash`، `axios`، `zustand`، `react-router-dom`، `nanoid`، `crypto-js`، `@faker-js/faker` اور بہت کچھ
 
 > Tree-shaking یقینی بناتا ہے کہ صرف وہی پیکجز فائنل بنڈل میں شامل ہوں جو آپ واقعی استعمال کرتے ہیں۔
 

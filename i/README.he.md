@@ -32,19 +32,29 @@
 - **מעל 40 רכיבי shadcn/ui** מותקנים מראש ב-`src/components/ui/`
 - **כל ה-Radix UI primitives** לאינטראקציות נגישות
 - **אייקונים** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **גרפים ותצוגת נתונים** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **מפות** — `leaflet` + `react-leaflet`
-- **וידאו** — `react-player`
-- **אנימציה** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **עריכת טקסט עשיר** — `@tiptap/react` + `@tiptap/starter-kit`
-- **טפסים** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **גרפים ותצוגת נתונים** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **מפות** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **וידאו ואודיו** — `react-player`, `howler`
+- **אנימציה** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **עריכת טקסט עשיר** — `@tiptap/react` + starter-kit + 12 הרחבות (link, image, table, color, highlight…)
+- **טפסים** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **תרשימי זרימה** — `@xyflow/react`
 - **תלת-ממד** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **תמונות** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **תמונות** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **לוח שנה** — `react-big-calendar`, `react-day-picker`
+- **תשלומים** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **בינלאומיות** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **אימייל** — `@emailjs/browser`
+- **טיפול בקבצים** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **חיפוש** — `fuse.js`
+- **אפקטי ממשק** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **גרור ושחרר** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **קרוסלה** — `embla-carousel-react`, `swiper`, `react-slick`
+- **קנבס** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **כלי עזר** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, ועוד רבים
+- **כלי עזר** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker`, ועוד רבים
 
 > Tree-shaking מבטיח שרק החבילות שבהן הארטיפקט שלך משתמש בפועל ייכנסו לחבילה הסופית.
 

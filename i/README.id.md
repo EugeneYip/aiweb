@@ -30,19 +30,29 @@ Template ini sudah dikonfigurasi dengan semua yang biasa digunakan oleh artefak 
 - **Lebih dari 40 komponen shadcn/ui** yang sudah terpasang di `src/components/ui/`
 - **Semua Radix UI primitives** untuk interaksi yang aksesibel
 - **Ikon** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafik & visualisasi data** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **Peta** — `leaflet` + `react-leaflet`
-- **Video** — `react-player`
-- **Animasi** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Rich text** — `@tiptap/react` + `@tiptap/starter-kit`
-- **Formulir** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Grafik & visualisasi data** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **Peta** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Video & audio** — `react-player`, `howler`
+- **Animasi** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Rich text** — `@tiptap/react` + starter-kit + 12 ekstensi (link, gambar, tabel, warna, highlight…)
+- **Formulir** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **Diagram alur** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Gambar** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Gambar** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Kalender** — `react-big-calendar`, `react-day-picker`
+- **Pembayaran** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **Email** — `@emailjs/browser`
+- **Penanganan file** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Pencarian** — `fuse.js`
+- **Efek UI** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Drag & drop** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Carousel** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Utilitas** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker`, dan banyak lagi
+- **Utilitas** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker`, dan banyak lagi
 
 > Tree-shaking memastikan hanya paket yang benar-benar kamu gunakan yang masuk ke dalam bundle akhir.
 

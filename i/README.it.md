@@ -30,19 +30,29 @@ Questo template è preconfigurato con tutto ciò che gli artefatti AI usano comu
 - **Oltre 40 componenti shadcn/ui** preinstallati in `src/components/ui/`
 - **Tutti i primitivi Radix UI** per interazioni accessibili
 - **Icone** — `lucide-react`, `react-icons`, `@heroicons/react`
-- **Grafici e visualizzazione** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`
-- **Mappe** — `leaflet` + `react-leaflet`
-- **Video** — `react-player`
-- **Animazione** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `tailwindcss-animate`
-- **Testo ricco** — `@tiptap/react` + `@tiptap/starter-kit`
-- **Moduli** — `react-hook-form` + `@hookform/resolvers` + `zod`
+- **Grafici e visualizzazione** — `recharts`, `chart.js` + `react-chartjs-2`, `d3`, `apexcharts`
+- **Mappe** — `leaflet` + `react-leaflet`, `@react-google-maps/api`, `react-simple-maps`
+- **Video e audio** — `react-player`, `howler`
+- **Animazione** — `framer-motion`, `react-spring`, `lottie-react`, `react-confetti`, `aos`, `tailwindcss-animate`
+- **Testo ricco** — `@tiptap/react` + starter-kit + 12 estensioni (link, image, table, color, highlight…)
+- **Moduli** — `react-hook-form` + `@hookform/resolvers` + `zod`, `react-number-format`
 - **Diagrammi di flusso** — `@xyflow/react`
 - **3D** — `three`, `@react-three/fiber`, `@react-three/drei`
-- **Immagini** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`
-- **PDF** — `jspdf`
+- **Immagini** — `react-easy-crop`, `react-image-gallery`, `yet-another-react-lightbox`, `react-lazy-load-image-component`
+- **PDF** — `jspdf`, `@react-pdf/renderer`, `react-pdf`, `pdf-lib`
 - **Calendario** — `react-big-calendar`, `react-day-picker`
+- **Pagamenti** — `@stripe/stripe-js` + `@stripe/react-stripe-js`
+- **i18n** — `i18next` + `react-i18next`
+- **SEO** — `react-helmet-async`
+- **Email** — `@emailjs/browser`
+- **Gestione file** — `file-saver`, `jszip`, `papaparse`, `xlsx`
+- **Ricerca** — `fuse.js`
+- **Effetti UI** — `react-type-animation`, `@tsparticles/react`, `react-parallax-tilt`
+- **Drag & drop** — `@dnd-kit/core` + sortable, `react-beautiful-dnd`
+- **Carosello** — `embla-carousel-react`, `swiper`, `react-slick`
+- **Canvas** — `fabric`
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
-- **Utilità** — `date-fns`, `lodash`, `axios`, `zustand`, `react-router-dom`, `@faker-js/faker` e molti altri
+- **Utilità** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker` e molti altri
 
 > Il tree-shaking garantisce che solo i pacchetti effettivamente utilizzati finiscano nel bundle finale.
 

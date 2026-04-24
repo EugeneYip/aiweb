@@ -20,7 +20,7 @@ const translations = {
     includedTitle: "What you get",
     includes: [
       "40+ shadcn/ui components",
-      "100+ pre-installed packages",
+      "160+ pre-installed packages",
       "Tailwind CSS, ready to use",
       "GitHub Actions deployment",
       "Custom domain support",
@@ -76,7 +76,7 @@ const translations = {
     includedTitle: "範本包含甚麼",
     includes: [
       "40+ 個 shadcn/ui 元件",
-      "100+ 個預裝套件",
+      "160+ 個預裝套件",
       "Tailwind CSS，開箱即用",
       "GitHub Actions 自動部署",
       "支援自訂網域",
@@ -131,7 +131,7 @@ const translations = {
     includedTitle: "Lo que obtienes",
     includes: [
       "Más de 40 componentes de shadcn/ui",
-      "Más de 100 paquetes preinstalados",
+      "Más de 160 paquetes preinstalados",
       "Tailwind CSS, listo para usar",
       "Despliegue con GitHub Actions",
       "Soporte para dominio personalizado",
@@ -187,7 +187,7 @@ const translations = {
     includedTitle: "テンプレートの中身",
     includes: [
       "shadcn/ui コンポーネント 40 種以上",
-      "100 以上のパッケージをプリインストール",
+      "160 以上のパッケージをプリインストール",
       "Tailwind CSS をそのまま利用可能",
       "GitHub Actions で自動デプロイ",
       "カスタムドメイン対応",
@@ -243,7 +243,7 @@ const translations = {
     includedTitle: "O que você recebe",
     includes: [
       "40+ componentes shadcn/ui",
-      "100+ pacotes pré-instalados",
+      "160+ pacotes pré-instalados",
       "Tailwind CSS, pronto para usar",
       "Deploy com GitHub Actions",
       "Suporte a domínio personalizado",
@@ -299,7 +299,7 @@ const translations = {
     includedTitle: "ما الذي تحصل عليه",
     includes: [
       "أكثر من 40 مكوّن shadcn/ui",
-      "أكثر من 100 حزمة مثبّتة مسبقاً",
+      "أكثر من 160 حزمة مثبّتة مسبقاً",
       "Tailwind CSS جاهز للاستخدام",
       "نشر تلقائي عبر GitHub Actions",
       "دعم النطاق المخصص",
@@ -355,7 +355,7 @@ const translations = {
     includedTitle: "Ce que vous obtenez",
     includes: [
       "Plus de 40 composants shadcn/ui",
-      "Plus de 100 paquets préinstallés",
+      "Plus de 160 paquets préinstallés",
       "Tailwind CSS, prêt à l'emploi",
       "Déploiement via GitHub Actions",
       "Support de domaine personnalisé",
@@ -411,7 +411,7 @@ const translations = {
     includedTitle: "आपको क्या मिलता है",
     includes: [
       "40+ shadcn/ui कंपोनेंट",
-      "100+ पैकेज पहले से इंस्टॉल",
+      "160+ पैकेज पहले से इंस्टॉल",
       "Tailwind CSS, तुरंत इस्तेमाल के लिए तैयार",
       "GitHub Actions से डिप्लॉयमेंट",
       "कस्टम डोमेन सपोर्ट",
@@ -467,7 +467,7 @@ const translations = {
     includedTitle: "무엇이 들어있나요",
     includes: [
       "40개 이상의 shadcn/ui 컴포넌트",
-      "100개 이상의 사전 설치 패키지",
+      "160개 이상의 사전 설치 패키지",
       "Tailwind CSS, 바로 사용 가능",
       "GitHub Actions 자동 배포",
       "커스텀 도메인 지원",
@@ -523,7 +523,7 @@ const translations = {
     includedTitle: "آپ کو کیا ملتا ہے",
     includes: [
       "40+ shadcn/ui کمپوننٹس",
-      "100+ پہلے سے نصب پیکجز",
+      "160+ پہلے سے نصب پیکجز",
       "Tailwind CSS، فوری استعمال کے لیے تیار",
       "GitHub Actions سے ڈیپلائمنٹ",
       "حسب ضرورت ڈومین سپورٹ",
@@ -579,7 +579,7 @@ const translations = {
     includedTitle: "มีอะไรบ้าง",
     includes: [
       "คอมโพเนนต์ shadcn/ui กว่า 40 ตัว",
-      "แพ็กเกจติดตั้งล่วงหน้ากว่า 100 ตัว",
+      "แพ็กเกจติดตั้งล่วงหน้ากว่า 160 ตัว",
       "Tailwind CSS พร้อมใช้งาน",
       "ดีพลอยด้วย GitHub Actions",
       "รองรับโดเมนที่กำหนดเอง",
@@ -635,7 +635,7 @@ const translations = {
     includedTitle: "Was du bekommst",
     includes: [
       "Über 40 shadcn/ui-Komponenten",
-      "Über 100 vorinstallierte Pakete",
+      "Über 160 vorinstallierte Pakete",
       "Tailwind CSS, sofort einsatzbereit",
       "Deployment mit GitHub Actions",
       "Eigene Domain wird unterstützt",
@@ -691,7 +691,7 @@ const translations = {
     includedTitle: "Neler geliyor",
     includes: [
       "40'tan fazla shadcn/ui bileşeni",
-      "100'den fazla önceden kurulu paket",
+      "160'dan fazla önceden kurulu paket",
       "Tailwind CSS, kullanıma hazır",
       "GitHub Actions ile dağıtım",
       "Özel alan adı desteği",
@@ -747,7 +747,7 @@ const translations = {
     includedTitle: "Что вы получаете",
     includes: [
       "Более 40 компонентов shadcn/ui",
-      "Более 100 предустановленных пакетов",
+      "Более 160 предустановленных пакетов",
       "Tailwind CSS, готов к использованию",
       "Деплой через GitHub Actions",
       "Поддержка своего домена",
@@ -803,7 +803,7 @@ const translations = {
     includedTitle: "מה אתה מקבל",
     includes: [
       "מעל 40 רכיבי shadcn/ui",
-      "מעל 100 חבילות מותקנות מראש",
+      "מעל 160 חבילות מותקנות מראש",
       "Tailwind CSS, מוכן לשימוש",
       "פריסה עם GitHub Actions",
       "תמיכה בדומיין מותאם אישית",
@@ -859,7 +859,7 @@ const translations = {
     includedTitle: "Cosa ottieni",
     includes: [
       "Oltre 40 componenti shadcn/ui",
-      "Oltre 100 pacchetti preinstallati",
+      "Oltre 160 pacchetti preinstallati",
       "Tailwind CSS, pronto all'uso",
       "Deployment con GitHub Actions",
       "Supporto dominio personalizzato",
@@ -915,7 +915,7 @@ const translations = {
     includedTitle: "Yang kamu dapatkan",
     includes: [
       "Lebih dari 40 komponen shadcn/ui",
-      "Lebih dari 100 paket yang sudah terpasang",
+      "Lebih dari 160 paket yang sudah terpasang",
       "Tailwind CSS, siap digunakan",
       "Deployment dengan GitHub Actions",
       "Dukungan domain kustom",
@@ -971,7 +971,7 @@ const translations = {
     includedTitle: "Trong template có gì",
     includes: [
       "40+ component shadcn/ui",
-      "100+ package cài sẵn",
+      "160+ package cài sẵn",
       "Tailwind CSS, dùng được ngay",
       "Deploy bằng GitHub Actions",
       "Hỗ trợ custom domain",
