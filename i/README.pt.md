@@ -10,6 +10,28 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
 ## Início rápido
 
 1. **Peça JSX à sua IA** — diga ao Claude, ChatGPT ou qualquer IA para gerar a página que você quer como componente React em **formato JSX**
+
+   <details>
+   <summary>Prompt inicial (clique para expandir e copiar)</summary>
+
+   ```
+   Crie uma página React em formato JSX que eu possa usar como src/App.jsx.
+
+   Tema: [o tema do seu site — ex: cafeteria, portfólio, produto SaaS]
+   Estilo: [estilo de design — ex: minimalista, moderno, colorido, corporativo]
+   Detalhes: [seções desejadas — ex: hero, funcionalidades, depoimentos, preços, contato]
+
+   Requisitos:
+   - Use Tailwind CSS para toda a estilização
+   - Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+   - Use lucide-react para ícones
+   - Torne responsivo para mobile e desktop
+   - Exportar como: export default function App()
+   - Arquivo único, sem arquivos CSS adicionais ou scripts de CDN
+   ```
+
+   </details>
+
 2. **Use este template** para criar o seu próprio repositório
 3. **Ative o GitHub Pages** — vá em **Settings → Pages** e defina Source como **GitHub Actions**
 4. **Substitua** [`src/App.jsx`](../src/App.jsx) pelo JSX que a IA gerou

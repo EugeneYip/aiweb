@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor, Sun, Moon } from "lucide-react";
+import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor, Sun, Moon, Copy, Check } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -63,6 +63,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Language",
+    promptLabel: "Starter Prompt",
+    promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
+    promptTemplate: `Create a React page in JSX format that I can use as src/App.jsx.
+
+Topic: [your website topic — e.g. coffee shop, portfolio, SaaS product]
+Style: [design style — e.g. minimal, modern, colorful, corporate]
+Details: [sections you want — e.g. hero, features, testimonials, pricing, contact]
+
+Requirements:
+- Use Tailwind CSS for all styling
+- Use shadcn/ui components (import from @/components/ui/) when suitable
+- Use lucide-react for icons
+- Make it responsive for both mobile and desktop
+- Export as: export default function App()
+- Single file, no additional CSS files or CDN scripts`,
+    promptCopy: "Copy",
+    promptCopied: "Copied!",
   },
   zh: {
     badge: "AI Page Publisher",
@@ -118,6 +135,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "版權所有。",
     langLabel: "語言",
+    promptLabel: "Prompt 範本",
+    promptHint: "複製以下 prompt 貼到你的 AI 工具中，填入空白處即可。",
+    promptTemplate: `請用 JSX 格式製作一個 React 頁面，可以直接替換 src/App.jsx。
+
+主題：[你的網站主題——例如：咖啡店、個人作品集、SaaS 產品介紹]
+風格：[設計風格——例如：簡約、現代、繽紛、企業專業]
+詳細內容：[想要的區塊——例如：主視覺、產品特色、客戶評價、定價、聯絡表單]
+
+技術要求：
+- 使用 Tailwind CSS 處理所有樣式
+- 適當使用 shadcn/ui 元件（從 @/components/ui/ 匯入）
+- 使用 lucide-react 圖示
+- 必須支援手機與桌面響應式
+- 匯出方式：export default function App()
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本`,
+    promptCopy: "複製",
+    promptCopied: "已複製！",
   },
   "zh-CN": {
     badge: "AI Page Publisher",
@@ -173,6 +207,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "保留所有权利。",
     langLabel: "语言",
+    promptLabel: "Prompt 模板",
+    promptHint: "复制以下 prompt 粘贴到你的 AI 工具中，填入空白处即可。",
+    promptTemplate: `请用 JSX 格式制作一个 React 页面，可以直接替换 src/App.jsx。
+
+主题：[你的网站主题——例如：咖啡店、个人作品集、SaaS 产品介绍]
+风格：[设计风格——例如：简约、现代、缤纷、企业专业]
+详细内容：[想要的区块——例如：主视觉、产品特色、客户评价、定价、联系表单]
+
+技术要求：
+- 使用 Tailwind CSS 处理所有样式
+- 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+- 使用 lucide-react 图标
+- 必须支持手机与桌面响应式
+- 导出方式：export default function App()
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本`,
+    promptCopy: "复制",
+    promptCopied: "已复制！",
   },
   es: {
     badge: "AI Page Publisher",
@@ -229,6 +280,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Todos los derechos reservados.",
     langLabel: "Idioma",
+    promptLabel: "Prompt inicial",
+    promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
+    promptTemplate: `Crea una página React en formato JSX que pueda usar como src/App.jsx.
+
+Tema: [el tema de tu sitio — ej. cafetería, portafolio, producto SaaS]
+Estilo: [estilo de diseño — ej. minimalista, moderno, colorido, corporativo]
+Detalles: [secciones que deseas — ej. hero, características, testimonios, precios, contacto]
+
+Requisitos:
+- Usa Tailwind CSS para todos los estilos
+- Usa componentes de shadcn/ui (importar desde @/components/ui/) cuando sea adecuado
+- Usa lucide-react para los iconos
+- Hazlo responsivo para móvil y escritorio
+- Exportar como: export default function App()
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN`,
+    promptCopy: "Copiar",
+    promptCopied: "¡Copiado!",
   },
   ja: {
     badge: "AI Page Publisher",
@@ -285,6 +353,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "言語",
+    promptLabel: "プロンプトテンプレート",
+    promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
+    promptTemplate: `src/App.jsx としてそのまま使える React ページを JSX 形式で作成してください。
+
+テーマ：[サイトのテーマ — 例：カフェ、ポートフォリオ、SaaS プロダクト紹介]
+スタイル：[デザインスタイル — 例：ミニマル、モダン、カラフル、コーポレート]
+詳細：[必要なセクション — 例：ヒーロー、特徴紹介、お客様の声、料金、お問い合わせ]
+
+技術要件：
+- スタイリングはすべて Tailwind CSS を使用
+- 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+- アイコンは lucide-react を使用
+- モバイルとデスクトップの両方に対応（レスポンシブ）
+- エクスポート形式：export default function App()
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要`,
+    promptCopy: "コピー",
+    promptCopied: "コピーしました！",
   },
   pt: {
     badge: "AI Page Publisher",
@@ -341,6 +426,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Todos os direitos reservados.",
     langLabel: "Idioma",
+    promptLabel: "Prompt inicial",
+    promptHint: "Copie este prompt e cole na sua ferramenta de IA. Preencha os espaços em branco.",
+    promptTemplate: `Crie uma página React em formato JSX que eu possa usar como src/App.jsx.
+
+Tema: [o tema do seu site — ex: cafeteria, portfólio, produto SaaS]
+Estilo: [estilo de design — ex: minimalista, moderno, colorido, corporativo]
+Detalhes: [seções desejadas — ex: hero, funcionalidades, depoimentos, preços, contato]
+
+Requisitos:
+- Use Tailwind CSS para toda a estilização
+- Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+- Use lucide-react para ícones
+- Torne responsivo para mobile e desktop
+- Exportar como: export default function App()
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN`,
+    promptCopy: "Copiar",
+    promptCopied: "Copiado!",
   },
   ar: {
     badge: "AI Page Publisher",
@@ -397,6 +499,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "جميع الحقوق محفوظة.",
     langLabel: "اللغة",
+    promptLabel: "قالب البرومبت",
+    promptHint: "انسخ هذا البرومبت والصقه في أداة الذكاء الاصطناعي، ثم املأ الفراغات.",
+    promptTemplate: `أنشئ صفحة React بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+
+الموضوع: [موضوع موقعك — مثلاً: مقهى، معرض أعمال، منتج SaaS]
+الأسلوب: [أسلوب التصميم — مثلاً: بسيط، عصري، ملوّن، مؤسسي]
+التفاصيل: [الأقسام المطلوبة — مثلاً: بطل الصفحة، الميزات، آراء العملاء، الأسعار، نموذج التواصل]
+
+المتطلبات التقنية:
+- استخدم Tailwind CSS لجميع الأنماط
+- استخدم مكونات shadcn/ui (استيراد من @/components/ui/) عند الحاجة
+- استخدم lucide-react للأيقونات
+- اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
+- صدّرها كـ: export default function App()
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN`,
+    promptCopy: "نسخ",
+    promptCopied: "تم النسخ!",
   },
   fr: {
     badge: "AI Page Publisher",
@@ -453,6 +572,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tous droits réservés.",
     langLabel: "Langue",
+    promptLabel: "Prompt de départ",
+    promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
+    promptTemplate: `Crée une page React en format JSX que je puisse utiliser comme src/App.jsx.
+
+Thème : [le thème de votre site — ex : café, portfolio, produit SaaS]
+Style : [style de design — ex : minimaliste, moderne, coloré, corporate]
+Détails : [sections souhaitées — ex : hero, fonctionnalités, témoignages, tarifs, contact]
+
+Exigences :
+- Utilise Tailwind CSS pour tout le style
+- Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
+- Utilise lucide-react pour les icônes
+- Rends la page responsive pour mobile et desktop
+- Exporter comme : export default function App()
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN`,
+    promptCopy: "Copier",
+    promptCopied: "Copié !",
   },
   hi: {
     badge: "AI Page Publisher",
@@ -509,6 +645,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "सर्वाधिकार सुरक्षित।",
     langLabel: "भाषा",
+    promptLabel: "शुरुआती प्रॉम्प्ट",
+    promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
+    promptTemplate: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक React पेज बनाएं।
+
+विषय: [आपकी वेबसाइट का विषय — उदा: कॉफी शॉप, पोर्टफोलियो, SaaS प्रोडक्ट]
+शैली: [डिज़ाइन शैली — उदा: न्यूनतम, आधुनिक, रंगीन, कॉर्पोरेट]
+विवरण: [चाहिए सेक्शन — उदा: हीरो, फ़ीचर्स, प्रशंसापत्र, मूल्य निर्धारण, संपर्क]
+
+तकनीकी आवश्यकताएं:
+- सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
+- उपयुक्त होने पर shadcn/ui कंपोनेंट्स का उपयोग करें (@/components/ui/ से इम्पोर्ट)
+- आइकन के लिए lucide-react का उपयोग करें
+- मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
+- एक्सपोर्ट: export default function App()
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं`,
+    promptCopy: "कॉपी करें",
+    promptCopied: "कॉपी हो गया!",
   },
   ko: {
     badge: "AI Page Publisher",
@@ -565,6 +718,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "언어",
+    promptLabel: "시작 프롬프트",
+    promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
+    promptTemplate: `src/App.jsx로 바로 사용할 수 있는 React 페이지를 JSX 형식으로 만들어 주세요.
+
+주제: [웹사이트 주제 — 예: 카페, 포트폴리오, SaaS 제품 소개]
+스타일: [디자인 스타일 — 예: 미니멀, 모던, 컬러풀, 기업형]
+세부사항: [원하는 섹션 — 예: 히어로, 기능 소개, 후기, 요금제, 문의]
+
+기술 요구사항:
+- 모든 스타일링에 Tailwind CSS 사용
+- 적절한 경우 shadcn/ui 컴포넌트 사용 (@/components/ui/에서 import)
+- 아이콘은 lucide-react 사용
+- 모바일과 데스크톱 모두 반응형으로 제작
+- 내보내기 형식: export default function App()
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이`,
+    promptCopy: "복사",
+    promptCopied: "복사됨!",
   },
   ur: {
     badge: "AI Page Publisher",
@@ -621,6 +791,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "جملہ حقوق محفوظ ہیں۔",
     langLabel: "زبان",
+    promptLabel: "شروعاتی پرامپٹ",
+    promptHint: "اس پرامپٹ کو کاپی کر کے اپنے AI ٹول میں پیسٹ کریں۔ خالی جگہیں پُر کریں۔",
+    promptTemplate: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک React صفحہ بنائیں۔
+
+موضوع: [آپ کی ویب سائٹ کا موضوع — مثلاً: کافی شاپ، پورٹ فولیو، SaaS پروڈکٹ]
+انداز: [ڈیزائن اسٹائل — مثلاً: سادہ، جدید، رنگین، کارپوریٹ]
+تفصیلات: [مطلوبہ سیکشنز — مثلاً: ہیرو، خصوصیات، تعریفیں، قیمتیں، رابطہ]
+
+تکنیکی تقاضے:
+- تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
+- ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
+- آئیکنز کے لیے lucide-react استعمال کریں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- ایکسپورٹ: export default function App()
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں`,
+    promptCopy: "کاپی",
+    promptCopied: "کاپی ہو گیا!",
   },
   th: {
     badge: "AI Page Publisher",
@@ -677,6 +864,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "สงวนลิขสิทธิ์",
     langLabel: "ภาษา",
+    promptLabel: "เทมเพลตพรอมต์",
+    promptHint: "คัดลอกพรอมต์นี้ไปวางในเครื่องมือ AI ของคุณ แล้วเติมข้อมูลในช่องว่าง",
+    promptTemplate: `สร้างหน้า React ในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+
+หัวข้อ: [หัวข้อเว็บไซต์ของคุณ — เช่น ร้านกาแฟ, พอร์ตโฟลิโอ, สินค้า SaaS]
+สไตล์: [สไตล์การออกแบบ — เช่น มินิมอล, โมเดิร์น, สีสัน, องค์กร]
+รายละเอียด: [ส่วนที่ต้องการ — เช่น ฮีโร่, ฟีเจอร์, รีวิว, ราคา, ติดต่อ]
+
+ข้อกำหนดทางเทคนิค:
+- ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
+- ใช้คอมโพเนนต์ shadcn/ui (import จาก @/components/ui/) ตามความเหมาะสม
+- ใช้ lucide-react สำหรับไอคอน
+- ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
+- Export เป็น: export default function App()
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN`,
+    promptCopy: "คัดลอก",
+    promptCopied: "คัดลอกแล้ว!",
   },
   de: {
     badge: "AI Page Publisher",
@@ -733,6 +937,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
+    promptLabel: "Starter-Prompt",
+    promptHint: "Kopieren Sie diesen Prompt und fügen Sie ihn in Ihr KI-Tool ein. Füllen Sie die Lücken aus.",
+    promptTemplate: `Erstelle eine React-Seite im JSX-Format, die ich als src/App.jsx verwenden kann.
+
+Thema: [Thema deiner Website — z.B. Café, Portfolio, SaaS-Produkt]
+Stil: [Designstil — z.B. minimalistisch, modern, farbenfroh, geschäftlich]
+Details: [gewünschte Abschnitte — z.B. Hero, Features, Testimonials, Preise, Kontakt]
+
+Technische Anforderungen:
+- Verwende Tailwind CSS für alle Styles
+- Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+- Verwende lucide-react für Icons
+- Mach die Seite responsiv für Mobil und Desktop
+- Export als: export default function App()
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte`,
+    promptCopy: "Kopieren",
+    promptCopied: "Kopiert!",
   },
   tr: {
     badge: "AI Page Publisher",
@@ -789,6 +1010,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tüm hakları saklıdır.",
     langLabel: "Dil",
+    promptLabel: "Başlangıç Promptu",
+    promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
+    promptTemplate: `src/App.jsx olarak kullanabileceğim JSX formatında bir React sayfası oluştur.
+
+Konu: [web sitenizin konusu — örn: kafe, portföy, SaaS ürünü]
+Stil: [tasarım stili — örn: minimalist, modern, renkli, kurumsal]
+Detaylar: [istediğiniz bölümler — örn: hero, özellikler, referanslar, fiyatlandırma, iletişim]
+
+Teknik gereksinimler:
+- Tüm stillendirme için Tailwind CSS kullan
+- Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+- İkonlar için lucide-react kullan
+- Mobil ve masaüstü için responsive yap
+- Dışa aktarım: export default function App()
+- Tek dosya, ek CSS dosyası veya CDN script'i yok`,
+    promptCopy: "Kopyala",
+    promptCopied: "Kopyalandı!",
   },
   ru: {
     badge: "AI Page Publisher",
@@ -845,6 +1083,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Все права защищены.",
     langLabel: "Язык",
+    promptLabel: "Шаблон промпта",
+    promptHint: "Скопируйте этот промпт и вставьте его в ваш AI-инструмент. Заполните пропуски.",
+    promptTemplate: `Создай страницу React в формате JSX, которую можно использовать как src/App.jsx.
+
+Тема: [тема вашего сайта — напр.: кофейня, портфолио, SaaS-продукт]
+Стиль: [стиль дизайна — напр.: минималистичный, современный, яркий, корпоративный]
+Детали: [нужные разделы — напр.: герой, преимущества, отзывы, цены, контакты]
+
+Технические требования:
+- Используй Tailwind CSS для всех стилей
+- Используй компоненты shadcn/ui (импорт из @/components/ui/) при необходимости
+- Используй lucide-react для иконок
+- Сделай адаптивную вёрстку для мобильных и десктопа
+- Экспорт: export default function App()
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов`,
+    promptCopy: "Копировать",
+    promptCopied: "Скопировано!",
   },
   he: {
     badge: "AI Page Publisher",
@@ -901,6 +1156,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "כל הזכויות שמורות.",
     langLabel: "שפה",
+    promptLabel: "תבנית פרומפט",
+    promptHint: "העתיקו את הפרומפט הזה והדביקו אותו בכלי ה-AI שלכם. מלאו את השדות הריקים.",
+    promptTemplate: `צרו עמוד React בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+
+נושא: [נושא האתר שלכם — למשל: בית קפה, תיק עבודות, מוצר SaaS]
+סגנון: [סגנון עיצוב — למשל: מינימליסטי, מודרני, צבעוני, עסקי]
+פרטים: [הסקשנים שתרצו — למשל: hero, תכונות, המלצות, מחירים, צור קשר]
+
+דרישות טכניות:
+- השתמשו ב-Tailwind CSS לכל העיצוב
+- השתמשו ברכיבי shadcn/ui (ייבוא מ-@/components/ui/) לפי הצורך
+- השתמשו ב-lucide-react לאייקונים
+- הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
+- ייצוא כ: export default function App()
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN`,
+    promptCopy: "העתקה",
+    promptCopied: "הועתק!",
   },
   it: {
     badge: "AI Page Publisher",
@@ -957,6 +1229,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tutti i diritti riservati.",
     langLabel: "Lingua",
+    promptLabel: "Prompt iniziale",
+    promptHint: "Copia questo prompt e incollalo nel tuo strumento AI. Compila gli spazi vuoti.",
+    promptTemplate: `Crea una pagina React in formato JSX che possa usare come src/App.jsx.
+
+Tema: [il tema del tuo sito — es: caffetteria, portfolio, prodotto SaaS]
+Stile: [stile di design — es: minimalista, moderno, colorato, aziendale]
+Dettagli: [sezioni desiderate — es: hero, funzionalità, testimonianze, prezzi, contatti]
+
+Requisiti tecnici:
+- Usa Tailwind CSS per tutti gli stili
+- Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
+- Usa lucide-react per le icone
+- Rendilo responsive per mobile e desktop
+- Esportare come: export default function App()
+- File singolo, nessun file CSS aggiuntivo o script CDN`,
+    promptCopy: "Copia",
+    promptCopied: "Copiato!",
   },
   id: {
     badge: "AI Page Publisher",
@@ -1013,6 +1302,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Semua hak dilindungi.",
     langLabel: "Bahasa",
+    promptLabel: "Prompt Awal",
+    promptHint: "Salin prompt ini dan tempelkan ke alat AI Anda. Isi bagian yang kosong.",
+    promptTemplate: `Buatkan halaman React dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+Topik: [topik website Anda — mis: kedai kopi, portofolio, produk SaaS]
+Gaya: [gaya desain — mis: minimalis, modern, warna-warni, korporat]
+Detail: [bagian yang diinginkan — mis: hero, fitur, testimoni, harga, kontak]
+
+Persyaratan teknis:
+- Gunakan Tailwind CSS untuk semua styling
+- Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+- Gunakan lucide-react untuk ikon
+- Buat responsif untuk mobile dan desktop
+- Ekspor sebagai: export default function App()
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN`,
+    promptCopy: "Salin",
+    promptCopied: "Tersalin!",
   },
   vi: {
     badge: "AI Page Publisher",
@@ -1069,6 +1375,23 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Ngôn ngữ",
+    promptLabel: "Prompt mẫu",
+    promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
+    promptTemplate: `Tạo một trang React dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+Chủ đề: [chủ đề website của bạn — VD: quán cà phê, portfolio, sản phẩm SaaS]
+Phong cách: [phong cách thiết kế — VD: tối giản, hiện đại, nhiều màu sắc, doanh nghiệp]
+Chi tiết: [các phần mong muốn — VD: hero, tính năng, đánh giá, bảng giá, liên hệ]
+
+Yêu cầu kỹ thuật:
+- Sử dụng Tailwind CSS cho toàn bộ styling
+- Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+- Sử dụng lucide-react cho icon
+- Làm responsive cho cả mobile và desktop
+- Export dạng: export default function App()
+- Một file duy nhất, không thêm file CSS hay script CDN`,
+    promptCopy: "Sao chép",
+    promptCopied: "Đã sao chép!",
   },
 };
 
@@ -1161,6 +1484,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [focusIdx, setFocusIdx] = useState(-1);
+  const [promptCopied, setPromptCopied] = useState(false);
   const switcherRef = useRef(null);
   const listRef = useRef(null);
 
@@ -1373,6 +1697,38 @@ export default function App() {
                 <p className="mt-2 text-sm leading-6 text-[var(--lp-text)]">{step.body}</p>
               </motion.div>
             ))}
+          </div>
+        </motion.section>
+
+        {/* Prompt Template */}
+        <motion.section
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="mt-6 rounded-[2rem] border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.65)] px-5 py-6 shadow-[0_8px_30px_rgba(var(--lp-shadow-rgb),0.04)] sm:mt-8 sm:px-8 sm:py-9 lg:px-10"
+        >
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--lp-muted)]">{t.promptLabel}</p>
+            <p className="mt-2.5 text-[0.938rem] leading-7 text-[var(--lp-text)] sm:text-base">
+              {t.promptHint}
+            </p>
+          </div>
+
+          <div className="relative mt-5 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(t.promptTemplate).then(() => {
+                  setPromptCopied(true);
+                  setTimeout(() => setPromptCopied(false), 2000);
+                });
+              }}
+              className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-lg border border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.85)] px-3 py-1.5 text-xs font-medium text-[var(--lp-subtle)] transition-all hover:bg-[var(--lp-surface-solid)] hover:border-[var(--lp-border-hover)]"
+            >
+              {promptCopied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+              {promptCopied ? t.promptCopied : t.promptCopy}
+            </button>
+            <pre className="whitespace-pre-wrap break-words font-mono text-xs leading-6 text-[var(--lp-text)] sm:text-sm sm:leading-7 pe-20">{t.promptTemplate}</pre>
           </div>
         </motion.section>
 

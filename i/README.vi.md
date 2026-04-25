@@ -10,6 +10,28 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 ## Bắt đầu nhanh
 
 1. **Nhờ AI sinh JSX** — bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React **định dạng JSX**
+
+   <details>
+   <summary>Prompt mẫu (nhấn để mở rộng, rồi sao chép)</summary>
+
+   ```
+   Tạo một trang React dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+   Chủ đề: [chủ đề website của bạn — VD: quán cà phê, portfolio, sản phẩm SaaS]
+   Phong cách: [phong cách thiết kế — VD: tối giản, hiện đại, nhiều màu sắc, doanh nghiệp]
+   Chi tiết: [các phần mong muốn — VD: hero, tính năng, đánh giá, bảng giá, liên hệ]
+
+   Yêu cầu kỹ thuật:
+   - Sử dụng Tailwind CSS cho toàn bộ styling
+   - Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+   - Sử dụng lucide-react cho icon
+   - Làm responsive cho cả mobile và desktop
+   - Export dạng: export default function App()
+   - Một file duy nhất, không thêm file CSS hay script CDN
+   ```
+
+   </details>
+
 2. **Dùng template này** để tạo repo của riêng bạn
 3. **Bật GitHub Pages** — vào **Settings → Pages**, đặt Source là **GitHub Actions**
 4. **Thay** [`src/App.jsx`](../src/App.jsx) bằng JSX mà AI vừa sinh ra

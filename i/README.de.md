@@ -10,6 +10,28 @@ Generiere eine Seite mit Claude, ChatGPT oder einer beliebigen KI. Füge sie in 
 ## Schnellstart
 
 1. **Frag deine KI nach JSX** — bitte Claude, ChatGPT oder eine beliebige KI, deine Seite als React-Komponente im **JSX-Format** zu generieren
+
+   <details>
+   <summary>Starter-Prompt (zum Aufklappen klicken, dann kopieren)</summary>
+
+   ```
+   Erstelle eine React-Seite im JSX-Format, die ich als src/App.jsx verwenden kann.
+
+   Thema: [Thema deiner Website — z.B. Café, Portfolio, SaaS-Produkt]
+   Stil: [Designstil — z.B. minimalistisch, modern, farbenfroh, geschäftlich]
+   Details: [gewünschte Abschnitte — z.B. Hero, Features, Testimonials, Preise, Kontakt]
+
+   Technische Anforderungen:
+   - Verwende Tailwind CSS für alle Styles
+   - Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+   - Verwende lucide-react für Icons
+   - Mach die Seite responsiv für Mobil und Desktop
+   - Export als: export default function App()
+   - Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte
+   ```
+
+   </details>
+
 2. **Verwende dieses Template**, um dein eigenes Repository zu erstellen
 3. **Aktiviere GitHub Pages** — gehe zu **Settings → Pages** und setze Source auf **GitHub Actions**
 4. **Ersetze** [`src/App.jsx`](../src/App.jsx) durch das von der KI generierte JSX
