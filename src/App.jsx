@@ -119,6 +119,61 @@ const translations = {
     footerLine2: "版權所有。",
     langLabel: "語言",
   },
+  "zh-CN": {
+    badge: "AI Page Publisher",
+    heroTitle: ["Push 一次", "AI 页面就上线"],
+    heroSubtitle:
+      "把 AI 生成的 React 成品直接变成线上网站的简洁模板。换掉一个文件，push 到 GitHub，就完成了。",
+    ctaPrimary: "使用这个模板",
+    ctaSecondary: "阅读 README",
+    readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh-CN.md",
+    includedLabel: "内置项目",
+    includedTitle: "模板包含什么",
+    includes: [
+      "40+ 个 shadcn/ui 组件",
+      "160+ 个预装包",
+      "Tailwind CSS，开箱即用",
+      "GitHub Actions 自动部署",
+      "支持自定义域名",
+      "自动检测 base path",
+    ],
+    howItWorksLabel: "运作方式",
+    howItWorksTitle: "三步就上线",
+    howItWorksSubtitle:
+      "不需要编程经验。让 AI 生成 JSX，粘贴，push，即可上线。",
+    steps: [
+      {
+        number: "01",
+        title: "让 AI 生成 JSX",
+        body: "告诉 Claude、ChatGPT 或任何 AI，让它用 JSX 格式帮你生成想要的 React 页面。",
+      },
+      {
+        number: "02",
+        title: "创建你的 repo",
+        body: "用这个模板创建自己的 repo。到 Settings → Pages 把 Source 设成 GitHub Actions。",
+      },
+      {
+        number: "03",
+        title: "粘贴并 Push",
+        body: "将 JSX 粘贴到 src/App.jsx，push 到 main。GitHub Actions 会自动 build 并发布你的网站。",
+      },
+    ],
+    filesLabel: "你的文件",
+    filesTitle: "需要改的文件",
+    filesSubtitle: "通常只需要修改一个文件，其余两个是进阶选用。",
+    files: [
+      { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 粘贴到这里。这是唯一需要改的文件。", required: true },
+      { name: "index.html", tag: "选用", desc: "更新页面标题、描述和 Google Analytics，让它符合你的网站。", required: false },
+      { name: "public/CNAME", tag: "选用", desc: "设置你的自定义域名。不需要的话保持原样即可。", required: false },
+    ],
+    tipLabel: "小提示",
+    tipText: "如果 AI 的代码用到了模板没预装的包，执行",
+    tipCommand: "npm run check",
+    tipAfter: "就能找到并修复缺少的依赖包。",
+    footerLine1: "© 2026 Eugene Yip.",
+    footerLine2: "保留所有权利。",
+    langLabel: "语言",
+  },
   es: {
     badge: "AI Page Publisher",
     heroTitle: ["Publica páginas de IA", "con un solo push."],
@@ -1020,6 +1075,7 @@ const translations = {
 const LANGUAGES = [
   { code: "en", label: "English", short: "EN" },
   { code: "zh", label: "中文", short: "中" },
+  { code: "zh-CN", label: "简体", short: "简" },
   { code: "es", label: "Español", short: "ES" },
   { code: "ja", label: "日本語", short: "日" },
   { code: "pt", label: "Português", short: "PT" },
@@ -1049,6 +1105,7 @@ const STEP_ICONS = [
 const HTML_LANG = {
   en: "en",
   zh: "zh",
+  "zh-CN": "zh-Hans",
   es: "es",
   ja: "ja",
   pt: "pt",
@@ -1076,7 +1133,10 @@ function detectInitialLang() {
     // ignore storage errors
   }
   const browser = (window.navigator.language || "en").toLowerCase();
-  if (browser.startsWith("zh")) return "zh";
+  if (browser.startsWith("zh")) {
+    if (browser === "zh-cn" || browser === "zh-hans" || browser.startsWith("zh-hans")) return "zh-CN";
+    return "zh";
+  }
   if (browser.startsWith("es")) return "es";
   if (browser.startsWith("ja")) return "ja";
   if (browser.startsWith("pt")) return "pt";
