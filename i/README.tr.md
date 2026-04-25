@@ -10,6 +10,28 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 ## Hızlı Başlangıç
 
 1. **Yapay zekadan JSX isteyin** — Claude, ChatGPT veya herhangi bir yapay zekadan istediğiniz sayfayı **JSX formatında** React bileşeni olarak oluşturmasını isteyin
+
+   <details>
+   <summary>Başlangıç Promptu (genişletmek için tıklayın, ardından kopyalayın)</summary>
+
+   ```
+   src/App.jsx olarak kullanabileceğim JSX formatında bir React sayfası oluştur.
+
+   Konu: [web sitenizin konusu — örn: kafe, portföy, SaaS ürünü]
+   Stil: [tasarım stili — örn: minimalist, modern, renkli, kurumsal]
+   Detaylar: [istediğiniz bölümler — örn: hero, özellikler, referanslar, fiyatlandırma, iletişim]
+
+   Teknik gereksinimler:
+   - Tüm stillendirme için Tailwind CSS kullan
+   - Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+   - İkonlar için lucide-react kullan
+   - Mobil ve masaüstü için responsive yap
+   - Dışa aktarım: export default function App()
+   - Tek dosya, ek CSS dosyası veya CDN script'i yok
+   ```
+
+   </details>
+
 2. **Bu şablonu kullanarak** kendi deponuzu oluşturun
 3. **GitHub Pages'i etkinleştirin** — **Settings → Pages** sayfasına gidin ve Source'u **GitHub Actions** olarak ayarlayın
 4. [`src/App.jsx`](../src/App.jsx) dosyasını yapay zekanın oluşturduğu JSX ile **değiştirin**

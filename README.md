@@ -10,6 +10,28 @@ Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. P
 ## Quick Start
 
 1. **Ask your AI for JSX** — tell Claude, ChatGPT, or any LLM to generate your page as a React component in **JSX format**
+
+   <details>
+   <summary>Starter prompt (click to expand, then copy)</summary>
+
+   ```
+   Create a React page in JSX format that I can use as src/App.jsx.
+
+   Topic: [your website topic — e.g. coffee shop, portfolio, SaaS product]
+   Style: [design style — e.g. minimal, modern, colorful, corporate]
+   Details: [sections you want — e.g. hero, features, testimonials, pricing, contact]
+
+   Requirements:
+   - Use Tailwind CSS for all styling
+   - Use shadcn/ui components (import from @/components/ui/) when suitable
+   - Use lucide-react for icons
+   - Make it responsive for both mobile and desktop
+   - Export as: export default function App()
+   - Single file, no additional CSS files or CDN scripts
+   ```
+
+   </details>
+
 2. **Use this template** to create your own repository
 3. **Enable GitHub Pages** — go to **Settings → Pages** and set Source to **GitHub Actions**
 4. **Replace** [`src/App.jsx`](src/App.jsx) with the JSX your AI generated

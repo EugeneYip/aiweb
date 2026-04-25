@@ -10,6 +10,28 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 ## Mulai Cepat
 
 1. **Minta JSX dari AI** — minta Claude, ChatGPT, atau AI mana pun untuk membuat halaman yang kamu inginkan sebagai komponen React dalam **format JSX**
+
+   <details>
+   <summary>Prompt Awal (klik untuk membuka, lalu salin)</summary>
+
+   ```
+   Buatkan halaman React dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+   Topik: [topik website Anda — mis: kedai kopi, portofolio, produk SaaS]
+   Gaya: [gaya desain — mis: minimalis, modern, warna-warni, korporat]
+   Detail: [bagian yang diinginkan — mis: hero, fitur, testimoni, harga, kontak]
+
+   Persyaratan teknis:
+   - Gunakan Tailwind CSS untuk semua styling
+   - Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+   - Gunakan lucide-react untuk ikon
+   - Buat responsif untuk mobile dan desktop
+   - Ekspor sebagai: export default function App()
+   - Satu file saja, tanpa file CSS tambahan atau skrip CDN
+   ```
+
+   </details>
+
 2. **Gunakan template ini** untuk membuat repositori kamu sendiri
 3. **Aktifkan GitHub Pages** — buka **Settings → Pages** dan atur Source ke **GitHub Actions**
 4. **Ganti** [`src/App.jsx`](../src/App.jsx) dengan JSX yang dibuat oleh AI

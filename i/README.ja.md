@@ -10,6 +10,28 @@ Claude、ChatGPT、お好きな LLM でページを生成して、`src/App.jsx` 
 ## クイックスタート
 
 1. **AI に JSX で生成してもらう** — Claude、ChatGPT などに、作りたいページを **JSX 形式**の React コンポーネントとして書いてもらいます
+
+   <details>
+   <summary>プロンプトテンプレート（クリックして展開、コピー）</summary>
+
+   ```
+   src/App.jsx としてそのまま使える React ページを JSX 形式で作成してください。
+
+   テーマ：[サイトのテーマ — 例：カフェ、ポートフォリオ、SaaS プロダクト紹介]
+   スタイル：[デザインスタイル — 例：ミニマル、モダン、カラフル、コーポレート]
+   詳細：[必要なセクション — 例：ヒーロー、特徴紹介、お客様の声、料金、お問い合わせ]
+
+   技術要件：
+   - スタイリングはすべて Tailwind CSS を使用
+   - 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+   - アイコンは lucide-react を使用
+   - モバイルとデスクトップの両方に対応（レスポンシブ）
+   - エクスポート形式：export default function App()
+   - 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要
+   ```
+
+   </details>
+
 2. **このテンプレートを使って**自分のリポジトリを作成
 3. **GitHub Pages を有効化** — **Settings → Pages** で Source を **GitHub Actions** に設定
 4. [`src/App.jsx`](../src/App.jsx) を AI が生成した JSX に**差し替え**

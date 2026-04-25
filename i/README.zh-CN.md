@@ -10,6 +10,28 @@
 ## 快速开始
 
 1. **让 AI 生成 JSX** — 告诉 Claude、ChatGPT 或任何 AI，让它用 **JSX 格式**帮你生成想要的 React 页面
+
+   <details>
+   <summary>Prompt 模板（点击展开后复制）</summary>
+
+   ```
+   请用 JSX 格式制作一个 React 页面，可以直接替换 src/App.jsx。
+
+   主题：[你的网站主题——例如：咖啡店、个人作品集、SaaS 产品介绍]
+   风格：[设计风格——例如：简约、现代、缤纷、企业专业]
+   详细内容：[想要的区块——例如：主视觉、产品特色、客户评价、定价、联系表单]
+
+   技术要求：
+   - 使用 Tailwind CSS 处理所有样式
+   - 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+   - 使用 lucide-react 图标
+   - 必须支持手机与桌面响应式
+   - 导出方式：export default function App()
+   - 单一文件，不要额外的 CSS 文件或 CDN 脚本
+   ```
+
+   </details>
+
 2. **使用这个模板**创建自己的 repo
 3. **启用 GitHub Pages** — 到 **Settings → Pages**，把 Source 设成 **GitHub Actions**
 4. 把 [`src/App.jsx`](../src/App.jsx) **换成** AI 刚刚生成的 JSX
