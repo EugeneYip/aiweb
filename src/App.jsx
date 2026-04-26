@@ -39,12 +39,12 @@ const translations = {
       {
         number: "02",
         title: "Set up your repo",
-        body: "Use this template to create your own repository. Go to Settings → Pages and set Source to GitHub Actions.",
+        body: "On the GitHub page, click “Use this template” → “Create a new repository” to create your own repo. Your GitHub username and repo name will determine your site URL. Then go to Settings → Pages and set Source to GitHub Actions.",
       },
       {
         number: "03",
-        title: "Replace and push",
-        body: "Paste the JSX into src/App.jsx and push to main. GitHub Actions builds and publishes your site automatically.",
+        title: "Paste and save",
+        body: "Paste the AI-generated JSX into src/App.jsx — delete and replace all existing content — then save the file. GitHub Actions will automatically build and publish your site.",
       },
     ],
     filesLabel: "Your files",
@@ -200,12 +200,12 @@ Requirements:
       {
         number: "02",
         title: "建立你的 repo",
-        body: "用這個範本建立自己的 repo。到 Settings → Pages 把 Source 設成 GitHub Actions。",
+        body: "在 GitHub 頁面點選「Use this template」→「Create a new repository」建立自己的 repo。註冊 GitHub 時的使用者名稱與新 repo 名稱都會影響網站網址。接著到 Settings → Pages 把 Source 設成 GitHub Actions。",
       },
       {
         number: "03",
-        title: "貼上並 Push",
-        body: "將 JSX 貼進 src/App.jsx，push 到 main。GitHub Actions 會自動 build 並發佈你的網站。",
+        title: "貼上並儲存",
+        body: "將 AI 生成的 JSX 貼進 src/App.jsx——刪除並取代原本裡面的所有內容——然後儲存檔案即可。GitHub Actions 會自動 build 並發佈你的網站。",
       },
     ],
     filesLabel: "你的檔案",
@@ -360,12 +360,12 @@ Requirements:
       {
         number: "02",
         title: "创建你的 repo",
-        body: "用这个模板创建自己的 repo。到 Settings → Pages 把 Source 设成 GitHub Actions。",
+        body: "在 GitHub 页面点击「Use this template」→「Create a new repository」创建自己的 repo。注册 GitHub 时的用户名和新 repo 名称都会影响网站网址。然后到 Settings → Pages 把 Source 设成 GitHub Actions。",
       },
       {
         number: "03",
-        title: "粘贴并 Push",
-        body: "将 JSX 粘贴到 src/App.jsx，push 到 main。GitHub Actions 会自动 build 并发布你的网站。",
+        title: "粘贴并保存",
+        body: "将 AI 生成的 JSX 粘贴到 src/App.jsx——删除并替换原来的所有内容——然后保存文件即可。GitHub Actions 会自动 build 并发布你的网站。",
       },
     ],
     filesLabel: "你的文件",
@@ -520,12 +520,12 @@ Requirements:
       {
         number: "02",
         title: "Configura tu repo",
-        body: "Usa esta plantilla para crear tu propio repo. Ve a Settings → Pages y pon Source en GitHub Actions.",
+        body: "En la página de GitHub, haz clic en “Use this template” → “Create a new repository” para crear tu propio repo. Tu nombre de usuario de GitHub y el nombre del repo determinarán la URL de tu sitio. Luego ve a Settings → Pages y pon Source en GitHub Actions.",
       },
       {
         number: "03",
-        title: "Pega y haz push",
-        body: "Pega el JSX en src/App.jsx y haz push a main. GitHub Actions se encarga de compilar y publicar tu sitio automáticamente.",
+        title: "Pega y guarda",
+        body: "Pega el JSX generado por la IA en src/App.jsx — borra y reemplaza todo el contenido existente — y guarda el archivo. GitHub Actions se encarga de compilar y publicar tu sitio automáticamente.",
       },
     ],
     filesLabel: "Tus archivos",
@@ -681,12 +681,12 @@ Requisitos:
       {
         number: "02",
         title: "リポジトリを準備",
-        body: "このテンプレートで自分のリポジトリを作成。Settings → Pages で Source を GitHub Actions に設定。",
+        body: "GitHub ページで「Use this template」→「Create a new repository」をクリックして自分のリポジトリを作成。GitHub のユーザー名とリポジトリ名がサイトの URL に影響します。次に Settings → Pages で Source を GitHub Actions に設定。",
       },
       {
         number: "03",
-        title: "貼り付けて push",
-        body: "JSX を src/App.jsx に貼り付けて main に push。GitHub Actions が自動でビルドして公開してくれます。",
+        title: "貼り付けて保存",
+        body: "AI が生成した JSX を src/App.jsx に貼り付けます。既存の内容をすべて削除して置き換えてから、ファイルを保存してください。GitHub Actions が自動でビルドして公開してくれます。",
       },
     ],
     filesLabel: "ファイル",
@@ -842,12 +842,12 @@ Requisitos:
       {
         number: "02",
         title: "Configure seu repo",
-        body: "Use este template para criar seu repositório. Vá em Settings → Pages e defina Source como GitHub Actions.",
+        body: "Na página do GitHub, clique em “Use this template” → “Create a new repository” para criar seu repositório. Seu nome de usuário do GitHub e o nome do repo determinarão a URL do seu site. Depois vá em Settings → Pages e defina Source como GitHub Actions.",
       },
       {
         number: "03",
-        title: "Cole e faça push",
-        body: "Cole o JSX em src/App.jsx e faça push para main. O GitHub Actions compila e publica seu site automaticamente.",
+        title: "Cole e salve",
+        body: "Cole o JSX gerado pela IA em src/App.jsx — apague e substitua todo o conteúdo existente — e salve o arquivo. O GitHub Actions compila e publica seu site automaticamente.",
       },
     ],
     filesLabel: "Seus arquivos",
@@ -1003,12 +1003,12 @@ Requisitos:
       {
         number: "02",
         title: "أعدّ مستودعك",
-        body: "استخدم هذا القالب لإنشاء مستودعك الخاص. اذهب إلى Settings → Pages واضبط Source على GitHub Actions.",
+        body: "في صفحة GitHub، اضغط على “Use this template” ← “Create a new repository” لإنشاء مستودعك الخاص. اسم المستخدم واسم المستودع الجديد سيحددان رابط موقعك. ثم اذهب إلى Settings ← Pages واضبط Source على GitHub Actions.",
       },
       {
         number: "03",
-        title: "الصق وادفع",
-        body: "الصق كود JSX في src/App.jsx وادفع إلى main. سيقوم GitHub Actions بالبناء والنشر تلقائياً.",
+        title: "الصق واحفظ",
+        body: "الصق كود JSX الذي أنشأه الذكاء الاصطناعي في src/App.jsx — احذف كل المحتوى الموجود واستبدله — ثم احفظ الملف. سيقوم GitHub Actions بالبناء والنشر تلقائياً.",
       },
     ],
     filesLabel: "ملفاتك",
@@ -1164,12 +1164,12 @@ Requisitos:
       {
         number: "02",
         title: "Configurez votre dépôt",
-        body: "Utilisez ce template pour créer votre propre dépôt. Allez dans Settings → Pages et définissez Source sur GitHub Actions.",
+        body: "Sur la page GitHub, cliquez sur « Use this template » → « Create a new repository » pour créer votre dépôt. Votre nom d'utilisateur GitHub et le nom du repo détermineront l'URL de votre site. Ensuite, allez dans Settings → Pages et définissez Source sur GitHub Actions.",
       },
       {
         number: "03",
-        title: "Collez et pushez",
-        body: "Collez le JSX dans src/App.jsx et pushez vers main. GitHub Actions compile et publie votre site automatiquement.",
+        title: "Collez et enregistrez",
+        body: "Collez le JSX généré par l'IA dans src/App.jsx — supprimez et remplacez tout le contenu existant — puis enregistrez le fichier. GitHub Actions compile et publie votre site automatiquement.",
       },
     ],
     filesLabel: "Vos fichiers",
@@ -1325,12 +1325,12 @@ Exigences :
       {
         number: "02",
         title: "अपना repo सेट करें",
-        body: "इस टेम्पलेट से अपना रिपॉज़िटरी बनाएँ। Settings → Pages में जाकर Source को GitHub Actions पर सेट करें।",
+        body: "GitHub पेज पर “Use this template” → “Create a new repository” पर क्लिक करके अपना repo बनाएँ। आपका GitHub यूज़रनेम और repo का नाम आपकी साइट का URL तय करेगा। फिर Settings → Pages में जाकर Source को GitHub Actions पर सेट करें।",
       },
       {
         number: "03",
-        title: "पेस्ट करें और push करें",
-        body: "JSX को src/App.jsx में पेस्ट करें और main पर push करें। GitHub Actions ऑटोमैटिक बिल्ड और पब्लिश कर देगा।",
+        title: "पेस्ट करें और सेव करें",
+        body: "AI द्वारा जनरेट किया गया JSX src/App.jsx में पेस्ट करें — पहले से मौजूद सभी कंटेंट को डिलीट करके रिप्लेस करें — फिर फ़ाइल सेव करें। GitHub Actions ऑटोमैटिक बिल्ड और पब्लिश कर देगा।",
       },
     ],
     filesLabel: "आपकी फ़ाइलें",
@@ -1486,12 +1486,12 @@ Exigences :
       {
         number: "02",
         title: "저장소 설정",
-        body: "이 템플릿으로 자신만의 저장소를 만드세요. Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
+        body: "GitHub 페이지에서 “Use this template” → “Create a new repository”를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL에 반영됩니다. 그런 다음 Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
       },
       {
         number: "03",
-        title: "붙여넣고 push",
-        body: "JSX를 src/App.jsx에 붙여넣고 main에 push하세요. GitHub Actions가 자동으로 빌드하고 배포합니다.",
+        title: "붙여넣고 저장",
+        body: "AI가 생성한 JSX를 src/App.jsx에 붙여넣으세요 — 기존 내용을 모두 삭제하고 교체한 후 — 파일을 저장하세요. GitHub Actions가 자동으로 빌드하고 배포합니다.",
       },
     ],
     filesLabel: "파일",
@@ -1647,12 +1647,12 @@ Exigences :
       {
         number: "02",
         title: "اپنا repo تیار کریں",
-        body: "اس ٹیمپلیٹ سے اپنا ذخیرہ بنائیں۔ Settings → Pages میں جا کر Source کو GitHub Actions پر سیٹ کریں۔",
+        body: "GitHub صفحے پر “Use this template” ← “Create a new repository” پر کلک کر کے اپنا repo بنائیں۔ آپ کا GitHub صارف نام اور repo کا نام آپ کی سائٹ کا URL طے کرے گا۔ پھر Settings ← Pages میں جا کر Source کو GitHub Actions پر سیٹ کریں۔",
       },
       {
         number: "03",
-        title: "چسپاں کریں اور push کریں",
-        body: "JSX کو src/App.jsx میں چسپاں کریں اور main پر push کریں۔ GitHub Actions خود بخود بلڈ اور شائع کر دے گا۔",
+        title: "چسپاں کریں اور محفوظ کریں",
+        body: "AI سے بنایا گیا JSX src/App.jsx میں چسپاں کریں — پہلے سے موجود تمام مواد حذف کر کے بدل دیں — پھر فائل محفوظ کریں۔ GitHub Actions خود بخود بلڈ اور شائع کر دے گا۔",
       },
     ],
     filesLabel: "آپ کی فائلز",
@@ -1808,12 +1808,12 @@ Exigences :
       {
         number: "02",
         title: "ตั้งค่า repo ของคุณ",
-        body: "ใช้เทมเพลตนี้สร้าง repository ของตัวเอง ไปที่ Settings → Pages แล้วตั้ง Source เป็น GitHub Actions",
+        body: "ที่หน้า GitHub คลิก “Use this template” → “Create a new repository” เพื่อสร้าง repo ของตัวเอง ชื่อผู้ใช้ GitHub และชื่อ repo จะเป็นส่วนหนึ่งของ URL เว็บไซต์ จากนั้นไปที่ Settings → Pages แล้วตั้ง Source เป็น GitHub Actions",
       },
       {
         number: "03",
-        title: "วางแล้ว push",
-        body: "วาง JSX ลงใน src/App.jsx แล้ว push ไปที่ main GitHub Actions จะบิลด์และเผยแพร่เว็บไซต์ให้อัตโนมัติ",
+        title: "วางแล้วบันทึก",
+        body: "วาง JSX ที่ AI สร้างขึ้นลงใน src/App.jsx — ลบเนื้อหาเดิมทั้งหมดแล้วแทนที่ — จากนั้นบันทึกไฟล์ GitHub Actions จะบิลด์และเผยแพร่เว็บไซต์ให้อัตโนมัติ",
       },
     ],
     filesLabel: "ไฟล์ของคุณ",
@@ -1969,12 +1969,12 @@ Exigences :
       {
         number: "02",
         title: "Richte dein Repo ein",
-        body: "Verwende dieses Template, um dein eigenes Repository zu erstellen. Gehe zu Settings → Pages und setze Source auf GitHub Actions.",
+        body: "Klicke auf der GitHub-Seite auf „Use this template“ → „Create a new repository”, um dein eigenes Repo zu erstellen. Dein GitHub-Benutzername und der Repo-Name bestimmen die URL deiner Seite. Gehe dann zu Settings → Pages und setze Source auf GitHub Actions.",
       },
       {
         number: "03",
-        title: "Einfügen und pushen",
-        body: "Füge das JSX in src/App.jsx ein und push nach main. GitHub Actions baut und veröffentlicht deine Seite automatisch.",
+        title: "Einfügen und speichern",
+        body: "Füge das von der KI generierte JSX in src/App.jsx ein — lösche den gesamten vorhandenen Inhalt und ersetze ihn — und speichere die Datei. GitHub Actions baut und veröffentlicht deine Seite automatisch.",
       },
     ],
     filesLabel: "Deine Dateien",
@@ -2130,12 +2130,12 @@ Technische Anforderungen:
       {
         number: "02",
         title: "Deponuzu kurun",
-        body: "Bu şablonu kullanarak kendi deponuzu oluşturun. Settings → Pages sayfasına gidin ve Source'u GitHub Actions olarak ayarlayın.",
+        body: "GitHub sayfasında “Use this template” → “Create a new repository” tıklayarak kendi reponuzu oluşturun. GitHub kullanıcı adınız ve repo adı sitenizin URL'sini belirleyecektir. Sonra Settings → Pages'e gidin ve Source'u GitHub Actions olarak ayarlayın.",
       },
       {
         number: "03",
-        title: "Yapıştırın ve push edin",
-        body: "JSX'i src/App.jsx dosyasına yapıştırın ve main dalına push edin. GitHub Actions sitenizi otomatik olarak derleyip yayınlar.",
+        title: "Yapıştırın ve kaydedin",
+        body: "Yapay zekanın oluşturduğu JSX'i src/App.jsx dosyasına yapıştırın — mevcut tüm içeriği silip değiştirin — ardından dosyayı kaydedin. GitHub Actions sitenizi otomatik olarak derleyip yayınlar.",
       },
     ],
     filesLabel: "Dosyalarınız",
@@ -2291,12 +2291,12 @@ Teknik gereksinimler:
       {
         number: "02",
         title: "Настройте свой репозиторий",
-        body: "Используйте этот шаблон для создания своего репозитория. Перейдите в Settings → Pages и установите Source на GitHub Actions.",
+        body: "На странице GitHub нажмите «Use this template» → «Create a new repository», чтобы создать свой репозиторий. Ваше имя пользователя GitHub и название репозитория определят URL вашего сайта. Затем перейдите в Settings → Pages и установите Source на GitHub Actions.",
       },
       {
         number: "03",
-        title: "Вставьте и сделайте push",
-        body: "Вставьте JSX в src/App.jsx и сделайте push в main. GitHub Actions автоматически соберёт и опубликует ваш сайт.",
+        title: "Вставьте и сохраните",
+        body: "Вставьте JSX, сгенерированный ИИ, в src/App.jsx — удалите и замените всё существующее содержимое — затем сохраните файл. GitHub Actions автоматически соберёт и опубликует ваш сайт.",
       },
     ],
     filesLabel: "Ваши файлы",
@@ -2452,12 +2452,12 @@ Teknik gereksinimler:
       {
         number: "02",
         title: "הגדר את ה-repo שלך",
-        body: "השתמש בתבנית זו ליצירת המאגר שלך. עבור אל Settings → Pages והגדר את Source ל-GitHub Actions.",
+        body: "בדף GitHub לחצו על “Use this template” ← “Create a new repository” כדי ליצור מאגר משלכם. שם המשתמש ושם המאגר ב-GitHub יקבעו את כתובת האתר שלכם. לאחר מכן עברו אל Settings ← Pages והגדירו את Source ל-GitHub Actions.",
       },
       {
         number: "03",
-        title: "הדבק ודחוף",
-        body: "הדבק את ה-JSX ב-src/App.jsx ודחוף ל-main. GitHub Actions יבנה וייפרס את האתר שלך אוטומטית.",
+        title: "הדביקו ושמרו",
+        body: "הדביקו את ה-JSX שה-AI יצר ב-src/App.jsx — מחקו והחליפו את כל התוכן הקיים — ואז שמרו את הקובץ. GitHub Actions יבנה וייפרס את האתר שלכם אוטומטית.",
       },
     ],
     filesLabel: "הקבצים שלך",
@@ -2613,12 +2613,12 @@ Teknik gereksinimler:
       {
         number: "02",
         title: "Configura il tuo repo",
-        body: "Usa questo template per creare il tuo repository. Vai su Settings → Pages e imposta Source su GitHub Actions.",
+        body: "Nella pagina GitHub, clicca su “Use this template” → “Create a new repository” per creare il tuo repo. Il tuo nome utente GitHub e il nome del repo determineranno l'URL del tuo sito. Poi vai su Settings → Pages e imposta Source su GitHub Actions.",
       },
       {
         number: "03",
-        title: "Incolla e fai push",
-        body: "Incolla il JSX in src/App.jsx e fai push su main. GitHub Actions compila e pubblica il tuo sito automaticamente.",
+        title: "Incolla e salva",
+        body: "Incolla il JSX generato dall'IA in src/App.jsx — cancella e sostituisci tutto il contenuto esistente — poi salva il file. GitHub Actions compila e pubblica il tuo sito automaticamente.",
       },
     ],
     filesLabel: "I tuoi file",
@@ -2774,12 +2774,12 @@ Requisiti tecnici:
       {
         number: "02",
         title: "Siapkan repo-mu",
-        body: "Gunakan template ini untuk membuat repositorimu sendiri. Buka Settings → Pages dan atur Source ke GitHub Actions.",
+        body: "Di halaman GitHub, klik “Use this template” → “Create a new repository” untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situs Anda. Lalu buka Settings → Pages dan atur Source ke GitHub Actions.",
       },
       {
         number: "03",
-        title: "Tempel dan push",
-        body: "Tempel JSX ke src/App.jsx lalu push ke main. GitHub Actions akan mem-build dan menerbitkan situsmu secara otomatis.",
+        title: "Tempel dan simpan",
+        body: "Tempel JSX yang dibuat AI ke src/App.jsx — hapus dan ganti semua konten yang ada — lalu simpan file. GitHub Actions akan mem-build dan menerbitkan situsmu secara otomatis.",
       },
     ],
     filesLabel: "File-mu",
@@ -2935,12 +2935,12 @@ Persyaratan teknis:
       {
         number: "02",
         title: "Tạo repo của bạn",
-        body: "Dùng template này để tạo repo riêng. Vào Settings → Pages đặt Source là GitHub Actions.",
+        body: "Trên trang GitHub, nhấn “Use this template” → “Create a new repository” để tạo repo riêng. Tên người dùng GitHub và tên repo sẽ quyết định URL trang web của bạn. Sau đó vào Settings → Pages đặt Source là GitHub Actions.",
       },
       {
         number: "03",
-        title: "Dán vào, push",
-        body: "Dán JSX vào src/App.jsx rồi push lên main. GitHub Actions sẽ tự build và publish site cho bạn.",
+        title: "Dán vào, lưu lại",
+        body: "Dán JSX do AI tạo vào src/App.jsx — xóa và thay thế toàn bộ nội dung hiện có — rồi lưu file. GitHub Actions sẽ tự build và publish site cho bạn.",
       },
     ],
     filesLabel: "File của bạn",
@@ -3157,6 +3157,7 @@ export default function App() {
   const [langOpen, setLangOpen] = useState(false);
   const [focusIdx, setFocusIdx] = useState(-1);
   const [promptCopied, setPromptCopied] = useState(false);
+  const [variantIdx, setVariantIdx] = useState(0);
   const switcherRef = useRef(null);
   const listRef = useRef(null);
 
@@ -3232,6 +3233,7 @@ export default function App() {
           e.preventDefault();
           if (focusIdx >= 0) {
             setLang(LANGUAGES[focusIdx].code);
+            setVariantIdx(0);
             setLangOpen(false);
           }
           break;
@@ -3387,10 +3389,26 @@ export default function App() {
             </p>
           </div>
 
-          <div className="relative mt-5 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
+          <div className="mt-4 flex flex-wrap gap-2">
+            {t.promptVariants.map((v, i) => (
+              <button
+                key={v.label}
+                onClick={() => { setVariantIdx(i); setPromptCopied(false); }}
+                className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
+                  i === variantIdx
+                    ? "border-[var(--lp-accent)] bg-[var(--lp-accent)] text-white shadow-sm"
+                    : "border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.6)] text-[var(--lp-subtle)] hover:border-[var(--lp-border-hover)] hover:bg-[var(--lp-surface-solid)]"
+                }`}
+              >
+                {v.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
             <button
               onClick={() => {
-                navigator.clipboard.writeText(t.promptTemplate).then(() => {
+                navigator.clipboard.writeText(t.promptVariants[variantIdx].template).then(() => {
                   setPromptCopied(true);
                   setTimeout(() => setPromptCopied(false), 2000);
                 });
@@ -3400,7 +3418,7 @@ export default function App() {
               {promptCopied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
               {promptCopied ? t.promptCopied : t.promptCopy}
             </button>
-            <pre className="whitespace-pre-wrap break-words font-mono text-xs leading-6 text-[var(--lp-text)] sm:text-sm sm:leading-7 pe-20">{t.promptTemplate}</pre>
+            <pre className="whitespace-pre-wrap break-words font-mono text-xs leading-6 text-[var(--lp-text)] sm:text-sm sm:leading-7 pe-20">{t.promptVariants[variantIdx].template}</pre>
           </div>
         </motion.section>
 
@@ -3520,6 +3538,7 @@ export default function App() {
                     onMouseEnter={() => setFocusIdx(i)}
                     onClick={() => {
                       setLang(l.code);
+                      setVariantIdx(0);
                       setLangOpen(false);
                     }}
                     className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${

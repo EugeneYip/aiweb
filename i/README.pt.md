@@ -32,10 +32,9 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
 
    </details>
 
-2. **Use este template** para criar o seu próprio repositório
+2. **Use este template** — na página do GitHub, clique em **"Use this template"** → **"Create a new repository"** para criar seu repositório. Seu nome de usuário do GitHub e o nome do repo determinarão a URL do seu site (`https://<usuario>.github.io/<nome-do-repo>/`)
 3. **Ative o GitHub Pages** — vá em **Settings → Pages** e defina Source como **GitHub Actions**
-4. **Substitua** [`src/App.jsx`](../src/App.jsx) pelo JSX que a IA gerou
-5. **Faça push** para `main` — seu site estará no ar em `https://<usuario>.github.io/<nome-do-repo>/`
+4. **Substitua** [`src/App.jsx`](../src/App.jsx) — cole o JSX gerado pela IA neste arquivo, **apague e substitua todo o conteúdo existente**, e salve
 
 ## Personalizar (Opcional)
 

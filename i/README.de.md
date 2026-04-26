@@ -32,10 +32,9 @@ Generiere eine Seite mit Claude, ChatGPT oder einer beliebigen KI. Füge sie in 
 
    </details>
 
-2. **Verwende dieses Template**, um dein eigenes Repository zu erstellen
+2. **Verwende dieses Template** — klicke auf der GitHub-Seite auf **„Use this template"** → **„Create a new repository"**, um dein eigenes Repo zu erstellen. Dein GitHub-Benutzername und der Repo-Name bestimmen die URL deiner Seite (`https://<benutzername>.github.io/<repo-name>/`)
 3. **Aktiviere GitHub Pages** — gehe zu **Settings → Pages** und setze Source auf **GitHub Actions**
-4. **Ersetze** [`src/App.jsx`](../src/App.jsx) durch das von der KI generierte JSX
-5. **Push** nach `main` — deine Seite ist dann unter `https://<benutzername>.github.io/<repo-name>/` erreichbar
+4. **Ersetze** [`src/App.jsx`](../src/App.jsx) — füge das von der KI generierte JSX in diese Datei ein, **lösche den gesamten vorhandenen Inhalt und ersetze ihn**, dann speichere
 
 ## Anpassen (Optional)
 

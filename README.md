@@ -32,10 +32,9 @@ Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. P
 
    </details>
 
-2. **Use this template** to create your own repository
+2. **Use this template** — on the GitHub page, click **"Use this template"** → **"Create a new repository"** to create your own repo. Your GitHub username and repo name will determine your site URL (`https://<username>.github.io/<repo-name>/`)
 3. **Enable GitHub Pages** — go to **Settings → Pages** and set Source to **GitHub Actions**
-4. **Replace** [`src/App.jsx`](src/App.jsx) with the JSX your AI generated
-5. **Push** to `main` — your site will be live at `https://<username>.github.io/<repo-name>/`
+4. **Replace** [`src/App.jsx`](src/App.jsx) — paste the AI-generated JSX into this file, **delete and replace all existing content**, then save
 
 ## Customize (Optional)
 
