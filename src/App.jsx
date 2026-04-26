@@ -65,11 +65,19 @@ const translations = {
     langLabel: "Language",
     promptLabel: "Starter Prompt",
     promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
-    promptTemplate: `Create a React page in JSX format that I can use as src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Create a landing page in JSX format that I can use as src/App.jsx.
 
-Topic: [your website topic — e.g. coffee shop, portfolio, SaaS product]
-Style: [design style — e.g. minimal, modern, colorful, corporate]
-Details: [sections you want — e.g. hero, features, testimonials, pricing, contact]
+Purpose: [promote your product/service — e.g. fitness app, local bakery, consulting firm]
+Style: [design style — e.g. minimal, modern, bold, corporate]
+
+Sections to include:
+- Hero with headline, subheadline, and CTA button
+- Features or benefits (3–4 items with icons)
+- Testimonials or social proof
+- Pricing or plans
+- Final call-to-action
+- Footer with links
 
 Requirements:
 - Use Tailwind CSS for all styling
@@ -77,7 +85,87 @@ Requirements:
 - Use lucide-react for icons
 - Make it responsive for both mobile and desktop
 - Export as: export default function App()
-- Single file, no additional CSS files or CDN scripts`,
+- Single file, no additional CSS files or CDN scripts` },
+      { label: "Portfolio", template: `Create a personal portfolio page in JSX format that I can use as src/App.jsx.
+
+Name: [your name]
+Role: [your title — e.g. frontend developer, designer, photographer]
+Style: [design style — e.g. minimal, creative, elegant, dark]
+
+Sections to include:
+- Hero with name, title, and short bio
+- Featured projects (3–6 items with images and descriptions)
+- Skills or tools
+- Experience or education timeline
+- Contact form or links
+
+Requirements:
+- Use Tailwind CSS for all styling
+- Use shadcn/ui components (import from @/components/ui/) when suitable
+- Use lucide-react for icons
+- Make it responsive for both mobile and desktop
+- Export as: export default function App()
+- Single file, no additional CSS files or CDN scripts` },
+      { label: "Dashboard", template: `Create an admin dashboard page in JSX format that I can use as src/App.jsx.
+
+Purpose: [dashboard purpose — e.g. sales analytics, project management, user metrics]
+Style: [design style — e.g. clean, data-dense, modern, corporate]
+
+Sections to include:
+- Top navigation bar with search and user menu
+- Sidebar with navigation links
+- Stats cards (4 KPI cards with icons and trends)
+- Charts area (line chart or bar chart using recharts)
+- Data table with recent activity
+
+Requirements:
+- Use Tailwind CSS for all styling
+- Use shadcn/ui components (import from @/components/ui/) when suitable
+- Use lucide-react for icons
+- Make it responsive for both mobile and desktop
+- Export as: export default function App()
+- Single file, no additional CSS files or CDN scripts` },
+      { label: "Blog", template: `Create a blog homepage in JSX format that I can use as src/App.jsx.
+
+Topic: [blog topic — e.g. tech, travel, cooking, personal journal]
+Style: [design style — e.g. minimal, magazine, editorial, cozy]
+
+Sections to include:
+- Header with blog name and navigation
+- Featured post with large image
+- Recent posts grid (6–9 cards with title, excerpt, date, category)
+- Newsletter signup section
+- Footer with links
+
+Requirements:
+- Use Tailwind CSS for all styling
+- Use shadcn/ui components (import from @/components/ui/) when suitable
+- Use lucide-react for icons
+- Make it responsive for both mobile and desktop
+- Export as: export default function App()
+- Single file, no additional CSS files or CDN scripts` },
+      { label: "SaaS", template: `Create a SaaS product page in JSX format that I can use as src/App.jsx.
+
+Product: [your SaaS product — e.g. project management tool, email platform, AI assistant]
+Style: [design style — e.g. modern, professional, playful, enterprise]
+
+Sections to include:
+- Hero with product name, tagline, CTA, and product mockup
+- Trusted-by logos bar
+- Key features (3–4 with icons and descriptions)
+- How it works (3 steps)
+- Pricing table (3 tiers: Free, Pro, Enterprise)
+- FAQ section
+- Final CTA with signup
+
+Requirements:
+- Use Tailwind CSS for all styling
+- Use shadcn/ui components (import from @/components/ui/) when suitable
+- Use lucide-react for icons
+- Make it responsive for both mobile and desktop
+- Export as: export default function App()
+- Single file, no additional CSS files or CDN scripts` },
+    ],
     promptCopy: "Copy",
     promptCopied: "Copied!",
   },
@@ -137,11 +225,19 @@ Requirements:
     langLabel: "語言",
     promptLabel: "Prompt 範本",
     promptHint: "複製以下 prompt 貼到你的 AI 工具中，填入空白處即可。",
-    promptTemplate: `請用 JSX 格式製作一個 React 頁面，可以直接替換 src/App.jsx。
+    promptVariants: [
+      { label: "落地頁", template: `請用 JSX 格式製作一個落地頁，可以直接替換 src/App.jsx。
 
-主題：[你的網站主題——例如：咖啡店、個人作品集、SaaS 產品介紹]
-風格：[設計風格——例如：簡約、現代、繽紛、企業專業]
-詳細內容：[想要的區塊——例如：主視覺、產品特色、客戶評價、定價、聯絡表單]
+目的：[推廣的產品或服務——例如：健身 App、在地麵包店、顧問公司]
+風格：[設計風格——例如：簡約、現代、大膽、企業專業]
+
+需要包含的區塊:
+- 主視覺（標題、副標題與 CTA 按鈕）
+- 特色或優勢（3–4 項搭配圖示）
+- 客戶評價或社會認證
+- 定價或方案
+- 最終行動呼籲
+- 頁尾連結
 
 技術要求：
 - 使用 Tailwind CSS 處理所有樣式
@@ -149,7 +245,87 @@ Requirements:
 - 使用 lucide-react 圖示
 - 必須支援手機與桌面響應式
 - 匯出方式：export default function App()
-- 單一檔案，不要額外的 CSS 檔或 CDN 腳本`,
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本` },
+      { label: "作品集", template: `請用 JSX 格式製作一個個人作品集頁面，可以直接替換 src/App.jsx。
+
+姓名：[你的名字]
+角色：[你的職稱——例如：前端工程師、設計師、攝影師]
+風格：[設計風格——例如：簡約、創意、優雅、深色]
+
+需要包含的區塊:
+- 個人介紹（姓名、職稱、簡短自我介紹）
+- 精選作品（3–6 項，搭配圖片與說明）
+- 技能或工具
+- 經歷或學歷時間軸
+- 聯絡表單或連結
+
+技術要求：
+- 使用 Tailwind CSS 處理所有樣式
+- 適當使用 shadcn/ui 元件（從 @/components/ui/ 匯入）
+- 使用 lucide-react 圖示
+- 必須支援手機與桌面響應式
+- 匯出方式：export default function App()
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本` },
+      { label: "儀表板", template: `請用 JSX 格式製作一個後台儀表板頁面，可以直接替換 src/App.jsx。
+
+目的：[儀表板用途——例如：銷售分析、專案管理、用戶數據]
+風格：[設計風格——例如：簡潔、資料密集、現代、企業專業]
+
+需要包含的區塊:
+- 頂部導覽列（搜尋與使用者選單）
+- 側邊欄導覽連結
+- 統計卡片（4 個 KPI 卡片搭配圖示與趨勢）
+- 圖表區（使用 recharts 的折線圖或柱狀圖）
+- 近期活動資料表
+
+技術要求：
+- 使用 Tailwind CSS 處理所有樣式
+- 適當使用 shadcn/ui 元件（從 @/components/ui/ 匯入）
+- 使用 lucide-react 圖示
+- 必須支援手機與桌面響應式
+- 匯出方式：export default function App()
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本` },
+      { label: "部落格", template: `請用 JSX 格式製作一個部落格首頁，可以直接替換 src/App.jsx。
+
+主題：[部落格主題——例如：科技、旅遊、烹飪、個人日誌]
+風格：[設計風格——例如：簡約、雜誌風、編輯風、溫馨]
+
+需要包含的區塊:
+- 頁首（部落格名稱與導覽）
+- 精選文章（大圖展示）
+- 最新文章區（6–9 張卡片，含標題、摘要、日期、分類）
+- 電子報訂閱區
+- 頁尾連結
+
+技術要求：
+- 使用 Tailwind CSS 處理所有樣式
+- 適當使用 shadcn/ui 元件（從 @/components/ui/ 匯入）
+- 使用 lucide-react 圖示
+- 必須支援手機與桌面響應式
+- 匯出方式：export default function App()
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本` },
+      { label: "SaaS 產品", template: `請用 JSX 格式製作一個 SaaS 產品頁面，可以直接替換 src/App.jsx。
+
+產品：[你的 SaaS 產品——例如：專案管理工具、Email 平台、AI 助手]
+風格：[設計風格——例如：現代、專業、活潑、企業級]
+
+需要包含的區塊:
+- 主視覺（產品名稱、標語、CTA 與產品截圖）
+- 合作品牌 logo 列
+- 核心功能（3–4 項搭配圖示與說明）
+- 使用流程（3 個步驟）
+- 定價表（3 個方案：免費、專業、企業）
+- 常見問題
+- 最終 CTA 與註冊
+
+技術要求：
+- 使用 Tailwind CSS 處理所有樣式
+- 適當使用 shadcn/ui 元件（從 @/components/ui/ 匯入）
+- 使用 lucide-react 圖示
+- 必須支援手機與桌面響應式
+- 匯出方式：export default function App()
+- 單一檔案，不要額外的 CSS 檔或 CDN 腳本` },
+    ],
     promptCopy: "複製",
     promptCopied: "已複製！",
   },
@@ -209,11 +385,19 @@ Requirements:
     langLabel: "语言",
     promptLabel: "Prompt 模板",
     promptHint: "复制以下 prompt 粘贴到你的 AI 工具中，填入空白处即可。",
-    promptTemplate: `请用 JSX 格式制作一个 React 页面，可以直接替换 src/App.jsx。
+    promptVariants: [
+      { label: "落地页", template: `请用 JSX 格式制作一个落地页，可以直接替换 src/App.jsx。
 
-主题：[你的网站主题——例如：咖啡店、个人作品集、SaaS 产品介绍]
-风格：[设计风格——例如：简约、现代、缤纷、企业专业]
-详细内容：[想要的区块——例如：主视觉、产品特色、客户评价、定价、联系表单]
+目的：[推广的产品或服务——例如：健身 App、本地面包店、咨询公司]
+风格：[设计风格——例如：简约、现代、大胆、企业专业]
+
+需要包含的区块:
+- 主视觉（标题、副标题与 CTA 按钮）
+- 特色或优势（3–4 项搭配图标）
+- 客户评价或社会认证
+- 定价或方案
+- 最终行动呼吁
+- 页脚链接
 
 技术要求：
 - 使用 Tailwind CSS 处理所有样式
@@ -221,7 +405,87 @@ Requirements:
 - 使用 lucide-react 图标
 - 必须支持手机与桌面响应式
 - 导出方式：export default function App()
-- 单一文件，不要额外的 CSS 文件或 CDN 脚本`,
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本` },
+      { label: "作品集", template: `请用 JSX 格式制作一个个人作品集页面，可以直接替换 src/App.jsx。
+
+姓名：[你的名字]
+角色：[你的职称——例如：前端工程师、设计师、摄影师]
+风格：[设计风格——例如：简约、创意、优雅、深色]
+
+需要包含的区块:
+- 个人介绍（姓名、职称、简短自我介绍）
+- 精选作品（3–6 项，搭配图片与说明）
+- 技能或工具
+- 经历或学历时间轴
+- 联系表单或链接
+
+技术要求：
+- 使用 Tailwind CSS 处理所有样式
+- 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+- 使用 lucide-react 图标
+- 必须支持手机与桌面响应式
+- 导出方式：export default function App()
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本` },
+      { label: "仪表板", template: `请用 JSX 格式制作一个后台仪表板页面，可以直接替换 src/App.jsx。
+
+目的：[仪表板用途——例如：销售分析、项目管理、用户数据]
+风格：[设计风格——例如：简洁、数据密集、现代、企业专业]
+
+需要包含的区块:
+- 顶部导航栏（搜索与用户菜单）
+- 侧边栏导航链接
+- 统计卡片（4 个 KPI 卡片搭配图标与趋势）
+- 图表区（使用 recharts 的折线图或柱状图）
+- 近期活动数据表
+
+技术要求：
+- 使用 Tailwind CSS 处理所有样式
+- 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+- 使用 lucide-react 图标
+- 必须支持手机与桌面响应式
+- 导出方式：export default function App()
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本` },
+      { label: "博客", template: `请用 JSX 格式制作一个博客首页，可以直接替换 src/App.jsx。
+
+主题：[博客主题——例如：科技、旅游、烹饪、个人日志]
+风格：[设计风格——例如：简约、杂志风、编辑风、温馨]
+
+需要包含的区块:
+- 页头（博客名称与导航）
+- 精选文章（大图展示）
+- 最新文章区（6–9 张卡片，含标题、摘要、日期、分类）
+- 邮件订阅区
+- 页脚链接
+
+技术要求：
+- 使用 Tailwind CSS 处理所有样式
+- 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+- 使用 lucide-react 图标
+- 必须支持手机与桌面响应式
+- 导出方式：export default function App()
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本` },
+      { label: "SaaS 产品", template: `请用 JSX 格式制作一个 SaaS 产品页面，可以直接替换 src/App.jsx。
+
+产品：[你的 SaaS 产品——例如：项目管理工具、Email 平台、AI 助手]
+风格：[设计风格——例如：现代、专业、活泼、企业级]
+
+需要包含的区块:
+- 主视觉（产品名称、标语、CTA 与产品截图）
+- 合作品牌 logo 列
+- 核心功能（3–4 项搭配图标与说明）
+- 使用流程（3 个步骤）
+- 定价表（3 个方案：免费、专业、企业）
+- 常见问题
+- 最终 CTA 与注册
+
+技术要求：
+- 使用 Tailwind CSS 处理所有样式
+- 适当使用 shadcn/ui 组件（从 @/components/ui/ 导入）
+- 使用 lucide-react 图标
+- 必须支持手机与桌面响应式
+- 导出方式：export default function App()
+- 单一文件，不要额外的 CSS 文件或 CDN 脚本` },
+    ],
     promptCopy: "复制",
     promptCopied: "已复制！",
   },
@@ -282,11 +546,19 @@ Requirements:
     langLabel: "Idioma",
     promptLabel: "Prompt inicial",
     promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
-    promptTemplate: `Crea una página React en formato JSX que pueda usar como src/App.jsx.
+    promptVariants: [
+      { label: "Landing", template: `Crea una landing page en formato JSX que pueda usar como src/App.jsx.
 
-Tema: [el tema de tu sitio — ej. cafetería, portafolio, producto SaaS]
-Estilo: [estilo de diseño — ej. minimalista, moderno, colorido, corporativo]
-Detalles: [secciones que deseas — ej. hero, características, testimonios, precios, contacto]
+Propósito: [lo que promocionas — ej. app de fitness, panadería local, consultora]
+Estilo: [estilo de diseño — ej. minimalista, moderno, llamativo, corporativo]
+
+Secciones a incluir:
+- Hero con título, subtítulo y botón CTA
+- Características o beneficios (3–4 elementos con iconos)
+- Testimonios o prueba social
+- Precios o planes
+- Llamada a la acción final
+- Footer con enlaces
 
 Requisitos:
 - Usa Tailwind CSS para todos los estilos
@@ -294,7 +566,87 @@ Requisitos:
 - Usa lucide-react para los iconos
 - Hazlo responsivo para móvil y escritorio
 - Exportar como: export default function App()
-- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN`,
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN` },
+      { label: "Portafolio", template: `Crea una página de portafolio personal en formato JSX que pueda usar como src/App.jsx.
+
+Nombre: [tu nombre]
+Rol: [tu título — ej. desarrollador frontend, diseñador, fotógrafo]
+Estilo: [estilo de diseño — ej. minimalista, creativo, elegante, oscuro]
+
+Secciones a incluir:
+- Hero con nombre, título y breve biografía
+- Proyectos destacados (3–6 con imágenes y descripciones)
+- Habilidades o herramientas
+- Experiencia o educación (línea de tiempo)
+- Formulario de contacto o enlaces
+
+Requisitos:
+- Usa Tailwind CSS para todos los estilos
+- Usa componentes de shadcn/ui (importar desde @/components/ui/) cuando sea adecuado
+- Usa lucide-react para los iconos
+- Hazlo responsivo para móvil y escritorio
+- Exportar como: export default function App()
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN` },
+      { label: "Dashboard", template: `Crea un panel de administración (dashboard) en formato JSX que pueda usar como src/App.jsx.
+
+Propósito: [propósito del dashboard — ej. análisis de ventas, gestión de proyectos, métricas de usuarios]
+Estilo: [estilo de diseño — ej. limpio, denso en datos, moderno, corporativo]
+
+Secciones a incluir:
+- Barra de navegación superior con búsqueda y menú de usuario
+- Barra lateral con enlaces de navegación
+- Tarjetas de estadísticas (4 KPIs con iconos y tendencias)
+- Área de gráficos (gráfico de líneas o barras usando recharts)
+- Tabla de datos con actividad reciente
+
+Requisitos:
+- Usa Tailwind CSS para todos los estilos
+- Usa componentes de shadcn/ui (importar desde @/components/ui/) cuando sea adecuado
+- Usa lucide-react para los iconos
+- Hazlo responsivo para móvil y escritorio
+- Exportar como: export default function App()
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN` },
+      { label: "Blog", template: `Crea una página de inicio de blog en formato JSX que pueda usar como src/App.jsx.
+
+Tema: [tema del blog — ej. tecnología, viajes, cocina, diario personal]
+Estilo: [estilo de diseño — ej. minimalista, revista, editorial, acogedor]
+
+Secciones a incluir:
+- Encabezado con nombre del blog y navegación
+- Post destacado con imagen grande
+- Grid de posts recientes (6–9 tarjetas con título, extracto, fecha, categoría)
+- Sección de suscripción al newsletter
+- Footer con enlaces
+
+Requisitos:
+- Usa Tailwind CSS para todos los estilos
+- Usa componentes de shadcn/ui (importar desde @/components/ui/) cuando sea adecuado
+- Usa lucide-react para los iconos
+- Hazlo responsivo para móvil y escritorio
+- Exportar como: export default function App()
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN` },
+      { label: "SaaS", template: `Crea una página de producto SaaS en formato JSX que pueda usar como src/App.jsx.
+
+Producto: [tu producto SaaS — ej. herramienta de gestión, plataforma de email, asistente IA]
+Estilo: [estilo de diseño — ej. moderno, profesional, divertido, empresarial]
+
+Secciones a incluir:
+- Hero con nombre del producto, eslogan, CTA y mockup
+- Barra de logos de empresas que lo usan
+- Funcionalidades clave (3–4 con iconos y descripciones)
+- Cómo funciona (3 pasos)
+- Tabla de precios (3 niveles: Gratis, Pro, Empresa)
+- Sección de preguntas frecuentes
+- CTA final con registro
+
+Requisitos:
+- Usa Tailwind CSS para todos los estilos
+- Usa componentes de shadcn/ui (importar desde @/components/ui/) cuando sea adecuado
+- Usa lucide-react para los iconos
+- Hazlo responsivo para móvil y escritorio
+- Exportar como: export default function App()
+- Un solo archivo, sin archivos CSS adicionales ni scripts de CDN` },
+    ],
     promptCopy: "Copiar",
     promptCopied: "¡Copiado!",
   },
@@ -355,11 +707,19 @@ Requisitos:
     langLabel: "言語",
     promptLabel: "プロンプトテンプレート",
     promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
-    promptTemplate: `src/App.jsx としてそのまま使える React ページを JSX 形式で作成してください。
+    promptVariants: [
+      { label: "LP", template: `src/App.jsx として使えるランディングページを JSX 形式で作成してください。
 
-テーマ：[サイトのテーマ — 例：カフェ、ポートフォリオ、SaaS プロダクト紹介]
-スタイル：[デザインスタイル — 例：ミニマル、モダン、カラフル、コーポレート]
-詳細：[必要なセクション — 例：ヒーロー、特徴紹介、お客様の声、料金、お問い合わせ]
+目的：[宣伝する商品やサービス — 例：フィットネスアプリ、地元のパン屋、コンサルティング会社]
+スタイル：[デザインスタイル — 例：ミニマル、モダン、インパクト重視、コーポレート]
+
+含めるセクション:
+- ヒーロー（見出し、サブ見出し、CTA ボタン）
+- 特徴やメリット（3–4 項目、アイコン付き）
+- お客様の声・社会的証明
+- 料金プラン
+- 最終 CTA
+- フッターリンク
 
 技術要件：
 - スタイリングはすべて Tailwind CSS を使用
@@ -367,7 +727,87 @@ Requisitos:
 - アイコンは lucide-react を使用
 - モバイルとデスクトップの両方に対応（レスポンシブ）
 - エクスポート形式：export default function App()
-- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要`,
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要` },
+      { label: "ポートフォリオ", template: `src/App.jsx として使えるポートフォリオページを JSX 形式で作成してください。
+
+名前：[あなたの名前]
+肩書き：[あなたの職種 — 例：フロントエンドエンジニア、デザイナー、フォトグラファー]
+スタイル：[デザインスタイル — 例：ミニマル、クリエイティブ、エレガント、ダーク]
+
+含めるセクション:
+- ヒーロー（名前、肩書き、短い自己紹介）
+- 代表作品（3–6 件、画像と説明付き）
+- スキル・ツール
+- 経歴・学歴タイムライン
+- お問い合わせフォームまたはリンク
+
+技術要件：
+- スタイリングはすべて Tailwind CSS を使用
+- 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+- アイコンは lucide-react を使用
+- モバイルとデスクトップの両方に対応（レスポンシブ）
+- エクスポート形式：export default function App()
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要` },
+      { label: "ダッシュボード", template: `src/App.jsx として使える管理ダッシュボードを JSX 形式で作成してください。
+
+目的：[ダッシュボードの用途 — 例：売上分析、プロジェクト管理、ユーザー指標]
+スタイル：[デザインスタイル — 例：クリーン、データ密度高め、モダン、コーポレート]
+
+含めるセクション:
+- 上部ナビゲーションバー（検索とユーザーメニュー）
+- サイドバーナビゲーション
+- 統計カード（4 つの KPI カード、アイコンとトレンド付き）
+- チャートエリア（recharts による折れ線または棒グラフ）
+- 最近のアクティビティテーブル
+
+技術要件：
+- スタイリングはすべて Tailwind CSS を使用
+- 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+- アイコンは lucide-react を使用
+- モバイルとデスクトップの両方に対応（レスポンシブ）
+- エクスポート形式：export default function App()
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要` },
+      { label: "ブログ", template: `src/App.jsx として使えるブログトップページを JSX 形式で作成してください。
+
+テーマ：[ブログのテーマ — 例：テック、旅行、料理、個人日記]
+スタイル：[デザインスタイル — 例：ミニマル、マガジン風、エディトリアル、温かみのある]
+
+含めるセクション:
+- ヘッダー（ブログ名とナビゲーション）
+- 注目記事（大きな画像付き）
+- 最新記事グリッド（6–9 枚のカード、タイトル・抜粋・日付・カテゴリ付き）
+- ニュースレター登録セクション
+- フッターリンク
+
+技術要件：
+- スタイリングはすべて Tailwind CSS を使用
+- 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+- アイコンは lucide-react を使用
+- モバイルとデスクトップの両方に対応（レスポンシブ）
+- エクスポート形式：export default function App()
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要` },
+      { label: "SaaS", template: `src/App.jsx として使える SaaS プロダクトページを JSX 形式で作成してください。
+
+プロダクト：[あなたの SaaS 製品 — 例：プロジェクト管理ツール、メールプラットフォーム、AI アシスタント]
+スタイル：[デザインスタイル — 例：モダン、プロフェッショナル、ポップ、エンタープライズ]
+
+含めるセクション:
+- ヒーロー（プロダクト名、キャッチコピー、CTA、スクリーンショット）
+- 導入企業のロゴバー
+- 主要機能（3–4 つ、アイコンと説明付き）
+- 使い方（3 ステップ）
+- 料金表（3 プラン：無料、プロ、エンタープライズ）
+- よくある質問
+- 最終 CTA・登録
+
+技術要件：
+- スタイリングはすべて Tailwind CSS を使用
+- 必要に応じて shadcn/ui コンポーネントを使用（@/components/ui/ からインポート）
+- アイコンは lucide-react を使用
+- モバイルとデスクトップの両方に対応（レスポンシブ）
+- エクスポート形式：export default function App()
+- 単一ファイルのみ、追加の CSS ファイルや CDN スクリプトは不要` },
+    ],
     promptCopy: "コピー",
     promptCopied: "コピーしました！",
   },
@@ -428,11 +868,19 @@ Requisitos:
     langLabel: "Idioma",
     promptLabel: "Prompt inicial",
     promptHint: "Copie este prompt e cole na sua ferramenta de IA. Preencha os espaços em branco.",
-    promptTemplate: `Crie uma página React em formato JSX que eu possa usar como src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Crie uma landing page em formato JSX que eu possa usar como src/App.jsx.
 
-Tema: [o tema do seu site — ex: cafeteria, portfólio, produto SaaS]
-Estilo: [estilo de design — ex: minimalista, moderno, colorido, corporativo]
-Detalhes: [seções desejadas — ex: hero, funcionalidades, depoimentos, preços, contato]
+Propósito: [o que você promove — ex: app de fitness, padaria local, consultoria]
+Estilo: [estilo de design — ex: minimalista, moderno, ousado, corporativo]
+
+Seções a incluir:
+- Hero com título, subtítulo e botão CTA
+- Funcionalidades ou benefícios (3–4 itens com ícones)
+- Depoimentos ou prova social
+- Preços ou planos
+- Chamada final para ação
+- Footer com links
 
 Requisitos:
 - Use Tailwind CSS para toda a estilização
@@ -440,7 +888,87 @@ Requisitos:
 - Use lucide-react para ícones
 - Torne responsivo para mobile e desktop
 - Exportar como: export default function App()
-- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN`,
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN` },
+      { label: "Portfólio", template: `Crie uma página de portfólio pessoal em formato JSX que eu possa usar como src/App.jsx.
+
+Nome: [seu nome]
+Cargo: [seu título — ex: desenvolvedor frontend, designer, fotógrafo]
+Estilo: [estilo de design — ex: minimalista, criativo, elegante, escuro]
+
+Seções a incluir:
+- Hero com nome, título e breve biografia
+- Projetos em destaque (3–6 com imagens e descrições)
+- Habilidades ou ferramentas
+- Experiência ou formação (linha do tempo)
+- Formulário de contato ou links
+
+Requisitos:
+- Use Tailwind CSS para toda a estilização
+- Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+- Use lucide-react para ícones
+- Torne responsivo para mobile e desktop
+- Exportar como: export default function App()
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN` },
+      { label: "Dashboard", template: `Crie uma página de dashboard administrativo em formato JSX que eu possa usar como src/App.jsx.
+
+Propósito: [propósito do dashboard — ex: análise de vendas, gestão de projetos, métricas de usuários]
+Estilo: [estilo de design — ex: limpo, denso em dados, moderno, corporativo]
+
+Seções a incluir:
+- Barra de navegação superior com busca e menu do usuário
+- Barra lateral com links de navegação
+- Cards de estatísticas (4 KPIs com ícones e tendências)
+- Área de gráficos (gráfico de linha ou barras usando recharts)
+- Tabela de dados com atividade recente
+
+Requisitos:
+- Use Tailwind CSS para toda a estilização
+- Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+- Use lucide-react para ícones
+- Torne responsivo para mobile e desktop
+- Exportar como: export default function App()
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN` },
+      { label: "Blog", template: `Crie uma página inicial de blog em formato JSX que eu possa usar como src/App.jsx.
+
+Tema: [tema do blog — ex: tecnologia, viagem, culinária, diário pessoal]
+Estilo: [estilo de design — ex: minimalista, revista, editorial, aconchegante]
+
+Seções a incluir:
+- Cabeçalho com nome do blog e navegação
+- Post em destaque com imagem grande
+- Grid de posts recentes (6–9 cards com título, resumo, data, categoria)
+- Seção de inscrição na newsletter
+- Footer com links
+
+Requisitos:
+- Use Tailwind CSS para toda a estilização
+- Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+- Use lucide-react para ícones
+- Torne responsivo para mobile e desktop
+- Exportar como: export default function App()
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN` },
+      { label: "SaaS", template: `Crie uma página de produto SaaS em formato JSX que eu possa usar como src/App.jsx.
+
+Produto: [seu produto SaaS — ex: ferramenta de gestão, plataforma de email, assistente IA]
+Estilo: [estilo de design — ex: moderno, profissional, divertido, empresarial]
+
+Seções a incluir:
+- Hero com nome do produto, slogan, CTA e mockup
+- Barra de logos de empresas parceiras
+- Funcionalidades-chave (3–4 com ícones e descrições)
+- Como funciona (3 passos)
+- Tabela de preços (3 planos: Grátis, Pro, Empresa)
+- Seção de perguntas frequentes
+- CTA final com cadastro
+
+Requisitos:
+- Use Tailwind CSS para toda a estilização
+- Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
+- Use lucide-react para ícones
+- Torne responsivo para mobile e desktop
+- Exportar como: export default function App()
+- Arquivo único, sem arquivos CSS adicionais ou scripts de CDN` },
+    ],
     promptCopy: "Copiar",
     promptCopied: "Copiado!",
   },
@@ -501,11 +1029,19 @@ Requisitos:
     langLabel: "اللغة",
     promptLabel: "قالب البرومبت",
     promptHint: "انسخ هذا البرومبت والصقه في أداة الذكاء الاصطناعي، ثم املأ الفراغات.",
-    promptTemplate: `أنشئ صفحة React بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+    promptVariants: [
+      { label: "صفحة هبوط", template: `أنشئ صفحة هبوط بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
 
-الموضوع: [موضوع موقعك — مثلاً: مقهى، معرض أعمال، منتج SaaS]
-الأسلوب: [أسلوب التصميم — مثلاً: بسيط، عصري، ملوّن، مؤسسي]
-التفاصيل: [الأقسام المطلوبة — مثلاً: بطل الصفحة، الميزات، آراء العملاء، الأسعار، نموذج التواصل]
+الغرض: [ما تروّج له — مثلاً: تطبيق لياقة، مخبز محلي، شركة استشارات]
+الأسلوب: [أسلوب التصميم — مثلاً: بسيط، عصري، جريء، مؤسسي]
+
+الأقسام المطلوبة:
+- بطل الصفحة (عنوان رئيسي، عنوان فرعي، زر CTA)
+- الميزات أو الفوائد (3–4 عناصر بأيقونات)
+- شهادات العملاء أو الإثبات الاجتماعي
+- الأسعار أو الخطط
+- دعوة أخيرة لاتخاذ إجراء
+- تذييل مع روابط
 
 المتطلبات التقنية:
 - استخدم Tailwind CSS لجميع الأنماط
@@ -513,7 +1049,87 @@ Requisitos:
 - استخدم lucide-react للأيقونات
 - اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
 - صدّرها كـ: export default function App()
-- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN`,
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN` },
+      { label: "معرض أعمال", template: `أنشئ صفحة معرض أعمال شخصي بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+
+الاسم: [اسمك]
+الدور: [مسماك الوظيفي — مثلاً: مطور واجهات، مصمم، مصور]
+الأسلوب: [أسلوب التصميم — مثلاً: بسيط، إبداعي، أنيق، داكن]
+
+الأقسام المطلوبة:
+- مقدمة (الاسم، المسمى الوظيفي، نبذة مختصرة)
+- أعمال مميزة (3–6 مع صور وأوصاف)
+- المهارات أو الأدوات
+- الخبرات أو التعليم (خط زمني)
+- نموذج تواصل أو روابط
+
+المتطلبات التقنية:
+- استخدم Tailwind CSS لجميع الأنماط
+- استخدم مكونات shadcn/ui (استيراد من @/components/ui/) عند الحاجة
+- استخدم lucide-react للأيقونات
+- اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
+- صدّرها كـ: export default function App()
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN` },
+      { label: "لوحة تحكم", template: `أنشئ لوحة تحكم إدارية بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+
+الغرض: [غرض اللوحة — مثلاً: تحليلات المبيعات، إدارة المشاريع، مقاييس المستخدمين]
+الأسلوب: [أسلوب التصميم — مثلاً: نظيف، كثيف البيانات، عصري، مؤسسي]
+
+الأقسام المطلوبة:
+- شريط تنقل علوي مع بحث وقائمة المستخدم
+- شريط جانبي مع روابط التنقل
+- بطاقات إحصائيات (4 مؤشرات KPI بأيقونات واتجاهات)
+- منطقة الرسوم البيانية (خطي أو أعمدة باستخدام recharts)
+- جدول بيانات النشاط الأخير
+
+المتطلبات التقنية:
+- استخدم Tailwind CSS لجميع الأنماط
+- استخدم مكونات shadcn/ui (استيراد من @/components/ui/) عند الحاجة
+- استخدم lucide-react للأيقونات
+- اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
+- صدّرها كـ: export default function App()
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN` },
+      { label: "مدوّنة", template: `أنشئ صفحة رئيسية لمدوّنة بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+
+الموضوع: [موضوع المدوّنة — مثلاً: تقنية، سفر، طبخ، يوميات شخصية]
+الأسلوب: [أسلوب التصميم — مثلاً: بسيط، مجلة، تحريري، دافئ]
+
+الأقسام المطلوبة:
+- رأس الصفحة (اسم المدوّنة والتنقل)
+- مقال مميز بصورة كبيرة
+- شبكة المقالات الأخيرة (6–9 بطاقات بعنوان وملخص وتاريخ وتصنيف)
+- قسم الاشتراك في النشرة البريدية
+- تذييل مع روابط
+
+المتطلبات التقنية:
+- استخدم Tailwind CSS لجميع الأنماط
+- استخدم مكونات shadcn/ui (استيراد من @/components/ui/) عند الحاجة
+- استخدم lucide-react للأيقونات
+- اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
+- صدّرها كـ: export default function App()
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN` },
+      { label: "SaaS", template: `أنشئ صفحة منتج SaaS بتنسيق JSX يمكنني استخدامها كملف src/App.jsx.
+
+المنتج: [منتجك SaaS — مثلاً: أداة إدارة مشاريع، منصة بريد إلكتروني، مساعد ذكاء اصطناعي]
+الأسلوب: [أسلوب التصميم — مثلاً: عصري، احترافي، مرح، مؤسسي]
+
+الأقسام المطلوبة:
+- بطل الصفحة (اسم المنتج، شعار، CTA، نموذج المنتج)
+- شريط شعارات الشركات المستخدمة
+- الميزات الرئيسية (3–4 بأيقونات وأوصاف)
+- كيف يعمل (3 خطوات)
+- جدول الأسعار (3 مستويات: مجاني، احترافي، مؤسسي)
+- قسم الأسئلة الشائعة
+- CTA أخير مع التسجيل
+
+المتطلبات التقنية:
+- استخدم Tailwind CSS لجميع الأنماط
+- استخدم مكونات shadcn/ui (استيراد من @/components/ui/) عند الحاجة
+- استخدم lucide-react للأيقونات
+- اجعل الصفحة متجاوبة مع الهاتف وسطح المكتب
+- صدّرها كـ: export default function App()
+- ملف واحد فقط، بدون ملفات CSS إضافية أو سكربتات CDN` },
+    ],
     promptCopy: "نسخ",
     promptCopied: "تم النسخ!",
   },
@@ -574,11 +1190,19 @@ Requisitos:
     langLabel: "Langue",
     promptLabel: "Prompt de départ",
     promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
-    promptTemplate: `Crée une page React en format JSX que je puisse utiliser comme src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Crée une landing page en format JSX que je puisse utiliser comme src/App.jsx.
 
-Thème : [le thème de votre site — ex : café, portfolio, produit SaaS]
-Style : [style de design — ex : minimaliste, moderne, coloré, corporate]
-Détails : [sections souhaitées — ex : hero, fonctionnalités, témoignages, tarifs, contact]
+Objectif : [ce que tu promeus — ex : appli fitness, boulangerie locale, cabinet de conseil]
+Style : [style de design — ex : minimaliste, moderne, audacieux, corporate]
+
+Sections à inclure:
+- Hero avec titre, sous-titre et bouton CTA
+- Fonctionnalités ou avantages (3–4 éléments avec icônes)
+- Témoignages ou preuve sociale
+- Tarifs ou plans
+- Appel à l'action final
+- Footer avec liens
 
 Exigences :
 - Utilise Tailwind CSS pour tout le style
@@ -586,7 +1210,87 @@ Exigences :
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
 - Exporter comme : export default function App()
-- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN`,
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
+      { label: "Portfolio", template: `Crée une page portfolio personnelle en format JSX que je puisse utiliser comme src/App.jsx.
+
+Nom : [ton nom]
+Rôle : [ton titre — ex : développeur frontend, designer, photographe]
+Style : [style de design — ex : minimaliste, créatif, élégant, sombre]
+
+Sections à inclure:
+- Hero avec nom, titre et courte bio
+- Projets phares (3–6 avec images et descriptions)
+- Compétences ou outils
+- Expérience ou formation (chronologie)
+- Formulaire de contact ou liens
+
+Exigences :
+- Utilise Tailwind CSS pour tout le style
+- Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
+- Utilise lucide-react pour les icônes
+- Rends la page responsive pour mobile et desktop
+- Exporter comme : export default function App()
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
+      { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX que je puisse utiliser comme src/App.jsx.
+
+Objectif : [objectif du dashboard — ex : analyses de ventes, gestion de projets, métriques utilisateurs]
+Style : [style de design — ex : épuré, dense en données, moderne, corporate]
+
+Sections à inclure:
+- Barre de navigation supérieure avec recherche et menu utilisateur
+- Barre latérale avec liens de navigation
+- Cartes de statistiques (4 KPIs avec icônes et tendances)
+- Zone de graphiques (courbes ou barres avec recharts)
+- Tableau de données avec activité récente
+
+Exigences :
+- Utilise Tailwind CSS pour tout le style
+- Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
+- Utilise lucide-react pour les icônes
+- Rends la page responsive pour mobile et desktop
+- Exporter comme : export default function App()
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
+      { label: "Blog", template: `Crée une page d'accueil de blog en format JSX que je puisse utiliser comme src/App.jsx.
+
+Thème : [thème du blog — ex : tech, voyage, cuisine, journal personnel]
+Style : [style de design — ex : minimaliste, magazine, éditorial, chaleureux]
+
+Sections à inclure:
+- En-tête avec nom du blog et navigation
+- Article à la une avec grande image
+- Grille d'articles récents (6–9 cartes avec titre, extrait, date, catégorie)
+- Section inscription newsletter
+- Footer avec liens
+
+Exigences :
+- Utilise Tailwind CSS pour tout le style
+- Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
+- Utilise lucide-react pour les icônes
+- Rends la page responsive pour mobile et desktop
+- Exporter comme : export default function App()
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
+      { label: "SaaS", template: `Crée une page produit SaaS en format JSX que je puisse utiliser comme src/App.jsx.
+
+Produit : [ton produit SaaS — ex : outil de gestion, plateforme email, assistant IA]
+Style : [style de design — ex : moderne, professionnel, ludique, entreprise]
+
+Sections à inclure:
+- Hero avec nom du produit, slogan, CTA et mockup
+- Barre de logos partenaires
+- Fonctionnalités clés (3–4 avec icônes et descriptions)
+- Comment ça marche (3 étapes)
+- Tableau de prix (3 niveaux : Gratuit, Pro, Entreprise)
+- Section FAQ
+- CTA final avec inscription
+
+Exigences :
+- Utilise Tailwind CSS pour tout le style
+- Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
+- Utilise lucide-react pour les icônes
+- Rends la page responsive pour mobile et desktop
+- Exporter comme : export default function App()
+- Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
+    ],
     promptCopy: "Copier",
     promptCopied: "Copié !",
   },
@@ -647,11 +1351,19 @@ Exigences :
     langLabel: "भाषा",
     promptLabel: "शुरुआती प्रॉम्प्ट",
     promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
-    promptTemplate: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक React पेज बनाएं।
+    promptVariants: [
+      { label: "लैंडिंग पेज", template: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक लैंडिंग पेज बनाएं।
 
-विषय: [आपकी वेबसाइट का विषय — उदा: कॉफी शॉप, पोर्टफोलियो, SaaS प्रोडक्ट]
-शैली: [डिज़ाइन शैली — उदा: न्यूनतम, आधुनिक, रंगीन, कॉर्पोरेट]
-विवरण: [चाहिए सेक्शन — उदा: हीरो, फ़ीचर्स, प्रशंसापत्र, मूल्य निर्धारण, संपर्क]
+उद्देश्य: [किसका प्रचार — उदा: फिटनेस ऐप, लोकल बेकरी, कंसल्टिंग फर्म]
+शैली: [डिज़ाइन शैली — उदा: न्यूनतम, आधुनिक, बोल्ड, कॉर्पोरेट]
+
+शामिल करने के सेक्शन:
+- हेडलाइन, सब-हेडलाइन और CTA बटन के साथ हीरो
+- फ़ीचर्स या फ़ायदे (3–4 आइटम आइकन के साथ)
+- ग्राहक प्रशंसापत्र या सोशल प्रूफ
+- प्राइसिंग या प्लान
+- अंतिम कॉल-टू-एक्शन
+- फ़ुटर लिंक
 
 तकनीकी आवश्यकताएं:
 - सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
@@ -659,7 +1371,87 @@ Exigences :
 - आइकन के लिए lucide-react का उपयोग करें
 - मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
 - एक्सपोर्ट: export default function App()
-- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं`,
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं` },
+      { label: "पोर्टफोलियो", template: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक पोर्टफोलियो पेज बनाएं।
+
+नाम: [आपका नाम]
+भूमिका: [आपकी उपाधि — उदा: फ्रंटएंड डेवलपर, डिज़ाइनर, फ़ोटोग्राफ़र]
+शैली: [डिज़ाइन शैली — उदा: न्यूनतम, रचनात्मक, सुरुचिपूर्ण, डार्क]
+
+शामिल करने के सेक्शन:
+- नाम, उपाधि और संक्षिप्त परिचय के साथ हीरो
+- प्रमुख प्रोजेक्ट (3–6, चित्र और विवरण के साथ)
+- कौशल या टूल्स
+- अनुभव या शिक्षा टाइमलाइन
+- संपर्क फ़ॉर्म या लिंक
+
+तकनीकी आवश्यकताएं:
+- सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
+- उपयुक्त होने पर shadcn/ui कंपोनेंट्स का उपयोग करें (@/components/ui/ से इम्पोर्ट)
+- आइकन के लिए lucide-react का उपयोग करें
+- मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
+- एक्सपोर्ट: export default function App()
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं` },
+      { label: "डैशबोर्ड", template: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक एडमिन डैशबोर्ड बनाएं।
+
+उद्देश्य: [डैशबोर्ड का उद्देश्य — उदा: बिक्री विश्लेषण, प्रोजेक्ट प्रबंधन, यूज़र मेट्रिक्स]
+शैली: [डिज़ाइन शैली — उदा: साफ़, डेटा-सघन, आधुनिक, कॉर्पोरेट]
+
+शामिल करने के सेक्शन:
+- सर्च और यूज़र मेनू के साथ टॉप नेविगेशन बार
+- साइडबार नेविगेशन लिंक
+- स्टैट्स कार्ड (4 KPI कार्ड, आइकन और ट्रेंड के साथ)
+- चार्ट एरिया (recharts का उपयोग करके लाइन या बार चार्ट)
+- हाल की गतिविधि डेटा टेबल
+
+तकनीकी आवश्यकताएं:
+- सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
+- उपयुक्त होने पर shadcn/ui कंपोनेंट्स का उपयोग करें (@/components/ui/ से इम्पोर्ट)
+- आइकन के लिए lucide-react का उपयोग करें
+- मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
+- एक्सपोर्ट: export default function App()
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं` },
+      { label: "ब्लॉग", template: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक ब्लॉग होमपेज बनाएं।
+
+विषय: [ब्लॉग का विषय — उदा: टेक, यात्रा, खाना पकाना, व्यक्तिगत डायरी]
+शैली: [डिज़ाइन शैली — उदा: न्यूनतम, मैगज़ीन, एडिटोरियल, आरामदायक]
+
+शामिल करने के सेक्शन:
+- ब्लॉग नाम और नेविगेशन के साथ हेडर
+- बड़ी छवि के साथ फ़ीचर्ड पोस्ट
+- हाल के पोस्ट ग्रिड (6–9 कार्ड, शीर्षक, सारांश, तारीख, श्रेणी)
+- न्यूज़लेटर सब्सक्रिप्शन सेक्शन
+- फ़ुटर लिंक
+
+तकनीकी आवश्यकताएं:
+- सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
+- उपयुक्त होने पर shadcn/ui कंपोनेंट्स का उपयोग करें (@/components/ui/ से इम्पोर्ट)
+- आइकन के लिए lucide-react का उपयोग करें
+- मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
+- एक्सपोर्ट: export default function App()
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं` },
+      { label: "SaaS", template: `src/App.jsx के रूप में उपयोग करने के लिए JSX फॉर्मेट में एक SaaS प्रोडक्ट पेज बनाएं।
+
+प्रोडक्ट: [आपका SaaS प्रोडक्ट — उदा: प्रोजेक्ट मैनेजमेंट टूल, ईमेल प्लेटफ़ॉर्म, AI असिस्टेंट]
+शैली: [डिज़ाइन शैली — उदा: आधुनिक, पेशेवर, चंचल, एंटरप्राइज़]
+
+शामिल करने के सेक्शन:
+- प्रोडक्ट नाम, टैगलाइन, CTA और मॉकअप के साथ हीरो
+- भरोसेमंद ब्रांड लोगो बार
+- मुख्य फ़ीचर्स (3–4, आइकन और विवरण के साथ)
+- कैसे काम करता है (3 स्टेप्स)
+- प्राइसिंग टेबल (3 टियर: फ्री, प्रो, एंटरप्राइज़)
+- FAQ सेक्शन
+- अंतिम CTA और साइनअप
+
+तकनीकी आवश्यकताएं:
+- सभी स्टाइलिंग के लिए Tailwind CSS का उपयोग करें
+- उपयुक्त होने पर shadcn/ui कंपोनेंट्स का उपयोग करें (@/components/ui/ से इम्पोर्ट)
+- आइकन के लिए lucide-react का उपयोग करें
+- मोबाइल और डेस्कटॉप दोनों के लिए रिस्पॉन्सिव बनाएं
+- एक्सपोर्ट: export default function App()
+- एकल फ़ाइल, कोई अतिरिक्त CSS फ़ाइल या CDN स्क्रिप्ट नहीं` },
+    ],
     promptCopy: "कॉपी करें",
     promptCopied: "कॉपी हो गया!",
   },
@@ -720,11 +1512,19 @@ Exigences :
     langLabel: "언어",
     promptLabel: "시작 프롬프트",
     promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
-    promptTemplate: `src/App.jsx로 바로 사용할 수 있는 React 페이지를 JSX 형식으로 만들어 주세요.
+    promptVariants: [
+      { label: "랜딩 페이지", template: `src/App.jsx로 바로 사용할 수 있는 랜딩 페이지를 JSX 형식으로 만들어 주세요.
 
-주제: [웹사이트 주제 — 예: 카페, 포트폴리오, SaaS 제품 소개]
-스타일: [디자인 스타일 — 예: 미니멀, 모던, 컬러풀, 기업형]
-세부사항: [원하는 섹션 — 예: 히어로, 기능 소개, 후기, 요금제, 문의]
+목적: [홍보할 제품/서비스 — 예: 피트니스 앱, 동네 빵집, 컨설팅 회사]
+스타일: [디자인 스타일 — 예: 미니멀, 모던, 강렬한, 기업형]
+
+포함할 섹션:
+- 헤드라인, 서브 헤드라인, CTA 버튼이 있는 히어로
+- 특징 또는 장점 (3–4개, 아이콘 포함)
+- 고객 후기 또는 소셜 프루프
+- 요금제 또는 플랜
+- 최종 CTA
+- 푸터 링크
 
 기술 요구사항:
 - 모든 스타일링에 Tailwind CSS 사용
@@ -732,7 +1532,87 @@ Exigences :
 - 아이콘은 lucide-react 사용
 - 모바일과 데스크톱 모두 반응형으로 제작
 - 내보내기 형식: export default function App()
-- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이`,
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이` },
+      { label: "포트폴리오", template: `src/App.jsx로 바로 사용할 수 있는 포트폴리오 페이지를 JSX 형식으로 만들어 주세요.
+
+이름: [본인 이름]
+역할: [직함 — 예: 프론트엔드 개발자, 디자이너, 포토그래퍼]
+스타일: [디자인 스타일 — 예: 미니멀, 크리에이티브, 우아한, 다크]
+
+포함할 섹션:
+- 이름, 직함, 짧은 소개가 있는 히어로
+- 대표 프로젝트 (3–6개, 이미지와 설명 포함)
+- 스킬 또는 도구
+- 경력 또는 학력 타임라인
+- 연락처 폼 또는 링크
+
+기술 요구사항:
+- 모든 스타일링에 Tailwind CSS 사용
+- 적절한 경우 shadcn/ui 컴포넌트 사용 (@/components/ui/에서 import)
+- 아이콘은 lucide-react 사용
+- 모바일과 데스크톱 모두 반응형으로 제작
+- 내보내기 형식: export default function App()
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이` },
+      { label: "대시보드", template: `src/App.jsx로 바로 사용할 수 있는 관리자 대시보드를 JSX 형식으로 만들어 주세요.
+
+목적: [대시보드 용도 — 예: 매출 분석, 프로젝트 관리, 사용자 지표]
+스타일: [디자인 스타일 — 예: 깔끔한, 데이터 밀집, 모던, 기업형]
+
+포함할 섹션:
+- 검색과 사용자 메뉴가 있는 상단 내비게이션 바
+- 사이드바 내비게이션 링크
+- 통계 카드 (4개 KPI 카드, 아이콘 및 추세 포함)
+- 차트 영역 (recharts를 사용한 라인 또는 바 차트)
+- 최근 활동 데이터 테이블
+
+기술 요구사항:
+- 모든 스타일링에 Tailwind CSS 사용
+- 적절한 경우 shadcn/ui 컴포넌트 사용 (@/components/ui/에서 import)
+- 아이콘은 lucide-react 사용
+- 모바일과 데스크톱 모두 반응형으로 제작
+- 내보내기 형식: export default function App()
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이` },
+      { label: "블로그", template: `src/App.jsx로 바로 사용할 수 있는 블로그 홈페이지를 JSX 형식으로 만들어 주세요.
+
+주제: [블로그 주제 — 예: 기술, 여행, 요리, 개인 일기]
+스타일: [디자인 스타일 — 예: 미니멀, 매거진, 에디토리얼, 아늑한]
+
+포함할 섹션:
+- 블로그 이름과 내비게이션이 있는 헤더
+- 큰 이미지가 있는 추천 게시물
+- 최근 게시물 그리드 (6–9개 카드, 제목/발췌/날짜/카테고리)
+- 뉴스레터 구독 섹션
+- 푸터 링크
+
+기술 요구사항:
+- 모든 스타일링에 Tailwind CSS 사용
+- 적절한 경우 shadcn/ui 컴포넌트 사용 (@/components/ui/에서 import)
+- 아이콘은 lucide-react 사용
+- 모바일과 데스크톱 모두 반응형으로 제작
+- 내보내기 형식: export default function App()
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이` },
+      { label: "SaaS", template: `src/App.jsx로 바로 사용할 수 있는 SaaS 제품 페이지를 JSX 형식으로 만들어 주세요.
+
+제품: [SaaS 제품 — 예: 프로젝트 관리 도구, 이메일 플랫폼, AI 어시스턴트]
+스타일: [디자인 스타일 — 예: 모던, 프로페셔널, 플레이풀, 엔터프라이즈]
+
+포함할 섹션:
+- 제품명, 태그라인, CTA, 제품 목업이 있는 히어로
+- 신뢰 기업 로고 바
+- 핵심 기능 (3–4개, 아이콘 및 설명 포함)
+- 사용 방법 (3단계)
+- 가격표 (3단계: 무료, 프로, 엔터프라이즈)
+- FAQ 섹션
+- 최종 CTA 및 가입
+
+기술 요구사항:
+- 모든 스타일링에 Tailwind CSS 사용
+- 적절한 경우 shadcn/ui 컴포넌트 사용 (@/components/ui/에서 import)
+- 아이콘은 lucide-react 사용
+- 모바일과 데스크톱 모두 반응형으로 제작
+- 내보내기 형식: export default function App()
+- 단일 파일, 추가 CSS 파일이나 CDN 스크립트 없이` },
+    ],
     promptCopy: "복사",
     promptCopied: "복사됨!",
   },
@@ -793,11 +1673,19 @@ Exigences :
     langLabel: "زبان",
     promptLabel: "شروعاتی پرامپٹ",
     promptHint: "اس پرامپٹ کو کاپی کر کے اپنے AI ٹول میں پیسٹ کریں۔ خالی جگہیں پُر کریں۔",
-    promptTemplate: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک React صفحہ بنائیں۔
+    promptVariants: [
+      { label: "لینڈنگ پیج", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک لینڈنگ پیج بنائیں۔
 
-موضوع: [آپ کی ویب سائٹ کا موضوع — مثلاً: کافی شاپ، پورٹ فولیو، SaaS پروڈکٹ]
-انداز: [ڈیزائن اسٹائل — مثلاً: سادہ، جدید، رنگین، کارپوریٹ]
-تفصیلات: [مطلوبہ سیکشنز — مثلاً: ہیرو، خصوصیات، تعریفیں، قیمتیں، رابطہ]
+مقصد: [آپ کیا پروموٹ کر رہے ہیں — مثلاً: فٹنس ایپ، مقامی بیکری، مشاورتی فرم]
+انداز: [ڈیزائن اسٹائل — مثلاً: سادہ، جدید، نمایاں، کارپوریٹ]
+
+شامل کرنے کے سیکشنز:
+- ہیرو (ہیڈ لائن، سب ہیڈ لائن، CTA بٹن)
+- خصوصیات یا فوائد (3–4 آئیکنز کے ساتھ)
+- کسٹمر تعریفیں یا سماجی ثبوت
+- قیمتیں یا پلانز
+- آخری CTA
+- فوٹر لنکس
 
 تکنیکی تقاضے:
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
@@ -805,7 +1693,87 @@ Exigences :
 - آئیکنز کے لیے lucide-react استعمال کریں
 - موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
 - ایکسپورٹ: export default function App()
-- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں`,
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
+      { label: "پورٹ فولیو", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک ذاتی پورٹ فولیو پیج بنائیں۔
+
+نام: [آپ کا نام]
+کردار: [آپ کا عہدہ — مثلاً: فرنٹ اینڈ ڈویلپر، ڈیزائنر، فوٹوگرافر]
+انداز: [ڈیزائن اسٹائل — مثلاً: سادہ، تخلیقی، خوبصورت، ڈارک]
+
+شامل کرنے کے سیکشنز:
+- نام، عہدہ اور مختصر تعارف کے ساتھ ہیرو
+- نمایاں پروجیکٹس (3–6، تصاویر اور تفصیل کے ساتھ)
+- مہارتیں یا ٹولز
+- تجربہ یا تعلیم ٹائم لائن
+- رابطہ فارم یا لنکس
+
+تکنیکی تقاضے:
+- تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
+- ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
+- آئیکنز کے لیے lucide-react استعمال کریں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- ایکسپورٹ: export default function App()
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
+      { label: "ڈیش بورڈ", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک ایڈمن ڈیش بورڈ بنائیں۔
+
+مقصد: [ڈیش بورڈ کا مقصد — مثلاً: سیلز تجزیہ، پروجیکٹ مینجمنٹ، یوزر میٹرکس]
+انداز: [ڈیزائن اسٹائل — مثلاً: صاف، ڈیٹا سے بھرپور، جدید، کارپوریٹ]
+
+شامل کرنے کے سیکشنز:
+- سرچ اور یوزر مینو کے ساتھ ٹاپ نیویگیشن بار
+- سائیڈ بار نیویگیشن لنکس
+- اسٹیٹس کارڈز (4 KPI کارڈز، آئیکنز اور ٹرینڈز کے ساتھ)
+- چارٹ ایریا (recharts استعمال کرتے ہوئے لائن یا بار چارٹ)
+- حالیہ سرگرمی ڈیٹا ٹیبل
+
+تکنیکی تقاضے:
+- تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
+- ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
+- آئیکنز کے لیے lucide-react استعمال کریں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- ایکسپورٹ: export default function App()
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
+      { label: "بلاگ", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک بلاگ ہوم پیج بنائیں۔
+
+موضوع: [بلاگ کا موضوع — مثلاً: ٹیکنالوجی، سفر، کھانا پکانا، ذاتی ڈائری]
+انداز: [ڈیزائن اسٹائل — مثلاً: سادہ، میگزین، ایڈیٹوریل، پرسکون]
+
+شامل کرنے کے سیکشنز:
+- بلاگ نام اور نیویگیشن کے ساتھ ہیڈر
+- بڑی تصویر کے ساتھ نمایاں پوسٹ
+- حالیہ پوسٹس گرڈ (6–9 کارڈز، عنوان، خلاصہ، تاریخ، زمرہ)
+- نیوز لیٹر سبسکرپشن سیکشن
+- فوٹر لنکس
+
+تکنیکی تقاضے:
+- تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
+- ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
+- آئیکنز کے لیے lucide-react استعمال کریں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- ایکسپورٹ: export default function App()
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
+      { label: "SaaS", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک SaaS پروڈکٹ پیج بنائیں۔
+
+پروڈکٹ: [آپ کا SaaS پروڈکٹ — مثلاً: پروجیکٹ مینجمنٹ ٹول، ای میل پلیٹ فارم، AI اسسٹنٹ]
+انداز: [ڈیزائن اسٹائل — مثلاً: جدید، پیشہ ورانہ، دلچسپ، انٹرپرائز]
+
+شامل کرنے کے سیکشنز:
+- پروڈکٹ نام، ٹیگ لائن، CTA اور ماک اپ کے ساتھ ہیرو
+- اعتماد کرنے والی کمپنیوں کے لوگو بار
+- اہم خصوصیات (3–4، آئیکنز اور تفصیل کے ساتھ)
+- کیسے کام کرتا ہے (3 مراحل)
+- قیمت ٹیبل (3 درجے: مفت، پرو، انٹرپرائز)
+- FAQ سیکشن
+- آخری CTA اور سائن اپ
+
+تکنیکی تقاضے:
+- تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
+- ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
+- آئیکنز کے لیے lucide-react استعمال کریں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- ایکسپورٹ: export default function App()
+- ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
+    ],
     promptCopy: "کاپی",
     promptCopied: "کاپی ہو گیا!",
   },
@@ -866,11 +1834,19 @@ Exigences :
     langLabel: "ภาษา",
     promptLabel: "เทมเพลตพรอมต์",
     promptHint: "คัดลอกพรอมต์นี้ไปวางในเครื่องมือ AI ของคุณ แล้วเติมข้อมูลในช่องว่าง",
-    promptTemplate: `สร้างหน้า React ในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+    promptVariants: [
+      { label: "แลนดิ้งเพจ", template: `สร้างแลนดิ้งเพจในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
 
-หัวข้อ: [หัวข้อเว็บไซต์ของคุณ — เช่น ร้านกาแฟ, พอร์ตโฟลิโอ, สินค้า SaaS]
-สไตล์: [สไตล์การออกแบบ — เช่น มินิมอล, โมเดิร์น, สีสัน, องค์กร]
-รายละเอียด: [ส่วนที่ต้องการ — เช่น ฮีโร่, ฟีเจอร์, รีวิว, ราคา, ติดต่อ]
+จุดประสงค์: [สิ่งที่โปรโมท — เช่น แอปฟิตเนส, เบเกอรี่ท้องถิ่น, บริษัทที่ปรึกษา]
+สไตล์: [สไตล์การออกแบบ — เช่น มินิมอล, โมเดิร์น, โดดเด่น, องค์กร]
+
+ส่วนที่ต้องรวม:
+- ฮีโร่ (หัวข้อหลัก, หัวข้อรอง, ปุ่ม CTA)
+- ฟีเจอร์หรือจุดเด่น (3–4 รายการพร้อมไอคอน)
+- รีวิวจากลูกค้า
+- ราคาหรือแพ็กเกจ
+- CTA สุดท้าย
+- ฟุตเตอร์พร้อมลิงก์
 
 ข้อกำหนดทางเทคนิค:
 - ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
@@ -878,7 +1854,87 @@ Exigences :
 - ใช้ lucide-react สำหรับไอคอน
 - ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
 - Export เป็น: export default function App()
-- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN`,
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN` },
+      { label: "พอร์ตโฟลิโอ", template: `สร้างหน้าพอร์ตโฟลิโอส่วนตัวในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+
+ชื่อ: [ชื่อของคุณ]
+บทบาท: [ตำแหน่ง — เช่น นักพัฒนาฟรอนต์เอนด์, นักออกแบบ, ช่างภาพ]
+สไตล์: [สไตล์การออกแบบ — เช่น มินิมอล, สร้างสรรค์, หรูหรา, โทนมืด]
+
+ส่วนที่ต้องรวม:
+- ฮีโร่ (ชื่อ, ตำแหน่ง, แนะนำตัวสั้นๆ)
+- ผลงานเด่น (3–6 ชิ้น พร้อมภาพและคำอธิบาย)
+- ทักษะหรือเครื่องมือ
+- ประสบการณ์หรือการศึกษา (ไทม์ไลน์)
+- แบบฟอร์มติดต่อหรือลิงก์
+
+ข้อกำหนดทางเทคนิค:
+- ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
+- ใช้คอมโพเนนต์ shadcn/ui (import จาก @/components/ui/) ตามความเหมาะสม
+- ใช้ lucide-react สำหรับไอคอน
+- ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
+- Export เป็น: export default function App()
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN` },
+      { label: "แดชบอร์ด", template: `สร้างหน้าแดชบอร์ดผู้ดูแลในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+
+จุดประสงค์: [จุดประสงค์ของแดชบอร์ด — เช่น วิเคราะห์ยอดขาย, จัดการโปรเจกต์, ตัวชี้วัดผู้ใช้]
+สไตล์: [สไตล์การออกแบบ — เช่น สะอาด, ข้อมูลหนาแน่น, โมเดิร์น, องค์กร]
+
+ส่วนที่ต้องรวม:
+- แถบนำทางด้านบน (ค้นหาและเมนูผู้ใช้)
+- แถบด้านข้างพร้อมลิงก์นำทาง
+- การ์ดสถิติ (4 การ์ด KPI พร้อมไอคอนและแนวโน้ม)
+- พื้นที่กราฟ (กราฟเส้นหรือแท่งโดยใช้ recharts)
+- ตารางข้อมูลกิจกรรมล่าสุด
+
+ข้อกำหนดทางเทคนิค:
+- ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
+- ใช้คอมโพเนนต์ shadcn/ui (import จาก @/components/ui/) ตามความเหมาะสม
+- ใช้ lucide-react สำหรับไอคอน
+- ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
+- Export เป็น: export default function App()
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN` },
+      { label: "บล็อก", template: `สร้างหน้าแรกบล็อกในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+
+หัวข้อ: [หัวข้อบล็อก — เช่น เทคโนโลยี, ท่องเที่ยว, ทำอาหาร, ไดอารี่]
+สไตล์: [สไตล์การออกแบบ — เช่น มินิมอล, แมกกาซีน, บรรณาธิการ, อบอุ่น]
+
+ส่วนที่ต้องรวม:
+- ส่วนหัว (ชื่อบล็อกและการนำทาง)
+- โพสต์เด่นพร้อมรูปภาพขนาดใหญ่
+- กริดโพสต์ล่าสุด (6–9 การ์ด มีชื่อ/บทคัดย่อ/วันที่/หมวดหมู่)
+- ส่วนสมัครรับข่าวสาร
+- ฟุตเตอร์พร้อมลิงก์
+
+ข้อกำหนดทางเทคนิค:
+- ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
+- ใช้คอมโพเนนต์ shadcn/ui (import จาก @/components/ui/) ตามความเหมาะสม
+- ใช้ lucide-react สำหรับไอคอน
+- ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
+- Export เป็น: export default function App()
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN` },
+      { label: "SaaS", template: `สร้างหน้าผลิตภัณฑ์ SaaS ในรูปแบบ JSX ที่ฉันสามารถใช้แทนไฟล์ src/App.jsx ได้เลย
+
+ผลิตภัณฑ์: [ผลิตภัณฑ์ SaaS ของคุณ — เช่น เครื่องมือจัดการโปรเจกต์, แพลตฟอร์มอีเมล, ผู้ช่วย AI]
+สไตล์: [สไตล์การออกแบบ — เช่น โมเดิร์น, มืออาชีพ, สนุกสนาน, องค์กร]
+
+ส่วนที่ต้องรวม:
+- ฮีโร่ (ชื่อผลิตภัณฑ์, สโลแกน, CTA, ม็อกอัพ)
+- แถบโลโก้บริษัทที่ไว้วางใจ
+- ฟีเจอร์หลัก (3–4 พร้อมไอคอนและคำอธิบาย)
+- วิธีการทำงาน (3 ขั้นตอน)
+- ตารางราคา (3 ระดับ: ฟรี/โปร/องค์กร)
+- ส่วนคำถามที่พบบ่อย
+- CTA สุดท้ายพร้อมสมัครสมาชิก
+
+ข้อกำหนดทางเทคนิค:
+- ใช้ Tailwind CSS สำหรับสไตล์ทั้งหมด
+- ใช้คอมโพเนนต์ shadcn/ui (import จาก @/components/ui/) ตามความเหมาะสม
+- ใช้ lucide-react สำหรับไอคอน
+- ทำให้รองรับทั้งมือถือและเดสก์ท็อป (responsive)
+- Export เป็น: export default function App()
+- ไฟล์เดียว ไม่ต้องมีไฟล์ CSS เพิ่มเติมหรือสคริปต์ CDN` },
+    ],
     promptCopy: "คัดลอก",
     promptCopied: "คัดลอกแล้ว!",
   },
@@ -939,11 +1995,19 @@ Exigences :
     langLabel: "Sprache",
     promptLabel: "Starter-Prompt",
     promptHint: "Kopieren Sie diesen Prompt und fügen Sie ihn in Ihr KI-Tool ein. Füllen Sie die Lücken aus.",
-    promptTemplate: `Erstelle eine React-Seite im JSX-Format, die ich als src/App.jsx verwenden kann.
+    promptVariants: [
+      { label: "Landingpage", template: `Erstelle eine Landingpage im JSX-Format, die ich als src/App.jsx verwenden kann.
 
-Thema: [Thema deiner Website — z.B. Café, Portfolio, SaaS-Produkt]
-Stil: [Designstil — z.B. minimalistisch, modern, farbenfroh, geschäftlich]
-Details: [gewünschte Abschnitte — z.B. Hero, Features, Testimonials, Preise, Kontakt]
+Zweck: [was du bewirbst — z.B. Fitness-App, lokale Bäckerei, Beratungsfirma]
+Stil: [Designstil — z.B. minimalistisch, modern, markant, geschäftlich]
+
+Abschnitte:
+- Hero mit Überschrift/Unterzeile/CTA-Button
+- Features oder Vorteile (3–4 Punkte mit Icons)
+- Testimonials oder Social Proof
+- Preise oder Pläne
+- Abschließender Call-to-Action
+- Footer mit Links
 
 Technische Anforderungen:
 - Verwende Tailwind CSS für alle Styles
@@ -951,7 +2015,87 @@ Technische Anforderungen:
 - Verwende lucide-react für Icons
 - Mach die Seite responsiv für Mobil und Desktop
 - Export als: export default function App()
-- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte`,
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte` },
+      { label: "Portfolio", template: `Erstelle eine persönliche Portfolio-Seite im JSX-Format, die ich als src/App.jsx verwenden kann.
+
+Name: [dein Name]
+Rolle: [dein Titel — z.B. Frontend-Entwickler, Designer, Fotograf]
+Stil: [Designstil — z.B. minimalistisch, kreativ, elegant, dunkel]
+
+Abschnitte:
+- Hero mit Name/Titel/kurzer Bio
+- Ausgewählte Projekte (3–6 mit Bildern und Beschreibungen)
+- Fähigkeiten oder Tools
+- Berufserfahrung oder Ausbildung (Zeitleiste)
+- Kontaktformular oder Links
+
+Technische Anforderungen:
+- Verwende Tailwind CSS für alle Styles
+- Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+- Verwende lucide-react für Icons
+- Mach die Seite responsiv für Mobil und Desktop
+- Export als: export default function App()
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte` },
+      { label: "Dashboard", template: `Erstelle ein Admin-Dashboard im JSX-Format, das ich als src/App.jsx verwenden kann.
+
+Zweck: [Zweck des Dashboards — z.B. Vertriebsanalyse, Projektmanagement, Nutzer-Metriken]
+Stil: [Designstil — z.B. aufgeräumt, datendicht, modern, geschäftlich]
+
+Abschnitte:
+- Obere Navigationsleiste mit Suche und Benutzermenü
+- Seitenleiste mit Navigationslinks
+- Statistik-Karten (4 KPI-Karten mit Icons und Trends)
+- Diagrammbereich (Linien- oder Balkendiagramm mit recharts)
+- Datentabelle mit aktueller Aktivität
+
+Technische Anforderungen:
+- Verwende Tailwind CSS für alle Styles
+- Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+- Verwende lucide-react für Icons
+- Mach die Seite responsiv für Mobil und Desktop
+- Export als: export default function App()
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte` },
+      { label: "Blog", template: `Erstelle eine Blog-Startseite im JSX-Format, die ich als src/App.jsx verwenden kann.
+
+Thema: [Blog-Thema — z.B. Tech, Reisen, Kochen, persönliches Tagebuch]
+Stil: [Designstil — z.B. minimalistisch, Magazin, Editorial, gemütlich]
+
+Abschnitte:
+- Header mit Blogname und Navigation
+- Hervorgehobener Beitrag mit großem Bild
+- Raster aktueller Beiträge (6–9 Karten mit Titel/Auszug/Datum/Kategorie)
+- Newsletter-Anmeldung
+- Footer mit Links
+
+Technische Anforderungen:
+- Verwende Tailwind CSS für alle Styles
+- Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+- Verwende lucide-react für Icons
+- Mach die Seite responsiv für Mobil und Desktop
+- Export als: export default function App()
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte` },
+      { label: "SaaS", template: `Erstelle eine SaaS-Produktseite im JSX-Format, die ich als src/App.jsx verwenden kann.
+
+Produkt: [dein SaaS-Produkt — z.B. Projektmanagement-Tool, E-Mail-Plattform, KI-Assistent]
+Stil: [Designstil — z.B. modern, professionell, verspielt, Enterprise]
+
+Abschnitte:
+- Hero mit Produktname/Slogan/CTA/Produktmockup
+- Logo-Leiste vertrauender Unternehmen
+- Kernfunktionen (3–4 mit Icons und Beschreibungen)
+- So funktioniert's (3 Schritte)
+- Preistabelle (3 Stufen: Kostenlos/Pro/Enterprise)
+- FAQ-Bereich
+- Abschließender CTA mit Registrierung
+
+Technische Anforderungen:
+- Verwende Tailwind CSS für alle Styles
+- Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+- Verwende lucide-react für Icons
+- Mach die Seite responsiv für Mobil und Desktop
+- Export als: export default function App()
+- Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte` },
+    ],
     promptCopy: "Kopieren",
     promptCopied: "Kopiert!",
   },
@@ -1012,11 +2156,19 @@ Technische Anforderungen:
     langLabel: "Dil",
     promptLabel: "Başlangıç Promptu",
     promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
-    promptTemplate: `src/App.jsx olarak kullanabileceğim JSX formatında bir React sayfası oluştur.
+    promptVariants: [
+      { label: "Landing", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir landing page oluştur.
 
-Konu: [web sitenizin konusu — örn: kafe, portföy, SaaS ürünü]
-Stil: [tasarım stili — örn: minimalist, modern, renkli, kurumsal]
-Detaylar: [istediğiniz bölümler — örn: hero, özellikler, referanslar, fiyatlandırma, iletişim]
+Amaç: [ne tanıtıyorsunuz — örn: fitness uygulaması, yerel fırın, danışmanlık firması]
+Stil: [tasarım stili — örn: minimalist, modern, cesur, kurumsal]
+
+Dahil edilecek bölümler:
+- Başlık/alt başlık/CTA butonu içeren hero
+- Özellikler veya avantajlar (3–4 madde ikonlu)
+- Müşteri yorumları veya sosyal kanıt
+- Fiyatlandırma veya planlar
+- Son CTA
+- Footer linkleri
 
 Teknik gereksinimler:
 - Tüm stillendirme için Tailwind CSS kullan
@@ -1024,7 +2176,87 @@ Teknik gereksinimler:
 - İkonlar için lucide-react kullan
 - Mobil ve masaüstü için responsive yap
 - Dışa aktarım: export default function App()
-- Tek dosya, ek CSS dosyası veya CDN script'i yok`,
+- Tek dosya, ek CSS dosyası veya CDN script'i yok` },
+      { label: "Portföy", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir kişisel portföy sayfası oluştur.
+
+İsim: [adınız]
+Rol: [unvanınız — örn: frontend geliştirici, tasarımcı, fotoğrafçı]
+Stil: [tasarım stili — örn: minimalist, yaratıcı, zarif, koyu]
+
+Dahil edilecek bölümler:
+- İsim/unvan/kısa biyografi içeren hero
+- Öne çıkan projeler (3–6 görseller ve açıklamalarla)
+- Yetenekler veya araçlar
+- Deneyim veya eğitim zaman çizelgesi
+- İletişim formu veya linkler
+
+Teknik gereksinimler:
+- Tüm stillendirme için Tailwind CSS kullan
+- Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+- İkonlar için lucide-react kullan
+- Mobil ve masaüstü için responsive yap
+- Dışa aktarım: export default function App()
+- Tek dosya, ek CSS dosyası veya CDN script'i yok` },
+      { label: "Panel", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir yönetim paneli oluştur.
+
+Amaç: [panel amacı — örn: satış analitiği, proje yönetimi, kullanıcı metrikleri]
+Stil: [tasarım stili — örn: temiz, veri yoğun, modern, kurumsal]
+
+Dahil edilecek bölümler:
+- Arama ve kullanıcı menüsü içeren üst navigasyon çubuğu
+- Navigasyon linkleri olan kenar çubuğu
+- İstatistik kartları (4 KPI kartı ikon ve trendlerle)
+- Grafik alanı (recharts ile çizgi veya çubuk grafik)
+- Son aktivite veri tablosu
+
+Teknik gereksinimler:
+- Tüm stillendirme için Tailwind CSS kullan
+- Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+- İkonlar için lucide-react kullan
+- Mobil ve masaüstü için responsive yap
+- Dışa aktarım: export default function App()
+- Tek dosya, ek CSS dosyası veya CDN script'i yok` },
+      { label: "Blog", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir blog ana sayfası oluştur.
+
+Konu: [blog konusu — örn: teknoloji, seyahat, yemek, kişisel günlük]
+Stil: [tasarım stili — örn: minimalist, dergi, editöryal, sıcak]
+
+Dahil edilecek bölümler:
+- Blog adı ve navigasyon içeren başlık
+- Büyük görselli öne çıkan yazı
+- Son yazılar ızgarası (6–9 kart: başlık/özet/tarih/kategori)
+- Bülten abonelik bölümü
+- Footer linkleri
+
+Teknik gereksinimler:
+- Tüm stillendirme için Tailwind CSS kullan
+- Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+- İkonlar için lucide-react kullan
+- Mobil ve masaüstü için responsive yap
+- Dışa aktarım: export default function App()
+- Tek dosya, ek CSS dosyası veya CDN script'i yok` },
+      { label: "SaaS", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir SaaS ürün sayfası oluştur.
+
+Ürün: [SaaS ürününüz — örn: proje yönetim aracı, e-posta platformu, AI asistan]
+Stil: [tasarım stili — örn: modern, profesyonel, eğlenceli, kurumsal]
+
+Dahil edilecek bölümler:
+- Ürün adı/slogan/CTA/mockup içeren hero
+- Güvenilen şirket logoları çubuğu
+- Temel özellikler (3–4 ikon ve açıklamalarla)
+- Nasıl çalışır (3 adım)
+- Fiyat tablosu (3 seviye: Ücretsiz/Pro/Kurumsal)
+- SSS bölümü
+- Son CTA ve kayıt
+
+Teknik gereksinimler:
+- Tüm stillendirme için Tailwind CSS kullan
+- Uygun olduğunda shadcn/ui bileşenlerini kullan (@/components/ui/ üzerinden import)
+- İkonlar için lucide-react kullan
+- Mobil ve masaüstü için responsive yap
+- Dışa aktarım: export default function App()
+- Tek dosya, ek CSS dosyası veya CDN script'i yok` },
+    ],
     promptCopy: "Kopyala",
     promptCopied: "Kopyalandı!",
   },
@@ -1085,11 +2317,19 @@ Teknik gereksinimler:
     langLabel: "Язык",
     promptLabel: "Шаблон промпта",
     promptHint: "Скопируйте этот промпт и вставьте его в ваш AI-инструмент. Заполните пропуски.",
-    promptTemplate: `Создай страницу React в формате JSX, которую можно использовать как src/App.jsx.
+    promptVariants: [
+      { label: "Лендинг", template: `Создай лендинг в формате JSX, который можно использовать как src/App.jsx.
 
-Тема: [тема вашего сайта — напр.: кофейня, портфолио, SaaS-продукт]
+Цель: [что продвигаешь — напр.: фитнес-приложение, местная пекарня, консалтинговая фирма]
 Стиль: [стиль дизайна — напр.: минималистичный, современный, яркий, корпоративный]
-Детали: [нужные разделы — напр.: герой, преимущества, отзывы, цены, контакты]
+
+Разделы:
+- Hero с заголовком/подзаголовком/кнопкой CTA
+- Преимущества или возможности (3–4 пункта с иконками)
+- Отзывы клиентов или социальное доказательство
+- Цены или тарифы
+- Финальный призыв к действию
+- Футер с ссылками
 
 Технические требования:
 - Используй Tailwind CSS для всех стилей
@@ -1097,7 +2337,87 @@ Teknik gereksinimler:
 - Используй lucide-react для иконок
 - Сделай адаптивную вёрстку для мобильных и десктопа
 - Экспорт: export default function App()
-- Один файл, без дополнительных CSS-файлов или CDN-скриптов`,
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов` },
+      { label: "Портфолио", template: `Создай страницу портфолио в формате JSX, которую можно использовать как src/App.jsx.
+
+Имя: [твоё имя]
+Роль: [твоя должность — напр.: фронтенд-разработчик, дизайнер, фотограф]
+Стиль: [стиль дизайна — напр.: минималистичный, креативный, элегантный, тёмный]
+
+Разделы:
+- Hero с именем/должностью/краткой биографией
+- Избранные проекты (3–6 с изображениями и описаниями)
+- Навыки или инструменты
+- Опыт работы или образование (таймлайн)
+- Форма обратной связи или ссылки
+
+Технические требования:
+- Используй Tailwind CSS для всех стилей
+- Используй компоненты shadcn/ui (импорт из @/components/ui/) при необходимости
+- Используй lucide-react для иконок
+- Сделай адаптивную вёрстку для мобильных и десктопа
+- Экспорт: export default function App()
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов` },
+      { label: "Дашборд", template: `Создай административный дашборд в формате JSX, который можно использовать как src/App.jsx.
+
+Цель: [назначение дашборда — напр.: аналитика продаж, управление проектами, метрики пользователей]
+Стиль: [стиль дизайна — напр.: чистый, насыщенный данными, современный, корпоративный]
+
+Разделы:
+- Верхняя навигационная панель с поиском и меню пользователя
+- Боковая панель с навигацией
+- Карточки статистики (4 KPI-карточки с иконками и трендами)
+- Область графиков (линейный или столбчатый с recharts)
+- Таблица данных с последней активностью
+
+Технические требования:
+- Используй Tailwind CSS для всех стилей
+- Используй компоненты shadcn/ui (импорт из @/components/ui/) при необходимости
+- Используй lucide-react для иконок
+- Сделай адаптивную вёрстку для мобильных и десктопа
+- Экспорт: export default function App()
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов` },
+      { label: "Блог", template: `Создай главную страницу блога в формате JSX, которую можно использовать как src/App.jsx.
+
+Тема: [тема блога — напр.: технологии, путешествия, кулинария, личный дневник]
+Стиль: [стиль дизайна — напр.: минималистичный, журнальный, редакторский, уютный]
+
+Разделы:
+- Шапка с названием блога и навигацией
+- Избранная статья с крупным изображением
+- Сетка последних статей (6–9 карточек с заголовком/выдержкой/датой/категорией)
+- Блок подписки на рассылку
+- Футер с ссылками
+
+Технические требования:
+- Используй Tailwind CSS для всех стилей
+- Используй компоненты shadcn/ui (импорт из @/components/ui/) при необходимости
+- Используй lucide-react для иконок
+- Сделай адаптивную вёрстку для мобильных и десктопа
+- Экспорт: export default function App()
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов` },
+      { label: "SaaS", template: `Создай страницу SaaS-продукта в формате JSX, которую можно использовать как src/App.jsx.
+
+Продукт: [твой SaaS-продукт — напр.: инструмент управления проектами, почтовая платформа, ИИ-ассистент]
+Стиль: [стиль дизайна — напр.: современный, профессиональный, игривый, корпоративный]
+
+Разделы:
+- Hero с названием продукта/слоганом/CTA/мокапом
+- Логобар компаний-клиентов
+- Ключевые возможности (3–4 с иконками и описаниями)
+- Как это работает (3 шага)
+- Таблица цен (3 тарифа: Бесплатный/Про/Корпоративный)
+- Раздел FAQ
+- Финальный CTA и регистрация
+
+Технические требования:
+- Используй Tailwind CSS для всех стилей
+- Используй компоненты shadcn/ui (импорт из @/components/ui/) при необходимости
+- Используй lucide-react для иконок
+- Сделай адаптивную вёрстку для мобильных и десктопа
+- Экспорт: export default function App()
+- Один файл, без дополнительных CSS-файлов или CDN-скриптов` },
+    ],
     promptCopy: "Копировать",
     promptCopied: "Скопировано!",
   },
@@ -1158,11 +2478,19 @@ Teknik gereksinimler:
     langLabel: "שפה",
     promptLabel: "תבנית פרומפט",
     promptHint: "העתיקו את הפרומפט הזה והדביקו אותו בכלי ה-AI שלכם. מלאו את השדות הריקים.",
-    promptTemplate: `צרו עמוד React בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+    promptVariants: [
+      { label: "דף נחיתה", template: `צרו דף נחיתה בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
 
-נושא: [נושא האתר שלכם — למשל: בית קפה, תיק עבודות, מוצר SaaS]
-סגנון: [סגנון עיצוב — למשל: מינימליסטי, מודרני, צבעוני, עסקי]
-פרטים: [הסקשנים שתרצו — למשל: hero, תכונות, המלצות, מחירים, צור קשר]
+מטרה: [מה אתם מקדמים — למשל: אפליקציית כושר, מאפייה מקומית, חברת ייעוץ]
+סגנון: [סגנון עיצוב — למשל: מינימליסטי, מודרני, בולט, עסקי]
+
+סקשנים לכלול:
+- Hero עם כותרת, תת-כותרת וכפתור CTA
+- תכונות או יתרונות (3–4 פריטים עם אייקונים)
+- המלצות לקוחות או הוכחה חברתית
+- תמחור או תוכניות
+- קריאה לפעולה אחרונה
+- פוטר עם קישורים
 
 דרישות טכניות:
 - השתמשו ב-Tailwind CSS לכל העיצוב
@@ -1170,7 +2498,87 @@ Teknik gereksinimler:
 - השתמשו ב-lucide-react לאייקונים
 - הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
 - ייצוא כ: export default function App()
-- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN`,
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN` },
+      { label: "תיק עבודות", template: `צרו דף תיק עבודות אישי בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+
+שם: [השם שלכם]
+תפקיד: [התואר שלכם — למשל: מפתח פרונטאנד, מעצב, צלם]
+סגנון: [סגנון עיצוב — למשל: מינימליסטי, יצירתי, אלגנטי, כהה]
+
+סקשנים לכלול:
+- Hero עם שם, תואר וביו קצר
+- פרויקטים נבחרים (3–6 עם תמונות ותיאורים)
+- כישורים או כלים
+- ניסיון או השכלה (ציר זמן)
+- טופס יצירת קשר או קישורים
+
+דרישות טכניות:
+- השתמשו ב-Tailwind CSS לכל העיצוב
+- השתמשו ברכיבי shadcn/ui (ייבוא מ-@/components/ui/) לפי הצורך
+- השתמשו ב-lucide-react לאייקונים
+- הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
+- ייצוא כ: export default function App()
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN` },
+      { label: "דשבורד", template: `צרו דשבורד ניהולי בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+
+מטרה: [מטרת הדשבורד — למשל: אנליטיקת מכירות, ניהול פרויקטים, מדדי משתמשים]
+סגנון: [סגנון עיצוב — למשל: נקי, עתיר נתונים, מודרני, עסקי]
+
+סקשנים לכלול:
+- סרגל ניווט עליון עם חיפוש ותפריט משתמש
+- סרגל צד עם קישורי ניווט
+- כרטיסיות סטטיסטיקה (4 כרטיסיות KPI עם אייקונים ומגמות)
+- אזור גרפים (קו או עמודות עם recharts)
+- טבלת נתונים עם פעילות אחרונה
+
+דרישות טכניות:
+- השתמשו ב-Tailwind CSS לכל העיצוב
+- השתמשו ברכיבי shadcn/ui (ייבוא מ-@/components/ui/) לפי הצורך
+- השתמשו ב-lucide-react לאייקונים
+- הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
+- ייצוא כ: export default function App()
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN` },
+      { label: "בלוג", template: `צרו דף בית לבלוג בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+
+נושא: [נושא הבלוג — למשל: טכנולוגיה, טיולים, בישול, יומן אישי]
+סגנון: [סגנון עיצוב — למשל: מינימליסטי, מגזין, עריכתי, חמים]
+
+סקשנים לכלול:
+- כותרת עם שם הבלוג וניווט
+- פוסט מומלץ עם תמונה גדולה
+- רשת פוסטים אחרונים (6–9 כרטיסיות עם כותרת, תקציר, תאריך, קטגוריה)
+- אזור הרשמה לניוזלטר
+- פוטר עם קישורים
+
+דרישות טכניות:
+- השתמשו ב-Tailwind CSS לכל העיצוב
+- השתמשו ברכיבי shadcn/ui (ייבוא מ-@/components/ui/) לפי הצורך
+- השתמשו ב-lucide-react לאייקונים
+- הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
+- ייצוא כ: export default function App()
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN` },
+      { label: "SaaS", template: `צרו דף מוצר SaaS בפורמט JSX שאוכל להשתמש בו כ-src/App.jsx.
+
+מוצר: [מוצר ה-SaaS שלכם — למשל: כלי ניהול פרויקטים, פלטפורמת אימייל, עוזר AI]
+סגנון: [סגנון עיצוב — למשל: מודרני, מקצועי, שובב, ארגוני]
+
+סקשנים לכלול:
+- Hero עם שם המוצר, סלוגן, CTA ומוקאפ
+- שורת לוגואים של חברות
+- תכונות מפתח (3–4 עם אייקונים ותיאורים)
+- איך זה עובד (3 שלבים)
+- טבלת מחירים (3 רמות: חינם, פרו, ארגוני)
+- אזור שאלות נפוצות
+- CTA אחרון עם הרשמה
+
+דרישות טכניות:
+- השתמשו ב-Tailwind CSS לכל העיצוב
+- השתמשו ברכיבי shadcn/ui (ייבוא מ-@/components/ui/) לפי הצורך
+- השתמשו ב-lucide-react לאייקונים
+- הפכו את העמוד לרספונסיבי למובייל ולדסקטופ
+- ייצוא כ: export default function App()
+- קובץ יחיד, ללא קובצי CSS נוספים או סקריפטים מ-CDN` },
+    ],
     promptCopy: "העתקה",
     promptCopied: "הועתק!",
   },
@@ -1231,11 +2639,19 @@ Teknik gereksinimler:
     langLabel: "Lingua",
     promptLabel: "Prompt iniziale",
     promptHint: "Copia questo prompt e incollalo nel tuo strumento AI. Compila gli spazi vuoti.",
-    promptTemplate: `Crea una pagina React in formato JSX che possa usare come src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Crea una landing page in formato JSX che possa usare come src/App.jsx.
 
-Tema: [il tema del tuo sito — es: caffetteria, portfolio, prodotto SaaS]
-Stile: [stile di design — es: minimalista, moderno, colorato, aziendale]
-Dettagli: [sezioni desiderate — es: hero, funzionalità, testimonianze, prezzi, contatti]
+Scopo: [cosa promuovi — es: app fitness, panetteria locale, società di consulenza]
+Stile: [stile di design — es: minimalista, moderno, audace, aziendale]
+
+Sezioni da includere:
+- Hero con titolo, sottotitolo e pulsante CTA
+- Funzionalità o vantaggi (3–4 elementi con icone)
+- Testimonianze o prova sociale
+- Prezzi o piani
+- Call-to-action finale
+- Footer con link
 
 Requisiti tecnici:
 - Usa Tailwind CSS per tutti gli stili
@@ -1243,7 +2659,87 @@ Requisiti tecnici:
 - Usa lucide-react per le icone
 - Rendilo responsive per mobile e desktop
 - Esportare come: export default function App()
-- File singolo, nessun file CSS aggiuntivo o script CDN`,
+- File singolo, nessun file CSS aggiuntivo o script CDN` },
+      { label: "Portfolio", template: `Crea una pagina portfolio personale in formato JSX che possa usare come src/App.jsx.
+
+Nome: [il tuo nome]
+Ruolo: [il tuo titolo — es: sviluppatore frontend, designer, fotografo]
+Stile: [stile di design — es: minimalista, creativo, elegante, scuro]
+
+Sezioni da includere:
+- Hero con nome, titolo e breve bio
+- Progetti in evidenza (3–6 con immagini e descrizioni)
+- Competenze o strumenti
+- Esperienza o formazione (cronologia)
+- Modulo di contatto o link
+
+Requisiti tecnici:
+- Usa Tailwind CSS per tutti gli stili
+- Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
+- Usa lucide-react per le icone
+- Rendilo responsive per mobile e desktop
+- Esportare come: export default function App()
+- File singolo, nessun file CSS aggiuntivo o script CDN` },
+      { label: "Dashboard", template: `Crea un dashboard amministrativo in formato JSX che possa usare come src/App.jsx.
+
+Scopo: [scopo del dashboard — es: analisi vendite, gestione progetti, metriche utenti]
+Stile: [stile di design — es: pulito, ricco di dati, moderno, aziendale]
+
+Sezioni da includere:
+- Barra di navigazione superiore con ricerca e menu utente
+- Barra laterale con link di navigazione
+- Card di statistiche (4 KPI con icone e trend)
+- Area grafici (grafico a linee o barre con recharts)
+- Tabella dati con attività recente
+
+Requisiti tecnici:
+- Usa Tailwind CSS per tutti gli stili
+- Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
+- Usa lucide-react per le icone
+- Rendilo responsive per mobile e desktop
+- Esportare come: export default function App()
+- File singolo, nessun file CSS aggiuntivo o script CDN` },
+      { label: "Blog", template: `Crea una homepage del blog in formato JSX che possa usare come src/App.jsx.
+
+Tema: [tema del blog — es: tech, viaggi, cucina, diario personale]
+Stile: [stile di design — es: minimalista, magazine, editoriale, accogliente]
+
+Sezioni da includere:
+- Header con nome del blog e navigazione
+- Post in evidenza con immagine grande
+- Griglia post recenti (6–9 card con titolo, estratto, data, categoria)
+- Sezione iscrizione newsletter
+- Footer con link
+
+Requisiti tecnici:
+- Usa Tailwind CSS per tutti gli stili
+- Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
+- Usa lucide-react per le icone
+- Rendilo responsive per mobile e desktop
+- Esportare come: export default function App()
+- File singolo, nessun file CSS aggiuntivo o script CDN` },
+      { label: "SaaS", template: `Crea una pagina prodotto SaaS in formato JSX che possa usare come src/App.jsx.
+
+Prodotto: [il tuo prodotto SaaS — es: tool di gestione, piattaforma email, assistente AI]
+Stile: [stile di design — es: moderno, professionale, giocoso, enterprise]
+
+Sezioni da includere:
+- Hero con nome prodotto, slogan, CTA e mockup
+- Barra loghi aziende partner
+- Funzionalità chiave (3–4 con icone e descrizioni)
+- Come funziona (3 passaggi)
+- Tabella prezzi (3 livelli: Gratis, Pro, Enterprise)
+- Sezione FAQ
+- CTA finale con registrazione
+
+Requisiti tecnici:
+- Usa Tailwind CSS per tutti gli stili
+- Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
+- Usa lucide-react per le icone
+- Rendilo responsive per mobile e desktop
+- Esportare come: export default function App()
+- File singolo, nessun file CSS aggiuntivo o script CDN` },
+    ],
     promptCopy: "Copia",
     promptCopied: "Copiato!",
   },
@@ -1304,11 +2800,19 @@ Requisiti tecnici:
     langLabel: "Bahasa",
     promptLabel: "Prompt Awal",
     promptHint: "Salin prompt ini dan tempelkan ke alat AI Anda. Isi bagian yang kosong.",
-    promptTemplate: `Buatkan halaman React dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Buatkan landing page dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
 
-Topik: [topik website Anda — mis: kedai kopi, portofolio, produk SaaS]
-Gaya: [gaya desain — mis: minimalis, modern, warna-warni, korporat]
-Detail: [bagian yang diinginkan — mis: hero, fitur, testimoni, harga, kontak]
+Tujuan: [apa yang dipromosikan — mis: aplikasi fitness, toko roti lokal, firma konsultan]
+Gaya: [gaya desain — mis: minimalis, modern, berani, korporat]
+
+Bagian yang perlu disertakan:
+- Hero dengan judul, subjudul dan tombol CTA
+- Fitur atau keunggulan (3–4 item dengan ikon)
+- Testimoni atau bukti sosial
+- Harga atau paket
+- CTA terakhir
+- Footer dengan tautan
 
 Persyaratan teknis:
 - Gunakan Tailwind CSS untuk semua styling
@@ -1316,7 +2820,87 @@ Persyaratan teknis:
 - Gunakan lucide-react untuk ikon
 - Buat responsif untuk mobile dan desktop
 - Ekspor sebagai: export default function App()
-- Satu file saja, tanpa file CSS tambahan atau skrip CDN`,
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN` },
+      { label: "Portofolio", template: `Buatkan halaman portofolio pribadi dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+Nama: [nama Anda]
+Peran: [jabatan Anda — mis: developer frontend, desainer, fotografer]
+Gaya: [gaya desain — mis: minimalis, kreatif, elegan, gelap]
+
+Bagian yang perlu disertakan:
+- Hero dengan nama, jabatan dan bio singkat
+- Proyek unggulan (3–6 dengan gambar dan deskripsi)
+- Keahlian atau alat
+- Pengalaman atau pendidikan (timeline)
+- Formulir kontak atau tautan
+
+Persyaratan teknis:
+- Gunakan Tailwind CSS untuk semua styling
+- Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+- Gunakan lucide-react untuk ikon
+- Buat responsif untuk mobile dan desktop
+- Ekspor sebagai: export default function App()
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN` },
+      { label: "Dashboard", template: `Buatkan halaman dashboard admin dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+Tujuan: [tujuan dashboard — mis: analisis penjualan, manajemen proyek, metrik pengguna]
+Gaya: [gaya desain — mis: bersih, padat data, modern, korporat]
+
+Bagian yang perlu disertakan:
+- Bilah navigasi atas dengan pencarian dan menu pengguna
+- Bilah samping dengan tautan navigasi
+- Kartu statistik (4 kartu KPI dengan ikon dan tren)
+- Area grafik (grafik garis atau batang menggunakan recharts)
+- Tabel data dengan aktivitas terbaru
+
+Persyaratan teknis:
+- Gunakan Tailwind CSS untuk semua styling
+- Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+- Gunakan lucide-react untuk ikon
+- Buat responsif untuk mobile dan desktop
+- Ekspor sebagai: export default function App()
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN` },
+      { label: "Blog", template: `Buatkan halaman utama blog dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+Topik: [topik blog — mis: teknologi, travel, masakan, jurnal pribadi]
+Gaya: [gaya desain — mis: minimalis, majalah, editorial, nyaman]
+
+Bagian yang perlu disertakan:
+- Header dengan nama blog dan navigasi
+- Post unggulan dengan gambar besar
+- Grid post terbaru (6–9 kartu dengan judul, cuplikan, tanggal, kategori)
+- Bagian langganan newsletter
+- Footer dengan tautan
+
+Persyaratan teknis:
+- Gunakan Tailwind CSS untuk semua styling
+- Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+- Gunakan lucide-react untuk ikon
+- Buat responsif untuk mobile dan desktop
+- Ekspor sebagai: export default function App()
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN` },
+      { label: "SaaS", template: `Buatkan halaman produk SaaS dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
+
+Produk: [produk SaaS Anda — mis: alat manajemen proyek, platform email, asisten AI]
+Gaya: [gaya desain — mis: modern, profesional, playful, enterprise]
+
+Bagian yang perlu disertakan:
+- Hero dengan nama produk, slogan, CTA dan mockup
+- Baris logo perusahaan tepercaya
+- Fitur utama (3–4 dengan ikon dan deskripsi)
+- Cara kerja (3 langkah)
+- Tabel harga (3 tingkat: Gratis, Pro, Enterprise)
+- Bagian FAQ
+- CTA akhir dengan pendaftaran
+
+Persyaratan teknis:
+- Gunakan Tailwind CSS untuk semua styling
+- Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
+- Gunakan lucide-react untuk ikon
+- Buat responsif untuk mobile dan desktop
+- Ekspor sebagai: export default function App()
+- Satu file saja, tanpa file CSS tambahan atau skrip CDN` },
+    ],
     promptCopy: "Salin",
     promptCopied: "Tersalin!",
   },
@@ -1377,11 +2961,19 @@ Persyaratan teknis:
     langLabel: "Ngôn ngữ",
     promptLabel: "Prompt mẫu",
     promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
-    promptTemplate: `Tạo một trang React dạng JSX mà tôi có thể dùng làm src/App.jsx.
+    promptVariants: [
+      { label: "Landing Page", template: `Tạo một landing page dạng JSX mà tôi có thể dùng làm src/App.jsx.
 
-Chủ đề: [chủ đề website của bạn — VD: quán cà phê, portfolio, sản phẩm SaaS]
-Phong cách: [phong cách thiết kế — VD: tối giản, hiện đại, nhiều màu sắc, doanh nghiệp]
-Chi tiết: [các phần mong muốn — VD: hero, tính năng, đánh giá, bảng giá, liên hệ]
+Mục đích: [quảng bá sản phẩm/dịch vụ — VD: ứng dụng fitness, tiệm bánh, công ty tư vấn]
+Phong cách: [phong cách thiết kế — VD: tối giản, hiện đại, nổi bật, doanh nghiệp]
+
+Các phần cần có:
+- Hero với tiêu đề, phụ đề và nút CTA
+- Tính năng hoặc lợi ích (3–4 mục có icon)
+- Đánh giá khách hàng
+- Bảng giá hoặc gói dịch vụ
+- CTA cuối cùng
+- Footer với liên kết
 
 Yêu cầu kỹ thuật:
 - Sử dụng Tailwind CSS cho toàn bộ styling
@@ -1389,7 +2981,87 @@ Yêu cầu kỹ thuật:
 - Sử dụng lucide-react cho icon
 - Làm responsive cho cả mobile và desktop
 - Export dạng: export default function App()
-- Một file duy nhất, không thêm file CSS hay script CDN`,
+- Một file duy nhất, không thêm file CSS hay script CDN` },
+      { label: "Portfolio", template: `Tạo một trang portfolio cá nhân dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+Tên: [tên của bạn]
+Vai trò: [chức danh — VD: lập trình viên frontend, nhà thiết kế, nhiếp ảnh gia]
+Phong cách: [phong cách thiết kế — VD: tối giản, sáng tạo, thanh lịch, tối]
+
+Các phần cần có:
+- Hero với tên, chức danh và giới thiệu ngắn
+- Dự án nổi bật (3–6 có hình ảnh và mô tả)
+- Kỹ năng hoặc công cụ
+- Kinh nghiệm hoặc học vấn (dòng thời gian)
+- Form liên hệ hoặc liên kết
+
+Yêu cầu kỹ thuật:
+- Sử dụng Tailwind CSS cho toàn bộ styling
+- Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+- Sử dụng lucide-react cho icon
+- Làm responsive cho cả mobile và desktop
+- Export dạng: export default function App()
+- Một file duy nhất, không thêm file CSS hay script CDN` },
+      { label: "Dashboard", template: `Tạo một trang dashboard quản trị dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+Mục đích: [mục đích dashboard — VD: phân tích doanh thu, quản lý dự án, chỉ số người dùng]
+Phong cách: [phong cách thiết kế — VD: gọn gàng, nhiều dữ liệu, hiện đại, doanh nghiệp]
+
+Các phần cần có:
+- Thanh điều hướng trên cùng với tìm kiếm và menu người dùng
+- Thanh bên với liên kết điều hướng
+- Thẻ thống kê (4 thẻ KPI có icon và xu hướng)
+- Khu vực biểu đồ (biểu đồ đường hoặc cột bằng recharts)
+- Bảng dữ liệu hoạt động gần đây
+
+Yêu cầu kỹ thuật:
+- Sử dụng Tailwind CSS cho toàn bộ styling
+- Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+- Sử dụng lucide-react cho icon
+- Làm responsive cho cả mobile và desktop
+- Export dạng: export default function App()
+- Một file duy nhất, không thêm file CSS hay script CDN` },
+      { label: "Blog", template: `Tạo một trang chủ blog dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+Chủ đề: [chủ đề blog — VD: công nghệ, du lịch, nấu ăn, nhật ký cá nhân]
+Phong cách: [phong cách thiết kế — VD: tối giản, tạp chí, biên tập, ấm cúng]
+
+Các phần cần có:
+- Header với tên blog và điều hướng
+- Bài viết nổi bật với hình lớn
+- Lưới bài viết gần đây (6–9 thẻ có tiêu đề, trích đoạn, ngày, danh mục)
+- Phần đăng ký nhận tin
+- Footer với liên kết
+
+Yêu cầu kỹ thuật:
+- Sử dụng Tailwind CSS cho toàn bộ styling
+- Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+- Sử dụng lucide-react cho icon
+- Làm responsive cho cả mobile và desktop
+- Export dạng: export default function App()
+- Một file duy nhất, không thêm file CSS hay script CDN` },
+      { label: "SaaS", template: `Tạo một trang sản phẩm SaaS dạng JSX mà tôi có thể dùng làm src/App.jsx.
+
+Sản phẩm: [sản phẩm SaaS — VD: công cụ quản lý dự án, nền tảng email, trợ lý AI]
+Phong cách: [phong cách thiết kế — VD: hiện đại, chuyên nghiệp, vui nhộn, doanh nghiệp]
+
+Các phần cần có:
+- Hero với tên sản phẩm, slogan, CTA và mockup
+- Thanh logo đối tác
+- Tính năng chính (3–4 có icon và mô tả)
+- Cách hoạt động (3 bước)
+- Bảng giá (3 gói: Miễn phí, Pro, Doanh nghiệp)
+- Phần FAQ
+- CTA cuối cùng với đăng ký
+
+Yêu cầu kỹ thuật:
+- Sử dụng Tailwind CSS cho toàn bộ styling
+- Sử dụng component shadcn/ui (import từ @/components/ui/) khi phù hợp
+- Sử dụng lucide-react cho icon
+- Làm responsive cho cả mobile và desktop
+- Export dạng: export default function App()
+- Một file duy nhất, không thêm file CSS hay script CDN` },
+    ],
     promptCopy: "Sao chép",
     promptCopied: "Đã sao chép!",
   },
