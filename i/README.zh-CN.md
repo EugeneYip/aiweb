@@ -32,10 +32,9 @@
 
    </details>
 
-2. **使用这个模板**创建自己的 repo
+2. **使用这个模板** — 在 GitHub 页面点击 **「Use this template」** → **「Create a new repository」** 创建自己的 repo。你的 GitHub 用户名和 repo 名称会决定网站网址（`https://<用户名>.github.io/<repo 名称>/`）
 3. **启用 GitHub Pages** — 到 **Settings → Pages**，把 Source 设成 **GitHub Actions**
-4. 把 [`src/App.jsx`](../src/App.jsx) **换成** AI 刚刚生成的 JSX
-5. **Push** 到 `main` — 网站就会上线在 `https://<用户名>.github.io/<repo 名称>/`
+4. **替换** [`src/App.jsx`](../src/App.jsx) — 将 AI 生成的 JSX 粘贴到这个文件，**删除并替换原来的所有内容**，然后保存
 
 ## 自定义设置（选用）
 

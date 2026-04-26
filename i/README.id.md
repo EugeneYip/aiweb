@@ -32,10 +32,9 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 
    </details>
 
-2. **Gunakan template ini** untuk membuat repositori kamu sendiri
+2. **Gunakan template ini** — di halaman GitHub, klik **"Use this template"** → **"Create a new repository"** untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situs Anda (`https://<username>.github.io/<repo-name>/`)
 3. **Aktifkan GitHub Pages** — buka **Settings → Pages** dan atur Source ke **GitHub Actions**
-4. **Ganti** [`src/App.jsx`](../src/App.jsx) dengan JSX yang dibuat oleh AI
-5. **Push** ke `main` — situsmu akan aktif di `https://<username>.github.io/<repo-name>/`
+4. **Ganti** [`src/App.jsx`](../src/App.jsx) — tempel JSX yang dibuat AI ke file ini, **hapus dan ganti semua konten yang ada**, lalu simpan
 
 ## Kustomisasi (Opsional)
 

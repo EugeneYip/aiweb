@@ -32,10 +32,9 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 
    </details>
 
-2. **Bu şablonu kullanarak** kendi deponuzu oluşturun
+2. **Bu şablonu kullanın** — GitHub sayfasında **"Use this template"** → **"Create a new repository"** tıklayarak kendi reponuzu oluşturun. GitHub kullanıcı adınız ve repo adı sitenizin URL'sini belirleyecektir (`https://<kullanıcı-adı>.github.io/<repo-adı>/`)
 3. **GitHub Pages'i etkinleştirin** — **Settings → Pages** sayfasına gidin ve Source'u **GitHub Actions** olarak ayarlayın
-4. [`src/App.jsx`](../src/App.jsx) dosyasını yapay zekanın oluşturduğu JSX ile **değiştirin**
-5. `main` dalına **push edin** — siteniz `https://<kullanıcı-adı>.github.io/<repo-adı>/` adresinde yayına girecektir
+4. [`src/App.jsx`](../src/App.jsx) dosyasını **değiştirin** — yapay zekanın oluşturduğu JSX'i bu dosyaya yapıştırın, **mevcut tüm içeriği silip değiştirin**, ardından kaydedin
 
 ## Özelleştirme (İsteğe Bağlı)
 

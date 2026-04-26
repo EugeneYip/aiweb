@@ -32,10 +32,9 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 
    </details>
 
-2. **Dùng template này** để tạo repo của riêng bạn
+2. **Dùng template này** — trên trang GitHub, nhấn **"Use this template"** → **"Create a new repository"** để tạo repo riêng. Tên người dùng GitHub và tên repo sẽ quyết định URL trang web của bạn (`https://<tên-user>.github.io/<tên-repo>/`)
 3. **Bật GitHub Pages** — vào **Settings → Pages**, đặt Source là **GitHub Actions**
-4. **Thay** [`src/App.jsx`](../src/App.jsx) bằng JSX mà AI vừa sinh ra
-5. **Push** lên `main` — site của bạn sẽ lên ở `https://<tên-user>.github.io/<tên-repo>/`
+4. **Thay** [`src/App.jsx`](../src/App.jsx) — dán JSX do AI tạo vào file này, **xóa và thay thế toàn bộ nội dung hiện có**, rồi lưu
 
 ## Tuỳ chỉnh (Không bắt buộc)
 

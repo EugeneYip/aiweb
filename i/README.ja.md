@@ -32,10 +32,9 @@ Claude、ChatGPT、お好きな LLM でページを生成して、`src/App.jsx` 
 
    </details>
 
-2. **このテンプレートを使って**自分のリポジトリを作成
+2. **このテンプレートを使う** — GitHub ページで **「Use this template」** → **「Create a new repository」** をクリックして自分のリポジトリを作成。GitHub のユーザー名とリポジトリ名がサイトの URL になります（`https://<ユーザー名>.github.io/<リポジトリ名>/`）
 3. **GitHub Pages を有効化** — **Settings → Pages** で Source を **GitHub Actions** に設定
-4. [`src/App.jsx`](../src/App.jsx) を AI が生成した JSX に**差し替え**
-5. `main` ブランチに **push** — `https://<ユーザー名>.github.io/<リポジトリ名>/` でサイトが公開されます
+4. [`src/App.jsx`](../src/App.jsx) を**差し替え** — AI が生成した JSX をこのファイルに貼り付け、**既存の内容をすべて削除して置き換えて**から保存
 
 ## カスタマイズ（任意）
 

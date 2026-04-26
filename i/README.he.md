@@ -34,10 +34,9 @@
 
    </details>
 
-2. **השתמש בתבנית זו** ליצירת המאגר שלך
-3. **הפעל את GitHub Pages** — עבור אל **Settings → Pages** והגדר את Source ל-**GitHub Actions**
-4. **החלף** את [`src/App.jsx`](../src/App.jsx) ב-JSX שנוצר על ידי הבינה המלאכותית
-5. **דחוף** ל-`main` — האתר שלך יהיה פעיל בכתובת `https://<שם-משתמש>.github.io/<שם-repo>/`
+2. **השתמשו בתבנית זו** — בדף GitHub לחצו על **"Use this template"** ← **"Create a new repository"** כדי ליצור מאגר משלכם. שם המשתמש ושם המאגר ב-GitHub יקבעו את כתובת האתר (`https://<שם-משתמש>.github.io/<שם-repo>/`)
+3. **הפעילו GitHub Pages** — עברו אל **Settings → Pages** והגדירו את Source ל-**GitHub Actions**
+4. **החליפו** את [`src/App.jsx`](../src/App.jsx) — הדביקו את ה-JSX שה-AI יצר בקובץ זה, **מחקו והחליפו את כל התוכן הקיים**, ואז שמרו
 
 ## התאמה אישית (אופציונלי)
 
