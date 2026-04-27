@@ -66,11 +66,36 @@ const translations = {
     promptLabel: "Starter Prompt",
     promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
     promptVariants: [
-      { label: "Landing Page", template: `Create a landing page for promoting a product or service in JSX format.` },
-      { label: "Portfolio", template: `Create a personal portfolio website in JSX format.` },
-      { label: "Dashboard", template: `Create an admin dashboard in JSX format.` },
-      { label: "Blog", template: `Create a blog homepage in JSX format.` },
-      { label: "SaaS", template: `Create a SaaS product website in JSX format.` },
+      { label: "Landing Page", template: `Create a landing page for promoting a product or service in JSX format.
+Topic:
+Style:
+Details:
+Reference files and images as attachments (if any).
+Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+      { label: "Portfolio", template: `Create a personal portfolio website in JSX format.
+Topic:
+Style:
+Details:
+Reference files and images as attachments (if any).
+Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+      { label: "Dashboard", template: `Create an admin dashboard in JSX format.
+Topic:
+Style:
+Details:
+Reference files and images as attachments (if any).
+Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+      { label: "Blog", template: `Create a blog homepage in JSX format.
+Topic:
+Style:
+Details:
+Reference files and images as attachments (if any).
+Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+      { label: "SaaS", template: `Create a SaaS product website in JSX format.
+Topic:
+Style:
+Details:
+Reference files and images as attachments (if any).
+Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
     ],
     promptCopy: "Copy",
     promptCopied: "Copied!",
@@ -132,11 +157,36 @@ const translations = {
     promptLabel: "Prompt 範本",
     promptHint: "複製以下 prompt 貼到你的 AI 工具中，填入空白處即可。",
     promptVariants: [
-      { label: "落地頁", template: `請用 JSX 格式製作一個推廣產品或服務的落地頁。` },
-      { label: "作品集", template: `請用 JSX 格式製作一個個人作品集網頁。` },
-      { label: "儀表板", template: `請用 JSX 格式製作一個後台儀表板網頁。` },
-      { label: "部落格", template: `請用 JSX 格式製作一個部落格首頁。` },
-      { label: "SaaS 產品", template: `請用 JSX 格式製作一個 SaaS 產品網頁。` },
+      { label: "落地頁", template: `請用 JSX 格式製作一個推廣產品或服務的落地頁。
+主題：
+風格：
+詳細資訊：
+參考檔案與圖案於附件（若有）。
+請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+      { label: "作品集", template: `請用 JSX 格式製作一個個人作品集網頁。
+主題：
+風格：
+詳細資訊：
+參考檔案與圖案於附件（若有）。
+請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+      { label: "儀表板", template: `請用 JSX 格式製作一個後台儀表板網頁。
+主題：
+風格：
+詳細資訊：
+參考檔案與圖案於附件（若有）。
+請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+      { label: "部落格", template: `請用 JSX 格式製作一個部落格首頁。
+主題：
+風格：
+詳細資訊：
+參考檔案與圖案於附件（若有）。
+請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+      { label: "SaaS 產品", template: `請用 JSX 格式製作一個 SaaS 產品網頁。
+主題：
+風格：
+詳細資訊：
+參考檔案與圖案於附件（若有）。
+請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
     ],
     promptCopy: "複製",
     promptCopied: "已複製！",
@@ -198,11 +248,36 @@ const translations = {
     promptLabel: "Prompt 模板",
     promptHint: "复制以下 prompt 粘贴到你的 AI 工具中，填入空白处即可。",
     promptVariants: [
-      { label: "落地页", template: `请用 JSX 格式制作一个推广产品或服务的落地页。` },
-      { label: "作品集", template: `请用 JSX 格式制作一个个人作品集网页。` },
-      { label: "仪表板", template: `请用 JSX 格式制作一个后台仪表板网页。` },
-      { label: "博客", template: `请用 JSX 格式制作一个博客首页。` },
-      { label: "SaaS 产品", template: `请用 JSX 格式制作一个 SaaS 产品网页。` },
+      { label: "落地页", template: `请用 JSX 格式制作一个推广产品或服务的落地页。
+主题：
+风格：
+详细信息：
+参考文件与图片于附件（若有）。
+请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+      { label: "作品集", template: `请用 JSX 格式制作一个个人作品集网页。
+主题：
+风格：
+详细信息：
+参考文件与图片于附件（若有）。
+请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+      { label: "仪表板", template: `请用 JSX 格式制作一个后台仪表板网页。
+主题：
+风格：
+详细信息：
+参考文件与图片于附件（若有）。
+请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+      { label: "博客", template: `请用 JSX 格式制作一个博客首页。
+主题：
+风格：
+详细信息：
+参考文件与图片于附件（若有）。
+请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+      { label: "SaaS 产品", template: `请用 JSX 格式制作一个 SaaS 产品网页。
+主题：
+风格：
+详细信息：
+参考文件与图片于附件（若有）。
+请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
     ],
     promptCopy: "复制",
     promptCopied: "已复制！",
@@ -265,11 +340,36 @@ const translations = {
     promptLabel: "Prompt inicial",
     promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
     promptVariants: [
-      { label: "Landing", template: `Crea una landing page para promocionar un producto o servicio en formato JSX.` },
-      { label: "Portafolio", template: `Crea una página de portfolio personal en formato JSX.` },
-      { label: "Dashboard", template: `Crea un dashboard administrativo en formato JSX.` },
-      { label: "Blog", template: `Crea una homepage de blog en formato JSX.` },
-      { label: "SaaS", template: `Crea una página de producto SaaS en formato JSX.` },
+      { label: "Landing", template: `Crea una landing page para promocionar un producto o servicio en formato JSX.
+Tema:
+Estilo:
+Detalles:
+Archivos de referencia e imágenes como adjuntos (si los hay).
+Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+      { label: "Portafolio", template: `Crea una página de portfolio personal en formato JSX.
+Tema:
+Estilo:
+Detalles:
+Archivos de referencia e imágenes como adjuntos (si los hay).
+Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+      { label: "Dashboard", template: `Crea un dashboard administrativo en formato JSX.
+Tema:
+Estilo:
+Detalles:
+Archivos de referencia e imágenes como adjuntos (si los hay).
+Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+      { label: "Blog", template: `Crea una homepage de blog en formato JSX.
+Tema:
+Estilo:
+Detalles:
+Archivos de referencia e imágenes como adjuntos (si los hay).
+Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+      { label: "SaaS", template: `Crea una página de producto SaaS en formato JSX.
+Tema:
+Estilo:
+Detalles:
+Archivos de referencia e imágenes como adjuntos (si los hay).
+Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
     ],
     promptCopy: "Copiar",
     promptCopied: "¡Copiado!",
@@ -332,11 +432,36 @@ const translations = {
     promptLabel: "プロンプトテンプレート",
     promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
     promptVariants: [
-      { label: "LP", template: `JSX 形式で商品・サービスを宣伝するランディングページを作ってください。` },
-      { label: "ポートフォリオ", template: `JSX 形式で個人ポートフォリオページを作ってください。` },
-      { label: "ダッシュボード", template: `JSX 形式で管理ダッシュボードを作ってください。` },
-      { label: "ブログ", template: `JSX 形式でブログのホームページを作ってください。` },
-      { label: "SaaS", template: `JSX 形式で SaaS の製品ページを作ってください。` },
+      { label: "LP", template: `JSX 形式で商品・サービスを宣伝するランディングページを作ってください。
+テーマ：
+スタイル：
+詳細情報：
+参考ファイルや画像があれば添付してください。
+ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+      { label: "ポートフォリオ", template: `JSX 形式で個人ポートフォリオページを作ってください。
+テーマ：
+スタイル：
+詳細情報：
+参考ファイルや画像があれば添付してください。
+ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+      { label: "ダッシュボード", template: `JSX 形式で管理ダッシュボードを作ってください。
+テーマ：
+スタイル：
+詳細情報：
+参考ファイルや画像があれば添付してください。
+ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+      { label: "ブログ", template: `JSX 形式でブログのホームページを作ってください。
+テーマ：
+スタイル：
+詳細情報：
+参考ファイルや画像があれば添付してください。
+ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+      { label: "SaaS", template: `JSX 形式で SaaS の製品ページを作ってください。
+テーマ：
+スタイル：
+詳細情報：
+参考ファイルや画像があれば添付してください。
+ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
     ],
     promptCopy: "コピー",
     promptCopied: "コピーしました！",
@@ -399,11 +524,36 @@ const translations = {
     promptLabel: "Prompt inicial",
     promptHint: "Copie este prompt e cole na sua ferramenta de IA. Preencha os espaços em branco.",
     promptVariants: [
-      { label: "Landing Page", template: `Crie uma landing page para promover um produto ou serviço em formato JSX.` },
-      { label: "Portfólio", template: `Crie uma página de portfolio pessoal em formato JSX.` },
-      { label: "Dashboard", template: `Crie um dashboard administrativo em formato JSX.` },
-      { label: "Blog", template: `Crie uma homepage de blog em formato JSX.` },
-      { label: "SaaS", template: `Crie uma página de produto SaaS em formato JSX.` },
+      { label: "Landing Page", template: `Crie uma landing page para promover um produto ou serviço em formato JSX.
+Tema:
+Estilo:
+Detalhes:
+Arquivos e imagens de referência em anexo (se houver).
+Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+      { label: "Portfólio", template: `Crie uma página de portfolio pessoal em formato JSX.
+Tema:
+Estilo:
+Detalhes:
+Arquivos e imagens de referência em anexo (se houver).
+Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+      { label: "Dashboard", template: `Crie um dashboard administrativo em formato JSX.
+Tema:
+Estilo:
+Detalhes:
+Arquivos e imagens de referência em anexo (se houver).
+Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+      { label: "Blog", template: `Crie uma homepage de blog em formato JSX.
+Tema:
+Estilo:
+Detalhes:
+Arquivos e imagens de referência em anexo (se houver).
+Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+      { label: "SaaS", template: `Crie uma página de produto SaaS em formato JSX.
+Tema:
+Estilo:
+Detalhes:
+Arquivos e imagens de referência em anexo (se houver).
+Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
     ],
     promptCopy: "Copiar",
     promptCopied: "Copiado!",
@@ -466,11 +616,36 @@ const translations = {
     promptLabel: "قالب البرومبت",
     promptHint: "انسخ هذا البرومبت والصقه في أداة الذكاء الاصطناعي، ثم املأ الفراغات.",
     promptVariants: [
-      { label: "صفحة هبوط", template: `أنشئ صفحة هبوط للترويج لمنتج أو خدمة بصيغة JSX.` },
-      { label: "معرض أعمال", template: `أنشئ صفحة معرض أعمال شخصية بصيغة JSX.` },
-      { label: "لوحة تحكم", template: `أنشئ لوحة تحكم إدارية بصيغة JSX.` },
-      { label: "مدوّنة", template: `أنشئ صفحة رئيسية لمدونة بصيغة JSX.` },
-      { label: "SaaS", template: `أنشئ صفحة منتج SaaS بصيغة JSX.` },
+      { label: "صفحة هبوط", template: `أنشئ صفحة هبوط للترويج لمنتج أو خدمة بصيغة JSX.
+الموضوع:
+النمط:
+التفاصيل:
+ملفات وصور مرجعية كمرفقات (إن وُجدت).
+يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+      { label: "معرض أعمال", template: `أنشئ صفحة معرض أعمال شخصية بصيغة JSX.
+الموضوع:
+النمط:
+التفاصيل:
+ملفات وصور مرجعية كمرفقات (إن وُجدت).
+يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+      { label: "لوحة تحكم", template: `أنشئ لوحة تحكم إدارية بصيغة JSX.
+الموضوع:
+النمط:
+التفاصيل:
+ملفات وصور مرجعية كمرفقات (إن وُجدت).
+يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+      { label: "مدوّنة", template: `أنشئ صفحة رئيسية لمدونة بصيغة JSX.
+الموضوع:
+النمط:
+التفاصيل:
+ملفات وصور مرجعية كمرفقات (إن وُجدت).
+يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+      { label: "SaaS", template: `أنشئ صفحة منتج SaaS بصيغة JSX.
+الموضوع:
+النمط:
+التفاصيل:
+ملفات وصور مرجعية كمرفقات (إن وُجدت).
+يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
     ],
     promptCopy: "نسخ",
     promptCopied: "تم النسخ!",
@@ -533,11 +708,36 @@ const translations = {
     promptLabel: "Prompt de départ",
     promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
     promptVariants: [
-      { label: "Landing Page", template: `Crée une landing page pour promouvoir un produit ou service en format JSX.` },
-      { label: "Portfolio", template: `Crée une page portfolio personnel en format JSX.` },
-      { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX.` },
-      { label: "Blog", template: `Crée une page d'accueil de blog en format JSX.` },
-      { label: "SaaS", template: `Crée une page produit SaaS en format JSX.` },
+      { label: "Landing Page", template: `Crée une landing page pour promouvoir un produit ou service en format JSX.
+Thème :
+Style :
+Détails :
+Fichiers et images de référence en pièces jointes (le cas échéant).
+Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+      { label: "Portfolio", template: `Crée une page portfolio personnel en format JSX.
+Thème :
+Style :
+Détails :
+Fichiers et images de référence en pièces jointes (le cas échéant).
+Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+      { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX.
+Thème :
+Style :
+Détails :
+Fichiers et images de référence en pièces jointes (le cas échéant).
+Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+      { label: "Blog", template: `Crée une page d'accueil de blog en format JSX.
+Thème :
+Style :
+Détails :
+Fichiers et images de référence en pièces jointes (le cas échéant).
+Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+      { label: "SaaS", template: `Crée une page produit SaaS en format JSX.
+Thème :
+Style :
+Détails :
+Fichiers et images de référence en pièces jointes (le cas échéant).
+Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
     ],
     promptCopy: "Copier",
     promptCopied: "Copié !",
@@ -600,11 +800,36 @@ const translations = {
     promptLabel: "शुरुआती प्रॉम्प्ट",
     promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
     promptVariants: [
-      { label: "लैंडिंग पेज", template: `JSX फॉर्मेट में किसी उत्पाद या सेवा को प्रमोट करने वाला लैंडिंग पेज बनाएं।` },
-      { label: "पोर्टफोलियो", template: `JSX फॉर्मेट में एक व्यक्तिगत पोर्टफोलियो वेब पेज बनाएं।` },
-      { label: "डैशबोर्ड", template: `JSX फॉर्मेट में एक एडमिन डैशबोर्ड बनाएं।` },
-      { label: "ब्लॉग", template: `JSX फॉर्मेट में एक ब्लॉग होमपेज बनाएं।` },
-      { label: "SaaS", template: `JSX फॉर्मेट में एक SaaS प्रोडक्ट पेज बनाएं।` },
+      { label: "लैंडिंग पेज", template: `JSX फॉर्मेट में किसी उत्पाद या सेवा को प्रमोट करने वाला लैंडिंग पेज बनाएं।
+विषय:
+शैली:
+विवरण:
+संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
+डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
+      { label: "पोर्टफोलियो", template: `JSX फॉर्मेट में एक व्यक्तिगत पोर्टफोलियो वेब पेज बनाएं।
+विषय:
+शैली:
+विवरण:
+संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
+डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
+      { label: "डैशबोर्ड", template: `JSX फॉर्मेट में एक एडमिन डैशबोर्ड बनाएं।
+विषय:
+शैली:
+विवरण:
+संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
+डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
+      { label: "ब्लॉग", template: `JSX फॉर्मेट में एक ब्लॉग होमपेज बनाएं।
+विषय:
+शैली:
+विवरण:
+संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
+डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
+      { label: "SaaS", template: `JSX फॉर्मेट में एक SaaS प्रोडक्ट पेज बनाएं।
+विषय:
+शैली:
+विवरण:
+संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
+डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
     ],
     promptCopy: "कॉपी करें",
     promptCopied: "कॉपी हो गया!",
@@ -667,11 +892,36 @@ const translations = {
     promptLabel: "시작 프롬프트",
     promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
     promptVariants: [
-      { label: "랜딩 페이지", template: `JSX 형식으로 제품이나 서비스를 홍보하는 랜딩 페이지를 만들어 주세요.` },
-      { label: "포트폴리오", template: `JSX 형식으로 개인 포트폴리오 페이지를 만들어 주세요.` },
-      { label: "대시보드", template: `JSX 형식으로 관리자 대시보드를 만들어 주세요.` },
-      { label: "블로그", template: `JSX 형식으로 블로그 홈페이지를 만들어 주세요.` },
-      { label: "SaaS", template: `JSX 형식으로 SaaS 제품 페이지를 만들어 주세요.` },
+      { label: "랜딩 페이지", template: `JSX 형식으로 제품이나 서비스를 홍보하는 랜딩 페이지를 만들어 주세요.
+주제:
+스타일:
+세부 정보:
+참고 파일과 이미지를 첨부해 주세요 (있는 경우).
+다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+      { label: "포트폴리오", template: `JSX 형식으로 개인 포트폴리오 페이지를 만들어 주세요.
+주제:
+스타일:
+세부 정보:
+참고 파일과 이미지를 첨부해 주세요 (있는 경우).
+다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+      { label: "대시보드", template: `JSX 형식으로 관리자 대시보드를 만들어 주세요.
+주제:
+스타일:
+세부 정보:
+참고 파일과 이미지를 첨부해 주세요 (있는 경우).
+다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+      { label: "블로그", template: `JSX 형식으로 블로그 홈페이지를 만들어 주세요.
+주제:
+스타일:
+세부 정보:
+참고 파일과 이미지를 첨부해 주세요 (있는 경우).
+다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+      { label: "SaaS", template: `JSX 형식으로 SaaS 제품 페이지를 만들어 주세요.
+주제:
+스타일:
+세부 정보:
+참고 파일과 이미지를 첨부해 주세요 (있는 경우).
+다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
     ],
     promptCopy: "복사",
     promptCopied: "복사됨!",
@@ -734,11 +984,36 @@ const translations = {
     promptLabel: "شروعاتی پرامپٹ",
     promptHint: "اس پرامپٹ کو کاپی کر کے اپنے AI ٹول میں پیسٹ کریں۔ خالی جگہیں پُر کریں۔",
     promptVariants: [
-      { label: "لینڈنگ پیج", template: `JSX فارمیٹ میں کسی پروڈکٹ یا سروس کی تشہیر کے لیے لینڈنگ پیج بنائیں۔` },
-      { label: "پورٹ فولیو", template: `JSX فارمیٹ میں ایک ذاتی پورٹ فولیو ویب صفحہ بنائیں۔` },
-      { label: "ڈیش بورڈ", template: `JSX فارمیٹ میں ایک ایڈمن ڈیش بورڈ بنائیں۔` },
-      { label: "بلاگ", template: `JSX فارمیٹ میں ایک بلاگ ہوم پیج بنائیں۔` },
-      { label: "SaaS", template: `JSX فارمیٹ میں ایک SaaS پروڈکٹ پیج بنائیں۔` },
+      { label: "لینڈنگ پیج", template: `JSX فارمیٹ میں کسی پروڈکٹ یا سروس کی تشہیر کے لیے لینڈنگ پیج بنائیں۔
+موضوع:
+انداز:
+تفصیلات:
+حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
+ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+      { label: "پورٹ فولیو", template: `JSX فارمیٹ میں ایک ذاتی پورٹ فولیو ویب صفحہ بنائیں۔
+موضوع:
+انداز:
+تفصیلات:
+حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
+ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+      { label: "ڈیش بورڈ", template: `JSX فارمیٹ میں ایک ایڈمن ڈیش بورڈ بنائیں۔
+موضوع:
+انداز:
+تفصیلات:
+حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
+ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+      { label: "بلاگ", template: `JSX فارمیٹ میں ایک بلاگ ہوم پیج بنائیں۔
+موضوع:
+انداز:
+تفصیلات:
+حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
+ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+      { label: "SaaS", template: `JSX فارمیٹ میں ایک SaaS پروڈکٹ پیج بنائیں۔
+موضوع:
+انداز:
+تفصیلات:
+حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
+ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
     ],
     promptCopy: "کاپی",
     promptCopied: "کاپی ہو گیا!",
@@ -801,11 +1076,36 @@ const translations = {
     promptLabel: "เทมเพลตพรอมต์",
     promptHint: "คัดลอกพรอมต์นี้ไปวางในเครื่องมือ AI ของคุณ แล้วเติมข้อมูลในช่องว่าง",
     promptVariants: [
-      { label: "แลนดิ้งเพจ", template: `สร้างแลนดิ้งเพจสำหรับโปรโมตสินค้าหรือบริการในรูปแบบ JSX` },
-      { label: "พอร์ตโฟลิโอ", template: `สร้างหน้าพอร์ตโฟลิโอส่วนตัวในรูปแบบ JSX` },
-      { label: "แดชบอร์ด", template: `สร้างแดชบอร์ดผู้ดูแลในรูปแบบ JSX` },
-      { label: "บล็อก", template: `สร้างหน้าแรกบล็อกในรูปแบบ JSX` },
-      { label: "SaaS", template: `สร้างหน้าผลิตภัณฑ์ SaaS ในรูปแบบ JSX` },
+      { label: "แลนดิ้งเพจ", template: `สร้างแลนดิ้งเพจสำหรับโปรโมตสินค้าหรือบริการในรูปแบบ JSX
+หัวข้อ:
+สไตล์:
+รายละเอียด:
+ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
+ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+      { label: "พอร์ตโฟลิโอ", template: `สร้างหน้าพอร์ตโฟลิโอส่วนตัวในรูปแบบ JSX
+หัวข้อ:
+สไตล์:
+รายละเอียด:
+ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
+ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+      { label: "แดชบอร์ด", template: `สร้างแดชบอร์ดผู้ดูแลในรูปแบบ JSX
+หัวข้อ:
+สไตล์:
+รายละเอียด:
+ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
+ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+      { label: "บล็อก", template: `สร้างหน้าแรกบล็อกในรูปแบบ JSX
+หัวข้อ:
+สไตล์:
+รายละเอียด:
+ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
+ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+      { label: "SaaS", template: `สร้างหน้าผลิตภัณฑ์ SaaS ในรูปแบบ JSX
+หัวข้อ:
+สไตล์:
+รายละเอียด:
+ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
+ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
     ],
     promptCopy: "คัดลอก",
     promptCopied: "คัดลอกแล้ว!",
@@ -868,11 +1168,36 @@ const translations = {
     promptLabel: "Starter-Prompt",
     promptHint: "Kopieren Sie diesen Prompt und fügen Sie ihn in Ihr KI-Tool ein. Füllen Sie die Lücken aus.",
     promptVariants: [
-      { label: "Landingpage", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.` },
-      { label: "Portfolio", template: `Erstelle eine persönliche Portfolio-Website im JSX-Format.` },
-      { label: "Dashboard", template: `Erstelle ein Admin-Dashboard im JSX-Format.` },
-      { label: "Blog", template: `Erstelle eine Blog-Startseite im JSX-Format.` },
-      { label: "SaaS", template: `Erstelle eine SaaS-Produktseite im JSX-Format.` },
+      { label: "Landingpage", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.
+Thema:
+Stil:
+Details:
+Referenzdateien und Bilder als Anhänge (falls vorhanden).
+Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+      { label: "Portfolio", template: `Erstelle eine persönliche Portfolio-Website im JSX-Format.
+Thema:
+Stil:
+Details:
+Referenzdateien und Bilder als Anhänge (falls vorhanden).
+Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+      { label: "Dashboard", template: `Erstelle ein Admin-Dashboard im JSX-Format.
+Thema:
+Stil:
+Details:
+Referenzdateien und Bilder als Anhänge (falls vorhanden).
+Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+      { label: "Blog", template: `Erstelle eine Blog-Startseite im JSX-Format.
+Thema:
+Stil:
+Details:
+Referenzdateien und Bilder als Anhänge (falls vorhanden).
+Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+      { label: "SaaS", template: `Erstelle eine SaaS-Produktseite im JSX-Format.
+Thema:
+Stil:
+Details:
+Referenzdateien und Bilder als Anhänge (falls vorhanden).
+Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
     ],
     promptCopy: "Kopieren",
     promptCopied: "Kopiert!",
@@ -935,11 +1260,36 @@ const translations = {
     promptLabel: "Başlangıç Promptu",
     promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
     promptVariants: [
-      { label: "Landing", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluştur.` },
-      { label: "Portföy", template: `JSX formatında kişisel bir portfolio sayfası oluştur.` },
-      { label: "Panel", template: `JSX formatında bir yönetici paneli oluştur.` },
-      { label: "Blog", template: `JSX formatında bir blog ana sayfası oluştur.` },
-      { label: "SaaS", template: `JSX formatında bir SaaS ürün sayfası oluştur.` },
+      { label: "Landing", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluştur.
+Konu:
+Stil:
+Detaylar:
+Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
+İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+      { label: "Portföy", template: `JSX formatında kişisel bir portfolio sayfası oluştur.
+Konu:
+Stil:
+Detaylar:
+Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
+İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+      { label: "Panel", template: `JSX formatında bir yönetici paneli oluştur.
+Konu:
+Stil:
+Detaylar:
+Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
+İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+      { label: "Blog", template: `JSX formatında bir blog ana sayfası oluştur.
+Konu:
+Stil:
+Detaylar:
+Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
+İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+      { label: "SaaS", template: `JSX formatında bir SaaS ürün sayfası oluştur.
+Konu:
+Stil:
+Detaylar:
+Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
+İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
     ],
     promptCopy: "Kopyala",
     promptCopied: "Kopyalandı!",
@@ -1002,11 +1352,36 @@ const translations = {
     promptLabel: "Шаблон промпта",
     promptHint: "Скопируйте этот промпт и вставьте его в ваш AI-инструмент. Заполните пропуски.",
     promptVariants: [
-      { label: "Лендинг", template: `Создайте лендинг для продвижения продукта или услуги в формате JSX.` },
-      { label: "Портфолио", template: `Создайте персональную страницу портфолио в формате JSX.` },
-      { label: "Дашборд", template: `Создайте административный дашборд в формате JSX.` },
-      { label: "Блог", template: `Создайте главную страницу блога в формате JSX.` },
-      { label: "SaaS", template: `Создайте страницу SaaS-продукта в формате JSX.` },
+      { label: "Лендинг", template: `Создайте лендинг для продвижения продукта или услуги в формате JSX.
+Тема:
+Стиль:
+Подробности:
+Справочные файлы и изображения в виде вложений (при наличии).
+Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+      { label: "Портфолио", template: `Создайте персональную страницу портфолио в формате JSX.
+Тема:
+Стиль:
+Подробности:
+Справочные файлы и изображения в виде вложений (при наличии).
+Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+      { label: "Дашборд", template: `Создайте административный дашборд в формате JSX.
+Тема:
+Стиль:
+Подробности:
+Справочные файлы и изображения в виде вложений (при наличии).
+Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+      { label: "Блог", template: `Создайте главную страницу блога в формате JSX.
+Тема:
+Стиль:
+Подробности:
+Справочные файлы и изображения в виде вложений (при наличии).
+Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+      { label: "SaaS", template: `Создайте страницу SaaS-продукта в формате JSX.
+Тема:
+Стиль:
+Подробности:
+Справочные файлы и изображения в виде вложений (при наличии).
+Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
     ],
     promptCopy: "Копировать",
     promptCopied: "Скопировано!",
@@ -1069,11 +1444,36 @@ const translations = {
     promptLabel: "תבנית פרומפט",
     promptHint: "העתיקו את הפרומפט הזה והדביקו אותו בכלי ה-AI שלכם. מלאו את השדות הריקים.",
     promptVariants: [
-      { label: "דף נחיתה", template: `צרו דף נחיתה לקידום מוצר או שירות בפורמט JSX.` },
-      { label: "תיק עבודות", template: `צרו דף תיק עבודות אישי בפורמט JSX.` },
-      { label: "דשבורד", template: `צרו דשבורד ניהולי בפורמט JSX.` },
-      { label: "בלוג", template: `צרו דף בית לבלוג בפורמט JSX.` },
-      { label: "SaaS", template: `צרו דף מוצר SaaS בפורמט JSX.` },
+      { label: "דף נחיתה", template: `צרו דף נחיתה לקידום מוצר או שירות בפורמט JSX.
+נושא:
+סגנון:
+פרטים:
+קבצי עזר ותמונות כקבצים מצורפים (אם יש).
+ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
+      { label: "תיק עבודות", template: `צרו דף תיק עבודות אישי בפורמט JSX.
+נושא:
+סגנון:
+פרטים:
+קבצי עזר ותמונות כקבצים מצורפים (אם יש).
+ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
+      { label: "דשבורד", template: `צרו דשבורד ניהולי בפורמט JSX.
+נושא:
+סגנון:
+פרטים:
+קבצי עזר ותמונות כקבצים מצורפים (אם יש).
+ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
+      { label: "בלוג", template: `צרו דף בית לבלוג בפורמט JSX.
+נושא:
+סגנון:
+פרטים:
+קבצי עזר ותמונות כקבצים מצורפים (אם יש).
+ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
+      { label: "SaaS", template: `צרו דף מוצר SaaS בפורמט JSX.
+נושא:
+סגנון:
+פרטים:
+קבצי עזר ותמונות כקבצים מצורפים (אם יש).
+ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
     ],
     promptCopy: "העתקה",
     promptCopied: "הועתק!",
@@ -1136,11 +1536,36 @@ const translations = {
     promptLabel: "Prompt iniziale",
     promptHint: "Copia questo prompt e incollalo nel tuo strumento AI. Compila gli spazi vuoti.",
     promptVariants: [
-      { label: "Landing Page", template: `Crea una landing page per promuovere un prodotto o servizio in formato JSX.` },
-      { label: "Portfolio", template: `Crea una pagina portfolio personale in formato JSX.` },
-      { label: "Dashboard", template: `Crea un dashboard amministrativo in formato JSX.` },
-      { label: "Blog", template: `Crea una homepage del blog in formato JSX.` },
-      { label: "SaaS", template: `Crea una pagina prodotto SaaS in formato JSX.` },
+      { label: "Landing Page", template: `Crea una landing page per promuovere un prodotto o servizio in formato JSX.
+Tema:
+Stile:
+Dettagli:
+File e immagini di riferimento come allegati (se presenti).
+Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+      { label: "Portfolio", template: `Crea una pagina portfolio personale in formato JSX.
+Tema:
+Stile:
+Dettagli:
+File e immagini di riferimento come allegati (se presenti).
+Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+      { label: "Dashboard", template: `Crea un dashboard amministrativo in formato JSX.
+Tema:
+Stile:
+Dettagli:
+File e immagini di riferimento come allegati (se presenti).
+Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+      { label: "Blog", template: `Crea una homepage del blog in formato JSX.
+Tema:
+Stile:
+Dettagli:
+File e immagini di riferimento come allegati (se presenti).
+Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+      { label: "SaaS", template: `Crea una pagina prodotto SaaS in formato JSX.
+Tema:
+Stile:
+Dettagli:
+File e immagini di riferimento come allegati (se presenti).
+Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
     ],
     promptCopy: "Copia",
     promptCopied: "Copiato!",
@@ -1203,11 +1628,36 @@ const translations = {
     promptLabel: "Prompt Awal",
     promptHint: "Salin prompt ini dan tempelkan ke alat AI Anda. Isi bagian yang kosong.",
     promptVariants: [
-      { label: "Landing Page", template: `Buatkan landing page untuk mempromosikan produk atau layanan dalam format JSX.` },
-      { label: "Portofolio", template: `Buatkan halaman portofolio pribadi dalam format JSX.` },
-      { label: "Dashboard", template: `Buatkan halaman dashboard admin dalam format JSX.` },
-      { label: "Blog", template: `Buatkan halaman utama blog dalam format JSX.` },
-      { label: "SaaS", template: `Buatkan halaman produk SaaS dalam format JSX.` },
+      { label: "Landing Page", template: `Buatkan landing page untuk mempromosikan produk atau layanan dalam format JSX.
+Topik:
+Gaya:
+Detail:
+File referensi dan gambar sebagai lampiran (jika ada).
+Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+      { label: "Portofolio", template: `Buatkan halaman portofolio pribadi dalam format JSX.
+Topik:
+Gaya:
+Detail:
+File referensi dan gambar sebagai lampiran (jika ada).
+Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+      { label: "Dashboard", template: `Buatkan halaman dashboard admin dalam format JSX.
+Topik:
+Gaya:
+Detail:
+File referensi dan gambar sebagai lampiran (jika ada).
+Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+      { label: "Blog", template: `Buatkan halaman utama blog dalam format JSX.
+Topik:
+Gaya:
+Detail:
+File referensi dan gambar sebagai lampiran (jika ada).
+Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+      { label: "SaaS", template: `Buatkan halaman produk SaaS dalam format JSX.
+Topik:
+Gaya:
+Detail:
+File referensi dan gambar sebagai lampiran (jika ada).
+Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
     ],
     promptCopy: "Salin",
     promptCopied: "Tersalin!",
@@ -1270,11 +1720,36 @@ const translations = {
     promptLabel: "Prompt mẫu",
     promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
     promptVariants: [
-      { label: "Landing Page", template: `Tạo một landing page quảng bá sản phẩm hoặc dịch vụ dạng JSX.` },
-      { label: "Portfolio", template: `Tạo một trang portfolio cá nhân dạng JSX.` },
-      { label: "Dashboard", template: `Tạo một trang dashboard quản trị dạng JSX.` },
-      { label: "Blog", template: `Tạo một trang chủ blog dạng JSX.` },
-      { label: "SaaS", template: `Tạo một trang sản phẩm SaaS dạng JSX.` },
+      { label: "Landing Page", template: `Tạo một landing page quảng bá sản phẩm hoặc dịch vụ dạng JSX.
+Chủ đề:
+Phong cách:
+Chi tiết:
+File tham khảo và hình ảnh đính kèm (nếu có).
+Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+      { label: "Portfolio", template: `Tạo một trang portfolio cá nhân dạng JSX.
+Chủ đề:
+Phong cách:
+Chi tiết:
+File tham khảo và hình ảnh đính kèm (nếu có).
+Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+      { label: "Dashboard", template: `Tạo một trang dashboard quản trị dạng JSX.
+Chủ đề:
+Phong cách:
+Chi tiết:
+File tham khảo và hình ảnh đính kèm (nếu có).
+Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+      { label: "Blog", template: `Tạo một trang chủ blog dạng JSX.
+Chủ đề:
+Phong cách:
+Chi tiết:
+File tham khảo và hình ảnh đính kèm (nếu có).
+Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+      { label: "SaaS", template: `Tạo một trang sản phẩm SaaS dạng JSX.
+Chủ đề:
+Phong cách:
+Chi tiết:
+File tham khảo và hình ảnh đính kèm (nếu có).
+Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
     ],
     promptCopy: "Sao chép",
     promptCopied: "Đã sao chép!",
