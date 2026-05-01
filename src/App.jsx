@@ -70,32 +70,32 @@ const translations = {
 Topic:
 Style:
 Details:
-Reference files and images as attachments (if any).
-Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+See attached files for reference, if any.
+Provide as a downloadable file or display in Canvas.` },
       { label: "Portfolio", template: `Create a personal portfolio website in JSX format.
 Topic:
 Style:
 Details:
-Reference files and images as attachments (if any).
-Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+See attached files for reference, if any.
+Provide as a downloadable file or display in Canvas.` },
       { label: "Dashboard", template: `Create an admin dashboard in JSX format.
 Topic:
 Style:
 Details:
-Reference files and images as attachments (if any).
-Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+See attached files for reference, if any.
+Provide as a downloadable file or display in Canvas.` },
       { label: "Blog", template: `Create a blog homepage in JSX format.
 Topic:
 Style:
 Details:
-Reference files and images as attachments (if any).
-Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+See attached files for reference, if any.
+Provide as a downloadable file or display in Canvas.` },
       { label: "SaaS", template: `Create a SaaS product website in JSX format.
 Topic:
 Style:
 Details:
-Reference files and images as attachments (if any).
-Please provide a downloadable file / Please display using Canvas (choose based on your needs).` },
+See attached files for reference, if any.
+Provide as a downloadable file or display in Canvas.` },
     ],
     promptCopy: "Copy",
     promptCopied: "Copied!",
@@ -161,32 +161,32 @@ Please provide a downloadable file / Please display using Canvas (choose based o
 主題：
 風格：
 詳細資訊：
-參考檔案與圖案於附件（若有）。
-請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+參考檔案或圖片請見附件（若有）。
+請提供下載檔，或使用 Canvas 顯示。` },
       { label: "作品集", template: `請用 JSX 格式製作一個個人作品集網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案與圖案於附件（若有）。
-請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+參考檔案或圖片請見附件（若有）。
+請提供下載檔，或使用 Canvas 顯示。` },
       { label: "儀表板", template: `請用 JSX 格式製作一個後台儀表板網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案與圖案於附件（若有）。
-請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+參考檔案或圖片請見附件（若有）。
+請提供下載檔，或使用 Canvas 顯示。` },
       { label: "部落格", template: `請用 JSX 格式製作一個部落格首頁。
 主題：
 風格：
 詳細資訊：
-參考檔案與圖案於附件（若有）。
-請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+參考檔案或圖片請見附件（若有）。
+請提供下載檔，或使用 Canvas 顯示。` },
       { label: "SaaS 產品", template: `請用 JSX 格式製作一個 SaaS 產品網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案與圖案於附件（若有）。
-請提供下載檔 / 請使用 Canvas 顯示（依需求選擇）。` },
+參考檔案或圖片請見附件（若有）。
+請提供下載檔，或使用 Canvas 顯示。` },
     ],
     promptCopy: "複製",
     promptCopied: "已複製！",
@@ -252,32 +252,32 @@ Please provide a downloadable file / Please display using Canvas (choose based o
 主题：
 风格：
 详细信息：
-参考文件与图片于附件（若有）。
-请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+参考文件或图片请见附件（若有）。
+请提供下载文件，或使用 Canvas 显示。` },
       { label: "作品集", template: `请用 JSX 格式制作一个个人作品集网页。
 主题：
 风格：
 详细信息：
-参考文件与图片于附件（若有）。
-请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+参考文件或图片请见附件（若有）。
+请提供下载文件，或使用 Canvas 显示。` },
       { label: "仪表板", template: `请用 JSX 格式制作一个后台仪表板网页。
 主题：
 风格：
 详细信息：
-参考文件与图片于附件（若有）。
-请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+参考文件或图片请见附件（若有）。
+请提供下载文件，或使用 Canvas 显示。` },
       { label: "博客", template: `请用 JSX 格式制作一个博客首页。
 主题：
 风格：
 详细信息：
-参考文件与图片于附件（若有）。
-请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+参考文件或图片请见附件（若有）。
+请提供下载文件，或使用 Canvas 显示。` },
       { label: "SaaS 产品", template: `请用 JSX 格式制作一个 SaaS 产品网页。
 主题：
 风格：
 详细信息：
-参考文件与图片于附件（若有）。
-请提供下载文件 / 请使用 Canvas 显示（按需选择）。` },
+参考文件或图片请见附件（若有）。
+请提供下载文件，或使用 Canvas 显示。` },
     ],
     promptCopy: "复制",
     promptCopied: "已复制！",
@@ -344,32 +344,32 @@ Please provide a downloadable file / Please display using Canvas (choose based o
 Tema:
 Estilo:
 Detalles:
-Archivos de referencia e imágenes como adjuntos (si los hay).
-Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+Adjunta archivos de referencia o imágenes si los tienes.
+Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
       { label: "Portafolio", template: `Crea una página de portfolio personal en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Archivos de referencia e imágenes como adjuntos (si los hay).
-Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+Adjunta archivos de referencia o imágenes si los tienes.
+Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
       { label: "Dashboard", template: `Crea un dashboard administrativo en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Archivos de referencia e imágenes como adjuntos (si los hay).
-Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+Adjunta archivos de referencia o imágenes si los tienes.
+Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
       { label: "Blog", template: `Crea una homepage de blog en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Archivos de referencia e imágenes como adjuntos (si los hay).
-Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+Adjunta archivos de referencia o imágenes si los tienes.
+Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
       { label: "SaaS", template: `Crea una página de producto SaaS en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Archivos de referencia e imágenes como adjuntos (si los hay).
-Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesidad).` },
+Adjunta archivos de referencia o imágenes si los tienes.
+Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
     ],
     promptCopy: "Copiar",
     promptCopied: "¡Copiado!",
@@ -427,7 +427,7 @@ Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesida
     tipCommand: "npm run check",
     tipAfter: "を実行すれば、足りない依存を見つけて修正できます。",
     footerLine1: "© 2026 Eugene Yip.",
-    footerLine2: "All Rights Reserved.",
+    footerLine2: "著作権所有。",
     langLabel: "言語",
     promptLabel: "プロンプトテンプレート",
     promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
@@ -437,31 +437,31 @@ Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesida
 スタイル：
 詳細情報：
 参考ファイルや画像があれば添付してください。
-ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+ダウンロードファイルか Canvas 表示、お好みで選んでください。` },
       { label: "ポートフォリオ", template: `JSX 形式で個人ポートフォリオページを作ってください。
 テーマ：
 スタイル：
 詳細情報：
 参考ファイルや画像があれば添付してください。
-ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+ダウンロードファイルか Canvas 表示、お好みで選んでください。` },
       { label: "ダッシュボード", template: `JSX 形式で管理ダッシュボードを作ってください。
 テーマ：
 スタイル：
 詳細情報：
 参考ファイルや画像があれば添付してください。
-ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+ダウンロードファイルか Canvas 表示、お好みで選んでください。` },
       { label: "ブログ", template: `JSX 形式でブログのホームページを作ってください。
 テーマ：
 スタイル：
 詳細情報：
 参考ファイルや画像があれば添付してください。
-ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+ダウンロードファイルか Canvas 表示、お好みで選んでください。` },
       { label: "SaaS", template: `JSX 形式で SaaS の製品ページを作ってください。
 テーマ：
 スタイル：
 詳細情報：
 参考ファイルや画像があれば添付してください。
-ダウンロードファイルで提供 / Canvas で表示（必要に応じて選択）。` },
+ダウンロードファイルか Canvas 表示、お好みで選んでください。` },
     ],
     promptCopy: "コピー",
     promptCopied: "コピーしました！",
@@ -528,32 +528,32 @@ Proporciona un archivo descargable / Muestra en Canvas (elige según tu necesida
 Tema:
 Estilo:
 Detalhes:
-Arquivos e imagens de referência em anexo (se houver).
-Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+Arquivos de referência e imagens em anexo, se houver.
+Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
       { label: "Portfólio", template: `Crie uma página de portfolio pessoal em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos e imagens de referência em anexo (se houver).
-Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+Arquivos de referência e imagens em anexo, se houver.
+Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
       { label: "Dashboard", template: `Crie um dashboard administrativo em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos e imagens de referência em anexo (se houver).
-Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+Arquivos de referência e imagens em anexo, se houver.
+Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
       { label: "Blog", template: `Crie uma homepage de blog em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos e imagens de referência em anexo (se houver).
-Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+Arquivos de referência e imagens em anexo, se houver.
+Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
       { label: "SaaS", template: `Crie uma página de produto SaaS em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos e imagens de referência em anexo (se houver).
-Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessário).` },
+Arquivos de referência e imagens em anexo, se houver.
+Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
     ],
     promptCopy: "Copiar",
     promptCopied: "Copiado!",
@@ -589,7 +589,7 @@ Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessári
       {
         number: "02",
         title: "أعدّ مستودعك",
-        body: "في صفحة GitHub، اضغط على “Use this template” ← “Create a new repository” لإنشاء مستودعك الخاص. اسم المستخدم واسم المستودع الجديد سيحددان رابط موقعك. ثم اذهب إلى Settings ← Pages واضبط Source على GitHub Actions.",
+        body: "في صفحة GitHub، اضغط على “Use this template” ثم “Create a new repository” لإنشاء مستودعك الخاص. اسم المستخدم واسم المستودع الجديد سيحددان رابط موقعك. ثم اذهب إلى Settings → Pages واضبط Source على GitHub Actions.",
       },
       {
         number: "03",
@@ -603,7 +603,7 @@ Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessári
       "في أغلب الأحيان ستعدّل ملفاً واحداً فقط. الملفان الآخران اختياريان.",
     files: [
       { name: "src/App.jsx", tag: "مطلوب", desc: "الصق كود JSX المولّد بالذكاء الاصطناعي هنا. هذا هو الملف الوحيد الذي تحتاج تغييره.", required: true },
-      { name: "index.html", tag: "اختياري", desc: "حدّث عنوان الصفحة والوصف وGoogle Analytics ليتوافقوا مع موقعك.", required: false },
+      { name: "index.html", tag: "اختياري", desc: "حدّث عنوان الصفحة والوصف وGoogle Analytics لتتوافق مع موقعك.", required: false },
       { name: "public/CNAME", tag: "اختياري", desc: "اضبط نطاقك المخصص. اتركه كما هو إن لم تحتج واحداً.", required: false },
     ],
     tipLabel: "نصيحة",
@@ -620,32 +620,32 @@ Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessári
 الموضوع:
 النمط:
 التفاصيل:
-ملفات وصور مرجعية كمرفقات (إن وُجدت).
-يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+ملفات وصور مرجعية مرفقة، إن وُجدت.
+قدّم كملف للتنزيل أو اعرض في Canvas.` },
       { label: "معرض أعمال", template: `أنشئ صفحة معرض أعمال شخصية بصيغة JSX.
 الموضوع:
 النمط:
 التفاصيل:
-ملفات وصور مرجعية كمرفقات (إن وُجدت).
-يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+ملفات وصور مرجعية مرفقة، إن وُجدت.
+قدّم كملف للتنزيل أو اعرض في Canvas.` },
       { label: "لوحة تحكم", template: `أنشئ لوحة تحكم إدارية بصيغة JSX.
 الموضوع:
 النمط:
 التفاصيل:
-ملفات وصور مرجعية كمرفقات (إن وُجدت).
-يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+ملفات وصور مرجعية مرفقة، إن وُجدت.
+قدّم كملف للتنزيل أو اعرض في Canvas.` },
       { label: "مدوّنة", template: `أنشئ صفحة رئيسية لمدونة بصيغة JSX.
 الموضوع:
 النمط:
 التفاصيل:
-ملفات وصور مرجعية كمرفقات (إن وُجدت).
-يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+ملفات وصور مرجعية مرفقة، إن وُجدت.
+قدّم كملف للتنزيل أو اعرض في Canvas.` },
       { label: "SaaS", template: `أنشئ صفحة منتج SaaS بصيغة JSX.
 الموضوع:
 النمط:
 التفاصيل:
-ملفات وصور مرجعية كمرفقات (إن وُجدت).
-يرجى توفير ملف للتنزيل / العرض عبر Canvas (اختر حسب الحاجة).` },
+ملفات وصور مرجعية مرفقة، إن وُجدت.
+قدّم كملف للتنزيل أو اعرض في Canvas.` },
     ],
     promptCopy: "نسخ",
     promptCopied: "تم النسخ!",
@@ -712,32 +712,32 @@ Forneça um arquivo para download / Exiba no Canvas (escolha conforme necessári
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièces jointes (le cas échéant).
-Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+Fichiers et images de référence en pièce jointe, le cas échéant.
+Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       { label: "Portfolio", template: `Crée une page portfolio personnel en format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièces jointes (le cas échéant).
-Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+Fichiers et images de référence en pièce jointe, le cas échéant.
+Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièces jointes (le cas échéant).
-Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+Fichiers et images de référence en pièce jointe, le cas échéant.
+Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       { label: "Blog", template: `Crée une page d'accueil de blog en format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièces jointes (le cas échéant).
-Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+Fichiers et images de référence en pièce jointe, le cas échéant.
+Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       { label: "SaaS", template: `Crée une page produit SaaS en format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièces jointes (le cas échéant).
-Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos besoins).` },
+Fichiers et images de référence en pièce jointe, le cas échéant.
+Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
     ],
     promptCopy: "Copier",
     promptCopied: "Copié !",
@@ -800,36 +800,36 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
     promptLabel: "शुरुआती प्रॉम्प्ट",
     promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
     promptVariants: [
-      { label: "लैंडिंग पेज", template: `JSX फॉर्मेट में किसी उत्पाद या सेवा को प्रमोट करने वाला लैंडिंग पेज बनाएं।
+      { label: "लैंडिंग पेज", template: `JSX फॉर्मेट में किसी उत्पाद या सेवा को प्रमोट करने वाला लैंडिंग पेज बनाएँ।
 विषय:
 शैली:
 विवरण:
-संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
-डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
-      { label: "पोर्टफोलियो", template: `JSX फॉर्मेट में एक व्यक्तिगत पोर्टफोलियो वेब पेज बनाएं।
+संदर्भ फ़ाइलें या इमेज अटैच हैं, यदि कोई हो।
+डाउनलोड फ़ाइल या Canvas में दिखाएँ — जैसा चाहें।` },
+      { label: "पोर्टफोलियो", template: `JSX फॉर्मेट में एक व्यक्तिगत पोर्टफोलियो वेब पेज बनाएँ।
 विषय:
 शैली:
 विवरण:
-संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
-डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
-      { label: "डैशबोर्ड", template: `JSX फॉर्मेट में एक एडमिन डैशबोर्ड बनाएं।
+संदर्भ फ़ाइलें या इमेज अटैच हैं, यदि कोई हो।
+डाउनलोड फ़ाइल या Canvas में दिखाएँ — जैसा चाहें।` },
+      { label: "डैशबोर्ड", template: `JSX फॉर्मेट में एक एडमिन डैशबोर्ड बनाएँ।
 विषय:
 शैली:
 विवरण:
-संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
-डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
-      { label: "ब्लॉग", template: `JSX फॉर्मेट में एक ब्लॉग होमपेज बनाएं।
+संदर्भ फ़ाइलें या इमेज अटैच हैं, यदि कोई हो।
+डाउनलोड फ़ाइल या Canvas में दिखाएँ — जैसा चाहें।` },
+      { label: "ब्लॉग", template: `JSX फॉर्मेट में एक ब्लॉग होमपेज बनाएँ।
 विषय:
 शैली:
 विवरण:
-संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
-डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
-      { label: "SaaS", template: `JSX फॉर्मेट में एक SaaS प्रोडक्ट पेज बनाएं।
+संदर्भ फ़ाइलें या इमेज अटैच हैं, यदि कोई हो।
+डाउनलोड फ़ाइल या Canvas में दिखाएँ — जैसा चाहें।` },
+      { label: "SaaS", template: `JSX फॉर्मेट में एक SaaS प्रोडक्ट पेज बनाएँ।
 विषय:
 शैली:
 विवरण:
-संदर्भ फ़ाइलें और इमेज अटैचमेंट में (यदि कोई हो)।
-डाउनलोड फ़ाइल दें / Canvas में दिखाएं (ज़रूरत के अनुसार चुनें)।` },
+संदर्भ फ़ाइलें या इमेज अटैच हैं, यदि कोई हो।
+डाउनलोड फ़ाइल या Canvas में दिखाएँ — जैसा चाहें।` },
     ],
     promptCopy: "कॉपी करें",
     promptCopied: "कॉपी हो गया!",
@@ -855,39 +855,39 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
     howItWorksLabel: "작동 방식",
     howItWorksTitle: "세 단계로 배포",
     howItWorksSubtitle:
-      "코딩 경험이 없어도 됩니다. AI에게 JSX를 요청하고, 붙여넣고, push하면 끝.",
+      "코딩 경험이 없어도 돼요. AI에게 JSX를 요청하고, 붙여넣고, push하면 끝.",
     steps: [
       {
         number: "01",
         title: "AI에게 JSX 요청",
-        body: "Claude, ChatGPT 또는 아무 AI에게 원하는 페이지를 JSX 형식의 React 컴포넌트로 생성해 달라고 하세요.",
+        body: "Claude, ChatGPT 또는 원하는 AI에게 원하는 페이지를 JSX 형식의 React 컴포넌트로 생성해 달라고 하세요.",
       },
       {
         number: "02",
         title: "저장소 설정",
-        body: "GitHub 페이지에서 “Use this template” → “Create a new repository”를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL에 반영됩니다. 그런 다음 Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
+        body: "GitHub 페이지에서 “Use this template” → “Create a new repository”를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL에 반영돼요. 그런 다음 Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
       },
       {
         number: "03",
         title: "붙여넣고 저장",
-        body: "AI가 생성한 JSX를 src/App.jsx에 붙여넣으세요 — 기존 내용을 모두 삭제하고 교체한 후 — 파일을 저장하세요. GitHub Actions가 자동으로 빌드하고 배포합니다.",
+        body: "AI가 생성한 JSX를 src/App.jsx에 붙여넣으세요 — 기존 내용을 모두 삭제하고 교체한 후 — 파일을 저장하세요. GitHub Actions가 자동으로 빌드하고 배포해요.",
       },
     ],
     filesLabel: "파일",
     filesTitle: "변경할 파일",
     filesSubtitle:
-      "대부분의 경우 파일 하나만 수정하면 됩니다. 나머지 둘은 선택사항입니다.",
+      "대부분의 경우 파일 하나만 수정하면 돼요. 나머지 둘은 선택사항이에요.",
     files: [
-      { name: "src/App.jsx", tag: "필수", desc: "AI가 생성한 JSX를 여기에 붙여넣으세요. 변경이 필요한 유일한 파일입니다.", required: true },
+      { name: "src/App.jsx", tag: "필수", desc: "AI가 생성한 JSX를 여기에 붙여넣으세요. 변경이 필요한 유일한 파일이에요.", required: true },
       { name: "index.html", tag: "선택", desc: "페이지 제목, 설명, Google Analytics를 사이트에 맞게 수정하세요.", required: false },
       { name: "public/CNAME", tag: "선택", desc: "커스텀 도메인을 설정하세요. 필요 없으면 그대로 두세요.", required: false },
     ],
     tipLabel: "팁",
     tipText: "AI 코드가 템플릿에 포함되지 않은 패키지를 사용하는 경우 실행하세요",
     tipCommand: "npm run check",
-    tipAfter: "누락된 의존성을 찾아 수정할 수 있습니다.",
+    tipAfter: "누락된 의존성을 찾아 수정할 수 있어요.",
     footerLine1: "© 2026 Eugene Yip.",
-    footerLine2: "All Rights Reserved.",
+    footerLine2: "모든 권리 보유.",
     langLabel: "언어",
     promptLabel: "시작 프롬프트",
     promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
@@ -896,32 +896,32 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
 주제:
 스타일:
 세부 정보:
-참고 파일과 이미지를 첨부해 주세요 (있는 경우).
-다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+참고할 파일이나 이미지가 있으면 첨부해 주세요.
+다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
       { label: "포트폴리오", template: `JSX 형식으로 개인 포트폴리오 페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고 파일과 이미지를 첨부해 주세요 (있는 경우).
-다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+참고할 파일이나 이미지가 있으면 첨부해 주세요.
+다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
       { label: "대시보드", template: `JSX 형식으로 관리자 대시보드를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고 파일과 이미지를 첨부해 주세요 (있는 경우).
-다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+참고할 파일이나 이미지가 있으면 첨부해 주세요.
+다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
       { label: "블로그", template: `JSX 형식으로 블로그 홈페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고 파일과 이미지를 첨부해 주세요 (있는 경우).
-다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+참고할 파일이나 이미지가 있으면 첨부해 주세요.
+다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
       { label: "SaaS", template: `JSX 형식으로 SaaS 제품 페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고 파일과 이미지를 첨부해 주세요 (있는 경우).
-다운로드 파일 제공 / Canvas에서 표시 (필요에 따라 선택).` },
+참고할 파일이나 이미지가 있으면 첨부해 주세요.
+다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
     ],
     promptCopy: "복사",
     promptCopied: "복사됨!",
@@ -957,7 +957,7 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
       {
         number: "02",
         title: "اپنا repo تیار کریں",
-        body: "GitHub صفحے پر “Use this template” ← “Create a new repository” پر کلک کر کے اپنا repo بنائیں۔ آپ کا GitHub صارف نام اور repo کا نام آپ کی سائٹ کا URL طے کرے گا۔ پھر Settings ← Pages میں جا کر Source کو GitHub Actions پر سیٹ کریں۔",
+        body: "GitHub صفحے پر “Use this template” پھر “Create a new repository” پر کلک کر کے اپنا repo بنائیں۔ آپ کا GitHub صارف نام اور repo کا نام آپ کی سائٹ کا URL طے کرے گا۔ پھر Settings → Pages میں جا کر Source کو GitHub Actions پر سیٹ کریں۔",
       },
       {
         number: "03",
@@ -988,32 +988,32 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
 موضوع:
 انداز:
 تفصیلات:
-حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
-ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+حوالہ فائلز یا تصاویر منسلک ہیں، اگر ہوں۔
+ڈاؤن لوڈ فائل یا Canvas پر دکھائیں۔` },
       { label: "پورٹ فولیو", template: `JSX فارمیٹ میں ایک ذاتی پورٹ فولیو ویب صفحہ بنائیں۔
 موضوع:
 انداز:
 تفصیلات:
-حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
-ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+حوالہ فائلز یا تصاویر منسلک ہیں، اگر ہوں۔
+ڈاؤن لوڈ فائل یا Canvas پر دکھائیں۔` },
       { label: "ڈیش بورڈ", template: `JSX فارمیٹ میں ایک ایڈمن ڈیش بورڈ بنائیں۔
 موضوع:
 انداز:
 تفصیلات:
-حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
-ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+حوالہ فائلز یا تصاویر منسلک ہیں، اگر ہوں۔
+ڈاؤن لوڈ فائل یا Canvas پر دکھائیں۔` },
       { label: "بلاگ", template: `JSX فارمیٹ میں ایک بلاگ ہوم پیج بنائیں۔
 موضوع:
 انداز:
 تفصیلات:
-حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
-ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+حوالہ فائلز یا تصاویر منسلک ہیں، اگر ہوں۔
+ڈاؤن لوڈ فائل یا Canvas پر دکھائیں۔` },
       { label: "SaaS", template: `JSX فارمیٹ میں ایک SaaS پروڈکٹ پیج بنائیں۔
 موضوع:
 انداز:
 تفصیلات:
-حوالہ فائلز اور تصاویر بطور اٹیچمنٹ (اگر ہوں)۔
-ڈاؤن لوڈ فائل فراہم کریں / Canvas پر دکھائیں (ضرورت کے مطابق منتخب کریں)۔` },
+حوالہ فائلز یا تصاویر منسلک ہیں، اگر ہوں۔
+ڈاؤن لوڈ فائل یا Canvas پر دکھائیں۔` },
     ],
     promptCopy: "کاپی",
     promptCopied: "کاپی ہو گیا!",
@@ -1080,32 +1080,32 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
 หัวข้อ:
 สไตล์:
 รายละเอียด:
-ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
-ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+แนบไฟล์อ้างอิงหรือรูปภาพมาด้วย ถ้ามี
+ส่งเป็นไฟล์ดาวน์โหลดหรือแสดงใน Canvas — เลือกได้ตามต้องการ` },
       { label: "พอร์ตโฟลิโอ", template: `สร้างหน้าพอร์ตโฟลิโอส่วนตัวในรูปแบบ JSX
 หัวข้อ:
 สไตล์:
 รายละเอียด:
-ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
-ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+แนบไฟล์อ้างอิงหรือรูปภาพมาด้วย ถ้ามี
+ส่งเป็นไฟล์ดาวน์โหลดหรือแสดงใน Canvas — เลือกได้ตามต้องการ` },
       { label: "แดชบอร์ด", template: `สร้างแดชบอร์ดผู้ดูแลในรูปแบบ JSX
 หัวข้อ:
 สไตล์:
 รายละเอียด:
-ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
-ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+แนบไฟล์อ้างอิงหรือรูปภาพมาด้วย ถ้ามี
+ส่งเป็นไฟล์ดาวน์โหลดหรือแสดงใน Canvas — เลือกได้ตามต้องการ` },
       { label: "บล็อก", template: `สร้างหน้าแรกบล็อกในรูปแบบ JSX
 หัวข้อ:
 สไตล์:
 รายละเอียด:
-ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
-ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+แนบไฟล์อ้างอิงหรือรูปภาพมาด้วย ถ้ามี
+ส่งเป็นไฟล์ดาวน์โหลดหรือแสดงใน Canvas — เลือกได้ตามต้องการ` },
       { label: "SaaS", template: `สร้างหน้าผลิตภัณฑ์ SaaS ในรูปแบบ JSX
 หัวข้อ:
 สไตล์:
 รายละเอียด:
-ไฟล์อ้างอิงและรูปภาพแนบมาด้วย (ถ้ามี)
-ให้ไฟล์ดาวน์โหลด / แสดงใน Canvas (เลือกตามต้องการ)` },
+แนบไฟล์อ้างอิงหรือรูปภาพมาด้วย ถ้ามี
+ส่งเป็นไฟล์ดาวน์โหลดหรือแสดงใน Canvas — เลือกได้ตามต้องการ` },
     ],
     promptCopy: "คัดลอก",
     promptCopied: "คัดลอกแล้ว!",
@@ -1166,38 +1166,38 @@ Fournir un fichier téléchargeable / Afficher dans Canvas (au choix selon vos b
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
     promptLabel: "Starter-Prompt",
-    promptHint: "Kopieren Sie diesen Prompt und fügen Sie ihn in Ihr KI-Tool ein. Füllen Sie die Lücken aus.",
+    promptHint: "Kopiere diesen Prompt und füge ihn in dein KI-Tool ein. Fülle die Lücken aus.",
     promptVariants: [
       { label: "Landingpage", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien und Bilder als Anhänge (falls vorhanden).
-Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+Referenzdateien oder Bilder sind angehängt, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
       { label: "Portfolio", template: `Erstelle eine persönliche Portfolio-Website im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien und Bilder als Anhänge (falls vorhanden).
-Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+Referenzdateien oder Bilder sind angehängt, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
       { label: "Dashboard", template: `Erstelle ein Admin-Dashboard im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien und Bilder als Anhänge (falls vorhanden).
-Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+Referenzdateien oder Bilder sind angehängt, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
       { label: "Blog", template: `Erstelle eine Blog-Startseite im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien und Bilder als Anhänge (falls vorhanden).
-Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+Referenzdateien oder Bilder sind angehängt, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
       { label: "SaaS", template: `Erstelle eine SaaS-Produktseite im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien und Bilder als Anhänge (falls vorhanden).
-Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wählen).` },
+Referenzdateien oder Bilder sind angehängt, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
     ],
     promptCopy: "Kopieren",
     promptCopied: "Kopiert!",
@@ -1264,32 +1264,32 @@ Bitte als Download-Datei bereitstellen / In Canvas anzeigen (je nach Bedarf wäh
 Konu:
 Stil:
 Detaylar:
-Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
-İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+Referans dosyaları veya görseller ektedir, varsa.
+İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
       { label: "Portföy", template: `JSX formatında kişisel bir portfolio sayfası oluştur.
 Konu:
 Stil:
 Detaylar:
-Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
-İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+Referans dosyaları veya görseller ektedir, varsa.
+İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
       { label: "Panel", template: `JSX formatında bir yönetici paneli oluştur.
 Konu:
 Stil:
 Detaylar:
-Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
-İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+Referans dosyaları veya görseller ektedir, varsa.
+İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
       { label: "Blog", template: `JSX formatında bir blog ana sayfası oluştur.
 Konu:
 Stil:
 Detaylar:
-Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
-İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+Referans dosyaları veya görseller ektedir, varsa.
+İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
       { label: "SaaS", template: `JSX formatında bir SaaS ürün sayfası oluştur.
 Konu:
 Stil:
 Detaylar:
-Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
-İndirilebilir dosya sağlayın / Canvas'ta görüntüleyin (ihtiyaca göre seçin).` },
+Referans dosyaları veya görseller ektedir, varsa.
+İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
     ],
     promptCopy: "Kopyala",
     promptCopied: "Kopyalandı!",
@@ -1356,32 +1356,32 @@ Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
 Тема:
 Стиль:
 Подробности:
-Справочные файлы и изображения в виде вложений (при наличии).
-Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+Справочные файлы и изображения прикреплены, при наличии.
+Предоставьте как файл для скачивания или отобразите в Canvas.` },
       { label: "Портфолио", template: `Создайте персональную страницу портфолио в формате JSX.
 Тема:
 Стиль:
 Подробности:
-Справочные файлы и изображения в виде вложений (при наличии).
-Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+Справочные файлы и изображения прикреплены, при наличии.
+Предоставьте как файл для скачивания или отобразите в Canvas.` },
       { label: "Дашборд", template: `Создайте административный дашборд в формате JSX.
 Тема:
 Стиль:
 Подробности:
-Справочные файлы и изображения в виде вложений (при наличии).
-Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+Справочные файлы и изображения прикреплены, при наличии.
+Предоставьте как файл для скачивания или отобразите в Canvas.` },
       { label: "Блог", template: `Создайте главную страницу блога в формате JSX.
 Тема:
 Стиль:
 Подробности:
-Справочные файлы и изображения в виде вложений (при наличии).
-Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+Справочные файлы и изображения прикреплены, при наличии.
+Предоставьте как файл для скачивания или отобразите в Canvas.` },
       { label: "SaaS", template: `Создайте страницу SaaS-продукта в формате JSX.
 Тема:
 Стиль:
 Подробности:
-Справочные файлы и изображения в виде вложений (при наличии).
-Предоставьте файл для скачивания / Отобразите в Canvas (выберите по необходимости).` },
+Справочные файлы и изображения прикреплены, при наличии.
+Предоставьте как файл для скачивания или отобразите в Canvas.` },
     ],
     promptCopy: "Копировать",
     promptCopied: "Скопировано!",
@@ -1417,12 +1417,12 @@ Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
       {
         number: "02",
         title: "הגדר את ה-repo שלך",
-        body: "בדף GitHub לחצו על “Use this template” ← “Create a new repository” כדי ליצור מאגר משלכם. שם המשתמש ושם המאגר ב-GitHub יקבעו את כתובת האתר שלכם. לאחר מכן עברו אל Settings ← Pages והגדירו את Source ל-GitHub Actions.",
+        body: "בדף GitHub לחץ על “Use this template” → “Create a new repository” כדי ליצור מאגר משלך. שם המשתמש ושם המאגר ב-GitHub יקבעו את כתובת האתר שלך. לאחר מכן עבור אל Settings → Pages והגדר את Source ל-GitHub Actions.",
       },
       {
         number: "03",
-        title: "הדביקו ושמרו",
-        body: "הדביקו את ה-JSX שה-AI יצר ב-src/App.jsx — מחקו והחליפו את כל התוכן הקיים — ואז שמרו את הקובץ. GitHub Actions יבנה וייפרס את האתר שלכם אוטומטית.",
+        title: "הדבק ושמור",
+        body: "הדבק את ה-JSX שה-AI יצר ב-src/App.jsx — מחק והחלף את כל התוכן הקיים — ואז שמור את הקובץ. GitHub Actions יבנה וייפרס את האתר שלך אוטומטית.",
       },
     ],
     filesLabel: "הקבצים שלך",
@@ -1442,38 +1442,38 @@ Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
     footerLine2: "כל הזכויות שמורות.",
     langLabel: "שפה",
     promptLabel: "תבנית פרומפט",
-    promptHint: "העתיקו את הפרומפט הזה והדביקו אותו בכלי ה-AI שלכם. מלאו את השדות הריקים.",
+    promptHint: "העתק את הפרומפט הזה והדבק אותו בכלי ה-AI שלך. מלא את השדות הריקים.",
     promptVariants: [
-      { label: "דף נחיתה", template: `צרו דף נחיתה לקידום מוצר או שירות בפורמט JSX.
+      { label: "דף נחיתה", template: `צור דף נחיתה לקידום מוצר או שירות בפורמט JSX.
 נושא:
 סגנון:
 פרטים:
-קבצי עזר ותמונות כקבצים מצורפים (אם יש).
-ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
-      { label: "תיק עבודות", template: `צרו דף תיק עבודות אישי בפורמט JSX.
+קבצי עזר ותמונות מצורפים, אם יש.
+ספק כקובץ להורדה או הצג ב-Canvas.` },
+      { label: "תיק עבודות", template: `צור דף תיק עבודות אישי בפורמט JSX.
 נושא:
 סגנון:
 פרטים:
-קבצי עזר ותמונות כקבצים מצורפים (אם יש).
-ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
-      { label: "דשבורד", template: `צרו דשבורד ניהולי בפורמט JSX.
+קבצי עזר ותמונות מצורפים, אם יש.
+ספק כקובץ להורדה או הצג ב-Canvas.` },
+      { label: "דשבורד", template: `צור דשבורד ניהולי בפורמט JSX.
 נושא:
 סגנון:
 פרטים:
-קבצי עזר ותמונות כקבצים מצורפים (אם יש).
-ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
-      { label: "בלוג", template: `צרו דף בית לבלוג בפורמט JSX.
+קבצי עזר ותמונות מצורפים, אם יש.
+ספק כקובץ להורדה או הצג ב-Canvas.` },
+      { label: "בלוג", template: `צור דף בית לבלוג בפורמט JSX.
 נושא:
 סגנון:
 פרטים:
-קבצי עזר ותמונות כקבצים מצורפים (אם יש).
-ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
-      { label: "SaaS", template: `צרו דף מוצר SaaS בפורמט JSX.
+קבצי עזר ותמונות מצורפים, אם יש.
+ספק כקובץ להורדה או הצג ב-Canvas.` },
+      { label: "SaaS", template: `צור דף מוצר SaaS בפורמט JSX.
 נושא:
 סגנון:
 פרטים:
-קבצי עזר ותמונות כקבצים מצורפים (אם יש).
-ספקו קובץ להורדה / הציגו ב-Canvas (בחרו לפי הצורך).` },
+קבצי עזר ותמונות מצורפים, אם יש.
+ספק כקובץ להורדה או הצג ב-Canvas.` },
     ],
     promptCopy: "העתקה",
     promptCopied: "הועתק!",
@@ -1540,32 +1540,32 @@ Referans dosyaları ve görselleri ek olarak ekleyin (varsa).
 Tema:
 Stile:
 Dettagli:
-File e immagini di riferimento come allegati (se presenti).
-Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+File di riferimento e immagini in allegato, se presenti.
+Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
       { label: "Portfolio", template: `Crea una pagina portfolio personale in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File e immagini di riferimento come allegati (se presenti).
-Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+File di riferimento e immagini in allegato, se presenti.
+Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
       { label: "Dashboard", template: `Crea un dashboard amministrativo in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File e immagini di riferimento come allegati (se presenti).
-Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+File di riferimento e immagini in allegato, se presenti.
+Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
       { label: "Blog", template: `Crea una homepage del blog in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File e immagini di riferimento come allegati (se presenti).
-Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+File di riferimento e immagini in allegato, se presenti.
+Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
       { label: "SaaS", template: `Crea una pagina prodotto SaaS in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File e immagini di riferimento come allegati (se presenti).
-Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessità).` },
+File di riferimento e immagini in allegato, se presenti.
+Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
     ],
     promptCopy: "Copia",
     promptCopied: "Copiato!",
@@ -1601,7 +1601,7 @@ Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessi
       {
         number: "02",
         title: "Siapkan repo-mu",
-        body: "Di halaman GitHub, klik “Use this template” → “Create a new repository” untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situs Anda. Lalu buka Settings → Pages dan atur Source ke GitHub Actions.",
+        body: "Di halaman GitHub, klik “Use this template” → “Create a new repository” untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situsmu. Lalu buka Settings → Pages dan atur Source ke GitHub Actions.",
       },
       {
         number: "03",
@@ -1626,38 +1626,38 @@ Fornisci un file scaricabile / Visualizza in Canvas (scegli in base alle necessi
     footerLine2: "Semua hak dilindungi.",
     langLabel: "Bahasa",
     promptLabel: "Prompt Awal",
-    promptHint: "Salin prompt ini dan tempelkan ke alat AI Anda. Isi bagian yang kosong.",
+    promptHint: "Salin prompt ini dan tempelkan ke alat AI kamu. Isi bagian yang kosong.",
     promptVariants: [
       { label: "Landing Page", template: `Buatkan landing page untuk mempromosikan produk atau layanan dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi dan gambar sebagai lampiran (jika ada).
-Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+File referensi atau gambar terlampir, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
       { label: "Portofolio", template: `Buatkan halaman portofolio pribadi dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi dan gambar sebagai lampiran (jika ada).
-Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+File referensi atau gambar terlampir, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
       { label: "Dashboard", template: `Buatkan halaman dashboard admin dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi dan gambar sebagai lampiran (jika ada).
-Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+File referensi atau gambar terlampir, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
       { label: "Blog", template: `Buatkan halaman utama blog dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi dan gambar sebagai lampiran (jika ada).
-Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+File referensi atau gambar terlampir, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
       { label: "SaaS", template: `Buatkan halaman produk SaaS dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi dan gambar sebagai lampiran (jika ada).
-Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` },
+File referensi atau gambar terlampir, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
     ],
     promptCopy: "Salin",
     promptCopied: "Tersalin!",
@@ -1715,7 +1715,7 @@ Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` 
     tipCommand: "npm run check",
     tipAfter: "để tìm và sửa các dependency còn thiếu.",
     footerLine1: "© 2026 Eugene Yip.",
-    footerLine2: "All Rights Reserved.",
+    footerLine2: "Bảo lưu mọi quyền.",
     langLabel: "Ngôn ngữ",
     promptLabel: "Prompt mẫu",
     promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
@@ -1724,32 +1724,32 @@ Berikan file yang bisa diunduh / Tampilkan di Canvas (pilih sesuai kebutuhan).` 
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo và hình ảnh đính kèm (nếu có).
-Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+File tham khảo hoặc hình ảnh đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
       { label: "Portfolio", template: `Tạo một trang portfolio cá nhân dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo và hình ảnh đính kèm (nếu có).
-Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+File tham khảo hoặc hình ảnh đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
       { label: "Dashboard", template: `Tạo một trang dashboard quản trị dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo và hình ảnh đính kèm (nếu có).
-Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+File tham khảo hoặc hình ảnh đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
       { label: "Blog", template: `Tạo một trang chủ blog dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo và hình ảnh đính kèm (nếu có).
-Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+File tham khảo hoặc hình ảnh đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
       { label: "SaaS", template: `Tạo một trang sản phẩm SaaS dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo và hình ảnh đính kèm (nếu có).
-Cung cấp file tải về / Hiển thị trên Canvas (chọn theo nhu cầu).` },
+File tham khảo hoặc hình ảnh đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
     ],
     promptCopy: "Sao chép",
     promptCopied: "Đã sao chép!",

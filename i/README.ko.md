@@ -5,7 +5,7 @@
 | [English](../README.md) · [中文](README.zh.md) · [简体](README.zh-CN.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [العربية](README.ar.md) · [Português](README.pt.md) · [हिन्दी](README.hi.md) · [Tiếng Việt](README.vi.md) · [Bahasa Indonesia](README.id.md) · [한국어](README.ko.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Türkçe](README.tr.md) · [اردو](README.ur.md) · [ไทย](README.th.md) · [עברית](README.he.md) |
 | :-- |
 
-Claude, ChatGPT 또는 아무 AI로 페이지를 생성하세요. `src/App.jsx`에 붙여넣으세요. Push하면 끝.
+Claude, ChatGPT 또는 원하는 AI로 페이지를 생성하세요. `src/App.jsx`에 붙여넣으세요. Push하면 끝.
 
 ## 빠른 시작
 

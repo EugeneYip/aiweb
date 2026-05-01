@@ -34,7 +34,7 @@ Claude، ChatGPT یا کسی بھی AI سے صفحہ بنوائیں۔ `src/App.j
 
    </details>
 
-2. **یہ ٹیمپلیٹ استعمال کریں** — GitHub صفحے پر **"Use this template"** ← **"Create a new repository"** پر کلک کر کے اپنا repo بنائیں۔ آپ کا GitHub صارف نام اور repo کا نام آپ کی سائٹ کا URL طے کرے گا (`https://<صارف-نام>.github.io/<ذخیرہ-نام>/`)
+2. **یہ ٹیمپلیٹ استعمال کریں** — GitHub صفحے پر **"Use this template"** پھر **"Create a new repository"** پر کلک کر کے اپنا repo بنائیں۔ آپ کا GitHub صارف نام اور repo کا نام آپ کی سائٹ کا URL طے کرے گا (`https://<صارف-نام>.github.io/<ذخیرہ-نام>/`)
 3. **GitHub Pages فعال کریں** — **Settings → Pages** میں جائیں اور Source کو **GitHub Actions** پر سیٹ کریں
 4. [`src/App.jsx`](../src/App.jsx) کو **بدلیں** — AI سے بنایا گیا JSX اس فائل میں چسپاں کریں، **پہلے سے موجود تمام مواد حذف کر کے بدل دیں**، پھر محفوظ کریں
 
