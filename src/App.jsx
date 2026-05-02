@@ -406,7 +406,7 @@ export default function App() {
       </main>
 
       {/* Controls */}
-      <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 sm:bottom-6 sm:right-6">
+      <div className="fixed bottom-4 end-4 z-50 flex items-center gap-2 sm:bottom-6 sm:end-6">
         {/* Theme toggle */}
         <button
           type="button"
@@ -429,7 +429,7 @@ export default function App() {
               role="listbox"
               aria-label={t.langLabel}
               aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
-              className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
+              className="absolute bottom-[calc(100%+0.625rem)] end-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
             >
               {LANGUAGES.map((l, i) => {
                 const active = l.code === lang;
@@ -447,7 +447,7 @@ export default function App() {
                       setVariantIdx(0);
                       setLangOpen(false);
                     }}
-                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
+                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-start text-sm transition ${
                       active
                         ? "bg-[var(--lp-raised)] font-semibold text-[var(--lp-heading)]"
                         : focused
@@ -457,7 +457,7 @@ export default function App() {
                   >
                     <span className="w-4 font-mono text-[11px] text-[var(--lp-hint)]">{l.short}</span>
                     <span>{l.label}</span>
-                    {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[var(--lp-accent)]" />}
+                    {active && <CheckCircle2 className="ms-auto h-4 w-4 text-[var(--lp-accent)]" />}
                   </button>
                 );
               })}
