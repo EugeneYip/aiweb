@@ -12,7 +12,7 @@ const translations = {
     badge: "AI Page Publisher",
     heroTitle: ["Publish AI pages", "in one push."],
     heroSubtitle:
-      "A clean template for turning any AI-generated React artifact into a live website. Replace one file. Push to GitHub. Done.",
+      "A clean template for turning any React page your AI generates into a live website. Replace one file. Push to GitHub. Done.",
     ctaPrimary: "Use this template",
     ctaSecondary: "Read the README",
     readmeUrl: "https://github.com/EugeneYip/aiweb#readme",
@@ -104,7 +104,7 @@ Provide as a downloadable file or display in Canvas.` },
     badge: "AI Page Publisher",
     heroTitle: ["Push 一次", "AI 頁面就上線"],
     heroSubtitle:
-      "把 AI 生成的 React 成品直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就完成了。",
+      "把 AI 生成的 React 頁面直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就完成了。",
     ctaPrimary: "使用這個範本",
     ctaSecondary: "閱讀 README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh.md",
@@ -195,7 +195,7 @@ Provide as a downloadable file or display in Canvas.` },
     badge: "AI Page Publisher",
     heroTitle: ["Push 一次", "AI 页面就上线"],
     heroSubtitle:
-      "把 AI 生成的 React 成品直接变成线上网站的简洁模板。换掉一个文件，push 到 GitHub，就完成了。",
+      "把 AI 生成的 React 页面直接变成线上网站的简洁模板。换掉一个文件，push 到 GitHub，就完成了。",
     ctaPrimary: "使用这个模板",
     ctaSecondary: "阅读 README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh-CN.md",
@@ -330,7 +330,7 @@ Provide as a downloadable file or display in Canvas.` },
       { name: "index.html", tag: "Opcional", desc: "Actualiza el título, la descripción y Google Analytics para que coincidan con tu sitio.", required: false },
       { name: "public/CNAME", tag: "Opcional", desc: "Configura tu dominio personalizado. Si no lo necesitas, déjalo como está.", required: false },
     ],
-    tipLabel: "Tip",
+    tipLabel: "Consejo",
     tipText: "Si el código de tu IA usa un paquete que no viene en la plantilla, ejecuta",
     tipCommand: "npm run check",
     tipAfter: "para encontrar y arreglar las dependencias que faltan.",
@@ -416,7 +416,7 @@ Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
     filesLabel: "ファイル",
     filesTitle: "変更するファイル",
     filesSubtitle:
-      "ほとんどの場合、触るのは 1 ファイルだけ。残り 2 つは任意です。",
+      "ほとんどの場合、編集するのは 1 ファイルだけです。残り 2 つは任意です。",
     files: [
       { name: "src/App.jsx", tag: "必須", desc: "AI が生成した JSX をここに貼り付けます。変更が必要なのはこのファイルだけです。", required: true },
       { name: "index.html", tag: "任意", desc: "ページのタイトル、説明、Google Analytics を自分のサイトに合わせて変更します。", required: false },
@@ -430,7 +430,7 @@ Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
     footerLine2: "著作権所有。",
     langLabel: "言語",
     promptLabel: "プロンプトテンプレート",
-    promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
+    promptHint: "以下のプロンプトを AI ツールにコピー＆ペーストし、空欄を埋めてください。",
     promptVariants: [
       { label: "LP", template: `JSX 形式で商品・サービスを宣伝するランディングページを作ってください。
 テーマ：
@@ -530,7 +530,7 @@ Estilo:
 Detalhes:
 Arquivos de referência e imagens em anexo, se houver.
 Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
-      { label: "Portfólio", template: `Crie uma página de portfolio pessoal em formato JSX.
+      { label: "Portfólio", template: `Crie uma página de portfólio pessoal em formato JSX.
 Tema:
 Estilo:
 Detalhes:
@@ -708,31 +708,31 @@ Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
     promptLabel: "Prompt de départ",
     promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
     promptVariants: [
-      { label: "Landing Page", template: `Crée une landing page pour promouvoir un produit ou service en format JSX.
+      { label: "Landing Page", template: `Crée une landing page pour promouvoir un produit ou service au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
 Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-      { label: "Portfolio", template: `Crée une page portfolio personnel en format JSX.
+      { label: "Portfolio", template: `Crée une page portfolio personnel au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
 Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-      { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX.
+      { label: "Tableau de bord", template: `Crée un tableau de bord administratif au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
 Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-      { label: "Blog", template: `Crée une page d'accueil de blog en format JSX.
+      { label: "Blog", template: `Crée une page d'accueil de blog au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
 Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-      { label: "SaaS", template: `Crée une page produit SaaS en format JSX.
+      { label: "SaaS", template: `Crée une page produit SaaS au format JSX.
 Thème :
 Style :
 Détails :
@@ -1049,7 +1049,7 @@ Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       {
         number: "02",
         title: "ตั้งค่า repo ของคุณ",
-        body: "ที่หน้า GitHub คลิก “Use this template” → “Create a new repository” เพื่อสร้าง repo ของตัวเอง ชื่อผู้ใช้ GitHub และชื่อ repo จะเป็นส่วนหนึ่งของ URL เว็บไซต์ จากนั้นไปที่ Settings → Pages แล้วตั้ง Source เป็น GitHub Actions",
+        body: "ที่หน้า GitHub คลิก “Use this template” → “Create a new repository” เพื่อสร้าง repo ของตัวเอง ชื่อผู้ใช้ GitHub และชื่อ repo จะเป็นส่วนหนึ่งของ URL เว็บไซต์ของคุณ จากนั้นไปที่ Settings → Pages แล้วตั้งค่า Source เป็น GitHub Actions",
       },
       {
         number: "03",
@@ -1125,7 +1125,7 @@ Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
       "Über 160 vorinstallierte Pakete",
       "Tailwind CSS, sofort einsatzbereit",
       "Deployment mit GitHub Actions",
-      "Eigene Domain wird unterstützt",
+      "Eigene Domains möglich",
       "Automatische Base-Path-Erkennung",
     ],
     howItWorksLabel: "So funktioniert's",
@@ -1325,7 +1325,7 @@ Referans dosyaları veya görseller ektedir, varsa.
       {
         number: "02",
         title: "Настройте свой репозиторий",
-        body: "На странице GitHub нажмите «Use this template» → «Create a new repository», чтобы создать свой репозиторий. Ваше имя пользователя GitHub и название репозитория определят URL вашего сайта. Затем перейдите в Settings → Pages и установите Source на GitHub Actions.",
+        body: "На странице GitHub нажмите «Use this template» → «Create a new repository», чтобы создать свой репозиторий. Ваше имя пользователя GitHub и название репозитория определят URL вашего сайта. Затем перейдите в Settings → Pages и выберите для Source значение GitHub Actions.",
       },
       {
         number: "03",
@@ -1497,14 +1497,14 @@ Referans dosyaları veya görseller ektedir, varsa.
       "Rilevamento automatico del base path",
     ],
     howItWorksLabel: "Come funziona",
-    howItWorksTitle: "Tre passi per andare live",
+    howItWorksTitle: "Tre passi per andare online",
     howItWorksSubtitle:
       "Non serve esperienza di programmazione. Chiedi il JSX all'AI, incollalo, fai push, fatto.",
     steps: [
       {
         number: "01",
         title: "Chiedi il JSX alla tua AI",
-        body: "Di' a Claude, ChatGPT o qualsiasi AI di generare la pagina che vuoi come componente React in formato JSX.",
+        body: "Chiedi a Claude, ChatGPT o qualsiasi AI di generare la pagina che vuoi come componente React in formato JSX.",
       },
       {
         number: "02",
@@ -1514,7 +1514,7 @@ Referans dosyaları veya görseller ektedir, varsa.
       {
         number: "03",
         title: "Incolla e salva",
-        body: "Incolla il JSX generato dall'IA in src/App.jsx — cancella e sostituisci tutto il contenuto esistente — poi salva il file. GitHub Actions compila e pubblica il tuo sito automaticamente.",
+        body: "Incolla il JSX generato dall'AI in src/App.jsx — cancella e sostituisci tutto il contenuto esistente — poi salva il file. GitHub Actions compila e pubblica il tuo sito automaticamente.",
       },
     ],
     filesLabel: "I tuoi file",
@@ -1678,7 +1678,7 @@ Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhan
       "Tailwind CSS, dùng được ngay",
       "Deploy bằng GitHub Actions",
       "Hỗ trợ custom domain",
-      "Tự detect base path",
+      "Tự nhận diện base path",
     ],
     howItWorksLabel: "Cách hoạt động",
     howItWorksTitle: "Ba bước là lên web",
@@ -1688,7 +1688,7 @@ Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhan
       {
         number: "01",
         title: "Nhờ AI sinh JSX",
-        body: "Bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React định dạng JSX.",
+        body: "Nhờ Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React định dạng JSX.",
       },
       {
         number: "02",

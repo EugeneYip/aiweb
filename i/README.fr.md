@@ -15,7 +15,7 @@ Générez une page avec Claude, ChatGPT ou n'importe quelle IA. Collez-la dans `
    <summary>Prompt de départ (cliquez pour développer, puis copiez)</summary>
 
    ```
-   Crée une page React en format JSX que je puisse utiliser comme src/App.jsx.
+   Crée une page React au format JSX que je puisse utiliser comme src/App.jsx.
 
    Thème : [le thème de votre site — ex : café, portfolio, produit SaaS]
    Style : [style de design — ex : minimaliste, moderne, coloré, corporate]
