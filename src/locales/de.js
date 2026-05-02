@@ -56,7 +56,7 @@ const de = {
   promptLabel: "Starter-Prompt",
   promptHint: "Kopiere diesen Prompt und füge ihn in dein KI-Tool ein. Fülle die Lücken aus.",
   promptVariants: [
-    { label: "Landingpage", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.
+    { label: "Landing Page", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.
 Thema:
 Stil:
 Details:

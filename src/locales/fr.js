@@ -56,36 +56,36 @@ const fr = {
   promptLabel: "Prompt de départ",
   promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
   promptVariants: [
-    { label: "Landing Page", template: `Crée une landing page pour promouvoir un produit ou service au format JSX.
+    { label: "Landing Page", template: `Créez une landing page pour promouvoir un produit ou service au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-    { label: "Portfolio", template: `Crée une page portfolio personnel au format JSX.
+Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+    { label: "Portfolio", template: `Créez une page portfolio personnel au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-    { label: "Tableau de bord", template: `Crée un tableau de bord administratif au format JSX.
+Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+    { label: "Tableau de bord", template: `Créez un tableau de bord administratif au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-    { label: "Blog", template: `Crée une page d'accueil de blog au format JSX.
+Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+    { label: "Blog", template: `Créez une page d'accueil de blog au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
-    { label: "SaaS", template: `Crée une page produit SaaS au format JSX.
+Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+    { label: "SaaS", template: `Créez une page produit SaaS au format JSX.
 Thème :
 Style :
 Détails :
 Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournis un fichier téléchargeable ou affiche dans Canvas, au choix.` },
+Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
   ],
   promptCopy: "Copier",
   promptCopied: "Copié !",

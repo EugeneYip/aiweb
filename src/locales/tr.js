@@ -56,36 +56,36 @@ const tr = {
   promptLabel: "Başlangıç Promptu",
   promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
   promptVariants: [
-    { label: "Landing", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluştur.
+    { label: "Landing", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluşturun.
 Konu:
 Stil:
 Detaylar:
 Referans dosyaları veya görseller ektedir, varsa.
-İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
-    { label: "Portföy", template: `JSX formatında kişisel bir portfolio sayfası oluştur.
+İndirilebilir dosya olarak sunun veya Canvas'ta görüntüleyin.` },
+    { label: "Portföy", template: `JSX formatında kişisel bir portföy sayfası oluşturun.
 Konu:
 Stil:
 Detaylar:
 Referans dosyaları veya görseller ektedir, varsa.
-İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
-    { label: "Panel", template: `JSX formatında bir yönetici paneli oluştur.
+İndirilebilir dosya olarak sunun veya Canvas'ta görüntüleyin.` },
+    { label: "Panel", template: `JSX formatında bir yönetici paneli oluşturun.
 Konu:
 Stil:
 Detaylar:
 Referans dosyaları veya görseller ektedir, varsa.
-İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
-    { label: "Blog", template: `JSX formatında bir blog ana sayfası oluştur.
+İndirilebilir dosya olarak sunun veya Canvas'ta görüntüleyin.` },
+    { label: "Blog", template: `JSX formatında bir blog ana sayfası oluşturun.
 Konu:
 Stil:
 Detaylar:
 Referans dosyaları veya görseller ektedir, varsa.
-İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
-    { label: "SaaS", template: `JSX formatında bir SaaS ürün sayfası oluştur.
+İndirilebilir dosya olarak sunun veya Canvas'ta görüntüleyin.` },
+    { label: "SaaS", template: `JSX formatında bir SaaS ürün sayfası oluşturun.
 Konu:
 Stil:
 Detaylar:
 Referans dosyaları veya görseller ektedir, varsa.
-İndirilebilir dosya olarak sun veya Canvas'ta görüntüle.` },
+İndirilebilir dosya olarak sunun veya Canvas'ta görüntüleyin.` },
   ],
   promptCopy: "Kopyala",
   promptCopied: "Kopyalandı!",
