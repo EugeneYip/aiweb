@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor, Sun, Moon, Copy, Check } from "lucide-react";
-import { translations, LANGUAGES, HTML_LANG, RTL_LANGS } from "./locales";
+import { translations, LANGUAGES, HTML_LANG, RTL_LANGS, detectInitialLang } from "./locales";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,38 +13,6 @@ const STEP_ICONS = [
   <Settings className="h-5 w-5" />,
   <Upload className="h-5 w-5" />,
 ];
-
-function detectInitialLang() {
-  if (typeof window === "undefined") return "en";
-  try {
-    const stored = window.localStorage.getItem("aiweb-lang");
-    if (stored && translations[stored]) return stored;
-  } catch (_) {
-    // ignore storage errors
-  }
-  const browser = (window.navigator.language || "en").toLowerCase();
-  if (browser.startsWith("zh")) {
-    if (browser === "zh-cn" || browser === "zh-hans" || browser.startsWith("zh-hans")) return "zh-CN";
-    return "zh";
-  }
-  if (browser.startsWith("es")) return "es";
-  if (browser.startsWith("ja")) return "ja";
-  if (browser.startsWith("pt")) return "pt";
-  if (browser.startsWith("ar")) return "ar";
-  if (browser.startsWith("fr")) return "fr";
-  if (browser.startsWith("hi")) return "hi";
-  if (browser.startsWith("ko")) return "ko";
-  if (browser.startsWith("ur")) return "ur";
-  if (browser.startsWith("th")) return "th";
-  if (browser.startsWith("de")) return "de";
-  if (browser.startsWith("id")) return "id";
-  if (browser.startsWith("it")) return "it";
-  if (browser.startsWith("he")) return "he";
-  if (browser.startsWith("tr")) return "tr";
-  if (browser.startsWith("ru")) return "ru";
-  if (browser.startsWith("vi")) return "vi";
-  return "en";
-}
 
 export default function App() {
   const [lang, setLang] = useState("en");
