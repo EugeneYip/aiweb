@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Settings, Upload, Globe, ArrowUpRight, CheckCircle2, Lightbulb, Anchor, Sun, Moon, Copy, Check } from "lucide-react";
-import { translations, LANGUAGES, HTML_LANG, RTL_LANGS } from "./locales";
+import { translations, LANGUAGES, HTML_LANG, RTL_LANGS, detectInitialLang } from "./locales";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -13,38 +13,6 @@ const STEP_ICONS = [
   <Settings className="h-5 w-5" />,
   <Upload className="h-5 w-5" />,
 ];
-
-function detectInitialLang() {
-  if (typeof window === "undefined") return "en";
-  try {
-    const stored = window.localStorage.getItem("aiweb-lang");
-    if (stored && translations[stored]) return stored;
-  } catch (_) {
-    // ignore storage errors
-  }
-  const browser = (window.navigator.language || "en").toLowerCase();
-  if (browser.startsWith("zh")) {
-    if (browser === "zh-cn" || browser === "zh-hans" || browser.startsWith("zh-hans")) return "zh-CN";
-    return "zh";
-  }
-  if (browser.startsWith("es")) return "es";
-  if (browser.startsWith("ja")) return "ja";
-  if (browser.startsWith("pt")) return "pt";
-  if (browser.startsWith("ar")) return "ar";
-  if (browser.startsWith("fr")) return "fr";
-  if (browser.startsWith("hi")) return "hi";
-  if (browser.startsWith("ko")) return "ko";
-  if (browser.startsWith("ur")) return "ur";
-  if (browser.startsWith("th")) return "th";
-  if (browser.startsWith("de")) return "de";
-  if (browser.startsWith("id")) return "id";
-  if (browser.startsWith("it")) return "it";
-  if (browser.startsWith("he")) return "he";
-  if (browser.startsWith("tr")) return "tr";
-  if (browser.startsWith("ru")) return "ru";
-  if (browser.startsWith("vi")) return "vi";
-  return "en";
-}
 
 export default function App() {
   const [lang, setLang] = useState("en");
@@ -406,7 +374,7 @@ export default function App() {
       </main>
 
       {/* Controls */}
-      <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 sm:bottom-6 sm:right-6">
+      <div className="fixed bottom-4 end-4 z-50 flex items-center gap-2 sm:bottom-6 sm:end-6">
         {/* Theme toggle */}
         <button
           type="button"
@@ -429,7 +397,7 @@ export default function App() {
               role="listbox"
               aria-label={t.langLabel}
               aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
-              className="absolute bottom-[calc(100%+0.625rem)] right-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
+              className="absolute bottom-[calc(100%+0.625rem)] end-0 min-w-[9.5rem] max-h-[min(20rem,60vh)] overflow-y-auto rounded-2xl border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.95)] shadow-[0_18px_50px_rgba(var(--lp-shadow-rgb),0.15)] backdrop-blur-sm"
             >
               {LANGUAGES.map((l, i) => {
                 const active = l.code === lang;
@@ -447,7 +415,7 @@ export default function App() {
                       setVariantIdx(0);
                       setLangOpen(false);
                     }}
-                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition ${
+                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-start text-sm transition ${
                       active
                         ? "bg-[var(--lp-raised)] font-semibold text-[var(--lp-heading)]"
                         : focused
@@ -457,7 +425,7 @@ export default function App() {
                   >
                     <span className="w-4 font-mono text-[11px] text-[var(--lp-hint)]">{l.short}</span>
                     <span>{l.label}</span>
-                    {active && <CheckCircle2 className="ml-auto h-4 w-4 text-[var(--lp-accent)]" />}
+                    {active && <CheckCircle2 className="ms-auto h-4 w-4 text-[var(--lp-accent)]" />}
                   </button>
                 );
               })}

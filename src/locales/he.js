@@ -44,7 +44,7 @@ const he = {
   files: [
     { name: "src/App.jsx", tag: "נדרש", desc: "הדבק כאן את ה-JSX שנוצר על ידי בינה מלאכותית. זהו הקובץ היחיד שעליך לשנות.", required: true },
     { name: "index.html", tag: "אופציונלי", desc: "עדכן את כותרת הדף, התיאור ו-Google Analytics כך שיתאימו לאתר שלך.", required: false },
-    { name: "public/CNAME", tag: "אופציונלי", desc: "הגדר את הדומיין המותאם אישית שלך. השאר כפי שהוא אם אינך זקוק לאחד.", required: false },
+    { name: "public/CNAME", tag: "אופציונלי", desc: "הגדר את הדומיין המותאם אישית שלך. השאר כפי שהוא אם אינך זקוק לכך.", required: false },
   ],
   tipLabel: "טיפ",
   tipText: "אם קוד הבינה המלאכותית משתמש בחבילה שאינה כלולה בתבנית, הפעל",
@@ -87,7 +87,7 @@ const he = {
 קבצי עזר ותמונות מצורפים, אם יש.
 ספק כקובץ להורדה או הצג ב-Canvas.` },
   ],
-  promptCopy: "העתקה",
+  promptCopy: "העתק",
   promptCopied: "הועתק!",
 };
 
