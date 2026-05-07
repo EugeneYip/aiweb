@@ -2,7 +2,7 @@ const zhCN = {
   badge: "AI Page Publisher",
   heroTitle: ["Push 一次", "AI 页面就上线"],
   heroSubtitle:
-    "把 AI 生成的 React 页面直接变成线上网站的简洁模板。换掉一个文件，push 到 GitHub，就完成了。",
+    "一份简洁模板，把 AI 生成的 React 页面直接变成线上网站。换掉一个文件，push 到 GitHub，就完成了。",
   ctaPrimary: "使用这个模板",
   ctaSecondary: "阅读 README",
   readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh-CN.md",
@@ -24,12 +24,12 @@ const zhCN = {
     {
       number: "01",
       title: "让 AI 生成 JSX",
-      body: "告诉 Claude、ChatGPT 或任何 AI，让它用 JSX 格式帮你生成想要的 React 页面。",
+      body: "让 Claude、ChatGPT 或任何 AI 用 JSX 格式帮你生成想要的 React 页面。",
     },
     {
       number: "02",
       title: "创建你的 repo",
-      body: "在 GitHub 页面点击「Use this template」→「Create a new repository」创建自己的 repo。注册 GitHub 时的用户名和新 repo 名称都会影响网站网址。然后到 Settings → Pages 把 Source 设成 GitHub Actions。",
+      body: "在 GitHub 页面点击「Use this template」→「Create a new repository」创建自己的 repo。你的 GitHub 用户名和 repo 名称会决定网站网址。然后到 Settings → Pages 把 Source 设成 GitHub Actions。",
     },
     {
       number: "03",
@@ -39,10 +39,10 @@ const zhCN = {
   ],
   filesLabel: "你的文件",
   filesTitle: "需要改的文件",
-  filesSubtitle: "通常只需要修改一个文件，其余两个是进阶选用。",
+  filesSubtitle: "通常只需要修改一个文件，其余两个是可选的。",
   files: [
     { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 粘贴到这里。这是唯一需要改的文件。", required: true },
-    { name: "index.html", tag: "选用", desc: "更新页面标题、描述和 Google Analytics，让它符合你的网站。", required: false },
+    { name: "index.html", tag: "选用", desc: "更新页面标题、描述和 Google Analytics，配合你自己的网站。", required: false },
     { name: "public/CNAME", tag: "选用", desc: "设置你的自定义域名。不需要的话保持原样即可。", required: false },
   ],
   tipLabel: "小提示",
@@ -61,31 +61,31 @@ const zhCN = {
 主题：
 风格：
 详细信息：
-参考文件或图片请见附件（若有）。
+如有附件，请一并参考。
 请提供下载文件，或使用 Canvas 显示。` },
     { label: "作品集", template: `请用 JSX 格式制作一个个人作品集网页。
 主题：
 风格：
 详细信息：
-参考文件或图片请见附件（若有）。
+如有附件，请一并参考。
 请提供下载文件，或使用 Canvas 显示。` },
     { label: "仪表板", template: `请用 JSX 格式制作一个后台仪表板网页。
 主题：
 风格：
 详细信息：
-参考文件或图片请见附件（若有）。
+如有附件，请一并参考。
 请提供下载文件，或使用 Canvas 显示。` },
     { label: "博客", template: `请用 JSX 格式制作一个博客首页。
 主题：
 风格：
 详细信息：
-参考文件或图片请见附件（若有）。
+如有附件，请一并参考。
 请提供下载文件，或使用 Canvas 显示。` },
     { label: "SaaS 产品", template: `请用 JSX 格式制作一个 SaaS 产品网页。
 主题：
 风格：
 详细信息：
-参考文件或图片请见附件（若有）。
+如有附件，请一并参考。
 请提供下载文件，或使用 Canvas 显示。` },
   ],
   promptCopy: "复制",
