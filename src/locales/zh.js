@@ -2,12 +2,12 @@ const zh = {
   badge: "AI Page Publisher",
   heroTitle: ["Push 一次", "AI 頁面就上線"],
   heroSubtitle:
-    "把 AI 生成的 React 頁面直接變成線上網站的簡潔範本。換掉一個檔案，push 到 GitHub，就完成了。",
+    "一份簡潔範本，把 AI 生成的 React 頁面直接變成線上網站。換掉一個檔案，push 到 GitHub，就完成了。",
   ctaPrimary: "使用這個範本",
   ctaSecondary: "閱讀 README",
   readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.zh.md",
   includedLabel: "內建項目",
-  includedTitle: "範本包含甚麼",
+  includedTitle: "範本包含什麼",
   includes: [
     "40+ 個 shadcn/ui 元件",
     "160+ 個預裝套件",
@@ -24,17 +24,17 @@ const zh = {
     {
       number: "01",
       title: "請 AI 生成 JSX",
-      body: "告訴 Claude、ChatGPT 或任何 AI，請它用 JSX 格式幫你生成想要的 React 頁面。",
+      body: "請 Claude、ChatGPT 或任何 AI 用 JSX 格式幫你生成想要的 React 頁面。",
     },
     {
       number: "02",
       title: "建立你的 repo",
-      body: "在 GitHub 頁面點選「Use this template」→「Create a new repository」建立自己的 repo。註冊 GitHub 時的使用者名稱與新 repo 名稱都會影響網站網址。接著到 Settings → Pages 把 Source 設成 GitHub Actions。",
+      body: "在 GitHub 頁面點選「Use this template」→「Create a new repository」建立自己的 repo。你的 GitHub 使用者名稱與 repo 名稱會決定網站網址。接著到 Settings → Pages 把 Source 設成 GitHub Actions。",
     },
     {
       number: "03",
       title: "貼上並儲存",
-      body: "將 AI 生成的 JSX 貼進 src/App.jsx——刪除並取代原本裡面的所有內容——然後儲存檔案即可。GitHub Actions 會自動 build 並發佈你的網站。",
+      body: "將 AI 生成的 JSX 貼進 src/App.jsx——刪除並取代原有的所有內容——然後儲存檔案即可。GitHub Actions 會自動 build 並發佈你的網站。",
     },
   ],
   filesLabel: "你的檔案",
@@ -42,7 +42,7 @@ const zh = {
   filesSubtitle: "通常只需要修改一個檔案，其餘兩個是進階選用。",
   files: [
     { name: "src/App.jsx", tag: "必要", desc: "把 AI 生成的 JSX 貼到這裡。這是唯一需要改的檔案。", required: true },
-    { name: "index.html", tag: "選用", desc: "更新頁面標題、描述和 Google Analytics，讓它符合你的網站。", required: false },
+    { name: "index.html", tag: "選用", desc: "更新頁面標題、描述和 Google Analytics，配合你自己的網站。", required: false },
     { name: "public/CNAME", tag: "選用", desc: "設定你的自訂網域。不需要的話維持原樣即可。", required: false },
   ],
   tipLabel: "小提示",
@@ -61,31 +61,31 @@ const zh = {
 主題：
 風格：
 詳細資訊：
-參考檔案或圖片請見附件（若有）。
+如有附件，請一併參考。
 請提供下載檔，或使用 Canvas 顯示。` },
     { label: "作品集", template: `請用 JSX 格式製作一個個人作品集網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案或圖片請見附件（若有）。
+如有附件，請一併參考。
 請提供下載檔，或使用 Canvas 顯示。` },
     { label: "儀表板", template: `請用 JSX 格式製作一個後台儀表板網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案或圖片請見附件（若有）。
+如有附件，請一併參考。
 請提供下載檔，或使用 Canvas 顯示。` },
     { label: "部落格", template: `請用 JSX 格式製作一個部落格首頁。
 主題：
 風格：
 詳細資訊：
-參考檔案或圖片請見附件（若有）。
+如有附件，請一併參考。
 請提供下載檔，或使用 Canvas 顯示。` },
     { label: "SaaS 產品", template: `請用 JSX 格式製作一個 SaaS 產品網頁。
 主題：
 風格：
 詳細資訊：
-參考檔案或圖片請見附件（若有）。
+如有附件，請一併參考。
 請提供下載檔，或使用 Canvas 顯示。` },
   ],
   promptCopy: "複製",
