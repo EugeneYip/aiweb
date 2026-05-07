@@ -53,6 +53,8 @@ const ru = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Все права защищены.",
   langLabel: "Язык",
+  themeLight: "Светлая тема",
+  themeDark: "Тёмная тема",
   promptLabel: "Шаблон промпта",
   promptHint: "Скопируйте этот промпт и вставьте его в ваш AI-инструмент. Заполните пропуски.",
   promptVariants: [

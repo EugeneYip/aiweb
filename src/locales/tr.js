@@ -53,10 +53,12 @@ const tr = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Tüm hakları saklıdır.",
   langLabel: "Dil",
+  themeLight: "Açık tema",
+  themeDark: "Koyu tema",
   promptLabel: "Başlangıç Promptu",
   promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
   promptVariants: [
-    { label: "Landing", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluşturun.
+    { label: "Landing Page", template: `JSX formatında bir ürün veya hizmet tanıtan bir landing page oluşturun.
 Konu:
 Stil:
 Detaylar:

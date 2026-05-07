@@ -53,10 +53,12 @@ const es = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Todos los derechos reservados.",
   langLabel: "Idioma",
+  themeLight: "Modo claro",
+  themeDark: "Modo oscuro",
   promptLabel: "Prompt inicial",
   promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
   promptVariants: [
-    { label: "Landing", template: `Crea una landing page para promocionar un producto o servicio en formato JSX.
+    { label: "Landing Page", template: `Crea una landing page para promocionar un producto o servicio en formato JSX.
 Tema:
 Estilo:
 Detalles:

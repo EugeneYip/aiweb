@@ -53,6 +53,8 @@ const ko = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "모든 권리 보유.",
   langLabel: "언어",
+  themeLight: "라이트 모드",
+  themeDark: "다크 모드",
   promptLabel: "시작 프롬프트",
   promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
   promptVariants: [

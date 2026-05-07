@@ -53,6 +53,8 @@ const hi = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "सर्वाधिकार सुरक्षित।",
   langLabel: "भाषा",
+  themeLight: "लाइट मोड",
+  themeDark: "डार्क मोड",
   promptLabel: "शुरुआती प्रॉम्प्ट",
   promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
   promptVariants: [

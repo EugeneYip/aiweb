@@ -53,6 +53,8 @@ const th = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "สงวนลิขสิทธิ์",
   langLabel: "ภาษา",
+  themeLight: "โหมดสว่าง",
+  themeDark: "โหมดมืด",
   promptLabel: "เทมเพลตพรอมต์",
   promptHint: "คัดลอกพรอมต์นี้ไปวางในเครื่องมือ AI ของคุณ แล้วเติมข้อมูลในช่องว่าง",
   promptVariants: [

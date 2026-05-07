@@ -2,7 +2,7 @@ const he = {
   badge: "AI Page Publisher",
   heroTitle: ["פרסם דפי AI", "בדחיפה אחת."],
   heroSubtitle:
-    "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. סיום.",
+    "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. וזהו.",
   ctaPrimary: "השתמש בתבנית זו",
   ctaSecondary: "קרא את ה-README",
   readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.he.md",
@@ -19,7 +19,7 @@ const he = {
   howItWorksLabel: "כיצד זה עובד",
   howItWorksTitle: "שלושה שלבים לעלייה לאוויר",
   howItWorksSubtitle:
-    "אין צורך בניסיון בתכנות. בקש JSX מהבינה המלאכותית, הדבק, דחוף, סיום.",
+    "אין צורך בניסיון בתכנות. בקש JSX מהבינה המלאכותית, הדבק, דחוף, וזהו.",
   steps: [
     {
       number: "01",
@@ -53,6 +53,8 @@ const he = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "כל הזכויות שמורות.",
   langLabel: "שפה",
+  themeLight: "מצב בהיר",
+  themeDark: "מצב כהה",
   promptLabel: "תבנית פרומפט",
   promptHint: "העתק את הפרומפט הזה והדבק אותו בכלי ה-AI שלך. מלא את השדות הריקים.",
   promptVariants: [

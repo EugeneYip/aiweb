@@ -52,6 +52,8 @@ const zhCN = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "保留所有权利。",
   langLabel: "语言",
+  themeLight: "浅色模式",
+  themeDark: "深色模式",
   promptLabel: "Prompt 模板",
   promptHint: "复制以下 prompt 粘贴到你的 AI 工具中，填入空白处即可。",
   promptVariants: [

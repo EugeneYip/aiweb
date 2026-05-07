@@ -53,6 +53,8 @@ const vi = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Bảo lưu mọi quyền.",
   langLabel: "Ngôn ngữ",
+  themeLight: "Chế độ sáng",
+  themeDark: "Chế độ tối",
   promptLabel: "Prompt mẫu",
   promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
   promptVariants: [

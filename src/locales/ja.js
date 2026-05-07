@@ -53,6 +53,8 @@ const ja = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "著作権所有。",
   langLabel: "言語",
+  themeLight: "ライトモード",
+  themeDark: "ダークモード",
   promptLabel: "プロンプトテンプレート",
   promptHint: "以下のプロンプトを AI ツールにコピー＆ペーストし、空欄を埋めてください。",
   promptVariants: [
