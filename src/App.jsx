@@ -15,21 +15,16 @@ const STEP_ICONS = [
 ];
 
 export default function App() {
-  const [lang, setLang] = useState("en");
-  const [darkMode, setDarkMode] = useState(false);
+  const [lang, setLang] = useState(detectInitialLang);
+  const [darkMode, setDarkMode] = useState(detectInitialDarkMode);
   const [langOpen, setLangOpen] = useState(false);
   const [focusIdx, setFocusIdx] = useState(-1);
   const [promptCopied, setPromptCopied] = useState(false);
   const [variantIdx, setVariantIdx] = useState(0);
   const switcherRef = useRef(null);
   const listRef = useRef(null);
-
-  useEffect(() => {
-    setLang(detectInitialLang());
-    const stored = localStorage.getItem("aiweb-theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setDarkMode(stored ? stored === "dark" : prefersDark);
-  }, []);
+  const triggerRef = useRef(null);
+  const copyTimeoutRef = useRef(null);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
@@ -37,6 +32,12 @@ export default function App() {
       m.setAttribute("content", darkMode ? "#1A1816" : "#FCFAF2");
     });
   }, [darkMode]);
+
+  useEffect(() => {
+    return () => {
+      if (copyTimeoutRef.current) clearTimeout(copyTimeoutRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("aiweb-theme")) return;
@@ -98,11 +99,13 @@ export default function App() {
             setLang(LANGUAGES[focusIdx].code);
             setVariantIdx(0);
             setLangOpen(false);
+            triggerRef.current?.focus();
           }
           break;
         case "Escape":
           e.preventDefault();
           setLangOpen(false);
+          triggerRef.current?.focus();
           break;
       }
     },
@@ -262,9 +265,11 @@ export default function App() {
               return (
                 <button
                   key={v.label}
+                  id={`prompt-tab-${i}`}
                   type="button"
                   role="tab"
                   aria-selected={selected}
+                  aria-controls="prompt-tabpanel"
                   tabIndex={selected ? 0 : -1}
                   onClick={() => { setVariantIdx(i); setPromptCopied(false); }}
                   className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
@@ -279,13 +284,27 @@ export default function App() {
             })}
           </div>
 
-          <div className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
+          <div
+            id="prompt-tabpanel"
+            role="tabpanel"
+            aria-labelledby={`prompt-tab-${variantIdx}`}
+            className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5"
+          >
             <button
               onClick={() => {
-                navigator.clipboard.writeText(t.promptVariants[variantIdx].template).then(() => {
-                  setPromptCopied(true);
-                  setTimeout(() => setPromptCopied(false), 2000);
-                });
+                navigator.clipboard
+                  .writeText(t.promptVariants[variantIdx].template)
+                  .then(() => {
+                    setPromptCopied(true);
+                    if (copyTimeoutRef.current) clearTimeout(copyTimeoutRef.current);
+                    copyTimeoutRef.current = setTimeout(() => {
+                      setPromptCopied(false);
+                      copyTimeoutRef.current = null;
+                    }, 2000);
+                  })
+                  .catch(() => {
+                    // clipboard unavailable (non-HTTPS, denied, unsupported) — silently no-op
+                  });
               }}
               className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-lg border border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.85)] px-3 py-1.5 text-xs font-medium text-[var(--lp-subtle)] transition-all hover:bg-[var(--lp-surface-solid)] hover:border-[var(--lp-border-hover)]"
             >
@@ -383,7 +402,7 @@ export default function App() {
             setDarkMode(next);
             localStorage.setItem("aiweb-theme", next ? "dark" : "light");
           }}
-          aria-label={darkMode ? "Light mode" : "Dark mode"}
+          aria-label={darkMode ? t.themeLight : t.themeDark}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
         >
           {darkMode ? <Sun className="h-[1.125rem] w-[1.125rem]" /> : <Moon className="h-[1.125rem] w-[1.125rem]" />}
@@ -414,6 +433,7 @@ export default function App() {
                       setLang(l.code);
                       setVariantIdx(0);
                       setLangOpen(false);
+                      triggerRef.current?.focus();
                     }}
                     className={`flex w-full items-center gap-3 px-4 py-2.5 text-start text-sm transition ${
                       active
@@ -432,6 +452,7 @@ export default function App() {
             </div>
           )}
           <button
+            ref={triggerRef}
             type="button"
             onClick={() => setLangOpen((v) => !v)}
             aria-label={t.langLabel}

@@ -22,11 +22,11 @@ Générez une page avec Claude, ChatGPT ou n'importe quelle IA. Collez-la dans `
    Détails : [sections souhaitées — ex : hero, fonctionnalités, témoignages, tarifs, contact]
 
    Exigences :
-   - Utilise Tailwind CSS pour tout le style
-   - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
-   - Utilise lucide-react pour les icônes
-   - Rends la page responsive pour mobile et desktop
-   - Exporte comme : export default function App()
+   - Utilisez Tailwind CSS pour tout le style
+   - Utilisez les composants shadcn/ui (import depuis @/components/ui/) si approprié
+   - Utilisez lucide-react pour les icônes
+   - Rendez la page responsive pour mobile et desktop
+   - Exportez comme : export default function App()
    - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN
    ```
 
