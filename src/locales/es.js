@@ -24,7 +24,7 @@ const es = {
     {
       number: "01",
       title: "Pide JSX a tu IA",
-      body: "Dile a Claude, ChatGPT o la IA que prefieras que te genere la página que quieres como componente React en formato JSX.",
+      body: "Dile a Claude, ChatGPT o la IA que prefieras que te genere tu página como componente React en formato JSX.",
     },
     {
       number: "02",
@@ -58,35 +58,35 @@ const es = {
   promptLabel: "Prompt inicial",
   promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
   promptVariants: [
-    { label: "Landing Page", template: `Crea una landing page para promocionar un producto o servicio en formato JSX.
+    { label: "Landing Page", template: `Crea una landing page en formato JSX para promocionar un producto o servicio.
 Tema:
 Estilo:
 Detalles:
-Adjunta archivos de referencia o imágenes si los tienes.
+Consulta los archivos adjuntos como referencia, si los hay.
 Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
-    { label: "Portafolio", template: `Crea una página de portfolio personal en formato JSX.
+    { label: "Portafolio", template: `Crea una página de portafolio personal en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Adjunta archivos de referencia o imágenes si los tienes.
+Consulta los archivos adjuntos como referencia, si los hay.
 Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
     { label: "Dashboard", template: `Crea un dashboard administrativo en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Adjunta archivos de referencia o imágenes si los tienes.
+Consulta los archivos adjuntos como referencia, si los hay.
 Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
-    { label: "Blog", template: `Crea una homepage de blog en formato JSX.
+    { label: "Blog", template: `Crea una página de inicio de un blog en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Adjunta archivos de referencia o imágenes si los tienes.
+Consulta los archivos adjuntos como referencia, si los hay.
 Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
     { label: "SaaS", template: `Crea una página de producto SaaS en formato JSX.
 Tema:
 Estilo:
 Detalles:
-Adjunta archivos de referencia o imágenes si los tienes.
+Consulta los archivos adjuntos como referencia, si los hay.
 Entrega como archivo descargable o muestra en Canvas, como prefieras.` },
   ],
   promptCopy: "Copiar",
