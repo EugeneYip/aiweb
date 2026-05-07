@@ -63,6 +63,8 @@ const translations = {
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Language",
+    themeLight: "Light mode",
+    themeDark: "Dark mode",
     promptLabel: "Starter Prompt",
     promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
     promptVariants: [
@@ -223,6 +225,8 @@ Requirements:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "版權所有。",
     langLabel: "語言",
+    themeLight: "亮色模式",
+    themeDark: "暗色模式",
     promptLabel: "Prompt 範本",
     promptHint: "複製以下 prompt 貼到你的 AI 工具中，填入空白處即可。",
     promptVariants: [
@@ -383,6 +387,8 @@ Requirements:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "保留所有权利。",
     langLabel: "语言",
+    themeLight: "浅色模式",
+    themeDark: "深色模式",
     promptLabel: "Prompt 模板",
     promptHint: "复制以下 prompt 粘贴到你的 AI 工具中，填入空白处即可。",
     promptVariants: [
@@ -544,6 +550,8 @@ Requirements:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Todos los derechos reservados.",
     langLabel: "Idioma",
+    themeLight: "Modo claro",
+    themeDark: "Modo oscuro",
     promptLabel: "Prompt inicial",
     promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
     promptVariants: [
@@ -705,6 +713,8 @@ Requisitos:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "言語",
+    themeLight: "ライトモード",
+    themeDark: "ダークモード",
     promptLabel: "プロンプトテンプレート",
     promptHint: "以下のプロンプトをAIツールにコピー＆ペーストし、空欄を埋めてください。",
     promptVariants: [
@@ -866,6 +876,8 @@ Requisitos:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Todos os direitos reservados.",
     langLabel: "Idioma",
+    themeLight: "Modo claro",
+    themeDark: "Modo escuro",
     promptLabel: "Prompt inicial",
     promptHint: "Copie este prompt e cole na sua ferramenta de IA. Preencha os espaços em branco.",
     promptVariants: [
@@ -1027,6 +1039,8 @@ Requisitos:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "جميع الحقوق محفوظة.",
     langLabel: "اللغة",
+    themeLight: "الوضع الفاتح",
+    themeDark: "الوضع الداكن",
     promptLabel: "قالب البرومبت",
     promptHint: "انسخ هذا البرومبت والصقه في أداة الذكاء الاصطناعي، ثم املأ الفراغات.",
     promptVariants: [
@@ -1188,6 +1202,8 @@ Requisitos:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tous droits réservés.",
     langLabel: "Langue",
+    themeLight: "Mode clair",
+    themeDark: "Mode sombre",
     promptLabel: "Prompt de départ",
     promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
     promptVariants: [
@@ -1349,6 +1365,8 @@ Exigences :
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "सर्वाधिकार सुरक्षित।",
     langLabel: "भाषा",
+    themeLight: "लाइट मोड",
+    themeDark: "डार्क मोड",
     promptLabel: "शुरुआती प्रॉम्प्ट",
     promptHint: "इस प्रॉम्प्ट को कॉपी करके अपने AI टूल में पेस्ट करें। खाली जगहें भरें।",
     promptVariants: [
@@ -1510,6 +1528,8 @@ Exigences :
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "언어",
+    themeLight: "라이트 모드",
+    themeDark: "다크 모드",
     promptLabel: "시작 프롬프트",
     promptHint: "이 프롬프트를 복사하여 AI 도구에 붙여넣고 빈칸을 채우세요.",
     promptVariants: [
@@ -1671,6 +1691,8 @@ Exigences :
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "جملہ حقوق محفوظ ہیں۔",
     langLabel: "زبان",
+    themeLight: "ہلکا موڈ",
+    themeDark: "تاریک موڈ",
     promptLabel: "شروعاتی پرامپٹ",
     promptHint: "اس پرامپٹ کو کاپی کر کے اپنے AI ٹول میں پیسٹ کریں۔ خالی جگہیں پُر کریں۔",
     promptVariants: [
@@ -1832,6 +1854,8 @@ Exigences :
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "สงวนลิขสิทธิ์",
     langLabel: "ภาษา",
+    themeLight: "โหมดสว่าง",
+    themeDark: "โหมดมืด",
     promptLabel: "เทมเพลตพรอมต์",
     promptHint: "คัดลอกพรอมต์นี้ไปวางในเครื่องมือ AI ของคุณ แล้วเติมข้อมูลในช่องว่าง",
     promptVariants: [
@@ -1993,6 +2017,8 @@ Exigences :
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Alle Rechte vorbehalten.",
     langLabel: "Sprache",
+    themeLight: "Hellmodus",
+    themeDark: "Dunkelmodus",
     promptLabel: "Starter-Prompt",
     promptHint: "Kopiere diesen Prompt und füge ihn in dein KI-Tool ein. Fülle die Lücken aus.",
     promptVariants: [
@@ -2154,6 +2180,8 @@ Technische Anforderungen:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tüm hakları saklıdır.",
     langLabel: "Dil",
+    themeLight: "Açık tema",
+    themeDark: "Koyu tema",
     promptLabel: "Başlangıç Promptu",
     promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
     promptVariants: [
@@ -2315,6 +2343,8 @@ Teknik gereksinimler:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Все права защищены.",
     langLabel: "Язык",
+    themeLight: "Светлая тема",
+    themeDark: "Тёмная тема",
     promptLabel: "Шаблон промпта",
     promptHint: "Скопируйте этот промпт и вставьте его в ваш AI-инструмент. Заполните пропуски.",
     promptVariants: [
@@ -2476,6 +2506,8 @@ Teknik gereksinimler:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "כל הזכויות שמורות.",
     langLabel: "שפה",
+    themeLight: "מצב בהיר",
+    themeDark: "מצב כהה",
     promptLabel: "תבנית פרומפט",
     promptHint: "העתק את הפרומפט הזה והדבק אותו בכלי ה-AI שלך. מלא את השדות הריקים.",
     promptVariants: [
@@ -2637,6 +2669,8 @@ Teknik gereksinimler:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Tutti i diritti riservati.",
     langLabel: "Lingua",
+    themeLight: "Modalità chiara",
+    themeDark: "Modalità scura",
     promptLabel: "Prompt iniziale",
     promptHint: "Copia questo prompt e incollalo nel tuo strumento AI. Compila gli spazi vuoti.",
     promptVariants: [
@@ -2798,6 +2832,8 @@ Requisiti tecnici:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "Semua hak dilindungi.",
     langLabel: "Bahasa",
+    themeLight: "Mode terang",
+    themeDark: "Mode gelap",
     promptLabel: "Prompt Awal",
     promptHint: "Salin prompt ini dan tempelkan ke alat AI-mu. Isi bagian yang kosong.",
     promptVariants: [
@@ -2959,6 +2995,8 @@ Persyaratan teknis:
     footerLine1: "© 2026 Eugene Yip.",
     footerLine2: "All Rights Reserved.",
     langLabel: "Ngôn ngữ",
+    themeLight: "Chế độ sáng",
+    themeDark: "Chế độ tối",
     promptLabel: "Prompt mẫu",
     promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
     promptVariants: [
@@ -3428,9 +3466,11 @@ export default function App() {
               return (
                 <button
                   key={v.label}
+                  id={`prompt-tab-${i}`}
                   type="button"
                   role="tab"
                   aria-selected={selected}
+                  aria-controls="prompt-tabpanel"
                   tabIndex={selected ? 0 : -1}
                   onClick={() => { setVariantIdx(i); setPromptCopied(false); }}
                   className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
@@ -3445,7 +3485,12 @@ export default function App() {
             })}
           </div>
 
-          <div className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
+          <div
+            id="prompt-tabpanel"
+            role="tabpanel"
+            aria-labelledby={`prompt-tab-${variantIdx}`}
+            className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5"
+          >
             <button
               onClick={() => {
                 navigator.clipboard
@@ -3558,7 +3603,7 @@ export default function App() {
             setDarkMode(next);
             localStorage.setItem("aiweb-theme", next ? "dark" : "light");
           }}
-          aria-label={darkMode ? "Light mode" : "Dark mode"}
+          aria-label={darkMode ? t.themeLight : t.themeDark}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
         >
           {darkMode ? <Sun className="h-[1.125rem] w-[1.125rem]" /> : <Moon className="h-[1.125rem] w-[1.125rem]" />}
