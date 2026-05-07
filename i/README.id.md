@@ -17,7 +17,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
    ```
    Buatkan halaman React dalam format JSX yang bisa saya gunakan sebagai src/App.jsx.
 
-   Topik: [topik website Anda — mis: kedai kopi, portofolio, produk SaaS]
+   Topik: [topik website kamu — mis: kedai kopi, portofolio, produk SaaS]
    Gaya: [gaya desain — mis: minimalis, modern, warna-warni, korporat]
    Detail: [bagian yang diinginkan — mis: hero, fitur, testimoni, harga, kontak]
 
@@ -32,7 +32,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 
    </details>
 
-2. **Gunakan template ini** — di halaman GitHub, klik **"Use this template"** → **"Create a new repository"** untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situs Anda (`https://<username>.github.io/<repo-name>/`)
+2. **Gunakan template ini** — di halaman GitHub, klik **"Use this template"** → **"Create a new repository"** untuk membuat repo sendiri. Username GitHub dan nama repo akan menentukan URL situs kamu (`https://<username>.github.io/<repo-name>/`)
 3. **Aktifkan GitHub Pages** — buka **Settings → Pages** dan atur Source ke **GitHub Actions**
 4. **Ganti** [`src/App.jsx`](../src/App.jsx) — tempel JSX yang dibuat AI ke file ini, **hapus dan ganti semua konten yang ada**, lalu simpan
 
