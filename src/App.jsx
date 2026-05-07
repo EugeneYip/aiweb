@@ -547,7 +547,7 @@ Requirements:
     promptLabel: "Prompt inicial",
     promptHint: "Copia este prompt y pégalo en tu herramienta de IA. Rellena los espacios en blanco.",
     promptVariants: [
-      { label: "Landing", template: `Crea una landing page en formato JSX que pueda usar como src/App.jsx.
+      { label: "Landing Page", template: `Crea una landing page en formato JSX que pueda usar como src/App.jsx.
 
 Propósito: [lo que promocionas — ej. app de fitness, panadería local, consultora]
 Estilo: [estilo de diseño — ej. minimalista, moderno, llamativo, corporativo]
@@ -1209,7 +1209,7 @@ Exigences :
 - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
-- Exporter comme : export default function App()
+- Exporte comme : export default function App()
 - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
       { label: "Portfolio", template: `Crée une page portfolio personnelle en format JSX que je puisse utiliser comme src/App.jsx.
 
@@ -1229,7 +1229,7 @@ Exigences :
 - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
-- Exporter comme : export default function App()
+- Exporte comme : export default function App()
 - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
       { label: "Tableau de bord", template: `Crée un tableau de bord administratif en format JSX que je puisse utiliser comme src/App.jsx.
 
@@ -1248,7 +1248,7 @@ Exigences :
 - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
-- Exporter comme : export default function App()
+- Exporte comme : export default function App()
 - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
       { label: "Blog", template: `Crée une page d'accueil de blog en format JSX que je puisse utiliser comme src/App.jsx.
 
@@ -1267,7 +1267,7 @@ Exigences :
 - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
-- Exporter comme : export default function App()
+- Exporte comme : export default function App()
 - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
       { label: "SaaS", template: `Crée une page produit SaaS en format JSX que je puisse utiliser comme src/App.jsx.
 
@@ -1288,7 +1288,7 @@ Exigences :
 - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
 - Utilise lucide-react pour les icônes
 - Rends la page responsive pour mobile et desktop
-- Exporter comme : export default function App()
+- Exporte comme : export default function App()
 - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN` },
     ],
     promptCopy: "Copier",
@@ -3200,7 +3200,7 @@ export default function App() {
     if (langOpen) {
       setFocusIdx(LANGUAGES.findIndex((l) => l.code === lang));
     }
-  }, [langOpen]);
+  }, [langOpen, lang]);
 
   useEffect(() => {
     if (!langOpen || focusIdx < 0) return;
@@ -3389,20 +3389,46 @@ export default function App() {
             </p>
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {t.promptVariants.map((v, i) => (
-              <button
-                key={v.label}
-                onClick={() => { setVariantIdx(i); setPromptCopied(false); }}
-                className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
-                  i === variantIdx
-                    ? "border-[var(--lp-accent)] bg-[var(--lp-accent)] text-white shadow-sm"
-                    : "border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.6)] text-[var(--lp-subtle)] hover:border-[var(--lp-border-hover)] hover:bg-[var(--lp-surface-solid)]"
-                }`}
-              >
-                {v.label}
-              </button>
-            ))}
+          <div
+            role="tablist"
+            aria-label={t.promptLabel}
+            className="mt-4 flex flex-wrap gap-2"
+            onKeyDown={(e) => {
+              if (e.key !== "ArrowLeft" && e.key !== "ArrowRight" && e.key !== "Home" && e.key !== "End") return;
+              e.preventDefault();
+              const count = t.promptVariants.length;
+              const forward = RTL_LANGS.has(lang) ? "ArrowLeft" : "ArrowRight";
+              let next = variantIdx;
+              if (e.key === "Home") next = 0;
+              else if (e.key === "End") next = count - 1;
+              else if (e.key === forward) next = (variantIdx + 1) % count;
+              else next = (variantIdx - 1 + count) % count;
+              setVariantIdx(next);
+              setPromptCopied(false);
+              const tabs = e.currentTarget.querySelectorAll('[role="tab"]');
+              tabs[next]?.focus();
+            }}
+          >
+            {t.promptVariants.map((v, i) => {
+              const selected = i === variantIdx;
+              return (
+                <button
+                  key={v.label}
+                  type="button"
+                  role="tab"
+                  aria-selected={selected}
+                  tabIndex={selected ? 0 : -1}
+                  onClick={() => { setVariantIdx(i); setPromptCopied(false); }}
+                  className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition-all ${
+                    selected
+                      ? "border-[var(--lp-accent)] bg-[var(--lp-accent)] text-white shadow-sm"
+                      : "border-[var(--lp-border-mid)] bg-[rgba(var(--lp-surface-rgb),0.6)] text-[var(--lp-subtle)] hover:border-[var(--lp-border-hover)] hover:bg-[var(--lp-surface-solid)]"
+                  }`}
+                >
+                  {v.label}
+                </button>
+              );
+            })}
           </div>
 
           <div className="relative mt-4 rounded-xl border border-[var(--lp-border)] bg-[var(--lp-bg)] p-4 sm:p-5">
