@@ -15,18 +15,18 @@ Générez une page avec Claude, ChatGPT ou n'importe quelle IA. Collez-la dans `
    <summary>Prompt de départ (cliquez pour développer, puis copiez)</summary>
 
    ```
-   Crée une page React en format JSX que je puisse utiliser comme src/App.jsx.
+   Créez une page React en format JSX que je puisse utiliser comme src/App.jsx.
 
    Thème : [le thème de votre site — ex : café, portfolio, produit SaaS]
    Style : [style de design — ex : minimaliste, moderne, coloré, corporate]
    Détails : [sections souhaitées — ex : hero, fonctionnalités, témoignages, tarifs, contact]
 
    Exigences :
-   - Utilise Tailwind CSS pour tout le style
-   - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
-   - Utilise lucide-react pour les icônes
-   - Rends la page responsive pour mobile et desktop
-   - Exporte comme : export default function App()
+   - Utilisez Tailwind CSS pour tout le style
+   - Utilisez les composants shadcn/ui (import depuis @/components/ui/) si approprié
+   - Utilisez lucide-react pour les icônes
+   - Rendez la page responsive pour mobile et desktop
+   - Exportez comme : export default function App()
    - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN
    ```
 
