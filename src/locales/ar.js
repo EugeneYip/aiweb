@@ -53,6 +53,8 @@ const ar = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "جميع الحقوق محفوظة.",
   langLabel: "اللغة",
+  themeLight: "الوضع الفاتح",
+  themeDark: "الوضع الداكن",
   promptLabel: "قالب البرومبت",
   promptHint: "انسخ هذا البرومبت والصقه في أداة الذكاء الاصطناعي، ثم املأ الفراغات.",
   promptVariants: [

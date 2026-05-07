@@ -53,6 +53,8 @@ const en = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "All Rights Reserved.",
   langLabel: "Language",
+  themeLight: "Light mode",
+  themeDark: "Dark mode",
   promptLabel: "Starter Prompt",
   promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
   promptVariants: [

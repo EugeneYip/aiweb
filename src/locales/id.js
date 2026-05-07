@@ -53,6 +53,8 @@ const id = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Semua hak dilindungi.",
   langLabel: "Bahasa",
+  themeLight: "Mode terang",
+  themeDark: "Mode gelap",
   promptLabel: "Prompt Awal",
   promptHint: "Salin prompt ini dan tempelkan ke alat AI kamu. Isi bagian yang kosong.",
   promptVariants: [

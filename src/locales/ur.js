@@ -53,6 +53,8 @@ const ur = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "جملہ حقوق محفوظ ہیں۔",
   langLabel: "زبان",
+  themeLight: "ہلکا موڈ",
+  themeDark: "تاریک موڈ",
   promptLabel: "شروعاتی پرامپٹ",
   promptHint: "اس پرامپٹ کو کاپی کر کے اپنے AI ٹول میں پیسٹ کریں۔ خالی جگہیں پُر کریں۔",
   promptVariants: [

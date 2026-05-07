@@ -53,6 +53,8 @@ const fr = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Tous droits réservés.",
   langLabel: "Langue",
+  themeLight: "Mode clair",
+  themeDark: "Mode sombre",
   promptLabel: "Prompt de départ",
   promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
   promptVariants: [

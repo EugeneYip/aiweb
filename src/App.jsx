@@ -14,6 +14,15 @@ const STEP_ICONS = [
   <Upload className="h-5 w-5" />,
 ];
 
+function detectInitialDarkMode() {
+  if (typeof window === "undefined") return false;
+  try {
+    const stored = window.localStorage.getItem("aiweb-theme");
+    if (stored) return stored === "dark";
+  } catch (_) {}
+  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false;
+}
+
 export default function App() {
   const [lang, setLang] = useState(detectInitialLang);
   const [darkMode, setDarkMode] = useState(detectInitialDarkMode);

@@ -53,6 +53,8 @@ const de = {
   footerLine1: "© 2026 Eugene Yip.",
   footerLine2: "Alle Rechte vorbehalten.",
   langLabel: "Sprache",
+  themeLight: "Hellmodus",
+  themeDark: "Dunkelmodus",
   promptLabel: "Starter-Prompt",
   promptHint: "Kopiere diesen Prompt und füge ihn in dein KI-Tool ein. Fülle die Lücken aus.",
   promptVariants: [
