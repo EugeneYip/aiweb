@@ -2,7 +2,7 @@ const en = {
   badge: "AI Page Publisher",
   heroTitle: ["Publish AI pages", "in one push."],
   heroSubtitle:
-    "A clean template for turning any React page your AI generates into a live website. Replace one file. Push to GitHub. Done.",
+    "A clean template that turns any AI-generated React page into a live website. Replace one file. Push to GitHub. Done.",
   ctaPrimary: "Use this template",
   ctaSecondary: "Read the README",
   readmeUrl: "https://github.com/EugeneYip/aiweb#readme",
@@ -24,7 +24,7 @@ const en = {
     {
       number: "01",
       title: "Ask your AI for JSX",
-      body: "Tell Claude, ChatGPT, or any AI to generate the page you want as a React component in JSX format.",
+      body: "Tell Claude, ChatGPT, or any AI to generate your page as a React component in JSX format.",
     },
     {
       number: "02",
@@ -58,7 +58,7 @@ const en = {
   promptLabel: "Starter Prompt",
   promptHint: "Copy this prompt template into your AI tool, then fill in the blanks.",
   promptVariants: [
-    { label: "Landing Page", template: `Create a landing page for promoting a product or service in JSX format.
+    { label: "Landing Page", template: `Create a landing page in JSX format to promote a product or service.
 Topic:
 Style:
 Details:
