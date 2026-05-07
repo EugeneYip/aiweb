@@ -422,6 +422,7 @@ export default function App() {
           {langOpen && (
             <div
               ref={listRef}
+              id="lang-listbox"
               role="listbox"
               aria-label={t.langLabel}
               aria-activedescendant={focusIdx >= 0 ? `lang-opt-${LANGUAGES[focusIdx].code}` : undefined}
@@ -467,6 +468,7 @@ export default function App() {
             aria-label={t.langLabel}
             aria-expanded={langOpen}
             aria-haspopup="listbox"
+            aria-controls="lang-listbox"
             className="flex h-11 items-center gap-2 rounded-full border border-[var(--lp-border)] bg-[rgba(var(--lp-surface-rgb),0.90)] px-3.5 text-[var(--lp-subtle)] shadow-[0_10px_30px_rgba(var(--lp-shadow-rgb),0.12)] backdrop-blur-sm transition hover:bg-[var(--lp-surface-solid)]"
           >
             <Globe className="h-4.5 w-4.5" />

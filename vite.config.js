@@ -22,7 +22,7 @@ function getBase() {
   const repo = process.env.GITHUB_REPOSITORY;
   if (repo) {
     const repoName = repo.split("/")[1];
-    return `/${repoName}/`;
+    if (repoName) return `/${repoName}/`;
   }
   // 4. Local dev
   return "/";

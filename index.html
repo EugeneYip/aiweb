@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#FCFAF2" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1A1816" media="(prefers-color-scheme: dark)" />
     <script>
-      (function(){var s=localStorage.getItem("aiweb-theme");var d=s?s==="dark":matchMedia("(prefers-color-scheme:dark)").matches;if(d)document.documentElement.classList.add("dark")})();
+      (function(){try{var s=localStorage.getItem("aiweb-theme");var d=s?s==="dark":matchMedia("(prefers-color-scheme:dark)").matches;if(d)document.documentElement.classList.add("dark")}catch(e){}})();
     </script>
 
     <!--
