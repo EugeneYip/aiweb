@@ -13,7 +13,7 @@ const pt = {
     "160+ pacotes pré-instalados",
     "Tailwind CSS, pronto para usar",
     "Deploy com GitHub Actions",
-    "Suporte a domínio personalizado",
+    "Suporte a domínios personalizados",
     "Detecção automática de base path",
   ],
   howItWorksLabel: "Como funciona",
@@ -24,7 +24,7 @@ const pt = {
     {
       number: "01",
       title: "Peça JSX à sua IA",
-      body: "Diga ao Claude, ChatGPT ou qualquer IA para gerar a página que você quer como componente React em formato JSX.",
+      body: "Diga ao Claude, ChatGPT ou qualquer IA para gerar sua página como componente React em formato JSX.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const pt = {
   promptLabel: "Prompt inicial",
   promptHint: "Copie este prompt e cole na sua ferramenta de IA. Preencha os espaços em branco.",
   promptVariants: [
-    { label: "Landing Page", template: `Crie uma landing page para promover um produto ou serviço em formato JSX.
+    { label: "Landing Page", template: `Crie uma landing page em formato JSX para promover um produto ou serviço.
 Tema:
 Estilo:
 Detalhes:
-Arquivos de referência e imagens em anexo, se houver.
-Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
+Consulte os arquivos em anexo como referência, se houver.
+Forneça como arquivo para download ou exiba no Canvas.` },
     { label: "Portfólio", template: `Crie uma página de portfólio pessoal em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos de referência e imagens em anexo, se houver.
-Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
+Consulte os arquivos em anexo como referência, se houver.
+Forneça como arquivo para download ou exiba no Canvas.` },
     { label: "Dashboard", template: `Crie um dashboard administrativo em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos de referência e imagens em anexo, se houver.
-Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
+Consulte os arquivos em anexo como referência, se houver.
+Forneça como arquivo para download ou exiba no Canvas.` },
     { label: "Blog", template: `Crie uma homepage de blog em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos de referência e imagens em anexo, se houver.
-Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
+Consulte os arquivos em anexo como referência, se houver.
+Forneça como arquivo para download ou exiba no Canvas.` },
     { label: "SaaS", template: `Crie uma página de produto SaaS em formato JSX.
 Tema:
 Estilo:
 Detalhes:
-Arquivos de referência e imagens em anexo, se houver.
-Forneça como arquivo para download ou exiba no Canvas — como preferir.` },
+Consulte os arquivos em anexo como referência, se houver.
+Forneça como arquivo para download ou exiba no Canvas.` },
   ],
   promptCopy: "Copiar",
   promptCopied: "Copiado!",
