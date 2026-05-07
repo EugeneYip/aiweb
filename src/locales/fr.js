@@ -13,7 +13,7 @@ const fr = {
     "Plus de 160 paquets préinstallés",
     "Tailwind CSS, prêt à l'emploi",
     "Déploiement via GitHub Actions",
-    "Support de domaine personnalisé",
+    "Support de domaines personnalisés",
     "Détection automatique du base path",
   ],
   howItWorksLabel: "Comment ça marche",
@@ -24,7 +24,7 @@ const fr = {
     {
       number: "01",
       title: "Demandez du JSX à votre IA",
-      body: "Dites à Claude, ChatGPT ou n'importe quelle IA de générer la page que vous voulez en tant que composant React au format JSX.",
+      body: "Dites à Claude, ChatGPT ou n'importe quelle IA de générer votre page sous forme de composant React au format JSX.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const fr = {
   promptLabel: "Prompt de départ",
   promptHint: "Copiez ce prompt et collez-le dans votre outil IA. Remplissez les champs vides.",
   promptVariants: [
-    { label: "Landing Page", template: `Créez une landing page pour promouvoir un produit ou service au format JSX.
+    { label: "Landing Page", template: `Créez une landing page au format JSX pour promouvoir un produit ou service.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+Consultez les fichiers joints comme référence, le cas échéant.
+Fournissez un fichier téléchargeable ou affichez dans Canvas.` },
     { label: "Portfolio", template: `Créez une page portfolio personnel au format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+Consultez les fichiers joints comme référence, le cas échéant.
+Fournissez un fichier téléchargeable ou affichez dans Canvas.` },
     { label: "Tableau de bord", template: `Créez un tableau de bord administratif au format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+Consultez les fichiers joints comme référence, le cas échéant.
+Fournissez un fichier téléchargeable ou affichez dans Canvas.` },
     { label: "Blog", template: `Créez une page d'accueil de blog au format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+Consultez les fichiers joints comme référence, le cas échéant.
+Fournissez un fichier téléchargeable ou affichez dans Canvas.` },
     { label: "SaaS", template: `Créez une page produit SaaS au format JSX.
 Thème :
 Style :
 Détails :
-Fichiers et images de référence en pièce jointe, le cas échéant.
-Fournissez un fichier téléchargeable ou affichez dans Canvas, au choix.` },
+Consultez les fichiers joints comme référence, le cas échéant.
+Fournissez un fichier téléchargeable ou affichez dans Canvas.` },
   ],
   promptCopy: "Copier",
   promptCopied: "Copié !",
