@@ -26,7 +26,7 @@ Générez une page avec Claude, ChatGPT ou n'importe quelle IA. Collez-la dans `
    - Utilise les composants shadcn/ui (import depuis @/components/ui/) si approprié
    - Utilise lucide-react pour les icônes
    - Rends la page responsive pour mobile et desktop
-   - Exporter comme : export default function App()
+   - Exporte comme : export default function App()
    - Fichier unique, pas de fichiers CSS supplémentaires ni de scripts CDN
    ```
 

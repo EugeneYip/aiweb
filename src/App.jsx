@@ -63,7 +63,7 @@ export default function App() {
     if (langOpen) {
       setFocusIdx(LANGUAGES.findIndex((l) => l.code === lang));
     }
-  }, [langOpen]);
+  }, [langOpen, lang]);
 
   useEffect(() => {
     if (!langOpen || focusIdx < 0) return;
