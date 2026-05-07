@@ -1713,7 +1713,7 @@ Exigences :
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
 - ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
 - آئیکنز کے لیے lucide-react استعمال کریں
-- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسیو بنائیں
 - ایکسپورٹ: export default function App()
 - ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
       { label: "پورٹ فولیو", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک ذاتی پورٹ فولیو پیج بنائیں۔
@@ -1733,7 +1733,7 @@ Exigences :
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
 - ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
 - آئیکنز کے لیے lucide-react استعمال کریں
-- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسیو بنائیں
 - ایکسپورٹ: export default function App()
 - ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
       { label: "ڈیش بورڈ", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک ایڈمن ڈیش بورڈ بنائیں۔
@@ -1752,7 +1752,7 @@ Exigences :
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
 - ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
 - آئیکنز کے لیے lucide-react استعمال کریں
-- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسیو بنائیں
 - ایکسپورٹ: export default function App()
 - ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
       { label: "بلاگ", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک بلاگ ہوم پیج بنائیں۔
@@ -1771,7 +1771,7 @@ Exigences :
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
 - ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
 - آئیکنز کے لیے lucide-react استعمال کریں
-- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسیو بنائیں
 - ایکسپورٹ: export default function App()
 - ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
       { label: "SaaS", template: `src/App.jsx کے طور پر استعمال کے لیے JSX فارمیٹ میں ایک SaaS پروڈکٹ پیج بنائیں۔
@@ -1792,7 +1792,7 @@ Exigences :
 - تمام اسٹائلنگ کے لیے Tailwind CSS استعمال کریں
 - ضرورت پر shadcn/ui اجزاء استعمال کریں (@/components/ui/ سے درآمد)
 - آئیکنز کے لیے lucide-react استعمال کریں
-- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسو بنائیں
+- موبائل اور ڈیسک ٹاپ دونوں کے لیے ریسپانسیو بنائیں
 - ایکسپورٹ: export default function App()
 - ایک فائل، کوئی اضافی CSS فائل یا CDN اسکرپٹ نہیں` },
     ],
@@ -2127,7 +2127,7 @@ Technische Anforderungen:
   },
   tr: {
     badge: "AI Page Publisher",
-    heroTitle: ["AI sayfalarını yayınlayın,", "tek bir push ile."],
+    heroTitle: ["AI sayfalarını yayınlayın", "tek bir push ile."],
     heroSubtitle:
       "Yapay zeka tarafından oluşturulan her React bileşenini canlı bir web sitesine dönüştürmek için sade bir şablon. Bir dosyayı değiştirin. GitHub'a push edin. Bitti.",
     ctaPrimary: "Bu şablonu kullan",
@@ -2185,7 +2185,7 @@ Technische Anforderungen:
     promptLabel: "Başlangıç Promptu",
     promptHint: "Bu promptu kopyalayıp AI aracınıza yapıştırın. Boşlukları doldurun.",
     promptVariants: [
-      { label: "Landing", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir landing page oluşturun.
+      { label: "Landing Page", template: `src/App.jsx olarak kullanabileceğim JSX formatında bir landing page oluşturun.
 
 Amaç: [ne tanıtıyorsunuz — örn: fitness uygulaması, yerel fırın, danışmanlık firması]
 Stil: [tasarım stili — örn: minimalist, modern, cesur, kurumsal]
@@ -2455,7 +2455,7 @@ Teknik gereksinimler:
     badge: "AI Page Publisher",
     heroTitle: ["פרסם דפי AI", "בדחיפה אחת."],
     heroSubtitle:
-      "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. סיום.",
+      "תבנית פשוטה להפיכת כל רכיב React שנוצר על ידי בינה מלאכותית לאתר חי. החלף קובץ אחד. דחוף ל-GitHub. וזהו.",
     ctaPrimary: "השתמש בתבנית זו",
     ctaSecondary: "קרא את ה-README",
     readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.he.md",
@@ -2472,7 +2472,7 @@ Teknik gereksinimler:
     howItWorksLabel: "כיצד זה עובד",
     howItWorksTitle: "שלושה שלבים לעלייה לאוויר",
     howItWorksSubtitle:
-      "אין צורך בניסיון בתכנות. בקש JSX מהבינה המלאכותית, הדבק, דחוף, סיום.",
+      "אין צורך בניסיון בתכנות. בקש JSX מהבינה המלאכותית, הדבק, דחוף, וזהו.",
     steps: [
       {
         number: "01",
