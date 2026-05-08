@@ -24,12 +24,12 @@ const ko = {
     {
       number: "01",
       title: "AI에게 JSX 요청",
-      body: "Claude, ChatGPT 또는 원하는 AI에게 원하는 페이지를 JSX 형식의 React 컴포넌트로 생성해 달라고 하세요.",
+      body: "Claude, ChatGPT 또는 원하는 AI에게 페이지를 JSX 형식의 React 컴포넌트로 생성해 달라고 하세요.",
     },
     {
       number: "02",
       title: "저장소 설정",
-      body: "GitHub 페이지에서 “Use this template” → “Create a new repository”를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL에 반영돼요. 그런 다음 Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
+      body: "GitHub 페이지에서 “Use this template” → “Create a new repository”를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL을 결정해요. 그런 다음 Settings → Pages에서 Source를 GitHub Actions로 설정하세요.",
     },
     {
       number: "03",
@@ -62,32 +62,32 @@ const ko = {
 주제:
 스타일:
 세부 정보:
-참고할 파일이나 이미지가 있으면 첨부해 주세요.
-다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
+첨부 파일이 있으면 참고해 주세요.
+다운로드 파일 또는 Canvas로 제공해 주세요.` },
     { label: "포트폴리오", template: `JSX 형식으로 개인 포트폴리오 페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고할 파일이나 이미지가 있으면 첨부해 주세요.
-다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
+첨부 파일이 있으면 참고해 주세요.
+다운로드 파일 또는 Canvas로 제공해 주세요.` },
     { label: "대시보드", template: `JSX 형식으로 관리자 대시보드를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고할 파일이나 이미지가 있으면 첨부해 주세요.
-다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
+첨부 파일이 있으면 참고해 주세요.
+다운로드 파일 또는 Canvas로 제공해 주세요.` },
     { label: "블로그", template: `JSX 형식으로 블로그 홈페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고할 파일이나 이미지가 있으면 첨부해 주세요.
-다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
+첨부 파일이 있으면 참고해 주세요.
+다운로드 파일 또는 Canvas로 제공해 주세요.` },
     { label: "SaaS", template: `JSX 형식으로 SaaS 제품 페이지를 만들어 주세요.
 주제:
 스타일:
 세부 정보:
-참고할 파일이나 이미지가 있으면 첨부해 주세요.
-다운로드 파일 또는 Canvas 표시 중 원하는 방식으로 제공해 주세요.` },
+첨부 파일이 있으면 참고해 주세요.
+다운로드 파일 또는 Canvas로 제공해 주세요.` },
   ],
   promptCopy: "복사",
   promptCopied: "복사됨!",

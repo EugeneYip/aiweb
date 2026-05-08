@@ -1,6 +1,6 @@
 const id = {
   badge: "AI Page Publisher",
-  heroTitle: ["Terbitkan halaman AI", "hanya satu push."],
+  heroTitle: ["Terbitkan halaman AI", "hanya dengan satu push."],
   heroSubtitle:
     "Template sederhana untuk mengubah komponen React buatan AI menjadi website langsung. Ganti satu file. Push ke GitHub. Selesai.",
   ctaPrimary: "Gunakan template ini",
@@ -24,7 +24,7 @@ const id = {
     {
       number: "01",
       title: "Minta JSX dari AI",
-      body: "Minta Claude, ChatGPT, atau AI mana pun untuk membuat halaman yang kamu inginkan sebagai komponen React dalam format JSX.",
+      body: "Minta Claude, ChatGPT, atau AI mana pun untuk membuat halamanmu sebagai komponen React dalam format JSX.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const id = {
   promptLabel: "Prompt Awal",
   promptHint: "Salin prompt ini dan tempelkan ke alat AI kamu. Isi bagian yang kosong.",
   promptVariants: [
-    { label: "Landing Page", template: `Buatkan landing page untuk mempromosikan produk atau layanan dalam format JSX.
+    { label: "Landing Page", template: `Buatkan landing page dalam format JSX untuk mempromosikan produk atau layanan.
 Topik:
 Gaya:
 Detail:
-File referensi atau gambar terlampir, jika ada.
-Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
+Gunakan file terlampir sebagai referensi, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas.` },
     { label: "Portofolio", template: `Buatkan halaman portofolio pribadi dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi atau gambar terlampir, jika ada.
-Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
+Gunakan file terlampir sebagai referensi, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas.` },
     { label: "Dashboard", template: `Buatkan halaman dashboard admin dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi atau gambar terlampir, jika ada.
-Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
+Gunakan file terlampir sebagai referensi, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas.` },
     { label: "Blog", template: `Buatkan halaman utama blog dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi atau gambar terlampir, jika ada.
-Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
+Gunakan file terlampir sebagai referensi, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas.` },
     { label: "SaaS", template: `Buatkan halaman produk SaaS dalam format JSX.
 Topik:
 Gaya:
 Detail:
-File referensi atau gambar terlampir, jika ada.
-Berikan sebagai file unduhan atau tampilkan di Canvas — pilih sesuai kebutuhanmu.` },
+Gunakan file terlampir sebagai referensi, jika ada.
+Berikan sebagai file unduhan atau tampilkan di Canvas.` },
   ],
   promptCopy: "Salin",
   promptCopied: "Tersalin!",

@@ -24,7 +24,7 @@ const vi = {
     {
       number: "01",
       title: "Nhờ AI sinh JSX",
-      body: "Nhờ Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React định dạng JSX.",
+      body: "Nhờ Claude, ChatGPT hay AI nào đó sinh trang của bạn dưới dạng component React định dạng JSX.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const vi = {
   promptLabel: "Prompt mẫu",
   promptHint: "Sao chép prompt này và dán vào công cụ AI của bạn. Điền vào chỗ trống.",
   promptVariants: [
-    { label: "Landing Page", template: `Tạo một landing page quảng bá sản phẩm hoặc dịch vụ dạng JSX.
+    { label: "Landing Page", template: `Tạo một landing page dạng JSX để quảng bá sản phẩm hoặc dịch vụ.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo hoặc hình ảnh đính kèm, nếu có.
-Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
+Tham khảo các file đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas.` },
     { label: "Portfolio", template: `Tạo một trang portfolio cá nhân dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo hoặc hình ảnh đính kèm, nếu có.
-Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
+Tham khảo các file đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas.` },
     { label: "Dashboard", template: `Tạo một trang dashboard quản trị dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo hoặc hình ảnh đính kèm, nếu có.
-Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
+Tham khảo các file đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas.` },
     { label: "Blog", template: `Tạo một trang chủ blog dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo hoặc hình ảnh đính kèm, nếu có.
-Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
+Tham khảo các file đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas.` },
     { label: "SaaS", template: `Tạo một trang sản phẩm SaaS dạng JSX.
 Chủ đề:
 Phong cách:
 Chi tiết:
-File tham khảo hoặc hình ảnh đính kèm, nếu có.
-Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas — tuỳ bạn.` },
+Tham khảo các file đính kèm, nếu có.
+Cung cấp dưới dạng file tải về hoặc hiển thị trên Canvas.` },
   ],
   promptCopy: "Sao chép",
   promptCopied: "Đã sao chép!",

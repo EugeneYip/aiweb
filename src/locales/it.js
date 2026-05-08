@@ -13,7 +13,7 @@ const it = {
     "Oltre 160 pacchetti preinstallati",
     "Tailwind CSS, pronto all'uso",
     "Deployment con GitHub Actions",
-    "Supporto dominio personalizzato",
+    "Supporto per domini personalizzati",
     "Rilevamento automatico del base path",
   ],
   howItWorksLabel: "Come funziona",
@@ -24,7 +24,7 @@ const it = {
     {
       number: "01",
       title: "Chiedi il JSX alla tua AI",
-      body: "Chiedi a Claude, ChatGPT o qualsiasi AI di generare la pagina che vuoi come componente React in formato JSX.",
+      body: "Chiedi a Claude, ChatGPT o qualsiasi AI di generare la tua pagina come componente React in formato JSX.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const it = {
   promptLabel: "Prompt iniziale",
   promptHint: "Copia questo prompt e incollalo nel tuo strumento AI. Compila gli spazi vuoti.",
   promptVariants: [
-    { label: "Landing Page", template: `Crea una landing page per promuovere un prodotto o servizio in formato JSX.
+    { label: "Landing Page", template: `Crea una landing page in formato JSX per promuovere un prodotto o servizio.
 Tema:
 Stile:
 Dettagli:
-File di riferimento e immagini in allegato, se presenti.
-Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
+Consulta gli allegati come riferimento, se presenti.
+Fornisci come file scaricabile o mostra in Canvas.` },
     { label: "Portfolio", template: `Crea una pagina portfolio personale in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File di riferimento e immagini in allegato, se presenti.
-Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
+Consulta gli allegati come riferimento, se presenti.
+Fornisci come file scaricabile o mostra in Canvas.` },
     { label: "Dashboard", template: `Crea un dashboard amministrativo in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File di riferimento e immagini in allegato, se presenti.
-Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
+Consulta gli allegati come riferimento, se presenti.
+Fornisci come file scaricabile o mostra in Canvas.` },
     { label: "Blog", template: `Crea una homepage del blog in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File di riferimento e immagini in allegato, se presenti.
-Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
+Consulta gli allegati come riferimento, se presenti.
+Fornisci come file scaricabile o mostra in Canvas.` },
     { label: "SaaS", template: `Crea una pagina prodotto SaaS in formato JSX.
 Tema:
 Stile:
 Dettagli:
-File di riferimento e immagini in allegato, se presenti.
-Fornisci come file scaricabile o mostra in Canvas — a tua scelta.` },
+Consulta gli allegati come riferimento, se presenti.
+Fornisci come file scaricabile o mostra in Canvas.` },
   ],
   promptCopy: "Copia",
   promptCopied: "Copiato!",

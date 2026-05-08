@@ -2,7 +2,7 @@ const de = {
   badge: "AI Page Publisher",
   heroTitle: ["KI-Seiten veröffentlichen", "mit einem Push."],
   heroSubtitle:
-    "Ein schlankes Template, um jedes KI-generierte React-Artefakt in eine Live-Website zu verwandeln. Eine Datei ersetzen. Auf GitHub pushen. Fertig.",
+    "Ein schlankes Template, um jede KI-generierte React-Seite in eine Live-Website zu verwandeln. Eine Datei ersetzen. Auf GitHub pushen. Fertig.",
   ctaPrimary: "Dieses Template verwenden",
   ctaSecondary: "README lesen",
   readmeUrl: "https://github.com/EugeneYip/aiweb/blob/main/i/README.de.md",
@@ -24,7 +24,7 @@ const de = {
     {
       number: "01",
       title: "Frag deine KI nach JSX",
-      body: "Bitte Claude, ChatGPT oder eine beliebige KI, die gewünschte Seite als React-Komponente im JSX-Format zu erstellen.",
+      body: "Bitte Claude, ChatGPT oder eine beliebige KI, deine Seite als React-Komponente im JSX-Format zu erstellen.",
     },
     {
       number: "02",
@@ -58,36 +58,36 @@ const de = {
   promptLabel: "Starter-Prompt",
   promptHint: "Kopiere diesen Prompt und füge ihn in dein KI-Tool ein. Fülle die Lücken aus.",
   promptVariants: [
-    { label: "Landing Page", template: `Erstelle eine Landing Page zur Bewerbung eines Produkts oder Services im JSX-Format.
+    { label: "Landing Page", template: `Erstelle eine Landing Page im JSX-Format zur Bewerbung eines Produkts oder Services.
 Thema:
 Stil:
 Details:
-Referenzdateien oder Bilder sind angehängt, falls vorhanden.
-Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
+Beziehe dich auf angehängte Dateien als Referenz, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen.` },
     { label: "Portfolio", template: `Erstelle eine persönliche Portfolio-Website im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien oder Bilder sind angehängt, falls vorhanden.
-Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
+Beziehe dich auf angehängte Dateien als Referenz, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen.` },
     { label: "Dashboard", template: `Erstelle ein Admin-Dashboard im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien oder Bilder sind angehängt, falls vorhanden.
-Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
+Beziehe dich auf angehängte Dateien als Referenz, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen.` },
     { label: "Blog", template: `Erstelle eine Blog-Startseite im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien oder Bilder sind angehängt, falls vorhanden.
-Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
+Beziehe dich auf angehängte Dateien als Referenz, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen.` },
     { label: "SaaS", template: `Erstelle eine SaaS-Produktseite im JSX-Format.
 Thema:
 Stil:
 Details:
-Referenzdateien oder Bilder sind angehängt, falls vorhanden.
-Als Download-Datei bereitstellen oder in Canvas anzeigen — wie du magst.` },
+Beziehe dich auf angehängte Dateien als Referenz, falls vorhanden.
+Als Download-Datei bereitstellen oder in Canvas anzeigen.` },
   ],
   promptCopy: "Kopieren",
   promptCopied: "Kopiert!",
