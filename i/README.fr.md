@@ -9,13 +9,13 @@ Générez une page avec Claude, ChatGPT ou n'importe quelle IA. Collez-la dans `
 
 ## Démarrage rapide
 
-1. **Demandez du JSX à votre IA** — dites à Claude, ChatGPT ou n'importe quelle IA de générer votre page en tant que composant React au **format JSX**
+1. **Demandez du JSX à votre IA** — dites à Claude, ChatGPT ou n'importe quelle IA de générer votre page sous forme de composant React au **format JSX**
 
    <details>
    <summary>Prompt de départ (cliquez pour développer, puis copiez)</summary>
 
    ```
-   Crée une page React au format JSX que je puisse utiliser comme src/App.jsx.
+   Créez une page React au format JSX que je puisse utiliser comme src/App.jsx.
 
    Thème : [le thème de votre site — ex : café, portfolio, produit SaaS]
    Style : [style de design — ex : minimaliste, moderne, coloré, corporate]
