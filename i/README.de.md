@@ -23,9 +23,9 @@ Generiere eine Seite mit Claude, ChatGPT oder einer beliebigen KI. Füge sie in 
 
    Technische Anforderungen:
    - Verwende Tailwind CSS für alle Styles
-   - Verwende shadcn/ui-Komponenten (Import von @/components/ui/) wenn passend
+   - Verwende shadcn/ui-Komponenten (Import von @/components/ui/), wo passend
    - Verwende lucide-react für Icons
-   - Mach die Seite responsiv für Mobil und Desktop
+   - Mache die Seite responsiv für Mobilgeräte und Desktop
    - Export als: export default function App()
    - Einzelne Datei, keine zusätzlichen CSS-Dateien oder CDN-Skripte
    ```
