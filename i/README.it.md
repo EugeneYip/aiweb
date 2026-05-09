@@ -9,13 +9,13 @@ Genera una pagina con Claude, ChatGPT o qualsiasi AI. Incollala in `src/App.jsx`
 
 ## Avvio rapido
 
-1. **Chiedi il JSX alla tua AI** — di' a Claude, ChatGPT o qualsiasi AI di generare la pagina che vuoi come componente React in **formato JSX**
+1. **Chiedi il JSX alla tua AI** — di' a Claude, ChatGPT o qualsiasi AI di generare la tua pagina come componente React in **formato JSX**
 
    <details>
    <summary>Prompt iniziale (clicca per espandere, poi copia)</summary>
 
    ```
-   Crea una pagina React in formato JSX che possa usare come src/App.jsx.
+   Crea una pagina React in formato JSX che io possa usare come src/App.jsx.
 
    Tema: [il tema del tuo sito — es: caffetteria, portfolio, prodotto SaaS]
    Stile: [stile di design — es: minimalista, moderno, colorato, aziendale]
@@ -25,7 +25,7 @@ Genera una pagina con Claude, ChatGPT o qualsiasi AI. Incollala in `src/App.jsx`
    - Usa Tailwind CSS per tutti gli stili
    - Usa i componenti shadcn/ui (importare da @/components/ui/) quando opportuno
    - Usa lucide-react per le icone
-   - Rendilo responsive per mobile e desktop
+   - Rendila responsive per mobile e desktop
    - Esportare come: export default function App()
    - File singolo, nessun file CSS aggiuntivo o script CDN
    ```
@@ -45,7 +45,7 @@ Genera una pagina con Claude, ChatGPT o qualsiasi AI. Incollala in `src/App.jsx`
 
 ## Cosa è incluso
 
-Questo template è preconfigurato con tutto ciò che gli artefatti AI usano comunemente:
+Questo template è preconfigurato con tutto ciò che le pagine generate dall'AI usano comunemente:
 
 - **React 18 + Vite + Tailwind CSS 3** — build moderno, veloce, zero configurazione
 - **Oltre 40 componenti shadcn/ui** preinstallati in `src/components/ui/`

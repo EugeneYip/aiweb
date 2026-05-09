@@ -9,7 +9,7 @@ Claude, ChatGPT 또는 원하는 AI로 페이지를 생성하세요. `src/App.js
 
 ## 빠른 시작
 
-1. **AI에게 JSX 요청** — Claude, ChatGPT 등 AI에게 원하는 페이지를 **JSX 형식**의 React 컴포넌트로 생성해 달라고 하세요
+1. **AI에게 JSX 요청** — Claude, ChatGPT 또는 원하는 AI에게 페이지를 **JSX 형식**의 React 컴포넌트로 생성해 달라고 하세요
 
    <details>
    <summary>시작 프롬프트 (클릭하여 펼치기, 복사)</summary>
@@ -32,7 +32,7 @@ Claude, ChatGPT 또는 원하는 AI로 페이지를 생성하세요. `src/App.js
 
    </details>
 
-2. **이 템플릿 사용** — GitHub 페이지에서 **"Use this template"** → **"Create a new repository"**를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL이 됩니다 (`https://<사용자명>.github.io/<저장소명>/`)
+2. **이 템플릿 사용** — GitHub 페이지에서 **"Use this template"** → **"Create a new repository"**를 클릭하여 저장소를 만드세요. GitHub 사용자 이름과 저장소 이름이 사이트 URL을 결정합니다 (`https://<사용자명>.github.io/<저장소명>/`)
 3. **GitHub Pages 활성화** — **Settings → Pages**에서 Source를 **GitHub Actions**로 설정하세요
 4. [`src/App.jsx`](../src/App.jsx)를 **교체** — AI가 생성한 JSX를 이 파일에 붙여넣고, **기존 내용을 모두 삭제하고 교체한 후** 저장
 

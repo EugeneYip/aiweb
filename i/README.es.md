@@ -9,7 +9,7 @@ Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/Ap
 
 ## Inicio rápido
 
-1. **Pide JSX a tu IA** — dile a Claude, ChatGPT o la IA que uses que te genere la página como un componente React en **formato JSX**
+1. **Pide JSX a tu IA** — dile a Claude, ChatGPT o cualquier IA que te genere tu página como un componente React en **formato JSX**
 
    <details>
    <summary>Prompt inicial (clic para expandir y copiar)</summary>
@@ -45,7 +45,7 @@ Genera una página con Claude, ChatGPT o la IA que prefieras. Pégala en `src/Ap
 
 ## Qué incluye
 
-La plantilla ya viene con todo lo que las páginas hechas con IA suelen ocupar:
+La plantilla ya viene con todo lo que las páginas hechas con IA suelen usar:
 
 - **React 18 + Vite + Tailwind CSS 3** — build moderno, rápido y sin configurar nada
 - **Más de 40 componentes de shadcn/ui** preinstalados en `src/components/ui/`

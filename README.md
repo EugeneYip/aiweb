@@ -45,7 +45,7 @@ Generate a page with Claude, ChatGPT, or any LLM. Paste it into `src/App.jsx`. P
 
 ## What's Included
 
-This template comes pre-configured with everything AI artifacts commonly use:
+This template comes pre-configured with everything AI-generated pages commonly use:
 
 - **React 18 + Vite + Tailwind CSS 3** — modern, fast, zero-config build
 - **40+ shadcn/ui components** pre-installed in `src/components/ui/`
@@ -75,11 +75,11 @@ This template comes pre-configured with everything AI artifacts commonly use:
 - **CSS-in-JS** — `styled-components`, `@emotion/react`
 - **Utilities** — `date-fns`, `dayjs`, `lodash`, `axios`, `zustand`, `react-router-dom`, `nanoid`, `crypto-js`, `@faker-js/faker`, and many more
 
-> Tree-shaking ensures only the packages your artifact actually uses end up in the final bundle.
+> Tree-shaking ensures only the packages your page actually uses end up in the final bundle.
 
 ## Check for Missing Imports
 
-If your AI-generated artifact uses a package that is not pre-installed, run:
+If your AI-generated code uses a package that is not pre-installed, run:
 
 ```bash
 npm run check

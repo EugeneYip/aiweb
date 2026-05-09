@@ -9,7 +9,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 
 ## Mulai Cepat
 
-1. **Minta JSX dari AI** — minta Claude, ChatGPT, atau AI mana pun untuk membuat halaman yang kamu inginkan sebagai komponen React dalam **format JSX**
+1. **Minta JSX dari AI** — minta Claude, ChatGPT, atau AI mana pun untuk membuat halamanmu sebagai komponen React dalam **format JSX**
 
    <details>
    <summary>Prompt Awal (klik untuk membuka, lalu salin)</summary>
@@ -25,7 +25,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
    - Gunakan Tailwind CSS untuk semua styling
    - Gunakan komponen shadcn/ui (import dari @/components/ui/) jika sesuai
    - Gunakan lucide-react untuk ikon
-   - Buat responsif untuk mobile dan desktop
+   - Buat halaman responsif untuk mobile dan desktop
    - Ekspor sebagai: export default function App()
    - Satu file saja, tanpa file CSS tambahan atau skrip CDN
    ```
@@ -45,7 +45,7 @@ Buat halaman dengan Claude, ChatGPT, atau AI mana pun. Tempel ke `src/App.jsx`. 
 
 ## Yang Sudah Disertakan
 
-Template ini sudah dikonfigurasi dengan semua yang biasa digunakan oleh artefak AI:
+Template ini sudah dikonfigurasi dengan semua yang biasa digunakan oleh halaman buatan AI:
 
 - **React 18 + Vite + Tailwind CSS 3** — build modern, cepat, tanpa konfigurasi
 - **Lebih dari 40 komponen shadcn/ui** yang sudah terpasang di `src/components/ui/`

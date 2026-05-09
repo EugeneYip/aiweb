@@ -9,7 +9,7 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
 
 ## Início rápido
 
-1. **Peça JSX à sua IA** — diga ao Claude, ChatGPT ou qualquer IA para gerar a página que você quer como componente React em **formato JSX**
+1. **Peça JSX à sua IA** — diga ao Claude, ChatGPT ou qualquer IA para gerar sua página como componente React em **formato JSX**
 
    <details>
    <summary>Prompt inicial (clique para expandir e copiar)</summary>
@@ -25,7 +25,7 @@ Gere uma página com o Claude, ChatGPT ou qualquer IA. Cole em `src/App.jsx`. Fa
    - Use Tailwind CSS para toda a estilização
    - Use componentes shadcn/ui (importar de @/components/ui/) quando adequado
    - Use lucide-react para ícones
-   - Torne responsivo para mobile e desktop
+   - Torne-a responsiva para mobile e desktop
    - Exportar como: export default function App()
    - Arquivo único, sem arquivos CSS adicionais ou scripts de CDN
    ```

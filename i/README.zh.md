@@ -9,7 +9,7 @@
 
 ## 快速開始
 
-1. **請 AI 生成 JSX** — 告訴 Claude、ChatGPT 或任何 AI，請它用 **JSX 格式**幫你生成想要的 React 頁面
+1. **請 AI 生成 JSX** — 告訴 Claude、ChatGPT 或任何 AI，請它用 **JSX 格式**幫你生成 React 頁面
 
    <details>
    <summary>Prompt 範本（點擊展開後複製）</summary>

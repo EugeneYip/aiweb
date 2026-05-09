@@ -9,7 +9,7 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 
 ## Hızlı Başlangıç
 
-1. **Yapay zekadan JSX isteyin** — Claude, ChatGPT veya herhangi bir yapay zekadan istediğiniz sayfayı **JSX formatında** React bileşeni olarak oluşturmasını isteyin
+1. **Yapay zekadan JSX isteyin** — Claude, ChatGPT veya herhangi bir yapay zekadan sayfanızı **JSX formatında** React bileşeni olarak oluşturmasını isteyin
 
    <details>
    <summary>Başlangıç Promptu (genişletmek için tıklayın, ardından kopyalayın)</summary>
@@ -32,7 +32,7 @@ Claude, ChatGPT veya herhangi bir yapay zeka ile sayfa oluşturun. `src/App.jsx`
 
    </details>
 
-2. **Bu şablonu kullanın** — GitHub sayfasında **"Use this template"** → **"Create a new repository"** tıklayarak kendi reponuzu oluşturun. GitHub kullanıcı adınız ve repo adı sitenizin URL'sini belirleyecektir (`https://<kullanıcı-adı>.github.io/<repo-adı>/`)
+2. **Bu şablonu kullanın** — GitHub sayfasında **"Use this template"** → **"Create a new repository"** tıklayarak kendi reponuzu oluşturun. GitHub kullanıcı adınız ve repo adınız sitenizin URL'sini belirleyecektir (`https://<kullanıcı-adı>.github.io/<repo-adı>/`)
 3. **GitHub Pages'i etkinleştirin** — **Settings → Pages** sayfasına gidin ve Source'u **GitHub Actions** olarak ayarlayın
 4. [`src/App.jsx`](../src/App.jsx) dosyasını **değiştirin** — yapay zekanın oluşturduğu JSX'i bu dosyaya yapıştırın, **mevcut tüm içeriği silip değiştirin**, ardından kaydedin
 
