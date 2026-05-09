@@ -9,7 +9,7 @@
 
 ## 快速开始
 
-1. **让 AI 生成 JSX** — 告诉 Claude、ChatGPT 或任何 AI，让它用 **JSX 格式**帮你生成想要的 React 页面
+1. **让 AI 生成 JSX** — 告诉 Claude、ChatGPT 或任何 AI，让它用 **JSX 格式**帮你生成 React 页面
 
    <details>
    <summary>Prompt 模板（点击展开后复制）</summary>
