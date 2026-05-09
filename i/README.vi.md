@@ -9,7 +9,7 @@ Nhờ Claude, ChatGPT hay AI nào cũng được sinh cho bạn một trang, dá
 
 ## Bắt đầu nhanh
 
-1. **Nhờ AI sinh JSX** — bảo Claude, ChatGPT hay AI nào đó sinh trang bạn muốn dưới dạng component React **định dạng JSX**
+1. **Nhờ AI sinh JSX** — nhờ Claude, ChatGPT hay AI nào đó sinh trang của bạn dưới dạng component React **định dạng JSX**
 
    <details>
    <summary>Prompt mẫu (nhấn để mở rộng, rồi sao chép)</summary>
