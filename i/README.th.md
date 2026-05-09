@@ -9,7 +9,7 @@
 
 ## เริ่มต้นอย่างรวดเร็ว
 
-1. **ขอ JSX จาก AI** — บอก Claude, ChatGPT หรือ AI ตัวไหนก็ได้ให้สร้างหน้าเว็บที่ต้องการเป็น React component ใน**รูปแบบ JSX**
+1. **ขอ JSX จาก AI** — บอก Claude, ChatGPT หรือ AI ตัวไหนก็ได้ให้สร้างหน้าเว็บของคุณเป็น React component ใน**รูปแบบ JSX**
 
    <details>
    <summary>เทมเพลตพรอมต์ (คลิกเพื่อดู แล้วคัดลอก)</summary>
@@ -32,7 +32,7 @@
 
    </details>
 
-2. **ใช้เทมเพลตนี้** — ที่หน้า GitHub คลิก **"Use this template"** → **"Create a new repository"** เพื่อสร้าง repo ของตัวเอง ชื่อผู้ใช้ GitHub และชื่อ repo จะเป็นส่วนหนึ่งของ URL เว็บไซต์ (`https://<ชื่อผู้ใช้>.github.io/<ชื่อ-repo>/`)
+2. **ใช้เทมเพลตนี้** — ที่หน้า GitHub คลิก **"Use this template"** → **"Create a new repository"** เพื่อสร้าง repo ของตัวเอง ชื่อผู้ใช้ GitHub และชื่อ repo จะกำหนด URL เว็บไซต์ของคุณ (`https://<ชื่อผู้ใช้>.github.io/<ชื่อ-repo>/`)
 3. **เปิดใช้งาน GitHub Pages** — ไปที่ **Settings → Pages** แล้วตั้ง Source เป็น **GitHub Actions**
 4. **แทนที่** [`src/App.jsx`](../src/App.jsx) — วาง JSX ที่ AI สร้างขึ้นลงในไฟล์นี้ **ลบเนื้อหาเดิมทั้งหมดแล้วแทนที่** จากนั้นบันทึก
 
